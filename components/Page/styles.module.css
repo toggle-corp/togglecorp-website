@@ -1,0 +1,23 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+
+    .navbar {
+        align-self: stretch;
+    }
+
+    .container {
+        max-width: var(--width-page-max);
+        width: 100%;
+
+        .mainContent {
+            min-height: 80vh;
+        }
+    }
+
+    .footer {
+        align-self: stretch;
+    }
+}
