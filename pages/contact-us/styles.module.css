@@ -1,0 +1,7 @@
+.workList {
+    .keyFigures {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-large);
+    }
+}

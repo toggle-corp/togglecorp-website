@@ -1,0 +1,74 @@
+.bannerWithImage {
+    --image-offset-y: 200px;
+    --image-width: 456px;
+
+    @media screen and (max-width: 900px) {
+        --image-offset-y: 300px;
+    }
+
+    .topSection {
+        background-color: var(--color-secondary);
+        color: var(--color-text-on-dark);
+
+        &.light {
+            background-color: var(--color-header-light);
+            color: var(--color-secondary);
+        }
+
+        .content {
+            display: flex;
+            gap: var(--spacing-large);
+
+            @media screen and (max-width: 900px) {
+                flex-wrap: wrap;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: var(--spacing-medium);
+
+                .title {
+                    color: var(--color-primary);
+                    font-size: var(--font-size-large);
+                }
+
+                .description {
+                    font-size: var(--font-size-banner-description);
+                }
+            }
+
+            .bannerImage {
+                transform: translateY(var(--image-offset-y));
+                border-radius: var(--radius-card);
+                width: 100%;
+                max-width: var(--image-width);
+                height: 562px;
+                object-fit: cover;
+
+                @media screen and (max-width: 900px) {
+                    margin-top: calc(-1 * var(--image-offset-y));
+                }
+            }
+        }
+    }
+
+    .bottomSection {
+        min-height: var(--image-offset-y);
+
+        .statsContainer {
+            margin: unset;
+            max-width: calc(100% - var(--image-width) - var(--spacing-large));
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-top: var(--image-offset-y);
+            min-height: unset;
+
+            .statsContainer {
+                max-width: unset;
+            }
+        }
+    }
+}

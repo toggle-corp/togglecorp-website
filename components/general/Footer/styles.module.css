@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--color-footer-dark);
+    color: var(--color-text-on-dark);
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: var(--spacing-extra-large) 0;
+        gap: var(--spacing-large);
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: var(--spacing-large);
+
+            .helpText {
+                /* FIXME: use appropriate variable */
+                font-size: var(--font-size-heading-medium);
+            }
+
+            .email {
+                color: var(--color-primary);
+                /* FIXME: use appropriate variable */
+                font-size: var(--font-size-heading-extra-small);
+            }
+        }
+
+        .logoContainer {
+            display: flex;
+            align-items: flex-end;
+            flex-shrink: 0;
+
+            .logo {
+                height: 60px;
+            }
+        }
+    }
+}

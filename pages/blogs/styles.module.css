@@ -1,0 +1,74 @@
+.blogList {
+    .blogLinks {
+        display: flex;
+        justify-content: flex-start;
+        gap: calc(var(--spacing-super-small) *3);
+        margin: calc(var(--spacing-super-small)*2);
+
+        .fakeLink {
+            margin: calc(var(--spacing-super-small) * 2) 0 0 var(--spacing-super-small);
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: var(--color-text);
+
+            @media screen and (max-width: 1200px) {
+                margin: 0;
+                padding: 0;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                color: var(--color-primary);
+            }
+        }
+        .fakePoint {
+            margin: calc(var(--spacing-super-small) * 2) 0 0 var(--spacing-super-small);
+            color: var(--color-text);
+
+            @media screen and (max-width: 1200px) {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .horizontalRow {
+        margin: var(--spacing-super-small) 0 var(--spacing-super-small) 0;
+        border: 0 none;
+        background-color: var(--color-border-light);
+        height: 2px;
+    }
+    .researchGrid {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+
+        .researchList {
+            flex-basis: 33.33%;
+
+            .researchImage {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .blogList {
+        .blogLinkList {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            max-width: 100%;
+        }
+        .blogLinks {
+            flex-direction: column;
+            gap:0;
+            margin:0;
+        }
+        .researchGrid{
+            flex-direction: column;
+        }
+    }
+}

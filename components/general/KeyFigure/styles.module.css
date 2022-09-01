@@ -1,0 +1,20 @@
+.keyFigure {
+    .label {
+        font-size: var(--font-size-large);
+    }
+
+    .value {
+        color: var(--color-primary);
+        font-size: var(--font-size-key-figure-value);
+    }
+
+    &.stringValue {
+        .label {
+            font-size: var(--font-size-large);
+        }
+
+        .value {
+            font-size: var(--font-size-large);
+        }
+    }
+}

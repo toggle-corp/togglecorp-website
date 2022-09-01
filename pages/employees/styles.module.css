@@ -1,0 +1,25 @@
+.employeePage {
+
+    margin: calc(var(--spacing-super-small)*5);
+    background-color: var(--color-background);
+
+    @media screen and (max-width: 1200px) {
+        margin: 0;
+    }
+
+    .brandName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-super-small);
+
+        .title {
+            font-size: var(--font-size-extra-large);
+        }
+    }
+    .toggleLink {
+        display: flex;
+        justify-content: center;
+        color: var(--color-primary);
+    }
+}

@@ -1,0 +1,28 @@
+.careerSection {
+    display: flex;
+    justify-content: space-between;
+    margin: calc(var(--spacing-super-small)*3) 0 var(--spacing-super-small) 0;
+    font-size: var(--font-size-mid-medium);
+
+    .applySection{
+        display: flex;
+        text-transform: uppercase;
+        color: var(--color-text-light);
+        gap: calc(var(--spacing-super-small)*4);
+
+        .applyButtons {
+            color: var(--color-primary);
+        }
+    }
+}
+.horizontalRow {
+    border: 0 none;
+    background-color: var(--color-border-light);
+    height: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+    .careerSection {
+        margin: var(--spacing-super-small);
+    }
+}

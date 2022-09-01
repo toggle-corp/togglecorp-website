@@ -1,0 +1,5 @@
+.keyFigures {
+    display: flex;
+    gap: var(--spacing-extra-large);
+    flex-wrap: wrap;
+}

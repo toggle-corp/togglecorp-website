@@ -1,0 +1,27 @@
+.banner {
+    background-color: var(--color-header-light);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-large);
+
+        .backLink {
+            display: flex;
+            gap: var(--spacing-medium);
+            align-items: center;
+
+            .icon {
+                font-size: var(--font-size-extra-large);
+            }
+
+            .label {
+                font-size: var(--font-size-large);
+            }
+        }
+
+        .title {
+            font-size: var(--font-size-heading-large);
+        }
+    }
+}
