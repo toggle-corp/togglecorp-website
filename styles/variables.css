@@ -17,4 +17,9 @@
     --font-size-mega-large: 3rem;
 
     --width-page-max: 80rem;
+
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
 }

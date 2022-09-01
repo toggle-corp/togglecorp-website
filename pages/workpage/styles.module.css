@@ -1,0 +1,26 @@
+.analysisSection {
+    align-self: stretch;
+    background-color: var(--color-background-dark);
+    gap: var(--spacing);
+
+    .description {
+        font-size: var(--font-size-extra-large);
+        max-width: 36rem;
+    }
+
+    .links {
+        display: flex;
+        gap: calc(var(--spacing) / 2);
+        margin-top: calc(var(--spacing) * 2);
+
+        .fakeLink {
+            cursor: pointer;
+            color: var(--color-primary);
+            font-weight: var(--font-weight-medium)
+        }
+
+        .fakeDescription {
+            font-weight: var(--font-weight-light);
+        }
+    }
+}
