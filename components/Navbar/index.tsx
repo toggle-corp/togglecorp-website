@@ -24,6 +24,7 @@ function Navbar(props: Props) {
                         togglecorp
                     </div>
                 </div>
+                 
             </div>
         </nav>
     );

@@ -1,26 +1,69 @@
-.analysisSection {
-    align-self: stretch;
-    background-color: var(--color-background-dark);
-    gap: var(--spacing);
+.detailSection {
+    display: flex;
+    justify-content: space-evenly;
+    gap: calc(var(--spacing) / 2);
 
-    .description {
-        font-size: var(--font-size-extra-large);
-        max-width: 36rem;
-    }
-
-    .links {
-        display: flex;
-        gap: calc(var(--spacing) / 2);
-        margin-top: calc(var(--spacing) * 2);
+    .detailPage {
+        margin-top: calc(var(--spacing) *3);
+        margin-right: calc(var(--spacing) *6);
 
         .fakeLink {
             cursor: pointer;
             color: var(--color-primary);
-            font-weight: var(--font-weight-medium)
+            font-weight: var(--font-weight-medium);
+            margin: calc(var(--spacing) / 5);
         }
 
         .fakeDescription {
             font-weight: var(--font-weight-light);
+        }
+    }
+
+    .aboutDetail {
+        margin-top: calc(var(--spacing) *3);
+        margin-left: calc(var(--spacing) *6);
+
+        .aboutPage {
+            font-size: var(--font-size-large);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .detailDescription {
+            margin-top: calc(var(--spacing));
+            width: 80%;
+        }
+
+        .aboutProject {
+            margin-top: calc(var(--spacing) *3);
+            font-size: var(--font-size-large);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .projectDescription {
+            margin-top: calc(var(--spacing));
+
+            .projectList {
+                gap: calc(var(--spacing) /2);
+            }
+        }
+
+        .horizontalRow {
+            height: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: var(--color-text-light);
+            border: 0 none;
+            margin-top: calc(var(--spacing)*2);
+        }
+
+        .quote {
+            margin: calc(var(--spacing)*2);
+            font-style: italic;
+            font-size: x-large;
+        }
+
+        .testimonial {
+            margin-top: calc(var(--spacing));
         }
     }
 }
