@@ -1,6 +1,8 @@
 :root {
     --color-primary: #ff5500;
-    --color-secondary: #021f31;
+    --color-secondary: #CC4400;
+    --color-footer-dark: #021f31;
+    --color-disabled: #B3B3B3;
     --color-background: #fdf9f7;
     --color-background-dark: #fff1eb;
     --color-text-on-dark: #ffffff;
