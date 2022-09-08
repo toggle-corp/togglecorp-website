@@ -128,7 +128,7 @@ function Navbar(props: NavProps) {
                     <div className={styles.title}>
                         togglecorp
                     </div>
-                    <div className={styles.contant}>
+                    <div className={styles.contantButton}>
                         <Button
                             variant='primary'
                         >

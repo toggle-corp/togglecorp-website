@@ -1,11 +1,16 @@
 import { _cs } from '@togglecorp/fujs';
 import Image from 'next/image';
 import { IoIosArrowRoundBack } from 'react-icons/io';
+
 import styles from './styles.module.css';
 
 interface NavigationProps {
     logo: React.ReactNode;
     contact: React.ReactNode;
+}
+
+interface TitleProps {
+    title: React.ReactNode;
 }
 
 interface HeadingProps {
@@ -33,6 +38,52 @@ interface FooterContentProps {
     secondContent: React.ReactNode;
 }
 
+interface ModalContentProps {
+    image: React.ReactNode;
+    heading: React.ReactNode;
+    description: React.ReactNode;
+    link: React.ReactNode;
+}
+
+export function Title(props: TitleProps) {
+    const { title } = props;
+    return (
+        <div className={styles.title}>
+            {title}
+        </div>
+    );
+}
+
+export function Modal(props: ModalContentProps) {
+    const {
+        heading,
+        description,
+        image,
+        link,
+    } = props;
+
+    return (
+        <div className={styles.modal}>
+            <div className={styles.modalSection}>
+                <div className={styles.modalImage}>
+                    {image}
+                </div>
+                <div>
+                    <div className={styles.modalTitle}>
+                        {heading}
+                    </div>
+                    <div className={styles.modalDescription}>
+                        {description}
+                    </div>
+                </div>
+            </div>
+            <hr className={styles.horizontalRow} />
+            <div className={styles.viewLink}>
+                {link}
+            </div>
+        </div>
+    );
+}
 function Footer(props: FooterContentProps) {
     const {
         firstContent,
@@ -87,34 +138,14 @@ export function SidePane(props: SidePaneProps) {
     );
 }
 
-function Description(props: DescriptionProps) {
+export function Description(props: DescriptionProps) {
     const {
         description,
     } = props;
 
     return (
-        <div className={styles.description}>
+        <div className={styles.detailDescription}>
             {description}
-        </div>
-    );
-}
-
-export function Navigation(props: NavigationProps) {
-    const {
-        logo,
-        contact,
-    } = props;
-
-    return (
-        <div className={styles.logo}>
-            {logo}
-            <Image
-                src="/tc-logo.png"
-                alt="TC"
-                width={48}
-                height={48}
-            />
-            {contact}
         </div>
     );
 }
@@ -139,17 +170,27 @@ function Heading(props: HeadingProps) {
             </div>
             <div className={styles.links}>
                 <div>
-                    <div className={styles.fakeLink}>Project Duration</div>
-                    <div className={styles.fakeDescription}>{duration}</div>
+                    <div className={styles.fakeLink}>
+                        Project Duration
+                    </div>
+                    <div className={styles.fakeDescription}>
+                        {duration}
+                    </div>
                 </div>
                 <div>
-                    <div className={styles.fakeLink}>Client</div>
-                    <div className={styles.fakeDescription}>{summary}</div>
+                    <div className={styles.fakeLink}>
+                        Client
+                    </div>
+                    <div className={styles.fakeDescription}>
+                        {summary}
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
+
+
 
 function WorkDetailsPage() {
     return (

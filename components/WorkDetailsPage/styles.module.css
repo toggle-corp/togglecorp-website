@@ -3,14 +3,14 @@
     /* background-color: var(--color-background-dark); */
 
     .description {
-        font-size: var(--font-size-extra-large);
+        font-size: var(--font-size-super-large);
         margin-top: calc(var(--spacing) * 3);
         max-width: 46rem;
     }
 
     .links {
         display: flex;
-        gap: calc(var(--spacing) / 2);
+        gap: calc(var(--spacing) * 4);
         margin-top: calc(var(--spacing) * 2);
 
         .fakeLink {
@@ -23,6 +23,12 @@
             font-weight: var(--font-weight-light);
         }
     }
+}
+
+.title {
+    margin: calc(var(--spacing)*2) 0 calc(var(--spacing)) 0;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-medium);
 }
 
 .detailSection {
@@ -45,8 +51,7 @@
     }
 
     .aboutDetail {
-        margin-top: calc(var(--spacing) *3);
-        margin-left: calc(var(--spacing) *6);
+        margin-top: calc(var(--spacing) *2);
 
         .aboutPage {
             font-size: var(--font-size-large);
@@ -54,8 +59,61 @@
         }
 
         .detailDescription {
+            font-size: var(--font-size-medium);
             margin-top: calc(var(--spacing));
-            width: 80%;
+            max-width: 75%;
         }
+    }
+}
+
+.detailDescription {
+    margin-top: calc(var(--spacing) *2);
+}
+
+.modal {
+    max-width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-hr-light);
+    padding: calc(var(--spacing));
+
+    .modalSection {
+        display: flex;
+
+        .modalImage {
+            margin: calc(var(--spacing)/2);
+            object-fit: cover;
+            width: 40%;
+        }
+
+        .modalTitle {
+            padding: calc(var(--spacing));
+            font-size: var(--font-size-large);
+            font-weight: var(--font-weight-normal);
+            margin: calc(var(--spacing)/4);
+        }
+
+        .modalDescription {
+            font-size: var(--font-size-medium);
+            color: var(--color-text-light);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: calc(var(--spacing));
+        }
+    }
+
+    .horizontalRow {
+        height: 2px;
+        background-color: var(--color-hr-light);
+        border: 0 none;
+        width: 100%;
+    }
+
+    .viewLink {
+        text-align: center;
+        cursor: pointer;
+        color: var(--color-primary);
+        font-weight: var(--font-weight-medium);
+        font-size: var(--font-size-large);
     }
 }
