@@ -1,0 +1,121 @@
+.button {
+    --color-text: transparent;
+    --color-background: transparent;
+    --border-color: transparent;
+    --padding: var(--spacing-small) calc(var(--spacing-medium) - var(--spacing-extra-small));
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    outline-offset: calc(-1 * var(--spacing-small));
+    border: var(--width-separator-thin) solid var(--border-color);
+    border-radius: var(--radius-button);
+    background-color: var(--color-background);
+    cursor: pointer;
+    padding: var(--padding);
+    overflow: hidden;
+    color: var(--color-text);
+    font-family: inherit;
+    font-weight: var(--font-weight-bold);
+
+    &.compact {
+        padding: var(--spacing-extra-small);
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        padding: 0 var(--spacing-extra-small);
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        padding: 0 var(--spacing-extra-small);
+    }
+
+    .children {
+        display: flex;
+        align-items: center;
+        padding: 0 var(--spacing-extra-small);
+    }
+
+    &.light {
+        --border-color: var(--color-separator-light);
+    }
+
+    &.dark {
+        --border-color: var(--color-separator-dark);
+    }
+
+    &.inner-light {
+        --color-text: var(--color-text-button-light);
+    }
+
+    &.inner-dark {
+        --color-text: var(--color-text-button-dark);
+    }
+
+    &.default {
+        --color-background: var(--color-background-button);
+    }
+
+    &.accent {
+        --color-background: var(--color-accent);
+    }
+
+    &.danger {
+        --color-background: var(--color-danger);
+    }
+
+    &.primary {
+        --color-background: var(--color-primary);
+    }
+
+    &.success {
+        --color-background: var(--color-success);
+    }
+
+    &.warning {
+        --color-background: var(--color-warning);
+    }
+
+    &.transparent {
+        --border-color: transparent;
+        --color-background: transparent;
+
+        &.dark {
+            --color-text: var(--color-text-button-dark);
+        }
+
+        &.light {
+            --color-text: var(--color-text-button-light);
+        }
+
+        &.accent {
+            --color-text: var(--color-accent);
+        }
+
+        &.danger {
+            --color-text: var(--color-danger);
+        }
+
+        &.primary {
+            --color-text: var(--color-primary);
+        }
+
+        &.success {
+            --color-text: var(--color-success);
+        }
+
+        &.warning {
+            --color-text: var(--color-warning);
+        }
+    }
+
+    &.disabled {
+        opacity: var(--opacity-disabled-element);
+        cursor: not-allowed;
+    }
+}

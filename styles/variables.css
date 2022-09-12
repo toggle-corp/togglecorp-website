@@ -8,10 +8,17 @@
     --color-text-on-dark: #ffffff;
     --color-text: #212121;
     --color-text-light: #858b96;
-    --color-hr-light:  #E5E5E5;
+    --color-hr-light: #E5E5E5;
 
 
     --spacing: 1rem;
+
+    --width-page-max: 80rem;
+
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
 
     --font-size-medium: 1rem;
     --font-size-small: 0.85rem;
@@ -20,10 +27,12 @@
     --font-size-super-large: 2.5rem;
     --font-size-mega-large: 3rem;
 
-    --width-page-max: 80rem;
-
-    --font-weight-light: 200;
-    --font-weight-normal: 400;
-    --font-weight-medium: 600;
-    --font-weight-bold: 700;
+    --spacing-super-small: 1px;
+    --spacing-extra-small: 3px;
+    --spacing-small: 6px;
+    --spacing-small-medium: 8px;
+    --spacing-medium: 10px;
+    --spacing-large-medium: 13px;
+    --spacing-large: 16px;
+    --spacing-extra-large: 24px;
 }

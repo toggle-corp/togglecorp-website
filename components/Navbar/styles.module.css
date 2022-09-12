@@ -10,9 +10,15 @@
 
         .brand {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
             flex-direction: row;
             gap: var(--spacing);
+
+            .brandName {
+                display: flex;
+                align-items: center;
+                gap: var(--spacing);
+            }
 
             .title {
                 font-size: var(--font-size-extra-large);

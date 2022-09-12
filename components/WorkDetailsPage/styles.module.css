@@ -1,6 +1,11 @@
 .analysisSection {
     align-self: stretch;
+    width: 100%;
     /* background-color: var(--color-background-dark); */
+
+    .projectLinks {
+        gap: var(--spacing);
+    }
 
     .description {
         font-size: var(--font-size-super-large);
@@ -115,5 +120,103 @@
         color: var(--color-primary);
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-large);
+    }
+}
+
+.deepDashboard {
+    margin-top: calc(var(--spacing) *3);
+    object-fit: fit;
+}
+.projectList {
+    display: flex;
+
+    .projectDetail {
+        width: 100%;
+    }
+
+    .projectDescription {
+        margin-top: calc(var(--spacing)*2);
+    }
+
+    .descriptionList {
+        margin-top: calc(var(--spacing) *2);
+        max-width: 75%;
+    }
+
+    .deepLogo {
+        margin-top: calc(var(--spacing) *2);
+        object-fit: fit;
+    }
+
+    .reviewSection {
+        cursor: pointer;
+        color: var(--color-primary);
+        font-weight: var(--font-weight-normal);
+        font-size: calc(var(--font-size-large));
+    }
+
+    .organisationSection {
+        font-weight: var(--font-weight-bold);
+        font-size: calc(var(--font-size-medium));
+        margin-top: calc(var(--spacing) *2);
+        max-width: 75%;
+    }
+
+    .button {
+        margin-top: calc(var(--spacing) *2);
+        width: 15rem;
+        height: 3rem;
+        border: none;
+        border-radius: 5%;
+        background-color: var(--color-primary);
+        color: var(--color-text-on-dark);
+        font-size: calc(var(--font-size-medium));
+    }
+}
+
+.horizontalRow {
+    height: 2px;
+    background-color: var(--color-hr-light);
+    border: 0 none;
+    margin: calc(var(--spacing)*2);
+}
+
+.quoteDetails {
+    text-align: center;
+    margin: calc(var(--spacing)*2);
+
+    .quote {
+        font-style: italic;
+        font-size: x-large;
+        text-align: center;
+        max-width: 95%;
+    }
+
+    .writer {
+        font-weight: var(--font-weight-normal);
+        margin: calc(var(--spacing)*2);
+        font-size: calc(var(--font-size-large));
+    }
+
+    .testimonial {
+        cursor: pointer;
+        margin: calc(var(--spacing)*2);
+        color: var(--color-primary);
+        font-weight: var(--font-weight-normal);
+        font-size: calc(var(--font-size-large));
+    }
+}
+
+.routeLinks {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: var(--font-weight-bold);
+
+    .projectLinks {
+
+        .linkHeader {
+            font-weight: var(--font-weight-normal);
+        }
     }
 }
