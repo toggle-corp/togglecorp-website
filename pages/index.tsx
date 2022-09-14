@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image';
-import Head from 'next/head'
+import Head from 'next/head';
 
 import Page from '../components/Page';
 

@@ -1,19 +1,10 @@
-import type { NextPage } from 'next'
-import Image from 'next/image';
+import type { NextPage } from 'next';
 import {
     IoIosArrowRoundBack,
     IoIosArrowRoundForward,
 } from 'react-icons/io';
-import WorkDetailsPage, {
-    Description,
-    MainContent,
-    Modal,
-    Title,
-    Heading,
-    SidePane,
-} from '../../components/WorkDetailsPage';
+import WorkDetailsPage from '../../components/WorkDetailsPage';
 import Page from '../../components/Page';
-import { Button } from '../../components/Button';
 
 import styles from './styles.module.css';
 
@@ -42,6 +33,6 @@ const WorkPage: NextPage = () => {
                 </a>
             </div>
         </Page>
-    )
+    );
 }
 export default WorkPage;
