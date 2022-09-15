@@ -1,4 +1,5 @@
 import { _cs } from '@togglecorp/fujs';
+import Image from 'next/image';
 
 import styles from './styles.module.css'
 
@@ -19,6 +20,23 @@ function Footer(props: Props) {
                     <p>
                         We&apos;d love to hear from you.
                     </p>
+                </div>
+                <div className={styles.toggleEmail}>
+                    info@togglecorp.com
+                </div>
+                <div className={styles.toggleAddress}>
+                    Manbhawan, Lalitpur, Nepal
+                    <p>
+                        +977-9841331922, +977-9849831936
+                    </p>
+                    <div className={styles.toggleLogo}>
+                        <Image
+                            src="/togglecorp.svg"
+                            alt="Togglecorp Logo"
+                            width={174}
+                            height={60}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

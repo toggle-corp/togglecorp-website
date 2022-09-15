@@ -5,6 +5,12 @@ import { Button } from '../Button';
 
 import styles from './styles.module.css';
 
+interface ServiceProps {
+    heading: React.ReactNode;
+    subHeading: React.ReactNode;
+    image: React.ReactNode;
+}
+
 interface ExpertiseProps {
     heading: React.ReactNode;
     subHeading: string;
@@ -27,6 +33,31 @@ interface ResearchModalProps {
     heading: React.ReactNode;
     description: React.ReactNode;
     title: React.ReactNode;
+}
+
+export function ServiceSection(props: ServiceProps) {
+    const {
+        heading,
+        subHeading,
+        image,
+    } = props;
+    return (
+        <div className={styles.serviceSection}>
+            <div className={styles.researchSection}>
+                <div className={styles.researchDescription}>
+                    <div className={styles.research}>
+                        {heading}
+                    </div>
+                    <div className={styles.serviceDescription}>
+                        {subHeading}
+                    </div>
+                </div>
+                <div className={styles.researchImage}>
+                    {image}
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export function ExpertiseSection(props: ExpertiseProps) {
@@ -119,26 +150,18 @@ export function ExpertiseDetail(props: ExpertiseDetailProps) {
 function ServiceDetailsPage() {
     return (
         <div className={styles.service}>
-            <div className={styles.serviceSection}>
-                <div className={styles.researchSection}>
-                    <div className={styles.researchDescription}>
-                        <div className={styles.research}>
-                            Research and Data Analysis
-                        </div>
-                        <div className={styles.serviceDescription}>
-                            We conduct secondary data evaluations with a humanitarian focus on qualitative research, report writing and data analysis.
-                        </div>
-                    </div>
-                    <div className={styles.researchImage}>
-                        <Image
-                            src="/organization.png"
-                            alt="Organization"
-                            width={456}
-                            height={552}
-                        />
-                    </div>
-                </div>
-            </div>
+            <ServiceSection
+                heading="Research and Data Analysis"
+                subHeading="We conduct secondary data evaluations with a humanitarian focus on qualitative research, report writing and data analysis."
+                image={
+                    <Image
+                        src="/organization.png"
+                        alt="Organization"
+                        width={456}
+                        height={552}
+                    />
+                }
+            />
             <div className={styles.softwareDetail}>
                 Also see:
                 <div className={styles.consultant}>
@@ -160,10 +183,10 @@ function ServiceDetailsPage() {
                 <div className={styles.deepDetailDescription}>
                     Our in-house platform DEEP centralizes, accelerates and strengthens the inter-agency response to humanitarian crises. It hosts the largest analysis framework repository in the international humanitarian sector.
                     <div className={styles.knowDeep}>
-                        Know more about DEEP
-                        <div className={styles.icon}>
+                        <a href="#">
+                            Know more about DEEP
                             <IoIosArrowRoundForward />
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div className={styles.deepImage}>
@@ -344,10 +367,10 @@ function ServiceDetailsPage() {
                 />
             </div>
             <div className={styles.knowwork}>
-                See all of the works
-                <div className={styles.icon}>
+                <a href="#">
+                    See all of the works
                     <IoIosArrowRoundForward />
-                </div>
+                </a>
             </div>
         </div>
     );

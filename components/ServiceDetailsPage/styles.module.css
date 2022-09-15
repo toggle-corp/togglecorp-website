@@ -1,41 +1,6 @@
 .service {
     width: 100%;
 
-    .serviceSection {
-        background-color: var(--color-background-dark);
-        height: 30rem;
-
-        .researchSection {
-            display: flex;
-            position: relative;
-
-            .researchDescription {
-                margin: calc(var(--spacing)*10);
-
-                .research {
-                    color: var(--color-primary);
-                    font-size: var(--font-size-medium);
-                    font-weight: var(--font-weight-medium);
-                }
-
-                .serviceDescription {
-                    width: 60%;
-                    color: var(--color-text-dark);
-                    font-size: var(--font-size-super-large);
-                    font-weight: var(--font-weight-normal);
-                }
-            }
-
-            .researchImage {
-                width: 40%;
-                position: absolute;
-                margin: calc(var(--spacing)*10);
-                left: calc(var(--spacing)*38);
-                z-index: 1;
-            }
-        }
-    }
-
     .softwareDetail {
         display: flex;
         gap: var(--spacing);
@@ -198,7 +163,7 @@
 
     .modalImage {
         width: 100%;
-        object-fit: contain;
+        object-fit: fill;
     }
 
     .modalHeading {
@@ -215,7 +180,44 @@
     }
 
     .modalTitle {
+        display: flex;
+        bottom:0;
         color: var(--color-text-light);
         margin: calc(var(--spacing)*3) 0 var(--spacing) var(--spacing);
+    }
+}
+
+.serviceSection {
+    background-color: var(--color-background-dark);
+    height: 30rem;
+
+    .researchSection {
+        display: flex;
+        position: relative;
+
+        .researchDescription {
+            margin: calc(var(--spacing)*10);
+
+            .research {
+                color: var(--color-primary);
+                font-size: var(--font-size-medium);
+                font-weight: var(--font-weight-medium);
+            }
+
+            .serviceDescription {
+                width: 60%;
+                color: var(--color-text-dark);
+                font-size: var(--font-size-super-large);
+                font-weight: var(--font-weight-normal);
+            }
+        }
+
+        .researchImage {
+            width: 40%;
+            position: absolute;
+            margin: calc(var(--spacing)*10);
+            left: calc(var(--spacing)*38);
+            z-index: 1;
+        }
     }
 }

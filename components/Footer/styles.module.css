@@ -15,5 +15,22 @@
             font-size: var(--font-size-extra-large);
             padding: var(--spacing);
         }
+
+        .toggleEmail {
+            font-size: var(--font-size-large);
+            padding: var(--spacing);
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+        .toggleAddress{
+            padding: var(--spacing);
+            color: var(--color-text-on-dark);
+            margin: 0 0 calc(var(--spacing)*3);
+        
+            .toggleLogo {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
     }
 }
