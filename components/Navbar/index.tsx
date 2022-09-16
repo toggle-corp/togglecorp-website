@@ -26,6 +26,12 @@ function Navbar(props: NavProps) {
                             togglecorp
                         </div>
                     </div>
+                    <ul>
+                        <li><a href="default.asp">Home</a></li>
+                        <li><a href="worklistpage">Work</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
                     <Button
                         variant='primary'
                     >

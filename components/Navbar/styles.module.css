@@ -23,6 +23,27 @@
             .title {
                 font-size: var(--font-size-extra-large);
             }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+                    
+            li {
+                float: left;
+            }
+                    
+            li a {
+                display: block;
+                color: var(--color-text);
+                text-align: center;
+                font-weight: var(--font-weight-medium);
+                padding: var(--spacing) calc(var(--spacing)*5) var(--spacing) var(--spacing);
+            }        
+            li a:hover {
+                color: var(--color-primary);
+            }
         }
     }
 }

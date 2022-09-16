@@ -41,32 +41,8 @@
         padding: 0 var(--spacing-extra-small);
     }
 
-    &.light {
-        --border-color: var(--color-separator-light);
-    }
-
-    &.dark {
-        --border-color: var(--color-separator-dark);
-    }
-
-    &.inner-light {
-        --color-text: var(--color-text-button-light);
-    }
-
-    &.inner-dark {
-        --color-text: var(--color-text-button-dark);
-    }
-
     &.default {
         --color-background: var(--color-background-button);
-    }
-
-    &.accent {
-        --color-background: var(--color-accent);
-    }
-
-    &.danger {
-        --color-background: var(--color-danger);
     }
 
     &.primary {
@@ -77,7 +53,7 @@
         --color-background: var(--color-success);
     }
 
-    &.warning {
+    &.disabled {
         --color-background: var(--color-warning);
     }
 
