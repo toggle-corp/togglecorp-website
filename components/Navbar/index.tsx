@@ -44,7 +44,7 @@ function Navbar(props: NavProps) {
                             className={styles.menu}
                             name="toggle"
                             onClick={toggleNavVisibility}
-                            variant="transparent"
+                            variant="default"
                         >
                             <HiViewList />
                         </Button>

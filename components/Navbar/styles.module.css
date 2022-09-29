@@ -24,7 +24,6 @@
                 display: flex;
                 align-items: center;
                 gap: var(--spacing);
-                flex-grow: 1;
             }
 
             .title {
@@ -36,9 +35,7 @@
                 align-items: center;
                 flex-wrap: wrap;
                 justify-content: flex-end;
-                /* padding: var(--tui-spacing-large);
-                max-width: var(--width-page-max);
-                gap: var(--tui-spacing-large); */
+                gap: var(--spacing);
     
                 .navItem {
                     font-weight: var(--font-weight-medium);
@@ -50,13 +47,13 @@
             }
             .menu {
                 display: none;
-                /* border: var(--tui-width-separator-thin) solid #ffffff;
-                border-radius: var(--tui-border-radius-medium);
-                padding: var(--tui-spacing-extra-small);
-                color: var(--tui-color-text-on-accent); */
+                border: 1px solid var(--color-text-on-dark);
+                border-radius: var(--radius-button);
+                padding: var(--spacing-extra-small);
+                color: var(--color-text);
     
                 &:hover {
-                    /* color: var(--tui-color-text-on-accent); */
+                    color: var(--color-text);
                 }
             }
         }
@@ -66,8 +63,12 @@
     .navbar {
         .container {
             .brand {
+                .navItemsContainer {
+                    display: flex;
+                    flex-direction: column;
+                }
                 .title{
-                font-size: var(--font-size-mid-medium);
+                    font-size: var(--font-size-mid-medium);
                 }
             }
         }

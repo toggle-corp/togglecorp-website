@@ -6,7 +6,12 @@
         justify-content: flex-end;
 
         .researchDescription {
-            margin: calc(var(--spacing)*10);
+            display:flex;
+            flex-direction: column;
+            height: 30rem;
+            justify-content: center;
+            align-items: flex-start;
+            margin: calc(var(--spacing)*2);
             
             .research {
                 color: var(--color-primary);
@@ -128,11 +133,11 @@
     .serviceSection{
         .researchSection {
             .researchDescription {
-                margin: var(--spacing);
+                margin: calc(var(--spacing)*2);
                 .serviceDescription{
                     width: 100%;
                     font-weight: var(--font-weight-normal);
-                    font-size: var(--font-size-mid-medium);
+                    font-size: var(--font-size-super-large);
                 }
             }
         }

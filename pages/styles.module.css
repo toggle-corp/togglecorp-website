@@ -58,6 +58,7 @@
 
 .task {
     display: flex;
+    gap: calc(var(--spacing) * 6);
 
     .title {
         font-size: var(--font-size-large);
@@ -77,5 +78,8 @@
                 max-width: 23rem;
             }
         }
+    }
+    .task {
+        gap: calc(var(--spacing)*2);
     }
 }
