@@ -58,7 +58,6 @@
 
 .task {
     display: flex;
-    gap: calc(var(--spacing) * 6);
 
     .title {
         font-size: var(--font-size-large);
@@ -69,5 +68,14 @@
 
     .summary {
         color: var(--color-text-light);
+    }
+}
+@media screen and (max-width: 600px) {
+    .home{
+        .tasksSection{
+            .taskList{
+                max-width: 23rem;
+            }
+        }
     }
 }

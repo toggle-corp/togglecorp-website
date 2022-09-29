@@ -7,42 +7,76 @@
         padding: var(--spacing) 0;
         max-width: var(--width-page-max);
         width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
 
         .brand {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
             gap: var(--spacing);
+            /* position: sticky;
+            top: 0;
+            z-index: 111111;
+            width: 100%; */
 
             .brandName {
                 display: flex;
                 align-items: center;
                 gap: var(--spacing);
+                flex-grow: 1;
             }
 
             .title {
                 font-size: var(--font-size-extra-large);
             }
-            ul {
-                list-style-type: none;
-                margin: 0;
+            
+            .navItemsContainer {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                /* padding: var(--tui-spacing-large);
+                max-width: var(--width-page-max);
+                gap: var(--tui-spacing-large); */
+    
+                .navItem {
+                    font-weight: var(--font-weight-medium);
+                }
+            }
+    
+            .button {
                 padding: 0;
-                overflow: hidden;
             }
-                    
-            li {
-                float: left;
+            .menu {
+                display: none;
+                /* border: var(--tui-width-separator-thin) solid #ffffff;
+                border-radius: var(--tui-border-radius-medium);
+                padding: var(--tui-spacing-extra-small);
+                color: var(--tui-color-text-on-accent); */
+    
+                &:hover {
+                    /* color: var(--tui-color-text-on-accent); */
+                }
             }
-                    
-            li a {
-                display: block;
-                color: var(--color-text);
-                text-align: center;
-                font-weight: var(--font-weight-medium);
-                padding: var(--spacing) calc(var(--spacing)*5) var(--spacing) var(--spacing);
-            }        
-            li a:hover {
-                color: var(--color-primary);
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        .container {
+            .brand {
+                .title{
+                font-size: var(--font-size-mid-medium);
+                }
+            }
+        }
+        .navItems {
+            .navLink {
+                align-self: flex-end;
+                display: initial;
+                position: absolute;
+                cursor: pointer;
             }
         }
     }

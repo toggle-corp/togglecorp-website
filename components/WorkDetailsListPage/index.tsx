@@ -1,28 +1,59 @@
-import Image from 'next/image';
-import { ResearchModal } from '../ServiceDetailsPage';
+import { _cs } from '@togglecorp/fujs';
 
 import styles from './styles.module.css';
 
 interface WorkListProps {
+    className?: string;
     heading: React.ReactNode;
     subHeading: React.ReactNode;
     image: React.ReactNode;
 }
 
+interface projectDetailProps {
+    className?: string;
+    projectCompleted: React.ReactNode;
+    organizationSupport: React.ReactNode;
+}
+
+export function ProjectDetail(props: projectDetailProps) {
+    const {
+        className,
+        projectCompleted,
+        organizationSupport,
+    } = props;
+    return (
+        <div className={_cs(styles.projectCompleted, className)}>
+            <div>
+                Project Completed
+                <div className={styles.projectCount}>
+                    {projectCompleted}
+                </div>
+            </div>
+            <div className={styles.organization}>
+                Organizations Supported
+                <div className={styles.projectCount}>
+                    {organizationSupport}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export function WorkListSection(props: WorkListProps) {
     const {
+        className,
         heading,
         subHeading,
         image,
     } = props;
     return (
-        <div className={styles.workListSection}>
+        <div className={_cs(styles.workListSection, className)}>
             <div className={styles.workSection}>
                 <div className={styles.workDescription}>
-                    <div className={styles.workList}>
-                        {heading}
-                    </div>
                     <div className={styles.workDescription}>
+                        <div className={styles.workList}>
+                            {heading}
+                        </div>
                         {subHeading}
                     </div>
                 </div>
@@ -34,126 +65,6 @@ export function WorkListSection(props: WorkListProps) {
     );
 }
 
-function WorkDetailsListPage() {
-    return (
-        <div className={styles.workList}>
-            <WorkListSection
-                heading="Our Work"
-                subHeading="We work closely with several national and international humanitarian organizations."
-                image={
-                    <Image
-                        src="/organization.png"
-                        alt="Organization"
-                        width={456}
-                        height={552}
-                    />
-                }
-            />
-            <div className={styles.projectDetail}>
-                <div className={styles.projectCompleted}>
-                    <div>
-                        Project Completed
-                        <div className={styles.projectCount}>
-                            25
-                        </div>
-                    </div>
-                    <div className={styles.organization}>
-                        Organizations Supported
-                        <div className={styles.projectCount}>
-                            8
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr
-                className={styles.horizontalRow}
-            />
-            <div className={styles.researchList}>
-                <ResearchModal
-                    image={
-                        <Image
-                            src="/work-list-1.png"
-                            alt="Deep Dashboard"
-                            width={580}
-                            height={250}
-                        />
-                    }
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-                <ResearchModal
-                    image={undefined}
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-            </div>
-            <div className={styles.researchList}>
-                <ResearchModal
-                    image={undefined}
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-                <ResearchModal
-                    image={
-                        <Image
-                            src="/work-list-2.png"
-                            alt="Deep Dashboard"
-                            width={580}
-                            height={250}
-                        />
-                    }
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-            </div>
-            <div className={styles.researchList}>
-                <ResearchModal
-                    image={
-                        <Image
-                            src="/work-list-1.png"
-                            alt="Deep Dashboard"
-                            width={580}
-                            height={250}
-                        />
-                    }
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-                <ResearchModal
-                    image={undefined}
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-            </div>
-            <div className={styles.researchList}>
-                <ResearchModal
-                    image={undefined}
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-                <ResearchModal
-                    image={
-                        <Image
-                            src="/work-list-2.png"
-                            alt="Deep Dashboard"
-                            width={580}
-                            height={250}
-                        />
-                    }
-                    heading="Refugee Situational Analysis"
-                    description="The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
-                    title="Data Analysis"
-                />
-            </div>
-        </div>
-    );
-}
+function WorkDetailsListPage() { }
 
 export default WorkDetailsListPage;

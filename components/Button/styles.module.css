@@ -1,9 +1,4 @@
 .button {
-    --color-text: transparent;
-    --color-background: transparent;
-    --border-color: transparent;
-    --padding: var(--spacing-small) calc(var(--spacing-medium) - var(--spacing-extra-small));
-
     display: flex;
     position: relative;
     align-items: center;
@@ -15,8 +10,8 @@
     cursor: pointer;
     padding: var(--padding);
     overflow: hidden;
-    color: var(--color-text);
-    font-family: inherit;
+    /* color: var(--color-text-on-dark); */
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
 
     &.compact {
@@ -42,56 +37,22 @@
     }
 
     &.default {
-        --color-background: var(--color-background-button);
+        --color-background: none;
+        color: var(--color-text);
     }
 
     &.primary {
         --color-background: var(--color-primary);
-    }
-
-    &.success {
-        --color-background: var(--color-success);
-    }
-
-    &.disabled {
-        --color-background: var(--color-warning);
-    }
-
-    &.transparent {
-        --border-color: transparent;
-        --color-background: transparent;
-
-        &.dark {
-            --color-text: var(--color-text-button-dark);
-        }
-
-        &.light {
-            --color-text: var(--color-text-button-light);
-        }
-
-        &.accent {
-            --color-text: var(--color-accent);
-        }
-
-        &.danger {
-            --color-text: var(--color-danger);
-        }
-
-        &.primary {
-            --color-text: var(--color-primary);
-        }
-
-        &.success {
-            --color-text: var(--color-success);
-        }
-
-        &.warning {
-            --color-text: var(--color-warning);
-        }
+        color: var(--color-text-on-dark);
     }
 
     &.disabled {
         opacity: var(--opacity-disabled-element);
         cursor: not-allowed;
     }
+}
+@media screen and (max-width: 600px) {
+.button{
+    font-size: var(--font-size-small);
+}
 }

@@ -19,5 +19,6 @@
 
     .footer {
         align-self: stretch;
+        margin-top: calc(var(--spacing)*5);
     }
 }

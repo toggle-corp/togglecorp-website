@@ -1,0 +1,61 @@
+.workList {
+    .projectDetail {
+        color: var(--color-text);
+        gap: var(--spacing);
+        margin: calc(var(--spacing)*5);
+
+        .projectCompleted {
+            display: flex;
+            gap: calc(var(--spacing)*6);
+
+            .projectCount {
+                color: var(--color-primary);
+                font-size: var(--font-size-super-large);
+            }
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: flex-start;
+        gap: calc(var(--spacing) *2);
+
+        .fakeLink {
+            cursor: pointer;
+            color: var(--color-text);
+            margin: calc(var(--spacing) * 2) 0 0 var(--spacing);
+
+            &:hover {
+                color: var(--color-primary);
+                text-decoration: underline;
+            }
+        }
+        .fakePoint{
+            color: var(--color-text);
+            margin: calc(var(--spacing) * 2) 0 0 var(--spacing);
+        }
+    }
+
+    .horizontalRow {
+        height: 2px;
+        background-color: var(--color-hr-light);
+        border: 0 none;
+        margin: var(--spacing) 0 var(--spacing) 0;
+    }
+
+    .researchList {
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px) {
+    .workList {
+        .horizontalRow {
+            margin: 0;
+        }
+        .links{
+            gap:0;
+        }
+        .projectDetail{
+            margin: calc(var(--spacing)*2);
+        }
+    }
+}

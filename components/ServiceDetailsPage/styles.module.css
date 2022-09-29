@@ -1,92 +1,32 @@
-.service {
-    width: 100%;
+.serviceSection {
+    background-color: var(--color-background-dark);
 
-    .softwareDetail {
+    .researchSection {
         display: flex;
-        gap: var(--spacing);
-        margin: calc(var(--spacing)*2);
+        justify-content: flex-end;
 
-        .consultant {
-            color: var(--color-primary);
-        }
-    }
-
-    .organizationList {
-        width: 100%;
-        padding: calc(var(--spacing)*17) calc(var(--spacing)*17) var(--spacing);
-        font-size: var(--font-size-large);
-        color: var(--color-text);
-    }
-
-    .organizationImage {
-        margin-left: calc(var(--spacing)*6);
-    }
-
-    .deepDetail {
-        display: flex;
-        margin: calc(var(--spacing)*8);
-
-        .deepDetailDescription {
-            color: var(--color-text);
-            font-size: var(--font-size-large);
-            width: 60%
-        }
-
-        .knowDeep {
-            display: flex;
-            color: var(--color-primary);
-            margin-top: calc(var(--spacing)*2);
-        }
-
-        .deepImage {
-            width: 40%;
-            padding-left: calc(var(--spacing)*2);
-        }
-    }
-
-    .expertise {
-        padding-bottom: var(--spacing);
-
-        .expertiseDetails {
-            display: flex;
-        }
-    }
-
-    .approach {
-
-        .descriptionHeading {
-            font-size: var(--font-size-large);
-            color: var(--color-text);
-            margin: var(--spacing);
-
-            .approachDetailDescription {
+        .researchDescription {
+            margin: calc(var(--spacing)*10);
+            
+            .research {
+                color: var(--color-primary);
                 font-size: var(--font-size-medium);
+                font-weight: var(--font-weight-medium);
+            }
+
+            .serviceDescription {
+                width: 60%;
+                color: var(--color-text-dark);
+                font-size: var(--font-size-super-large);
+                font-weight: var(--font-weight-normal);
             }
         }
-    }
 
-    .horizontalRow {
-        height: 2px;
-        background-color: var(--color-hr-light);
-        border: 0 none;
-    }
-
-    .researchButtons {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .knowwork {
-        display: flex;
-        color: var(--color-primary);
-        justify-content: center;
-        background-color: var(--color-background-light);
-        padding-bottom: calc(var(--spacing)*4);
-    }
-
-    .researchList {
-        display: flex;
-        background-color: var(--color-background-light);
+        .researchImage {
+            display:flex;
+            position: absolute;
+            margin-top: calc(var(--spacing)*5);
+        }
     }
 }
 
@@ -97,24 +37,24 @@
     .expertiseHeading {
         color: var(--color-primary);
         font-size: var(--font-size-large);
-        padding: calc(var(--spacing)*5) calc(var(--spacing)*5) 0;
     }
 
     .expertiseSubheading {
         color: var(--color-text-dark);
         font-size: var(--font-size-large);
-        width: 65%;
-        padding: var(--spacing) calc(var(--spacing)*5);
+        width: 60%;
+        padding: calc(var(--spacing)*3) 0 0 calc(var(--spacing)*3);
     }
 }
 
 .expertiseDetail {
+    display: flex;
     background-color: var(--color-background-light);
-    padding: calc(var(--spacing)*4);
 
     .expertiseDescription {
         background-color: var(--color-text-on-dark);
         padding: calc(var(--spacing)*2);
+        margin: calc(var(--spacing)*2);
         border-radius: calc(var(--spacing)/2);
 
         .iconDescription {
@@ -156,7 +96,6 @@
     width: 45%;
     border-style: solid;
     border-color: var(--color-hr-light);
-    border-width: var(--spacing-super-small);
     margin: var(--spacing);
     border-radius: var(--spacing);
     background-color: var(--color-text-on-dark);
@@ -181,43 +120,45 @@
 
     .modalTitle {
         display: flex;
-        bottom:0;
         color: var(--color-text-light);
         margin: calc(var(--spacing)*3) 0 var(--spacing) var(--spacing);
     }
 }
-
-.serviceSection {
-    background-color: var(--color-background-dark);
-    height: 30rem;
-
-    .researchSection {
-        display: flex;
-        position: relative;
-
-        .researchDescription {
-            margin: calc(var(--spacing)*10);
-
-            .research {
-                color: var(--color-primary);
-                font-size: var(--font-size-medium);
-                font-weight: var(--font-weight-medium);
-            }
-
-            .serviceDescription {
-                width: 60%;
-                color: var(--color-text-dark);
-                font-size: var(--font-size-super-large);
-                font-weight: var(--font-weight-normal);
+@media screen and (max-width: 600px) {
+    .serviceSection{
+        .researchSection {
+            .researchDescription {
+                margin: var(--spacing);
+                .serviceDescription{
+                    width: 100%;
+                    font-weight: var(--font-weight-normal);
+                    font-size: var(--font-size-mid-medium);
+                }
             }
         }
+    }
+    .researchImage {
+        height: 0;
+        width: 0;
+    }
+    .expertiseSection{
+        .expertiseSubheading{
+            width: auto;
+            padding: calc(var(--spacing)*2);
+        }
+    }
+    .approachSection {
+        .approachSubheading{
+            width: auto;
+            padding: calc(var(--spacing)*2);
+        }
+        .approachDescription{
+            flex-direction: column-reverse;
+            margin: var(--spacing);
 
-        .researchImage {
-            width: 40%;
-            position: absolute;
-            margin: calc(var(--spacing)*10);
-            left: calc(var(--spacing)*38);
-            z-index: 1;
+            .description{
+                width: auto;
+            }
         }
     }
 }

@@ -5,29 +5,20 @@ import styles from './styles.module.css';
 
 export type ButtonVariant = (
     'primary'
-    | 'secondary'
-    | 'disabled'
+    | 'default'
 );
-
-const buttonVariantToVariableNameMap: {
-    [key in ButtonVariant]: string;
-} = {
-    primary: '--color-primary',
-    secondary: '--color-secondary',
-    disabled: '--color-disabled',
-}
 
 interface ButtonProps<N extends number | string | undefined> {
     variant?: ButtonVariant;
     className?: string;
     children?: ReactNode;
-    disabled?: boolean;
-    transparent?: boolean;
+    default?: boolean;
     icons?: ReactNode;
     actions?: ReactNode;
+    actionsClassName?: string;
 }
 
-type ButtonFeatureKeys = 'variant' | 'className' | 'disabled' | 'transparent' | 'icons' | 'actions' | 'children';
+type ButtonFeatureKeys = 'variant' | 'className' | 'actionsClassName' | 'default'| 'icons' | 'actions' | 'children';
 
 export function useButtonFeatures(
     props: Pick<ButtonProps<string>, ButtonFeatureKeys>,
@@ -35,8 +26,6 @@ export function useButtonFeatures(
     const {
         variant = 'primary',
         className: classNameFromProps,
-        disabled,
-        transparent = false,
         icons,
         children,
         actions,
@@ -44,7 +33,9 @@ export function useButtonFeatures(
 
     const buttonClassName = _cs(
         classNameFromProps,
-        variant,
+        styles.button,
+        variant === 'default' && styles.default,
+        variant === 'primary' && styles.primary,
     );
 
     const buttonChildren = (
@@ -70,18 +61,16 @@ export function useButtonFeatures(
     return {
         className: buttonClassName,
         children: buttonChildren,
-        disabled,
     }
 }
+
 export function Button<N extends number | string | undefined>(props: ButtonProps<N>) {
     const {
         variant,
         className,
-        transparent = false,
         children,
         icons,
         actions,
-        disabled,
 
         ...otherProps
     } = props;
@@ -89,19 +78,15 @@ export function Button<N extends number | string | undefined>(props: ButtonProps
     const buttonProps = useButtonFeatures({
         variant,
         className,
-        transparent,
         children,
         icons,
         actions,
-        disabled,
     });
 
     return (
         <button
             // type={type}
-            // eslint-disable-next-line react/jsx-props-no-spreading
             {...otherProps}
-            // eslint-disable-next-line react/jsx-props-no-spreading
             {...buttonProps}
         >
         </button>

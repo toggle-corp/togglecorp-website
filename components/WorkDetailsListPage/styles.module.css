@@ -1,67 +1,50 @@
-.workList {
-    width: 100%;
-
-    .projectDetail {
-        color: var(--color-text);
-        gap: var(--spacing);
-        margin: calc(var(--spacing)*4) calc(var(--spacing)*4) calc(var(--spacing)*4) 0;
-
-        .projectCompleted {
-            display: flex;
-            gap: calc(var(--spacing)*6);
-
-            .projectCount {
-                color: var(--color-primary);
-                font-size: var(--font-size-super-large);
-            }
-        }
-    }
-
-    .horizontalRow {
-        height: 2px;
-        background-color: var(--color-hr-light);
-        border: 0 none;
-        margin: calc(var(--spacing)*10) 0 calc(var(--spacing)*10) 0;
-    }
-
-    .researchList {
-        display: flex;
-        background-color: var(--color-background-light);
-    }
-}
-
 .workListSection {
     background-color: var(--color-text-dark);
-    height: 30rem;
 
     .workSection {
         display: flex;
         position: relative;
 
         .workDescription {
-
-            .workList {
-                color: var(--color-primary);
-                font-size: var(--font-size-medium);
-                font-weight: var(--font-weight-medium);
-                margin: calc(var(--spacing)*10) calc(var(--spacing)*10) 0 calc(var(--spacing)*10);
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 30rem;
+            margin: var(--spacing);
 
             .workDescription {
-                width: 40%;
+                width: 60%;
                 color: var(--color-text-on-dark);
                 font-size: var(--font-size-super-large);
                 font-weight: var(--font-weight-normal);
-                margin: var(--spacing) calc(var(--spacing)*10) 0 calc(var(--spacing)*10);
+
+                .workList {
+                    color: var(--color-primary);
+                    font-size: var(--font-size-medium);
+                    font-weight: var(--font-weight-medium);
+                    justify-content: center;
+                }
             }
         }
-
         .workImage {
-            width: 40%;
             position: absolute;
-            margin: calc(var(--spacing)*10);
-            left: calc(var(--spacing)*38);
-            z-index: 1;
+            right: 0;
+            margin-top: calc(var(--spacing)*5);
         }
+    }
+}
+.projectCompleted {
+    display: flex;
+    gap: calc(var(--spacing)*6);
+
+    .projectCount {
+        color: var(--color-primary);
+        font-size: var(--font-size-super-large);
+    }
+}
+@media screen and (max-width: 600px) {
+    .workImage {
+        height: 0;
+        width: 0;
     }
 }
