@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Image from 'next/image';
+// import Image from 'next/image';
 import Head from 'next/head';
 
 import Page from '../components/Page';
@@ -29,7 +29,7 @@ function Task(props: TaskProps) {
     );
 }
 
-const Home: NextPage = () => {
+function Home() {
     return (
         <Page className={styles.home}>
             <Head>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                 <div className={styles.description}>
                     We work closely with several national and international clients and is focused primarily on the development and humanitarian communities
                 </div>
-                <Image
+                <img
                     src="/tc-clients.png"
                     alt="Togglecorp clients"
                     width={1000}

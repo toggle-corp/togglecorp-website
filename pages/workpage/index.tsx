@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import {
     IoIosArrowRoundBack,
@@ -33,7 +33,7 @@ const WorkPage: NextPage = () => {
             >
             </Heading>
             <div className={styles.deepDashboard}>
-                <Image
+                <img
                     src="/dashboard.png"
                     alt="Dashboard"
                     width={1138}
@@ -68,7 +68,7 @@ const WorkPage: NextPage = () => {
                                     <li
                                         className={styles.projectDescription}
                                     >
-                                        Collected data related to Turkey’s refugee crisis to identify the potential negative socio-economic impact of refugees' presence on host communities.
+                                        Collected data related to Turkey’s refugee crisis to identify the potential negative socio-economic impact of refugees&apos; presence on host communities.
                                     </li>
                                     <li
                                         className={styles.projectDescription}
@@ -118,7 +118,7 @@ const WorkPage: NextPage = () => {
                         </p>
                     </div>
                     <div className={styles.deepLogo}>
-                        <Image
+                        <img
                             src="/deep-description-logo.png"
                             alt="Deep"
                             width={750}
@@ -133,7 +133,7 @@ const WorkPage: NextPage = () => {
                         description="Read about the various applications of data analytics and business analytics tools that Tredence uses to provide advanced analytics solutions that drive ..."
                         link="View Full Case Study"
                         image={
-                            <Image
+                            <img
                                 src="/modal_image.png"
                                 alt="TC"
                                 width={250}
@@ -163,6 +163,7 @@ const WorkPage: NextPage = () => {
                         Learn how we can help you to enhance yours.
                     </div>
                     <Button
+                        name={undefined}
                         className={styles.freeButton}
                         variant='primary'
                     >

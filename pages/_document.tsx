@@ -4,7 +4,7 @@ import {
     Main,
     NextScript,
 } from 'next/document'
-import Image from 'next/image';
+// import Image from 'next/image';
 
 function Document() {
     return (

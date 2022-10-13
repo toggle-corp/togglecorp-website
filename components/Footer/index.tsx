@@ -1,5 +1,5 @@
 import { _cs } from '@togglecorp/fujs';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import styles from './styles.module.css'
 
@@ -30,7 +30,7 @@ function Footer(props: Props) {
                         +977-9841331922, +977-9849831936
                     </p>
                     <div className={styles.toggleLogo}>
-                        <Image
+                        <img
                             src="/togglecorp.svg"
                             alt="Togglecorp Logo"
                             width={174}

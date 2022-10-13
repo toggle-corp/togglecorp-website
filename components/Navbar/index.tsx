@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { HiViewList } from 'react-icons/hi';
 import { useCallback } from 'react';
+import { HiViewList } from 'react-icons/hi';
+// import Image from 'next/image';
 
 import { _cs } from '@togglecorp/fujs';
 import { Button } from '../Button';
@@ -31,7 +31,7 @@ function Navbar(props: NavProps) {
             <div className={styles.container}>
                 <div className={styles.brand}>
                     <div className={styles.brandName}>
-                        <Image
+                        <img
                             src="/tc-logo.png"
                             alt="TC"
                             width={48}
@@ -88,6 +88,7 @@ function Navbar(props: NavProps) {
                         </Button>
                     </div>
                     <Button
+                        name="contact"
                         variant='primary'
                     >
                         Contact Us

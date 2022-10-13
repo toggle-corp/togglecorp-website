@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Page from '../../components/Page';
 import { ResearchSection } from '../../components/ServiceDetailsPage';
 import { ProjectDetail, WorkListSection } from '../../components/WorkDetailsListPage';
@@ -20,7 +20,7 @@ const WorkListPage: NextPage = () => {
                     heading="Our Work"
                     subHeading="We work closely with several national and international humanitarian organizations."
                     image={
-                        <Image
+                        <img
                             src="/organization.png"
                             alt="Organization"
                             width={456}
@@ -63,7 +63,7 @@ const WorkListPage: NextPage = () => {
                 <div className={styles.researchList}>
                     <ResearchSection
                         image={
-                            <Image
+                            <img
                                 src="/work-list-1.png"
                                 alt="Deep Dashboard"
                                 width={580}
@@ -90,7 +90,7 @@ const WorkListPage: NextPage = () => {
                     />
                     <ResearchSection
                         image={
-                            <Image
+                            <img
                                 src="/work-list-2.png"
                                 alt="Deep Dashboard"
                                 width={580}
@@ -105,7 +105,7 @@ const WorkListPage: NextPage = () => {
                 <div className={styles.researchList}>
                     <ResearchSection
                         image={
-                            <Image
+                            <img
                                 src="/work-list-1.png"
                                 alt="Deep Dashboard"
                                 width={580}
@@ -132,7 +132,7 @@ const WorkListPage: NextPage = () => {
                     />
                     <ResearchSection
                         image={
-                            <Image
+                            <img
                                 src="/work-list-2.png"
                                 alt="Deep Dashboard"
                                 width={580}

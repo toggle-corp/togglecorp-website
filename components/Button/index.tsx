@@ -1,5 +1,9 @@
-import { ReactNode } from 'react';
-import { _cs } from '@togglecorp/fujs';
+import { ReactNode, useCallback } from 'react';
+import {
+    _cs,
+    isDefined,
+    isNotDefined,
+} from '@togglecorp/fujs';
 
 import styles from './styles.module.css';
 
@@ -8,7 +12,7 @@ export type ButtonVariant = (
     | 'default'
 );
 
-interface ButtonProps<N extends number | string | undefined> {
+type ButtonProps<N> = {
     variant?: ButtonVariant;
     className?: string;
     children?: ReactNode;
@@ -16,12 +20,14 @@ interface ButtonProps<N extends number | string | undefined> {
     icons?: ReactNode;
     actions?: ReactNode;
     actionsClassName?: string;
+    name: N;
+    onClick?: (name: N) => void;
 }
 
 type ButtonFeatureKeys = 'variant' | 'className' | 'actionsClassName' | 'default'| 'icons' | 'actions' | 'children';
 
 export function useButtonFeatures(
-    props: Pick<ButtonProps<string>, ButtonFeatureKeys>,
+    props: Pick<ButtonProps<unknown>, ButtonFeatureKeys>,
 ) {
     const {
         variant = 'primary',
@@ -64,13 +70,15 @@ export function useButtonFeatures(
     }
 }
 
-export function Button<N extends number | string | undefined>(props: ButtonProps<N>) {
+export function Button<N>(props: ButtonProps<N>) {
     const {
         variant,
         className,
         children,
         icons,
         actions,
+        name,
+        onClick,
 
         ...otherProps
     } = props;
@@ -83,11 +91,18 @@ export function Button<N extends number | string | undefined>(props: ButtonProps
         actions,
     });
 
+    const handleClick = useCallback(() => {
+        if (onClick) {
+            onClick(name);
+        }
+    }, [name, onClick]);
+
     return (
         <button
             // type={type}
             {...otherProps}
             {...buttonProps}
+            onClick={handleClick}
         >
         </button>
     );
