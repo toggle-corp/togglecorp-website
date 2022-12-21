@@ -16,20 +16,15 @@ function CareerItem(props: CareerItemProps) {
     } = props;
 
     return (
-        <>
-            <div className={styles.careerSection}>
-                {position}
-                <div className={styles.applySection}>
-                    {vacancy}
-                    <div className={styles.applyButtons}>
-                        {link}
-                    </div>
+        <div className={styles.careerSection}>
+            {position}
+            <div className={styles.applySection}>
+                {vacancy}
+                <div className={styles.applyButtons}>
+                    {link}
                 </div>
             </div>
-            <hr
-                className={styles.horizontalRow}
-            />
-        </>
+        </div>
     );
 }
 
