@@ -69,6 +69,7 @@
 
         .statsContainer {
             margin: unset;
+            margin-top: var(--spacing-extra-large);
             max-width: calc(100% - var(--image-width) - var(--spacing-large));
         }
 

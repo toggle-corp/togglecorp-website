@@ -11,6 +11,7 @@ import styles from './styles.module.css';
 function Contact() {
     return (
         <Page
+            pageTitle="Contact Us"
             className={styles.workList}
             banner={(
                 <BannerWithImage

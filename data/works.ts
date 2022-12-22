@@ -18,7 +18,7 @@ export interface Work {
     client: Organization;
     summary: string;
     whatWeDid: string[];
-    skilledUsed: string; // FIXME: rename this to skillsUsed
+    skillsUsed: string;
     projectUrl: string;
 }
 
@@ -37,7 +37,7 @@ const works: Work[] = [
             'Work with external backend team to integrate data into the React application',
             'Create required API in Python Django',
         ],
-        skilledUsed: 'React on Wordpress, Django, Leaflet',
+        skillsUsed: 'React on Wordpress, Django, Leaflet',
         projectUrl: 'https://go.ifrc.org/',
     },
     {
@@ -55,7 +55,7 @@ const works: Work[] = [
             'Project management tool (Trello) to keep track of tasks',
         ],
         projectUrl: 'https://www.dvs-nepal.org',
-        skilledUsed: 'ReactJS, Mapbox, Django',
+        skillsUsed: 'ReactJS, Mapbox, Django',
     },
     {
         id: 'npstocks',
@@ -72,7 +72,7 @@ const works: Work[] = [
             'Introduce React Native to the project as the app was to work on iOS devices as well',
             'Phase 2: animations, multiple visualizations, and night mode',
         ],
-        skilledUsed: 'React Native, Websocket, NodeJS, and Firebase (for authentication and analytics)',
+        skillsUsed: 'React Native, Websocket, NodeJS, and Firebase (for authentication and analytics)',
         projectUrl: 'https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks&hl=en&gl=US&pli=1',
     },
     {
@@ -88,7 +88,7 @@ const works: Work[] = [
             'System Design',
             'Collaboration with Polto and Flowminder',
         ],
-        skilledUsed: 'Docker, Docker Swarm, Flowkit, Airflow',
+        skillsUsed: 'Docker, Docker Swarm, Flowkit, Airflow',
         projectUrl: 'https://www.jips.org',
     },
 ];

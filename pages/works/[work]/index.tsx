@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import {
@@ -43,6 +42,7 @@ function WorkPage(props: WorkPageProps) {
 
     return (
         <Page
+            pageTitle="Work"
             banner={(
                 <Banner
                     backLinkTitle="All Projects"
@@ -63,11 +63,6 @@ function WorkPage(props: WorkPageProps) {
                 />
             )}
         >
-            <Head>
-                <title>
-                    Work page
-                </title>
-            </Head>
             <div className={styles.dashboardDetail}>
                 <img
                     className={styles.bannerImg}
@@ -209,7 +204,7 @@ function WorkPage(props: WorkPageProps) {
                             Skills Used
                         </div>
                         <div className={styles.reviewSection}>
-                            {specificWorkData.skilledUsed}
+                            {specificWorkData.skillsUsed}
                         </div>
                         <div className={styles.organisationSection}>
                             {/* eslint-disable-next-line max-len */}

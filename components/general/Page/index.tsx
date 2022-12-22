@@ -12,7 +12,7 @@ interface Props {
     className?: string;
     children: React.ReactNode;
     banner?: React.ReactNode;
-    pageTitle?: string;
+    pageTitle: string;
 }
 
 function Page(props: Props) {
