@@ -1,13 +1,19 @@
 .bannerWithImage {
     --image-offset-y: 200px;
     --image-width: 456px;
+    --image-height: 562px;
+    --section-min-height: 38rem;
 
     @media screen and (max-width: 900px) {
         --image-offset-y: 300px;
     }
 
     .topSection {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid green;
         background-color: var(--color-secondary);
+        min-height: var(--section-min-height);
         color: var(--color-text-on-dark);
 
         &.light {
@@ -17,7 +23,10 @@
 
         .content {
             display: flex;
-            gap: var(--spacing-large);
+            align-items: flex-end;
+            flex-grow: 1;
+            padding: var(--spacing-extra-large) 0;
+            gap: var(--spacing-extra-large);
 
             @media screen and (max-width: 900px) {
                 flex-wrap: wrap;
@@ -41,6 +50,7 @@
 
             .bannerImage {
                 transform: translateY(var(--image-offset-y));
+                margin-top: calc(-1 * var(--image-offset-y));
                 border-radius: var(--radius-card);
                 width: 100%;
                 max-width: var(--image-width);
@@ -69,6 +79,22 @@
             .statsContainer {
                 max-width: unset;
             }
+        }
+    }
+
+    &.noImage {
+        --section-min-height: 26rem;
+
+        .topSection {
+            .content {
+                .left {
+                    max-width: calc(var(--width-content-max) - var(--image-width));
+                }
+            }
+        }
+
+        .bottomSection {
+            min-height: unset;
         }
     }
 }

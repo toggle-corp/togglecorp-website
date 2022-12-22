@@ -1,5 +1,5 @@
 .container {
-    padding: var(--spacing-extra-large);
+    padding: var(--spacing-large);
 
     .content {
         margin: 0 auto;
