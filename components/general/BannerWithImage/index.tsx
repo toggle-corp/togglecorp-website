@@ -25,7 +25,7 @@ function BannerWithImage(props: Props) {
     } = props;
 
     return (
-        <div className={_cs(styles.bannerWithImage, className)}>
+        <div className={_cs(styles.bannerWithImage, !imageUrl && styles.noImage, className)}>
             <Container
                 className={_cs(styles.topSection, mode === 'light' && styles.light)}
                 contentClassName={styles.content}
@@ -38,11 +38,13 @@ function BannerWithImage(props: Props) {
                         {description}
                     </div>
                 </div>
-                <img
-                    className={styles.bannerImage}
-                    src={imageUrl}
-                    alt={imageUrl ? title : ''}
-                />
+                {imageUrl && (
+                    <img
+                        className={styles.bannerImage}
+                        src={imageUrl}
+                        alt={imageUrl ? title : ''}
+                    />
+                )}
             </Container>
             <Container
                 className={styles.bottomSection}

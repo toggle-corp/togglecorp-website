@@ -1,6 +1,6 @@
 .navbar {
     background-color: var(--color-background);
-    padding: var(--spacing-medium) var(--spacing-extra-large);
+    padding: var(--spacing-large);
 
     .content {
         display: flex;
@@ -25,3 +25,8 @@
     }
 }
 
+.navLink {
+    &.active {
+        color: var(--color-primary);
+    }
+}

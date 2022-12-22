@@ -10,10 +10,12 @@
 
     &.stringValue {
         .label {
+            color: var(--color-primary);
             font-size: var(--font-size-large);
         }
 
         .value {
+            color: var(--color-text);
             font-size: var(--font-size-large);
         }
     }

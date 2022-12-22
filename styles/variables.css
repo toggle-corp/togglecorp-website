@@ -50,7 +50,8 @@
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 1.75rem;
-    --spacing-extra-large: 2rem;
+    --spacing-extra-large: 3rem;
+    --spacing-super-large: 5rem;
 
     --radius-button: 0.25rem;
     --radius-card: 0.5rem;
