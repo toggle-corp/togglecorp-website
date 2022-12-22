@@ -1,37 +1,5 @@
-.workList {
-    .organisationImage{
-        width: 100%;
-        @media screen and (max-width: 1300px) {
-            margin: calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) 0 calc(var(--spacing-super-small)*2);
-            height: 26rem;
-        }
-    }
-}
-.careerAtToggleCorp {
+.carrerSection {
     display: flex;
     flex-direction: column;
-    margin-top: calc(var(--spacing-super-small)*20);
-
-    .careerToggleHeading {
-        color: var(--color-primary);
-        font-size: var(--font-size-large);
-    }
-    .careerToggleCorpSubHeading{
-        margin-top: var(--spacing-super-small);
-        max-width: 65%;
-        color: var(--color-text-dark);
-        font-size: var(--font-size-large);
-    }
-}
-@media screen and (max-width: 1200px) {
-    .career {
-        .careerAtToggleCorp {
-            margin-top: calc(var(--spacing-super-small)*25);
-            padding: var(--spacing-super-small);
-
-            .careerToggleCorpSubHeading {
-                max-width:100%;
-            }
-        }
-    }
+    gap: var(--spacing-extra-large);
 }

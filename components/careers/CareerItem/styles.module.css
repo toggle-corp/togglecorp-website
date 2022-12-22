@@ -1,28 +1,21 @@
 .careerSection {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: calc(var(--spacing-super-small)*3) 0 var(--spacing-super-small) 0;
-    font-size: var(--font-size-mid-medium);
+    border-bottom: 2px solid transparent;
+    border-color: var(--color-border-light);
+    padding: var(--spacing-medium) 0 var(--spacing-medium);
+    color: var(--color-black);
+    font-size: var(--font-size-carrer-title);
 
-    .applySection{
+    .applySection {
         display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-extra-large);
         text-transform: uppercase;
-        color: var(--color-text-light);
-        gap: calc(var(--spacing-super-small)*4);
-
-        .applyButtons {
-            color: var(--color-primary);
-        }
     }
-}
-.horizontalRow {
-    border: 0 none;
-    background-color: var(--color-border-light);
-    height: 1px;
-}
-
-@media screen and (max-width: 1200px) {
-    .careerSection {
-        margin: var(--spacing-super-small);
+    .applyButtons {
+        text-transform: none;
+        color: var(--color-primary);
     }
 }

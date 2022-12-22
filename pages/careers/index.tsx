@@ -1,8 +1,7 @@
-import Head from 'next/head';
-
 import CareerItem from 'components/careers/CareerItem';
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
+import Header from 'components/general/Header';
 
 import organizationLogo from 'resources/organization.webp';
 import vacancies from 'data/vacancies';
@@ -21,21 +20,11 @@ function Career() {
                 />
             )}
         >
-            <Head>
-                <title>
-                    Career
-                </title>
-            </Head>
-            <div className={styles.career}>
-                <div className={styles.careerAtToggleCorp}>
-                    <div className={styles.careerToggleHeading}>
-                        Our Culture and Core Values
-                    </div>
-                    <div className={styles.careerToggleCorpSubHeading}>
-                        {/* eslint-disable-next-line max-len */}
-                        We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in.
-                    </div>
-                </div>
+            <div className={styles.carrerSection}>
+                <Header
+                    title="Our Culture and Core Values"
+                    description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
+                />
                 {vacancies.map((vacancy) => (
                     <CareerItem
                         key={vacancy.id}
