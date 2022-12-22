@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Page from 'components/general/Page';
 import TaskItem from 'components/home/TaskItem';
 
@@ -9,12 +7,10 @@ import styles from './styles.module.css';
 
 function Home() {
     return (
-        <Page className={styles.home}>
-            <Head>
-                <title>
-                    Togglecorp - Home
-                </title>
-            </Head>
+        <Page
+            className={styles.home}
+            pageTitle="Home"
+        >
             <div className={styles.introSection}>
                 <h1 className={styles.description}>
                     {/* eslint-disable-next-line max-len */}

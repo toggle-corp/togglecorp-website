@@ -4,7 +4,7 @@
     justify-content: space-between;
     border-bottom: 2px solid transparent;
     border-color: var(--color-border-light);
-    padding: var(--spacing-medium) 0 var(--spacing-medium);
+    padding-bottom: var(--spacing-extra-large);
     color: var(--color-black);
     font-size: var(--font-size-carrer-title);
 
@@ -13,6 +13,7 @@
         flex-wrap: wrap;
         gap: var(--spacing-extra-large);
         text-transform: uppercase;
+        font-size: var(--font-size-medium);
     }
     .applyButtons {
         text-transform: none;

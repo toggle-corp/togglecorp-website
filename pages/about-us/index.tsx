@@ -32,6 +32,7 @@ function AboutUs() {
 
     return (
         <Page
+            pageTitle="About Us"
             banner={(
                 <BannerWithImage
                     title="About Us"

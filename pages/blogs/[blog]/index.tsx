@@ -1,13 +1,13 @@
-import Head from 'next/head';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import {
     IoIosArrowRoundBack,
     IoIosArrowRoundForward,
 } from 'react-icons/io';
 import Link from 'next/link';
-
-// FIXME: move this to certain folder
-import blogs from 'data.json';
+import staticBlogs, {
+    Blog,
+    getBlogCoverImage,
+} from 'data/blogs';
 import {
     ProjectSection,
 } from 'components/WorkDetailsPage';
@@ -17,72 +17,58 @@ import Button from 'components/general/Button';
 import Banner from 'components/general/Banner';
 import KeyFigure from 'components/general/KeyFigure';
 
-import dashboardImage from 'resources/dashboard.webp';
-
 import styles from './styles.module.css';
 
-interface BlogInterface {
-    id: string;
-    blogType: string;
-    blogTitle: string;
-    postedOn: string;
-    summary: string;
-    whatWeDid: string[];
-}
+type BlogPageProps = {
+    specificBlogData: Blog,
+    specificNextPost: Blog | null,
+    specificPrevPost: Blog | null,
+};
 
-interface BlogPageProps {
-    specificblogData: BlogInterface,
-    specificprevpost: BlogInterface | null,
-    specificnextpost: BlogInterface | null,
-}
-
-function Blog(props: BlogPageProps) {
+function BlogPage(props: BlogPageProps) {
     const {
-        specificblogData,
-        specificnextpost,
-        specificprevpost,
+        specificBlogData,
+        specificNextPost,
+        specificPrevPost,
     } = props;
+
     return (
         <Page
+            pageTitle="Blog"
             banner={(
                 <Banner
                     backLinkTitle="All Blogs"
                     backLinkHref="/blogs/"
-                    title={specificblogData.blogTitle}
+                    title={specificBlogData.blogTitle}
                     stats={(
                         <div className={styles.keyFigures}>
                             <KeyFigure
                                 label="Posted On"
-                                value={specificblogData.postedOn}
+                                value={specificBlogData.postedOn}
                             />
                             <KeyFigure
                                 label="Type"
-                                value={specificblogData.blogType}
+                                value={specificBlogData.blogType}
                             />
                         </div>
                     )}
                 />
             )}
         >
-            <Head>
-                <title>
-                    Blog
-                </title>
-            </Head>
             <div className={styles.deepDashboard}>
                 <img
                     className={styles.bannerImg}
-                    src={dashboardImage}
+                    src={getBlogCoverImage(specificBlogData.id)}
                     alt="Dashboard"
-                    width={1138}
-                    height={466}
+                    width={1400}
+                    height={550}
                 />
             </div>
             <div className={styles.projectList}>
                 <div className={styles.projectSection}>
                     <ProjectSection
                         title="About the Project"
-                        summary={specificblogData.summary}
+                        summary={specificBlogData.summary}
                     />
                     <ProjectSection
                         title="What we did in the project"
@@ -92,27 +78,27 @@ function Blog(props: BlogPageProps) {
                                     <li
                                         className={styles.projectDescription}
                                     >
-                                        {specificblogData.whatWeDid[0]}
+                                        {specificBlogData.whatWeDid[0]}
                                     </li>
                                     <li
                                         className={styles.projectDescription}
                                     >
-                                        {specificblogData.whatWeDid[1]}
+                                        {specificBlogData.whatWeDid[1]}
                                     </li>
                                     <li
                                         className={styles.projectDescription}
                                     >
-                                        {specificblogData.whatWeDid[2]}
+                                        {specificBlogData.whatWeDid[2]}
                                     </li>
                                     <li
                                         className={styles.projectDescription}
                                     >
-                                        {specificblogData.whatWeDid[3]}
+                                        {specificBlogData.whatWeDid[3]}
                                     </li>
                                     <li
                                         className={styles.projectDescription}
                                     >
-                                        {specificblogData.whatWeDid[4]}
+                                        {specificBlogData.whatWeDid[4]}
                                     </li>
                                 </ol>
                             </div>
@@ -151,29 +137,29 @@ function Blog(props: BlogPageProps) {
                 className={styles.horizontalRow}
             />
             <div className={styles.routeLinks}>
-                {specificprevpost && (
+                {specificPrevPost && (
                     <div className={styles.projectLinks}>
                         <IoIosArrowRoundBack />
                         <Link
-                            href={`/blogs/${specificprevpost.id}`}
+                            href={`/blogs/${specificPrevPost.id}`}
                         >
-                            {specificprevpost.blogTitle}
+                            {specificPrevPost.blogTitle}
                         </Link>
                         <div className={styles.linkHeader}>
-                            {specificprevpost.blogType}
+                            {specificPrevPost.blogType}
                         </div>
                     </div>
                 )}
-                {specificnextpost && (
+                {specificNextPost && (
                     <div className={styles.projectLinks}>
                         <Link
-                            href={`/blogs/${specificnextpost.id}`}
+                            href={`/blogs/${specificNextPost.id}`}
                         >
-                            {specificnextpost.blogTitle}
+                            {specificNextPost.blogTitle}
                         </Link>
                         <IoIosArrowRoundForward />
                         <div className={styles.linkHeader}>
-                            {specificnextpost.blogType}
+                            {specificNextPost.blogType}
                         </div>
                     </div>
                 )}
@@ -182,29 +168,30 @@ function Blog(props: BlogPageProps) {
     );
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps<BlogPageProps> = async (context) => {
     const blogId = context.params?.blog;
-    const specificBlog = blogs.blog.find((item) => blogId === item.id);
 
-    const specificBlogId = blogs.blog.findIndex((item) => item.id === blogId);
-    const prevBlog = blogs.blog[specificBlogId - 1];
-    const nextBlog = blogs.blog[specificBlogId + 1];
+    const specificBlog = staticBlogs.find((item) => blogId === item.id);
+
+    const specificBlogId = staticBlogs.findIndex((item) => item.id === blogId);
+    const prevBlog = staticBlogs[specificBlogId - 1];
+    const nextBlog = staticBlogs[specificBlogId + 1];
 
     if (!specificBlog) {
         return { notFound: true };
     }
 
     const props: BlogPageProps = {
-        specificblogData: specificBlog,
-        specificprevpost: prevBlog ?? null,
-        specificnextpost: nextBlog ?? null,
+        specificBlogData: specificBlog,
+        specificPrevPost: prevBlog ?? null,
+        specificNextPost: nextBlog ?? null,
     };
 
     return { props };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const pathsWithParams = blogs.blog.map((blog: BlogInterface) => ({
+    const pathsWithParams = staticBlogs.map((blog) => ({
         params: { blog: blog.id },
     }));
 
@@ -214,4 +201,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
 };
 
-export default Blog;
+export default BlogPage;

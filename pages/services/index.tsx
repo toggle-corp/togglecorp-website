@@ -68,6 +68,7 @@ function Service() {
 
     return (
         <Page
+            pageTitle="Our Services"
             banner={(
                 <BannerWithImage
                     title="Research and Data Analysis"

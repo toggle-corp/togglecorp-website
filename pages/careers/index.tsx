@@ -11,6 +11,7 @@ import styles from './styles.module.css';
 function Career() {
     return (
         <Page
+            pageTitle="Careers"
             banner={(
                 <BannerWithImage
                     title="Career at Togglecorp"

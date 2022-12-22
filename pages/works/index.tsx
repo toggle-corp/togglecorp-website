@@ -83,39 +83,42 @@ function WorksPage(props: WorksPageProps) {
             )}
         >
             <div className={styles.tabList}>
-                {workFilterOptions.map((type, i) => (
-                    <React.Fragment
-                        key={type}
-                    >
-                        <Button
-                            variant="tab"
-                            className={_cs(
-                                styles.tab,
-                                filteredProjectType === type && styles.active,
-                            )}
-                            name={type}
-                            onClick={setFilteredProjectType}
+                <div className={styles.tabs}>
+                    {workFilterOptions.map((type, i) => (
+                        <React.Fragment
+                            key={type}
                         >
-                            {type === 'all' ? 'All Works' : getProjectTypeTitle(type)}
-                        </Button>
-                        {i < (workFilterOptions.length - 1) && (
-                            <IoEllipseSharp className={styles.dot} />
-                        )}
-                    </React.Fragment>
-                ))}
-            </div>
-            <div className={styles.projectList}>
-                {filteredProjects.map((project) => (
-                    <Card
-                        key={project.id}
-                        className={styles.project}
-                        imageSrc={getWorkCoverImage(project.id)}
-                        title={project.projectTitle}
-                        description={project.summary}
-                        href={`/works/${project.id}`}
-                        tag={getProjectTypeTitle(project.projectType)}
-                    />
-                ))}
+                            <Button
+                                variant="tab"
+                                className={_cs(
+                                    styles.tab,
+                                    filteredProjectType === type && styles.active,
+                                )}
+                                name={type}
+                                onClick={setFilteredProjectType}
+                            >
+                                {type === 'all' ? 'All Works' : getProjectTypeTitle(type)}
+                            </Button>
+                            {i < (workFilterOptions.length - 1) && (
+                                <IoEllipseSharp className={styles.dot} />
+                            )}
+                        </React.Fragment>
+                    ))}
+                </div>
+                <div className={styles.horizontalRow} />
+                <div className={styles.projectList}>
+                    {filteredProjects.map((project) => (
+                        <Card
+                            key={project.id}
+                            className={styles.project}
+                            imageSrc={getWorkCoverImage(project.id)}
+                            title={project.projectTitle}
+                            description={project.summary}
+                            href={`/works/${project.id}`}
+                            tag={getProjectTypeTitle(project.projectType)}
+                        />
+                    ))}
+                </div>
             </div>
         </Page>
     );
