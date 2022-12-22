@@ -3,30 +3,32 @@ import { _cs } from '@togglecorp/fujs';
 
 import styles from './styles.module.css';
 
-interface ToggleCorpSectionProps {
+interface Props {
     className?: string;
-    image: React.ReactNode;
+    imageUrl: string;
     caption: React.ReactNode;
 }
 
 // NOTE: used in about-us page
-export function ToggleCorpSection(props: ToggleCorpSectionProps) {
+function GalleryCard(props: Props) {
     const {
         className,
-        image,
+        imageUrl,
         caption,
     } = props;
 
     return (
-        <div className={_cs(styles.toggleSection, className)}>
-            <div className={styles.togglecorpImg}>
-                {image}
-            </div>
-            <div className={styles.togglecorpImgCaption}>
+        <div className={_cs(styles.galleryCard, className)}>
+            <img
+                className={styles.image}
+                alt=""
+                src={imageUrl}
+            />
+            <div>
                 {caption}
             </div>
         </div>
     );
 }
 
-export default ToggleCorpSection;
+export default GalleryCard;

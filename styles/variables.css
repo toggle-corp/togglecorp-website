@@ -21,6 +21,7 @@
     --color-background: #fdf9f7; /* background */
     --color-background-dark: #032B43; /* FIXME: brand color */
     --color-background-light: #f7f7f7; /* FIXME: white */
+    --color-surface-white: #ffffff;
 
     /* border */
     --color-border-light: #e5e5e5; /* default */

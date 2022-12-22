@@ -82,17 +82,12 @@ function Navbar(props: NavProps) {
                     About
                 </NavLink>
             </div>
-            <Link
+            <NavLink
                 href="/contact-us"
-                passHref
+                className={styles.contactLink}
             >
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a
-                    className={styles.contactLink}
-                >
-                    Contact Us
-                </a>
-            </Link>
+                Contact Us
+            </NavLink>
         </Container>
     );
 }

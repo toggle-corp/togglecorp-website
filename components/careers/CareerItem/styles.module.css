@@ -1,19 +1,22 @@
 .careerSection {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid var(--color-border-light);
     border-color: var(--color-border-light);
-    padding: var(--spacing-medium) 0 var(--spacing-medium);
+    padding: var(--spacing-extra-large) 0;
     color: var(--color-black);
     font-size: var(--font-size-carrer-title);
 
     .applySection {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--spacing-extra-large);
         text-transform: uppercase;
+        font-size: var(--font-size-large);
+        gap: var(--spacing-extra-large);
     }
+
     .applyButtons {
         text-transform: none;
         color: var(--color-primary);

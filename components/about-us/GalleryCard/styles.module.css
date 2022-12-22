@@ -1,11 +1,10 @@
-.toggleSection {
-    margin: calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) 0;
-
-    .togglecorpImg {
-        max-width: 50%;
-    }
-    .togglecorpImgCaption {
-        font-size: var(--font-size-medium);
-        font-weight: var(--font-weight-normal);
+.galleryCard {
+    .image {
+        border: 1px solid rgba(0, 0, 0, .05);
+        border-radius: var(--radius-card);
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+        object-position: center center;
     }
 }

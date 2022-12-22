@@ -5,16 +5,18 @@ import { _cs } from '@togglecorp/fujs';
 import styles from './styles.module.css';
 
 interface Props {
+    variant?: 'mini' | 'normal';
     className?: string;
     href?: string;
     imageSrc?: string;
-    title: string;
+    title?: string;
     description?: string;
     tag?: string;
 }
 
 function Card(props: Props) {
     const {
+        variant = 'normal',
         className: classNameFromProps,
         imageSrc,
         title,
@@ -40,15 +42,24 @@ function Card(props: Props) {
                 >
                     {description}
                 </div>
-                <div className={styles.spacer} />
-                <div className={styles.tag}>
-                    {tag}
-                </div>
+                {tag && (
+                    <>
+                        <div className={styles.spacer} />
+                        <div className={styles.tag}>
+                            {tag}
+                        </div>
+                    </>
+                )}
             </div>
         </>
     );
 
-    const className = _cs(styles.card, classNameFromProps);
+    const className = _cs(
+        styles.card,
+        classNameFromProps,
+        variant === 'normal' && styles.normal,
+        variant === 'mini' && styles.mini,
+    );
 
     if (!href) {
         return (
