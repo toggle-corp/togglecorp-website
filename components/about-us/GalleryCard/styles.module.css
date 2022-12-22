@@ -1,0 +1,11 @@
+.toggleSection {
+    margin: calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) 0;
+
+    .togglecorpImg {
+        max-width: 50%;
+    }
+    .togglecorpImgCaption {
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-normal);
+    }
+}

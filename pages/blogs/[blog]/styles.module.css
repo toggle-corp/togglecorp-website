@@ -1,0 +1,114 @@
+.keyFigures {
+    display: flex;
+    gap: var(--spacing-extra-large);
+    flex-wrap: wrap;
+}
+
+.bannerSection {
+    background-color: var(--color-header-light);
+    padding-left: calc(var(--spacing-super-small) *15);
+
+    @media screen and (max-width: 1200px) {
+        padding-left: 0;
+    }
+}
+.deepDashboard {
+    margin-top: calc(var(--spacing-super-small) *3);
+    object-fit: cover;
+    padding: var(--spacing-super-small);
+
+    @media screen and (max-width: 1200px) {
+        .bannerImg {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+.projectList {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 1200px) {
+        justify-content: center;
+    }
+
+    .projectDetail {
+        width: 100%;
+    }
+
+    .projectDescription {
+        margin-top: calc(var(--spacing-super-small)*2);
+    }
+
+    .descriptionList {
+        margin-top: calc(var(--spacing-super-small) *2);
+        max-width: 75%;
+    }
+    .caseStudy {
+        margin: calc(var(--spacing-super-small)*2) 0 calc(var(--spacing-super-small)) 0;
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-medium); 
+    }
+
+    .reviewSection {
+        cursor: pointer;
+        color: var(--color-primary);
+        font-size: calc(var(--font-size-large));
+        font-weight: var(--font-weight-normal);
+    }
+
+    .organisationSection {
+        margin-top: calc(var(--spacing-super-small) *2);
+        max-width: 75%;
+        font-size: calc(var(--font-size-medium));
+        font-weight: var(--font-weight-bold);
+    }
+
+    .freeButton {
+        margin-top: calc(var(--spacing-super-small) *2);
+        height: 3rem;
+    }
+}
+
+.routeLinks {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: var(--spacing-super-small);
+    font-weight: var(--font-weight-bold);
+
+    .projectLinks {
+
+        .linkHeader {
+            font-weight: var(--font-weight-normal);
+        }
+    }
+}
+
+.horizontalRow {
+    margin: calc(var(--spacing-super-small)*2);
+    border: 0 none;
+    background-color: var(--color-border-light);
+    height: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    .deepDashboard {
+        .bannerImg {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    .caseImg {
+        height: auto;
+    }
+
+    .projectList {
+        .descriptionList {
+            max-width: 90%;
+        }
+    }
+}

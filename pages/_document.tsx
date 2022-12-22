@@ -3,14 +3,16 @@ import {
     Head,
     Main,
     NextScript,
-} from 'next/document'
-import Image from 'next/image';
+} from 'next/document';
 
 function Document() {
     return (
         <Html lang="en">
             <Head>
-                <link rel="shortcut icon" href="/tc-logo.png" />
+                <link
+                    rel="shortcut icon"
+                    href="/favicon.webp"
+                />
                 <link
                     rel="preconnect"
                     href="https://fonts.googleapis.com"

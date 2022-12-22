@@ -1,0 +1,27 @@
+{
+    "service" : [
+        {
+            "id": "service1",
+            "researchType": "secondary",
+            "serviceTitle": "Refugee Situation Analysis",
+            "summary": "The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
+        },
+        {
+            "id": "service2",
+            "researchType": "analysis",
+            "serviceTitle": "Refugee Situation Analysis",
+            "summary": "The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
+        },        {
+            "id": "service3",
+            "researchType": "report",
+            "serviceTitle": "Refugee Situation Analysis",
+            "summary": "The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
+        },
+        {
+            "id": "service4",
+            "researchType": "data",
+            "serviceTitle": "Refugee Situation Analysis",
+            "summary": "The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees."
+        }
+    ]
+}

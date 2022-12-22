@@ -1,0 +1,32 @@
+.navbar {
+    background-color: var(--color-background);
+    padding: var(--spacing-large);
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-extra-large);
+
+        .logo {
+            height: 32px;
+        }
+
+        .menuList {
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            gap: var(--spacing-large);
+        }
+
+        .contactLink {
+            flex-shrink: 0;
+        }
+    }
+}
+
+.navLink {
+    &.active {
+        color: var(--color-primary);
+    }
+}

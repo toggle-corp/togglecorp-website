@@ -3,24 +3,52 @@
 }
 
 html {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    overflow: auto;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    padding: 0;
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--color-background);
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    scrollbar-gutter: stable;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 p {
     margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--font-size-mega-large);
+    font-weight: var(--font-weight-normal);
+}
+
+h2 {
+    margin: 0;
+    font-size: var(--font-size-super-large);
+    font-weight: var(--font-weight-normal);
+}
+
+h3 {
+    margin: 0;
+    font-size: var(--font-size-extra-large);
+    font-weight: var(--font-weight-normal);
+}
+
+h4 {
+    margin: 0;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
 }

@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+
+    .title {
+        color: var(--color-primary);
+        font-size: var(--font-size-large);
+    }
+
+    .description {
+        color: var(--color-secondary);
+        font-size: var(--font-size-key-figure-value);
+    }
+}

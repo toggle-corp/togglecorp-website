@@ -1,0 +1,21 @@
+.careerSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid transparent;
+    border-color: var(--color-border-light);
+    padding: var(--spacing-medium) 0 var(--spacing-medium);
+    color: var(--color-black);
+    font-size: var(--font-size-carrer-title);
+
+    .applySection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-extra-large);
+        text-transform: uppercase;
+    }
+    .applyButtons {
+        text-transform: none;
+        color: var(--color-primary);
+    }
+}

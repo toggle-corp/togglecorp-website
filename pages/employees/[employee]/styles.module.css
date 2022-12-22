@@ -1,0 +1,24 @@
+.employeePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-header-dark);
+    padding: var(--spacing-small);
+    gap: var(--spacing-medium);
+
+    @media screen and (max-width: 1200px) {
+        margin: 0;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .card {
+        max-width: 720px;
+    }
+
+    .toggleLink {
+        display: flex;
+    }
+}

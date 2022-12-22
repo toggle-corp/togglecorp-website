@@ -1,46 +1,21 @@
-import type { NextPage } from 'next'
-import Image from 'next/image';
-import Head from 'next/head'
+import Page from 'components/general/Page';
+import TaskItem from 'components/home/TaskItem';
 
-import Page from '../components/Page';
+import clientsIcon from 'resources/tc-clients.webp';
 
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
-interface TaskProps {
-    title: React.ReactNode;
-    summary: React.ReactNode;
-}
-
-function Task(props: TaskProps) {
-    const {
-        title,
-        summary,
-    } = props;
-
+function Home() {
     return (
-        <div className={styles.task}>
-            <div className={styles.title}>
-                {title}
-            </div>
-            <div className={styles.summary}>
-                {summary}
-            </div>
-        </div>
-    );
-}
-
-const Home: NextPage = () => {
-    return (
-        <Page className={styles.home}>
-            <Head>
-                <title>
-                    Togglecorp - Home
-                </title>
-            </Head>
+        <Page
+            className={styles.home}
+            pageTitle="Home"
+        >
             <div className={styles.introSection}>
-                <div className={styles.description}>
+                <h1 className={styles.description}>
+                    {/* eslint-disable-next-line max-len */}
                     We assist humanitarian and development agencies help people reliably and efficiently.
-                </div>
+                </h1>
                 <div className={styles.links}>
                     <div className={styles.fakeLink}>
                         Tech Development
@@ -60,41 +35,47 @@ const Home: NextPage = () => {
                 </div>
             </div>
             <div className={styles.clientsSection}>
-                <div className={styles.description}>
+                <h3 className={styles.description}>
+                    {/* eslint-disable-next-line max-len */}
                     We work closely with several national and international clients and is focused primarily on the development and humanitarian communities
-                </div>
-                <Image
-                    src="/tc-clients.png"
-                    alt="Togglecorp clients"
+                </h3>
+                <img
+                    className={styles.toggleClientImg}
+                    src={clientsIcon}
+                    alt="Clients"
                     width={1000}
-                    height={400}
+                    height={350}
                 />
             </div>
             <div className={styles.tasksSection}>
-                <div className={styles.description}>
+                <h2 className={styles.description}>
                     A team to assist you in all your technology and research needs
-                </div>
+                </h2>
                 <div className={styles.taskList}>
-                    <Task
+                    <TaskItem
+                        className={styles.task}
                         title="Technology Design and Development"
                         summary="We design and develop systems of various complexities that run on web, mobile and desktop platforms."
                     />
-                    <Task
+                    <TaskItem
+                        className={styles.task}
                         title="Data Science and Visualization"
                         summary="We specialize in data analysis and visualization using statistics and machine learning technologies."
                     />
-                    <Task
+                    <TaskItem
+                        className={styles.task}
                         title="Data Research and Analysis"
                         summary="We carryout humanitarian driven secondary data review with a focus on qualitative data research, report writing and data analysis."
                     />
-                    <Task
+                    <TaskItem
+                        className={styles.task}
                         title="Consulting"
                         summary="We provide consultancy services regarding software architecture design, database design, programming practices and various technologies."
                     />
                 </div>
             </div>
         </Page>
-    )
+    );
 }
 
-export default Home
+export default Home;
