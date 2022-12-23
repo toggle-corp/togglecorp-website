@@ -2,6 +2,7 @@ import CareerItem from 'components/careers/CareerItem';
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Header from 'components/general/Header';
+import Container from 'components/general/Container';
 
 import organizationLogo from 'resources/organization.webp';
 import vacancies from 'data/vacancies';
@@ -21,28 +22,30 @@ function Career() {
                 />
             )}
         >
-            <div className={styles.carrerSection}>
+            <Container contentClassName={styles.careerContent}>
                 <Header
                     title="Our Culture and Core Values"
                     description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
                 />
-                {vacancies.map((vacancy) => (
-                    <CareerItem
-                        key={vacancy.id}
-                        position={vacancy.position}
-                        vacancy={vacancy.department}
-                        link={(
-                            <a
-                                href={vacancy.formLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Apply
-                            </a>
-                        )}
-                    />
-                ))}
-            </div>
+                <div>
+                    {vacancies.map((vacancy) => (
+                        <CareerItem
+                            key={vacancy.id}
+                            position={vacancy.position}
+                            vacancy={vacancy.department}
+                            link={(
+                                <a
+                                    href={vacancy.formLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Apply
+                                </a>
+                            )}
+                        />
+                    ))}
+                </div>
+            </Container>
         </Page>
     );
 }

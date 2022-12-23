@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
-import { _cs } from '@togglecorp/fujs';
+import React from 'react';
 
-import GalleryCard from 'components/about-us/GalleryCard';
+import GalleryCard from 'components/general/GalleryCard';
 import Page from 'components/general/Page';
-import { ResearchSection } from 'components/ServiceDetailsPage';
 
 import cultures from 'data/cultures';
 import gallery from 'data/gallery';
@@ -12,53 +10,15 @@ import expertises from 'data/expertises';
 import socialResponsibilities from 'data/socialResponsibilities';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Container from 'components/general/Container';
+import Section from 'components/general/Section';
 import Card from 'components/general/Card';
+import AccordionWithImage from 'components/general/AccordionWithImage';
 
 import organizationLogo from 'resources/organization.webp';
-import halfTogglecorpLogo from 'resources/half-tc-icon.png';
 
 import styles from './styles.module.css';
 
-const firstCulture = cultures[0];
-
-interface SectionProps {
-    className?: string;
-    title: string;
-    description: string;
-    children: React.ReactNode;
-}
-
-function Section(props: SectionProps) {
-    const {
-        className,
-        title,
-        description,
-        children,
-    } = props;
-
-    return (
-        <Container
-            className={_cs(styles.section, className)}
-            contentClassName={styles.content}
-        >
-            <h5 className={styles.title}>
-                {title}
-            </h5>
-            <div className={styles.description}>
-                {description}
-            </div>
-            {children}
-        </Container>
-    );
-}
-
 function AboutUs() {
-    const [activeKey, setActiveKey] = useState<string | undefined>(firstCulture?.key);
-
-    const activeCulture = activeKey
-        ? cultures.find((culture) => culture.key === activeKey)
-        : undefined;
-
     return (
         <Page
             pageTitle="About Us"
@@ -99,45 +59,13 @@ function AboutUs() {
                 title="Our Culture and Core Values"
                 description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
             >
-                <div className={styles.coreValueDetails}>
-                    <div className={styles.cultureList}>
-                        {cultures.map((culture) => (
-                            <React.Fragment
-                                key={culture.key}
-                            >
-                                <div
-                                    role="presentation"
-                                    className={styles.cultureItem}
-                                    onClick={() => setActiveKey(culture.key)}
-                                >
-                                    <img
-                                        className={styles.halfLogo}
-                                        src={halfTogglecorpLogo}
-                                        alt="tc logo"
-                                    />
-                                    <h5 className={styles.cultureTitle}>
-                                        {culture.title}
-                                    </h5>
-                                </div>
-                                {activeKey === culture.key && (
-                                    <div className={styles.cultureDescription}>
-                                        {culture.description}
-                                    </div>
-                                )}
-                                <hr
-                                    className={styles.horizontalRow}
-                                />
-                            </React.Fragment>
-                        ))}
-                    </div>
-                    {activeCulture && (
-                        <img
-                            className={styles.activeCultureImage}
-                            src={activeCulture.image}
-                            alt="tc logo"
-                        />
-                    )}
-                </div>
+                <AccordionWithImage
+                    data={cultures}
+                    keySelector={(c) => c.key}
+                    labelSelector={(c) => c.title}
+                    descriptionSelector={(c) => c.description}
+                    imageUrlSelector={(c) => c.image}
+                />
             </Section>
             <Section
                 title="Life at Togglecorp"

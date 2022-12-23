@@ -15,6 +15,7 @@ import staticWorks, {
 import Button from 'components/general/Button';
 import Page from 'components/general/Page';
 import Card from 'components/general/Card';
+import Container from 'components/general/Container';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
 
@@ -30,7 +31,6 @@ export const workFilterOptions: (WorkType | 'all')[] = [
     'development',
     'consulting',
 ];
-
 interface WorksPageProps {
     works: Work[];
 }
@@ -82,7 +82,7 @@ function WorksPage(props: WorksPageProps) {
                 />
             )}
         >
-            <div className={styles.tabList}>
+            <Container contentClassName={styles.workContent}>
                 <div className={styles.tabs}>
                     {workFilterOptions.map((type, i) => (
                         <React.Fragment
@@ -119,7 +119,7 @@ function WorksPage(props: WorksPageProps) {
                         />
                     ))}
                 </div>
-            </div>
+            </Container>
         </Page>
     );
 }

@@ -1,0 +1,45 @@
+.accordion {
+    display: flex;
+    gap: var(--spacing-super-large);
+
+    .itemList {
+        align-self: center;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding: var(--spacing-medium) 0;
+            gap: var(--spacing-medium);
+
+            .titleRow {
+                display: flex;
+                align-items: baseline;
+                cursor: pointer;
+                width: 100%;
+                gap: var(--spacing-medium);
+
+                .halfLogo {
+                    height: var(--font-size-large);
+                }
+
+                .label {
+                    font-size: var(--font-size-heading-extra-small);
+                }
+            }
+
+            .description {
+                font-size: var(--font-size-large);
+            }
+        }
+    }
+
+    .image {
+        flex-shrink: 0;
+        margin-top: var(--spacing-extra-large);
+        width: 24rem;
+        height: 30rem;
+        object-fit: cover;
+        object-position: center center;
+    }
+}

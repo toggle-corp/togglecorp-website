@@ -1,195 +1,109 @@
-.workList {
-    .organisationImage{
-        width: 100%;
-        @media screen and (max-width: 1300px) {
-            margin: calc(var(--spacing-super-small)*4) calc(var(--spacing-super-small)*2) 0 calc(var(--spacing-super-small)*2);
-            height: 26rem;
-        }
+.alsoSee {
+    display: flex;
+    gap: var(--spacing-small);
+
+    .tags {
+        color: var(--color-primary);
     }
 }
-.service {
-    .serviceImage {
-        display: none;
+
+.organizationsWorkedWith {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-large);
+
+    .organizationImg {
+        width: 100%;
     }
-    .softwareDetail {
+}
+
+.productDetail {
+    display: flex;
+    gap: var(--spacing-super-large);
+
+    .productDescription {
         display: flex;
-        gap: var(--spacing-super-small);
-        margin: calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) 0 0;
-
-        @media screen and (max-width: 1300px) {
-            margin: calc(var(--spacing-super-small)*2);
-        }
-
-        .consultant {
-            color: var(--color-primary);
-        }
-    }
-
-    .organizationImage {
-        margin: calc(var(--spacing-super-small)*10);
-
-        .organizationList {
-            margin: 0 0 calc(var(--spacing-super-small)*3) calc(var(--spacing-super-small)*8);
-            color: var(--color-text);
-            font-size: var(--font-size-large);
-        }
-    }
-
-    .deepDetail {
-        display: flex;
-        margin-top: calc(var(--spacing-super-small)*10);
-
-        .deepDetailDescription {
-            width: 60%;
-            color: var(--color-text);
-            font-size: var(--font-size-large)
-        }
-
-        .knowDeep {
-            display: flex;
-            margin-top: calc(var(--spacing-super-small)*2);
-            color: var(--color-primary);
-        }
-
-        .deepImage {
-            padding-left: calc(var(--spacing-super-small)*2);
-            width: 40%;
-
-            @media screen and (max-width: 1300px) {
-                padding: calc(var(--spacing-super-small)*2);
-            }
-        }
-    }
-
-    .expertise {
-        width: fit-content;
-
-        .expertiseDetails {
-            display: flex;
-        }
-    }
- 
-    .approach {
-        ol {
-            margin: 0;
-            padding: 0;
-        }
-        .descriptionHeading {
-            display: flex;
-            justify-content: space-between;
-            margin: var(--spacing-super-small);
-            color: var(--color-text);
-            font-size: var(--font-size-large);
-        }
-        
-        .approachDetailDescription {
-            padding: var(--spacing-super-small);
-            font-size: var(--font-size-medium);
-        }
-    }
-
-    .horizontalRow {
-        border: 0 none;
-        background-color: var(--color-border-light);
-        height: 1px;
-    }
-
-    .expertiseSectionList {
-        margin-top: calc(var(--spacing-super-small)*5);
-
-        .researchButtons {
-            display: flex;
-            justify-content: space-between;
-            margin: calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) calc(var(--spacing-super-small)*2) 0;
-        
-            .workButtons {
-                display:flex;
-                border-width: 2px;
-                border-style: none;
-                border-color: var(--color-hr-fff1eb);
-                background-color: transparent;
-                cursor: pointer;
-                font-size: var(--font-size-medium);
-
-                &:hover {
-                    transition: 0.3s;
-                    border-color: var(--color-primary);
-                    color: var(--color-primary);
-                }
-            }
-        }
-    }
-
-    .knowWork {
-        display: flex;
-        align-items: center;
+        align-self: center;
         flex-direction: column;
-        margin: calc(var(--spacing-super-small)*3);
-        color: var(--color-primary);
+        gap: var(--spacing-large);
 
-        .arrowLink{
+        .text {
+            line-height: 1.5;
+            font-size: var(--font-size-heading-extra-small);
+        }
+
+        .knowMoreLink {
             display: flex;
-            align-items: center;
-            gap: calc(var(--spacing-super-small)/2);
+            gap: var(--spacing-small);
+            color: var(--color-primary);
+            font-size: var(--font-size-large);
+
+            .icon {
+                font-size: var(--font-size-extra-large);
+            }
         }
     }
 
-    .researchGrid { 
+    .productImage {
+        flex-shrink: 0;
+        width: 20rem;
+        filter: saturate(10%);
+    }
+}
+
+.expertise {
+    background-color: var(--color-background-light);
+
+    .expertiseList {
         display: flex;
-        flex: 1;
-        flex-wrap: wrap;
+        gap: var(--spacing-large);
+    }
+}
+
+.ourResearch {
+    background-color: var(--color-background-light);
+
+    .researchContent {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-large);
+
+        .researchTagList {
+            display: flex;
+            gap: var(--spacing-medium);
+            flex-wrap: wrap;
+        }
+
+        .divider {
+            margin: 0;
+            border-color: rgba(0, 0, 0, .05);
+            width: 100%;
+        }
 
         .researchList {
-            flex-basis: 50%;
+            display: flex;
+            gap: var(--spacing-medium);
+            flex-wrap: wrap;
 
-            .researchImage {
-                width: 100%;
-                height: auto;
+            >* {
+                flex-basis: calc(50% - var(--spacing-medium));
             }
         }
     }
-}
 
-@media screen and (max-width: 1300px) {
-    .service {
-        margin-top: calc(var(--spacing-super-small)*26);
+    .arrowLink {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        color: var(--color-primary);
+        gap: var(--spacing-small);
+        font-size: var(--font-size-large);
 
-        .researchGrid {
-            flex-direction: column;
-        }
-        .bannerImg {
-            display: none;
-        }
-        .organizationImage{
-            margin: var(--spacing-super-small);
-            .organizationList{
-                margin: var(--spacing-super-small);
-            }
-            .organizationImg {
-                width: 100%;
-                object-fit: contain;
-            }
-        }
-        .deepDetail{
-            flex-direction: column;
-
-            .deepDetailDescription{
-                width: auto;
-            }
-        }
-        .approach{
-            .descriptionHeading {
-                font-size: var(--font-size-mid-medium);
-            }
-        }
-        .expertise{
-            .expertiseDetails {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-        .knowWork {
-            margin: var(--spacing-super-small);
+        .icon {
+            display: flex;
+            align-items: center;
+            font-size: var(--font-size-extra-large);
         }
     }
 }

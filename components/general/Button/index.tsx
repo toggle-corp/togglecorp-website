@@ -4,7 +4,7 @@ import { _cs } from '@togglecorp/fujs';
 import styles from './styles.module.css';
 
 export type ButtonVariant = (
-    'primary' | 'default' | 'tab'
+    'primary' | 'default' | 'outline' | 'tab'
 );
 
 type ButtonProps<N> = {
@@ -27,7 +27,7 @@ export function useButtonFeatures(
     props: Pick<ButtonProps<unknown>, ButtonFeatureKeys>,
 ) {
     const {
-        variant = 'primary',
+        variant = 'default',
         className: classNameFromProps,
         icons,
         children,
@@ -40,6 +40,7 @@ export function useButtonFeatures(
         variant === 'default' && styles.default,
         variant === 'primary' && styles.primary,
         variant === 'tab' && styles.tab,
+        variant === 'outline' && styles.outline,
     );
 
     const buttonChildren = (

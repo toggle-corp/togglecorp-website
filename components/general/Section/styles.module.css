@@ -1,0 +1,20 @@
+.section {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-extra-large);
+        padding: var(--spacing-large) 0;
+
+        .title {
+            color: var(--color-primary);
+            font-size: var(--font-size-large);
+        }
+
+        .description {
+            max-width: 56rem;
+            color: var(--color-secondary);
+            font-size: var(--font-size-extra-large);
+        }
+    }
+}
+

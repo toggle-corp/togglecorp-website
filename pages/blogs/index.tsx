@@ -5,6 +5,7 @@ import { _cs } from '@togglecorp/fujs';
 
 import Page from 'components/general/Page';
 import Button from 'components/general/Button';
+import Container from 'components/general/Container';
 import staticBlogs, {
     Blog,
     BlogType,
@@ -60,7 +61,7 @@ function BlogsPage(props: BlogsPageProps) {
                 />
             )}
         >
-            <div className={styles.tabList}>
+            <Container contentClassName={styles.blogContent}>
                 <div className={styles.tabs}>
                     {blogFilterOptions.map((type, i) => (
                         <React.Fragment
@@ -96,7 +97,7 @@ function BlogsPage(props: BlogsPageProps) {
                         />
                     ))}
                 </div>
-            </div>
+            </Container>
         </Page>
     );
 }
