@@ -77,6 +77,7 @@ function AboutUs() {
                             key={galleryItem.id}
                             caption={galleryItem.caption}
                             imageUrl={galleryItem.image}
+                            imageAlt={galleryItem.imageAlt}
                         />
                     ))}
                 </div>

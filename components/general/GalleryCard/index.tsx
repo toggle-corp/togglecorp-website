@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 interface Props {
     className?: string;
     imageUrl: string;
+    imageAlt: string;
     caption: React.ReactNode;
 }
 
@@ -15,13 +16,14 @@ function GalleryCard(props: Props) {
         className,
         imageUrl,
         caption,
+        imageAlt,
     } = props;
 
     return (
         <div className={_cs(styles.galleryCard, className)}>
             <img
                 className={styles.image}
-                alt=""
+                alt={imageAlt}
                 src={imageUrl}
             />
             <div>

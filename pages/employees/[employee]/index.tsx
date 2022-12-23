@@ -32,14 +32,7 @@ function EmployeePage(props: EmployeePageProps) {
             <EmployeeCard
                 className={styles.card}
                 key={specificEmployeeData.id}
-                image={(
-                    <img
-                        src={employeeIcon}
-                        alt="TC"
-                        width={258}
-                        height={258}
-                    />
-                )}
+                imageSrc={employeeIcon}
                 name={specificEmployeeData.name}
                 position={specificEmployeeData.position}
                 description={specificEmployeeData.description}
@@ -47,13 +40,15 @@ function EmployeePage(props: EmployeePageProps) {
                 linkedInLink={specificEmployeeData.linkedInLink}
                 instagramLink={specificEmployeeData.instagramLink}
             />
-            <div className={styles.toggleLink}>
-                <Link
-                    href="/"
-                >
+            <Link
+                href="/"
+                passHref
+            >
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a className={styles.visitWebsiteLink}>
                     Visit Toggle Website
-                </Link>
-            </div>
+                </a>
+            </Link>
         </div>
     );
 }

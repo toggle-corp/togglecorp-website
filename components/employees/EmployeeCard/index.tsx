@@ -12,7 +12,7 @@ const dateFormatter = new Intl.DateTimeFormat('default', {
 
 interface EmployeeCardProps {
     className?: string;
-    image: React.ReactNode;
+    imageSrc: string;
     name: string;
     position: string;
     description: string;
@@ -24,7 +24,7 @@ interface EmployeeCardProps {
 function EmployeeCard(props: EmployeeCardProps) {
     const {
         className,
-        image,
+        imageSrc,
         name,
         position,
         description,
@@ -35,22 +35,24 @@ function EmployeeCard(props: EmployeeCardProps) {
 
     return (
         <div className={_cs(styles.cardSection, className)}>
-            {image}
-            <div className={styles.employeeContainer}>
+            <img
+                className={styles.displayImage}
+                src={imageSrc}
+                alt={name}
+            />
+            <div className={styles.details}>
                 <div>
-                    <h4>
+                    <h3>
                         {name}
-                    </h4>
-                    <div className={styles.employeePosition}>
+                    </h3>
+                    <div className={styles.position}>
                         {position}
                     </div>
                 </div>
-                <div>
+                <div className={styles.description}>
                     {description}
                 </div>
-                <div
-                    className={styles.horizontalRow}
-                />
+                <div className={styles.horizontalRow} />
                 <div className={styles.employeeDate}>
                     Joined Togglecorp on
                     {' '}
@@ -63,9 +65,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <IoLogoLinkedin
-                                size={24}
-                            />
+                            <IoLogoLinkedin size={24} />
                         </a>
                     )}
                     {instagramLink && (
