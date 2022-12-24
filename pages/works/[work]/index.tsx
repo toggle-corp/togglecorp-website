@@ -157,8 +157,7 @@ function WorkPage(props: WorkPageProps) {
                         className={styles.deepImg}
                         src={deepDescriptionLogo}
                         alt="Deep"
-                        width={750}
-                        height={500}
+                        width="100%"
                     />
                 </div>
                 <div className={styles.caseStudy}>

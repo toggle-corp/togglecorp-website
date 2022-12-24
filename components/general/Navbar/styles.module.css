@@ -9,6 +9,7 @@
         gap: var(--spacing-extra-large);
 
         .logo {
+            cursor: pointer;
             height: 32px;
         }
 

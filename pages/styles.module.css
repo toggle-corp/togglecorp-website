@@ -1,75 +1,165 @@
 .home {
-    .introSection {
-        padding: calc(var(--spacing-super-small)*2);
-        min-height: 36rem;
+    .banner {
+        background-color: #272727;
+        color: var(--color-text-on-dark);
 
-        .description {
-            max-width: 36rem;
+        .content {
+            display: flex;
+            align-items: center;
+            min-height: 50vh;
+
+            .introductionContent {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-super-large);
+                max-width: 36rem;
+
+                .description {
+                    font-size: var(--font-size-heading-large);
+                }
+
+                .tags {
+                    display: flex;
+                    gap: var(--spacing-medium);
+                    color: var(--color-primary);
+                    font-size: var(--font-size-large);
+                }
+
+                .getStartedButton {
+                    align-self: flex-start;
+                    font-size: var(--font-size-large);
+                }
+            }
+        }
+    }
+
+    .brief {
+        line-height: 1.5;
+        font-size: var(--font-size-large);
+    }
+
+    .introImages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-medium);
+
+        >* {
+            flex-grow: 1;
+            width: calc(100% / 3 - var(--spacing-medium) / 1.5);
+            min-width: 20rem;
+            max-width: calc(50% - var(--spacing-medium) / 2);
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
         }
 
-        .links {
-            display: flex;
-            font-size: var(--font-size-mid-medium);
-            gap: calc(var(--spacing-super-small) / 2);
-
-            .fakeLink {
-                color: var(--color-primary);
+        @media screen and (max-width: 900px) {
+            >* {
+                flex-basis: 100%;
+                min-width: unset;
+                max-width: unset;
             }
         }
     }
 
     .clientsSection {
         display: flex;
-        align-items: center;
         flex-direction: column;
-        padding: calc(var(--spacing-super-small) * 5) 0;
-        gap: calc(var(--spacing-super-small) * 2);
+        gap: var(--spacing-large);
 
-        .description {
-            padding: var(--spacing-super-small);
-            max-width: 50rem;
+        .heading {
             text-align: center;
         }
 
-        .toggleClientImg{
-            width: 95%;
-            height: auto;
+        .clientsImage {
+            width: 100%;
         }
     }
 
-    .tasksSection {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: calc(var(--spacing-super-small) * 5) 0;
-        gap: calc(var(--spacing-super-small) * 6);
+    .ourServices {
+        background-color: var(--color-background-light);
 
-        .description {
-            max-width: 40rem;
-            text-align: center;
-        }
-
-        .taskList {
+        .serviceList {
             display: flex;
-            flex-direction: column;
-            max-width: 42rem;
-            gap: calc(var(--spacing-super-small) * 5);
-        }
-    }
-}
+            gap: var(--spacing-medium);
+            flex-wrap: wrap;
 
-@media screen and (max-width: 1200px) {
-    .home{
-        .introSection {
-            min-height: 20rem;
-        }
-        .tasksSection{
-            .taskList{
-                max-width: 23rem;
-                .task {
-                    gap: calc(var(--spacing-super-small)*2);
+            >* {
+                flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
+                flex-grow: 1;
+                min-width: 20rem;
+                max-width: calc(50% - var(--spacing-medium) / 2);
+            }
+
+            @media screen and (max-width: 900px) {
+                >* {
+                    flex-basis: 100%;
+                    min-width: unset;
+                    max-width: unset;
                 }
             }
         }
     }
+
+    .recentWorkList {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-super-large);
+
+        .recentWorkCard {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-super-large);
+
+            .workPreview {
+                flex-basis: 50%;
+                flex-shrink: 0;
+                border-radius: 0.5rem;
+                width: 50%;
+                height: 20rem;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-medium);
+            }
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                gap: var(--spacing-medium);
+
+                .workPreview {
+                    flex-basis: unset;
+                    width: 100%;
+                }
+
+                &:nth-child(even) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .bottomSection {
+        /* FIXME: use design token */
+        background-color: #fff1eb;
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 20rem;
+            gap: var(--spacing-large);
+            text-align: center;
+        }
+    }
 }
+

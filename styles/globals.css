@@ -31,25 +31,25 @@ p {
 
 h1 {
     margin: 0;
-    font-size: var(--font-size-mega-large);
+    font-size: var(--font-size-heading-large);
     font-weight: var(--font-weight-normal);
 }
 
 h2 {
     margin: 0;
-    font-size: var(--font-size-super-large);
+    font-size: var(--font-size-heading-medium);
     font-weight: var(--font-weight-normal);
 }
 
 h3 {
     margin: 0;
-    font-size: var(--font-size-extra-large);
+    font-size: var(--font-size-heading-small);
     font-weight: var(--font-weight-normal);
 }
 
 h4 {
     margin: 0;
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-heading-extra-small);
     font-weight: var(--font-weight-bold);
 }
 

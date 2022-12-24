@@ -5,9 +5,21 @@
 .expertiseList {
     display: flex;
     gap: var(--spacing-medium);
+    flex-wrap: wrap;
 
     >* {
-        flex-basis: 20rem;
+        flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
+        flex-grow: 1;
+        min-width: 20rem;
+        max-width: calc(50% - var(--spacing-medium) / 2);
+    }
+
+    @media screen and (max-width: 900px) {
+        >* {
+            flex-basis: 100%;
+            min-width: unset;
+            max-width: unset;
+        }
     }
 }
 

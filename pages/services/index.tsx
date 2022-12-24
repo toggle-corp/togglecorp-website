@@ -10,7 +10,6 @@ import Page from 'components/general/Page';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import Button from 'components/general/Button';
-import Container from 'components/general/Container';
 import BannerWithImage from 'components/general/BannerWithImage';
 import AccordianWithImage from 'components/general/AccordionWithImage';
 
@@ -111,6 +110,11 @@ function Service() {
             </Section>
             <Section>
                 <div className={styles.productDetail}>
+                    <img
+                        className={styles.productImage}
+                        src={deepPrimaryLogo}
+                        alt="Deep Primary Logo"
+                    />
                     <div className={styles.productDescription}>
                         <div className={styles.text}>
                             {/* eslint-disable-next-line max-len */}
@@ -127,11 +131,6 @@ function Service() {
                             </a>
                         </Link>
                     </div>
-                    <img
-                        className={styles.productImage}
-                        src={deepPrimaryLogo}
-                        alt="Deep Primary Logo"
-                    />
                 </div>
             </Section>
             <Section
@@ -172,7 +171,7 @@ function Service() {
                     <div className={styles.researchTagList}>
                         {researchTags.map((type) => (
                             <Button
-                                variant={filteredServiceType === type.value ? 'primary' : 'outline'}
+                                variant={filteredServiceType === type.value ? 'outline-active' : 'outline'}
                                 key={type.value}
                                 name={type.value}
                                 onClick={setFilteredServiceType}

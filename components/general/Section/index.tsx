@@ -8,7 +8,9 @@ interface Props {
     className?: string;
     title?: string;
     description?: string;
+    actions?: React.ReactNode;
     children: React.ReactNode;
+    sideImageUrl?: string;
 }
 
 function Section(props: Props) {
@@ -16,14 +18,13 @@ function Section(props: Props) {
         className,
         title,
         description,
-        children,
+        children: childrenFromProps,
+        actions,
+        sideImageUrl,
     } = props;
 
-    return (
-        <Container
-            className={_cs(styles.section, className)}
-            contentClassName={styles.content}
-        >
+    const predefinedContent = (
+        <>
             {title && (
                 <h5 className={styles.title}>
                     {title}
@@ -34,6 +35,40 @@ function Section(props: Props) {
                     {description}
                 </div>
             )}
+            {actions}
+        </>
+    );
+
+    let children = (
+        <>
+            {predefinedContent}
+            {childrenFromProps}
+        </>
+    );
+
+    if (sideImageUrl) {
+        children = (
+            <>
+                <div className={styles.predefinedContainer}>
+                    <img
+                        className={styles.sideImage}
+                        src={sideImageUrl}
+                        alt={title}
+                    />
+                    <div className={styles.left}>
+                        {predefinedContent}
+                    </div>
+                </div>
+                {childrenFromProps}
+            </>
+        );
+    }
+
+    return (
+        <Container
+            className={_cs(styles.section, className)}
+            contentClassName={styles.content}
+        >
             {children}
         </Container>
     );

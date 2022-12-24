@@ -7,7 +7,7 @@
     --color-black: #212121;
     --color-dark-gray: #7a7a7a;
 
-    --color-text: var(--color-black); /* black */
+    --color-text: #333333; /* black */
     --color-text-light: var(--color-dark-gray); /* dark gray */
 
     --color-text-on-dark: #f7f7f7; /* white */

@@ -2,6 +2,7 @@
     --padding: var(--spacing-small) var(--spacing-medium);
     --border-color: transparent;
     --background: var(--color-background);
+    --color: var(--color-text);
 
     display: flex;
     position: relative;
@@ -13,7 +14,9 @@
     background-color: var(--background);
     cursor: pointer;
     padding: var(--padding);
+    width: fit-content;
     overflow: hidden;
+    color: var(--color);
     font-family: inherit;
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
@@ -38,25 +41,31 @@
 
     &.default {
         --background: none;
-        color: var(--color-text);
     }
 
     &.primary {
         --background: var(--color-primary);
-        color: var(--color-text-on-dark);
+        --color: var(--color-text-on-dark);
     }
 
     &.tab {
         --background: transparent;
         border-radius: unset;
-        color: var(--color-secondary);
         font-size: var(--font-size-large);
         font-weight: var(--font-weight-normal);
+        --color: var(--color-secondary);
     }
 
     &.outline {
         --background: var(--color-surface-white);
         --border-color: rgba(0, 0, 0, 0.1);
+        font-weight: var(--font-weight-normal);
+    }
+
+    &.outlineActive {
+        --background: var(--color-surface-white);
+        --border-color: var(--color-primary);
+        --color: var(--color-primary);
         font-weight: var(--font-weight-normal);
     }
 

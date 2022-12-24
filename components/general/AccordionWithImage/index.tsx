@@ -27,9 +27,19 @@ function AccordionWithImage<D>(props: Props<D>) {
     } = props;
 
     const [activeItem, setActiveItem] = React.useState<D | undefined>(data[0]);
+    const imgUrl = isDefined(activeItem) ? imageUrlSelector(activeItem) : undefined;
+    const activeKey = isDefined(activeItem) ? keySelector(activeItem) : undefined;
 
     return (
         <div className={_cs(styles.accordion, className)}>
+            {imgUrl && (
+                <img
+                    className={styles.backgroundImage}
+                    src={imgUrl}
+                    alt={activeKey}
+                />
+            )}
+            <div className={styles.gradientBackground} />
             <div className={styles.itemList}>
                 {data.map((d) => {
                     const key = keySelector(d);
@@ -52,19 +62,26 @@ function AccordionWithImage<D>(props: Props<D>) {
                                 </div>
                             </div>
                             {isDefined(activeItem) && key === keySelector(activeItem) && (
-                                <div className={styles.description}>
-                                    {descriptionSelector(d)}
-                                </div>
+                                <>
+                                    <img
+                                        className={styles.imageInternal}
+                                        src={imageUrlSelector(activeItem)}
+                                        alt={keySelector(activeItem)}
+                                    />
+                                    <div className={styles.description}>
+                                        {descriptionSelector(d)}
+                                    </div>
+                                </>
                             )}
                         </div>
                     );
                 })}
             </div>
-            {isDefined(activeItem) && (
+            {imgUrl && (
                 <img
                     className={styles.image}
-                    src={imageUrlSelector(activeItem)}
-                    alt={keySelector(activeItem)}
+                    src={imgUrl}
+                    alt={activeKey}
                 />
             )}
         </div>
