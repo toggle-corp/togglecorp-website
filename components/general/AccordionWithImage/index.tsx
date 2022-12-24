@@ -32,14 +32,6 @@ function AccordionWithImage<D>(props: Props<D>) {
 
     return (
         <div className={_cs(styles.accordion, className)}>
-            {imgUrl && (
-                <img
-                    className={styles.backgroundImage}
-                    src={imgUrl}
-                    alt={activeKey}
-                />
-            )}
-            <div className={styles.gradientBackground} />
             <div className={styles.itemList}>
                 {data.map((d) => {
                     const key = keySelector(d);

@@ -1,11 +1,14 @@
 .bannerWithImage {
-    --image-offset-y: 260px;
-    --image-width: 456px;
-    --image-height: 562px;
-    --section-min-height: 38rem;
+    --image-offset-y: 14rem;
+    --image-width: calc(10% + 22rem);
+    --image-height: 30rem;
+    --section-min-height: 20rem;
 
     @media screen and (max-width: 900px) {
-        --image-offset-y: 300px;
+        --image-offset-y: 200px;
+        --section-min-height: 26rem;
+        --image-width: 100%;
+        --image-height: 400px;
     }
 
     .topSection {
@@ -24,11 +27,13 @@
             display: flex;
             align-items: flex-end;
             flex-grow: 1;
-            padding: var(--spacing-extra-large) 0;
+            padding: var(--spacing-medium) 0;
             gap: var(--spacing-super-large);
 
             @media screen and (max-width: 900px) {
                 flex-wrap: wrap;
+                padding: 0;
+                gap: var(--spacing-large);
             }
 
             .left {
@@ -53,12 +58,8 @@
                 border-radius: var(--radius-card);
                 width: 100%;
                 max-width: var(--image-width);
-                height: 562px;
+                height: var(--image-height);
                 object-fit: cover;
-
-                @media screen and (max-width: 900px) {
-                    margin-top: calc(-1 * var(--image-offset-y));
-                }
             }
         }
     }
@@ -85,6 +86,10 @@
     &.noImage {
         --section-min-height: 26rem;
 
+        @media screen and (max-width: 900px) {
+            --section-min-height: 18rem;
+        }
+
         .topSection {
             .content {
                 .left {
@@ -95,6 +100,10 @@
 
         .bottomSection {
             min-height: unset;
+
+            @media screen and (max-width: 900px) {
+                margin-top: 0;
+            }
         }
     }
 }

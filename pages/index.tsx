@@ -67,13 +67,13 @@ function Home() {
                             <div>
                                 Tech Development
                             </div>
-                            <div>
+                            <div className={styles.dot}>
                                 •
                             </div>
                             <div>
                                 Research and Analysis
                             </div>
-                            <div>
+                            <div className={styles.dot}>
                                 •
                             </div>
                             <div>

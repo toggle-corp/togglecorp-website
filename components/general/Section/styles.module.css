@@ -22,7 +22,7 @@
 
         .predefinedContainer {
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             gap: var(--spacing-super-large);
 
 

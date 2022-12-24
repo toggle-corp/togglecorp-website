@@ -43,7 +43,7 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            padding: var(--spacing-large);
+            padding: var(--spacing-medium);
             gap: var(--spacing-medium);
 
             .title {
@@ -57,11 +57,10 @@
                 -webkit-box-orient: vertical;
             }
 
-            .spacer {
-                flex-grow: 1;
-            }
-
             .tag {
+                display: flex;
+                align-items: flex-end;
+                flex-grow: 1;
                 color: var(--color-text-light);
             }
         }

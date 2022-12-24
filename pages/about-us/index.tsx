@@ -43,14 +43,14 @@ function AboutUs() {
                 title="We are proud of the team we have built"
                 description="A place that nurtures, cares, and respects. A place where the best and the brightest are appreciated."
             >
-                <div className={styles.expertiseList}>
-                    {expertises.map((expertise) => (
+                <div className={styles.activityList}>
+                    {expertises.map((activity) => (
                         <Card
                             variant="mini"
-                            key={expertise.key}
-                            imageSrc={expertise.image}
-                            title={expertise.title}
-                            description={expertise.description}
+                            key={activity.key}
+                            imageSrc={activity.image}
+                            title={activity.title}
+                            description={activity.description}
                         />
                     ))}
                 </div>

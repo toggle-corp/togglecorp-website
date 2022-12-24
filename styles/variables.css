@@ -38,24 +38,48 @@
     --font-size-large: 1.25rem; /* body text */
     --font-size-extra-large: 2rem; /* body text */
 
-    --font-size-banner-description: 3rem;
-    --font-size-key-figure-value: 3rem;
+    --font-size-banner-description: 2.2rem;
+    --font-size-key-figure-value: 2.2rem;
     --font-size-carrer-title: 1.5rem;
 
-    --font-size-heading-extra-small: 1.5625rem; /* h4 */
-    --font-size-heading-small: 2rem; /* h3 */
-    --font-size-heading-medium: 2.5rem; /* h2 */
-    --font-size-heading-large: 3rem; /* h1 */
+    --font-size-heading-extra-small: 1.1rem; /* h4 */
+    --font-size-heading-small: 1.4rem; /* h3 */
+    --font-size-heading-medium: 1.8rem; /* h2 */
+    --font-size-heading-large: 2.2rem; /* h1 */
 
     --spacing-extra-small: 0.25rem;
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 1.75rem;
-    --spacing-extra-large: 3rem;
-    --spacing-super-large: 5rem;
+    --spacing-extra-large: 2.5rem;
+    --spacing-super-large: 4rem;
 
     --radius-button: 0.25rem;
     --radius-card: 0.5rem;
 
     --height-logo: 1.5rem;
+
+    @media screen and (max-width: 900px) {
+        --font-size-heading-extra-small: 1rem; /* h4 */
+        --font-size-heading-small: 1.2rem; /* h3 */
+        --font-size-heading-medium: 1.5rem; /* h2 */
+        --font-size-heading-large: 2rem; /* h1 */
+
+        --font-size-small: 0.85rem; /* do not use this */
+        --font-size-medium: 1rem; /* body small and button */
+        --font-size-large: 1.2rem; /* body text */
+        --font-size-extra-large: 1.7rem;
+
+        --spacing-extra-small: 0.2rem;
+        --spacing-small: 0.4rem;
+        --spacing-medium: 0.7rem;
+        --spacing-large: 1.1rem;
+        --spacing-extra-large: 1.6rem;
+        --spacing-super-large: 2.3rem;
+
+        --font-size-banner-description: 2rem;
+        --font-size-key-figure-value: 2rem;
+        --font-size-carrer-title: 1.25rem;
+    }
 }
+

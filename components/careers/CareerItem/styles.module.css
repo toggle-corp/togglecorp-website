@@ -1,24 +1,42 @@
 .careerSection {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: 2px solid var(--color-border-light);
-    border-color: var(--color-border-light);
-    padding: var(--spacing-large) 0;
+    gap: var(--spacing-large);
+    border-bottom: 1px solid var(--color-border-light);
+    padding: var(--spacing-medium) 0;
     color: var(--color-black);
-    font-size: var(--font-size-carrer-title);
 
-    .applySection {
-        display: flex;
-        flex-wrap: wrap;
-        text-transform: uppercase;
-        font-size: var(--font-size-large);
-        gap: var(--spacing-extra-large);
+    .title {
+        flex-grow: 1;
+        font-size: var(--font-size-carrer-title);
     }
 
-    .applyButtons {
-        text-transform: none;
-        color: var(--color-primary);
+    .actions {
+        display: flex;
+        gap: var(--spacing-large);
+        justify-content: flex-end;
+
+        .type {
+            text-transform: uppercase;
+            gap: var(--spacing-extra-large);
+            color: var(--color-text-light);
+            font-size: var(--font-size-small);
+        }
+
+        .apply {
+            color: var(--color-primary);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-wrap: wrap;
+
+        .title {
+            flex-basis: 100%;
+        }
+
+        .actions {
+            flex-grow: 1;
+        }
     }
 }

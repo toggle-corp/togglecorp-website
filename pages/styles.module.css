@@ -20,9 +20,18 @@
 
                 .tags {
                     display: flex;
-                    gap: var(--spacing-medium);
+                    flex-wrap: wrap;
                     color: var(--color-primary);
                     font-size: var(--font-size-large);
+                    gap: var(--spacing-medium);
+
+                    @media screen and (max-width: 900px) {
+                        flex-direction: column;
+
+                        .dot {
+                            display: none;
+                        }
+                    }
                 }
 
                 .getStartedButton {

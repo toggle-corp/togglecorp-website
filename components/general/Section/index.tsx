@@ -50,14 +50,14 @@ function Section(props: Props) {
         children = (
             <>
                 <div className={styles.predefinedContainer}>
+                    <div className={styles.left}>
+                        {predefinedContent}
+                    </div>
                     <img
                         className={styles.sideImage}
                         src={sideImageUrl}
                         alt={title}
                     />
-                    <div className={styles.left}>
-                        {predefinedContent}
-                    </div>
                 </div>
                 {childrenFromProps}
             </>

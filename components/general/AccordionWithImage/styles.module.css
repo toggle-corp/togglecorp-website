@@ -4,29 +4,6 @@
     z-index: 0;
     gap: var(--spacing-super-large);
 
-    .gradientBackground {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 1;
-        z-index: 0;
-        background: radial-gradient(circle at center, #ffffffa0 0, var(--color-background) 60%);
-        width: 100%;
-        height: 100%;
-    }
-
-    .backgroundImage {
-        position: absolute;
-        top: var(--spacing-medium);
-        left: var(--spacing-medium);
-        z-index: 0;
-        width: calc(100% - var(--spacing-medium) * 2);
-        height: calc(100% - var(--spacing-medium) * 2);
-        object-fit: cover;
-        object-position: center right;
-        filter: blur(8px);
-    }
-
     .itemList {
         align-self: center;
         z-index: 1;
@@ -40,22 +17,22 @@
 
             .titleRow {
                 display: flex;
-                align-items: baseline;
+                align-items: center;
                 cursor: pointer;
                 width: 100%;
                 gap: var(--spacing-medium);
 
                 .halfLogo {
-                    height: var(--font-size-large);
+                    height: var(--font-size-heading-small);
                 }
 
                 .label {
-                    font-size: var(--font-size-heading-extra-small);
+                    font-size: var(--font-size-heading-small);
                 }
             }
 
             .description {
-                font-size: var(--font-size-large);
+                font-size: var(--font-size-medium);
             }
 
             .imageInternal {

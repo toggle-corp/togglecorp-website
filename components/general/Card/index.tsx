@@ -33,22 +33,23 @@ function Card(props: Props) {
                 alt={title}
             />
             <div className={styles.details}>
-                <h4 className={styles.title}>
-                    {title}
-                </h4>
-                <div
-                    className={styles.description}
-                    title={description}
-                >
-                    {description}
-                </div>
+                {title && (
+                    <h4 className={styles.title}>
+                        {title}
+                    </h4>
+                )}
+                {description && (
+                    <div
+                        className={styles.description}
+                        title={description}
+                    >
+                        {description}
+                    </div>
+                )}
                 {tag && (
-                    <>
-                        <div className={styles.spacer} />
-                        <div className={styles.tag}>
-                            {tag}
-                        </div>
-                    </>
+                    <div className={styles.tag}>
+                        {tag}
+                    </div>
                 )}
             </div>
         </>
