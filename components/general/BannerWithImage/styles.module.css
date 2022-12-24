@@ -1,5 +1,5 @@
 .bannerWithImage {
-    --image-offset-y: 200px;
+    --image-offset-y: 260px;
     --image-width: 456px;
     --image-height: 562px;
     --section-min-height: 38rem;
@@ -64,16 +64,16 @@
     }
 
     .bottomSection {
+        margin-top: var(--spacing-large);
         min-height: var(--image-offset-y);
 
         .statsContainer {
             margin: unset;
-            margin-top: var(--spacing-extra-large);
             max-width: calc(100% - var(--image-width) - var(--spacing-large));
         }
 
         @media screen and (max-width: 900px) {
-            margin-top: var(--image-offset-y);
+            margin-top: calc(var(--image-offset-y) - var(--spacing-super-large));
             min-height: unset;
 
             .statsContainer {

@@ -1,16 +1,6 @@
-import Link from 'next/link';
 import { GetStaticProps, GetStaticPaths } from 'next';
-import {
-    IoIosArrowRoundBack,
-    IoIosArrowRoundForward,
-} from 'react-icons/io';
-
-import {
-    CaseStudy,
-    ProjectSection,
-    SidePaneItem,
-} from 'components/WorkDetailsPage';
-
+import { CaseStudy } from 'components/WorkDetailsPage';
+import PageContentWithSidebar from 'components/general/PageContentWithSidebar';
 import Banner from 'components/general/Banner';
 import KeyFigure from 'components/general/KeyFigure';
 
@@ -63,198 +53,167 @@ function WorkPage(props: WorkPageProps) {
                 />
             )}
         >
-            <div className={styles.dashboardDetail}>
-                <img
-                    className={styles.bannerImg}
-                    src={getWorkCoverImage(specificWorkData.id)}
-                    alt="Dashboard"
-                    width={1400}
-                    height={550}
-                />
-                <div className={styles.projectList}>
-                    <div className={styles.projectDetail}>
-                        <SidePaneItem
-                            title="View Projects"
-                            subtitle={(
-                                <a
-                                    href={specificWorkData.projectUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {specificWorkData.projectUrl}
-                                </a>
-                            )}
+            <PageContentWithSidebar
+                previewImageUrl={getWorkCoverImage(specificWorkData.id)}
+                sideBarContent={(
+                    <>
+                        <KeyFigure
+                            label="View Projects"
+                            value={specificWorkData.projectTitle}
+                            valueHref={specificWorkData.projectUrl}
                         />
-                        <SidePaneItem
-                            title="Work Type"
-                            subtitle={getProjectTypeTitle(specificWorkData.projectType)}
+                        <KeyFigure
+                            label="Work Type"
+                            value={getProjectTypeTitle(specificWorkData.projectType)}
                         />
-                        <SidePaneItem
-                            title="Client Domain"
-                            subtitle={specificWorkData.client.domain}
+                        <KeyFigure
+                            label="Client Domain"
+                            value={specificWorkData.client.domain}
                         />
-                    </div>
-                    <div className={styles.projectSection}>
-                        <ProjectSection
-                            title="About the Project"
-                            summary={specificWorkData.summary}
-                        />
-                        <ProjectSection
-                            title="What we did in the project"
-                            summary={(
-                                <div>
-                                    <ol>
-                                        <li
-                                            className={styles.projectDescription}
-                                        >
-                                            {specificWorkData.whatWeDid[0]}
-                                        </li>
-                                        <li
-                                            className={styles.projectDescription}
-                                        >
-                                            {specificWorkData.whatWeDid[1]}
-                                        </li>
-                                        <li
-                                            className={styles.projectDescription}
-                                        >
-                                            {specificWorkData.whatWeDid[2]}
-                                        </li>
-                                        <li
-                                            className={styles.projectDescription}
-                                        >
-                                            {specificWorkData.whatWeDid[3]}
-                                        </li>
-                                    </ol>
-                                    <hr
-                                        className={styles.horizontalRow}
-                                    />
-                                    <div className={styles.quoteDetails}>
-                                        <div className={styles.quote}>
-                                            {/* eslint-disable-next-line max-len */}
-                                            Data Analysis performed by Togglecorp helped us determine better solutions for conflict resolution in Afghanistan
-                                        </div>
-                                        <div className={styles.writer}>
-                                            Adrian, DFS
-                                        </div>
-                                        <div className={styles.testimonial}>
-                                            View Full Testimonial
-                                        </div>
-                                    </div>
-                                    <hr
-                                        className={styles.horizontalRow}
-                                    />
-                                </div>
-                            )}
-                        />
-                        <div className={styles.descriptionList}>
-                            <p className={styles.paragraph}>
-                                {/* eslint-disable-next-line max-len */}
-                                Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
-                            </p>
-                            <p className={styles.paragraph}>
-                                {/* eslint-disable-next-line max-len */}
-                                Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
-                            </p>
-                            <p className={styles.paragraph}>
-                                {/* eslint-disable-next-line max-len */}
-                                Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
-                            </p>
-                        </div>
-                        <div className={styles.deepLogo}>
-                            <img
-                                className={styles.deepImg}
-                                src={deepDescriptionLogo}
-                                alt="Deep"
-                                width={750}
-                                height={500}
-                            />
-                        </div>
-                        <div className={styles.caseStudy}>
-                            Case Study
-                        </div>
-                        <CaseStudy
-                            heading="Use of Qualitative Data Analysis in conflict resolution in low-income cities"
-                            description="Read about the various applications of data analytics and business analytics tools that Tredence uses to provide advanced analytics solutions that drive ..."
-                            link="View Full Case Study"
-                            image={(
-                                <img
-                                    className={styles.caseImg}
-                                    src={modalImage}
-                                    alt="TC"
-                                    width={250}
-                                    height={250}
-                                />
-                            )}
-                        />
-                        <div className={styles.descriptionList}>
-                            <p className={styles.paragraph}>
-                                {/* eslint-disable-next-line max-len */}
-                                Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
-                            </p>
-                            <p className={styles.paragraph}>
-                                {/* eslint-disable-next-line max-len */}
-                                Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
-                            </p>
-                            <p className={styles.paragraph}>
-                                {/* eslint-disable-next-line max-len */}
-                                Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
-                            </p>
-                        </div>
-                        <div className={styles.caseStudy}>
-                            Skills Used
-                        </div>
-                        <div className={styles.reviewSection}>
-                            {specificWorkData.skillsUsed}
-                        </div>
-                        <div className={styles.organisationSection}>
-                            {/* eslint-disable-next-line max-len */}
-                            We have worked with IFRC and other organizations to enhace their technological and analysis capabilities
-                        </div>
-                        <div className={styles.organisationSection}>
-                            Learn how we can help you to enhance yours.
-                        </div>
-                        <Button
-                            name={undefined}
-                            className={styles.freeButton}
-                            variant="primary"
-                            disabled
-                        >
-                            Book a free consultation
-                        </Button>
+                    </>
+                )}
+                nextPageDetails={specificNextPost ? {
+                    url: `/works/${specificNextPost.id}`,
+                    title: specificNextPost.projectTitle,
+                    description: specificNextPost.client.name,
+                } : undefined}
+                prevPageDetails={specificPrevPost ? {
+                    url: `/works/${specificPrevPost.id}`,
+                    title: specificPrevPost.projectTitle,
+                    description: specificPrevPost.client.name,
+                } : undefined}
+            >
+                <div>
+                    <h3>
+                        About the Project
+                    </h3>
+                    <div>
+                        {specificWorkData.summary}
                     </div>
                 </div>
-                <hr
-                    className={styles.horizontalRow}
-                />
-                <div className={styles.routeLinks}>
-                    {specificPrevPost && (
-                        <div className={styles.projectLinks}>
-                            <IoIosArrowRoundBack />
-                            <Link
-                                href={`/works/${specificPrevPost.id}`}
+                <div>
+                    <h3>
+                        What we did in the project
+                    </h3>
+                    <div>
+                        <ol>
+                            <li
+                                className={styles.projectDescription}
                             >
-                                {specificPrevPost.projectTitle}
-                            </Link>
-                            <div className={styles.linkHeader}>
-                                {specificPrevPost.client.name}
+                                {specificWorkData.whatWeDid[0]}
+                            </li>
+                            <li
+                                className={styles.projectDescription}
+                            >
+                                {specificWorkData.whatWeDid[1]}
+                            </li>
+                            <li
+                                className={styles.projectDescription}
+                            >
+                                {specificWorkData.whatWeDid[2]}
+                            </li>
+                            <li
+                                className={styles.projectDescription}
+                            >
+                                {specificWorkData.whatWeDid[3]}
+                            </li>
+                        </ol>
+                        <hr
+                            className={styles.horizontalRow}
+                        />
+                        <div className={styles.quoteDetails}>
+                            <div className={styles.quote}>
+                                {/* eslint-disable-next-line max-len */}
+                                Data Analysis performed by Togglecorp helped us determine better solutions for conflict resolution in Afghanistan
+                            </div>
+                            <div className={styles.writer}>
+                                Adrian, DFS
+                            </div>
+                            <div className={styles.testimonial}>
+                                View Full Testimonial
                             </div>
                         </div>
-                    )}
-                    {specificNextPost && (
-                        <div className={styles.projectLinks}>
-                            <Link
-                                href={`/works/${specificNextPost.id}`}
-                            >
-                                {specificNextPost.projectTitle}
-                            </Link>
-                            <IoIosArrowRoundForward />
-                            <div className={styles.linkHeader}>
-                                {specificNextPost.client.name}
-                            </div>
-                        </div>
-                    )}
+                        <hr
+                            className={styles.horizontalRow}
+                        />
+                    </div>
                 </div>
-            </div>
+                <div className={styles.descriptionList}>
+                    <p>
+                        {/* eslint-disable-next-line max-len */}
+                        Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
+                    </p>
+                    <p>
+                        {/* eslint-disable-next-line max-len */}
+                        Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
+                    </p>
+                    <p>
+                        {/* eslint-disable-next-line max-len */}
+                        Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
+                    </p>
+                </div>
+                <div className={styles.deepLogo}>
+                    <img
+                        className={styles.deepImg}
+                        src={deepDescriptionLogo}
+                        alt="Deep"
+                        width={750}
+                        height={500}
+                    />
+                </div>
+                <div className={styles.caseStudy}>
+                    Case Study
+                </div>
+                <CaseStudy
+                    heading="Use of Qualitative Data Analysis in conflict resolution in low-income cities"
+                    description="Read about the various applications of data analytics and business analytics tools that Tredence uses to provide advanced analytics solutions that drive ..."
+                    link="View Full Case Study"
+                    image={(
+                        <img
+                            className={styles.caseImg}
+                            src={modalImage}
+                            alt="TC"
+                            width={250}
+                            height={250}
+                        />
+                    )}
+                />
+                <div className={styles.descriptionList}>
+                    <p className={styles.paragraph}>
+                        {/* eslint-disable-next-line max-len */}
+                        Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
+                    </p>
+                    <p className={styles.paragraph}>
+                        {/* eslint-disable-next-line max-len */}
+                        Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
+                    </p>
+                    <p className={styles.paragraph}>
+                        {/* eslint-disable-next-line max-len */}
+                        Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
+                    </p>
+                </div>
+                <div className={styles.caseStudy}>
+                    Skills Used
+                </div>
+                <div className={styles.reviewSection}>
+                    {specificWorkData.skillsUsed}
+                </div>
+                <div className={styles.organisationSection}>
+                    {/* eslint-disable-next-line max-len */}
+                    We have worked with IFRC and other organizations to enhace their technological and analysis capabilities
+                </div>
+                <div className={styles.organisationSection}>
+                    Learn how we can help you to enhance yours.
+                </div>
+                <Button
+                    name={undefined}
+                    className={styles.freeButton}
+                    variant="primary"
+                    disabled
+                >
+                    Book a free consultation
+                </Button>
+            </PageContentWithSidebar>
         </Page>
     );
 }

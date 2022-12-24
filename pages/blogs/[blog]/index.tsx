@@ -1,9 +1,4 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-import {
-    IoIosArrowRoundBack,
-    IoIosArrowRoundForward,
-} from 'react-icons/io';
-import Link from 'next/link';
 import staticBlogs, {
     Blog,
     getBlogCoverImage,
@@ -13,6 +8,7 @@ import {
 } from 'components/WorkDetailsPage';
 import Page from 'components/general/Page';
 import Button from 'components/general/Button';
+import PageContentWithSidebar from 'components/general/PageContentWithSidebar';
 
 import Banner from 'components/general/Banner';
 import KeyFigure from 'components/general/KeyFigure';
@@ -55,115 +51,85 @@ function BlogPage(props: BlogPageProps) {
                 />
             )}
         >
-            <div className={styles.deepDashboard}>
-                <img
-                    className={styles.bannerImg}
-                    src={getBlogCoverImage(specificBlogData.id)}
-                    alt="Dashboard"
-                    width={1400}
-                    height={550}
+            <PageContentWithSidebar
+                previewImageUrl={getBlogCoverImage(specificBlogData.id)}
+                prevPageDetails={specificPrevPost ? {
+                    url: `/blogs/${specificPrevPost.id}`,
+                    title: specificPrevPost.blogTitle,
+                    description: specificPrevPost.blogType,
+                } : undefined}
+                nextPageDetails={specificNextPost ? {
+                    url: `/blogs/${specificNextPost.id}`,
+                    title: specificNextPost.blogTitle,
+                    description: specificNextPost.blogType,
+                } : undefined}
+            >
+                <ProjectSection
+                    title="About the Project"
+                    summary={specificBlogData.summary}
                 />
-            </div>
-            <div className={styles.projectList}>
-                <div className={styles.projectSection}>
-                    <ProjectSection
-                        title="About the Project"
-                        summary={specificBlogData.summary}
-                    />
-                    <ProjectSection
-                        title="What we did in the project"
-                        summary={(
-                            <div>
-                                <ol>
-                                    <li
-                                        className={styles.projectDescription}
-                                    >
-                                        {specificBlogData.whatWeDid[0]}
-                                    </li>
-                                    <li
-                                        className={styles.projectDescription}
-                                    >
-                                        {specificBlogData.whatWeDid[1]}
-                                    </li>
-                                    <li
-                                        className={styles.projectDescription}
-                                    >
-                                        {specificBlogData.whatWeDid[2]}
-                                    </li>
-                                    <li
-                                        className={styles.projectDescription}
-                                    >
-                                        {specificBlogData.whatWeDid[3]}
-                                    </li>
-                                    <li
-                                        className={styles.projectDescription}
-                                    >
-                                        {specificBlogData.whatWeDid[4]}
-                                    </li>
-                                </ol>
-                            </div>
-                        )}
-                    />
-                    <div className={styles.descriptionList}>
-                        <p className={styles.paragraph}>
-                            {/* eslint-disable-next-line max-len */}
-                            Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
-                        </p>
-                        <p className={styles.paragraph}>
-                            {/* eslint-disable-next-line max-len */}
-                            Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
-                        </p>
-                        <p className={styles.paragraph}>
-                            {/* eslint-disable-next-line max-len */}
-                            Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
-                        </p>
-                    </div>
-                    <div className={styles.organisationSection}>
+                <ProjectSection
+                    title="What we did in the project"
+                    summary={(
+                        <div>
+                            <ol>
+                                <li
+                                    className={styles.projectDescription}
+                                >
+                                    {specificBlogData.whatWeDid[0]}
+                                </li>
+                                <li
+                                    className={styles.projectDescription}
+                                >
+                                    {specificBlogData.whatWeDid[1]}
+                                </li>
+                                <li
+                                    className={styles.projectDescription}
+                                >
+                                    {specificBlogData.whatWeDid[2]}
+                                </li>
+                                <li
+                                    className={styles.projectDescription}
+                                >
+                                    {specificBlogData.whatWeDid[3]}
+                                </li>
+                                <li
+                                    className={styles.projectDescription}
+                                >
+                                    {specificBlogData.whatWeDid[4]}
+                                </li>
+                            </ol>
+                        </div>
+                    )}
+                />
+                <div className={styles.descriptionList}>
+                    <p className={styles.paragraph}>
                         {/* eslint-disable-next-line max-len */}
-                        We have worked with IFRC and other organizations to enhace their technological and analysis capabilities.
-                        Learn how we can help you to enhance yours.
-                    </div>
-                    <Button
-                        name={undefined}
-                        className={styles.freeButton}
-                        variant="primary"
-                        disabled
-                    >
-                        Book a free consultation
-                    </Button>
+                        Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
+                    </p>
+                    <p className={styles.paragraph}>
+                        {/* eslint-disable-next-line max-len */}
+                        Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
+                    </p>
+                    <p className={styles.paragraph}>
+                        {/* eslint-disable-next-line max-len */}
+                        Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
+                    </p>
                 </div>
-            </div>
-            <hr
-                className={styles.horizontalRow}
-            />
-            <div className={styles.routeLinks}>
-                {specificPrevPost && (
-                    <div className={styles.projectLinks}>
-                        <IoIosArrowRoundBack />
-                        <Link
-                            href={`/blogs/${specificPrevPost.id}`}
-                        >
-                            {specificPrevPost.blogTitle}
-                        </Link>
-                        <div className={styles.linkHeader}>
-                            {specificPrevPost.blogType}
-                        </div>
-                    </div>
-                )}
-                {specificNextPost && (
-                    <div className={styles.projectLinks}>
-                        <Link
-                            href={`/blogs/${specificNextPost.id}`}
-                        >
-                            {specificNextPost.blogTitle}
-                        </Link>
-                        <IoIosArrowRoundForward />
-                        <div className={styles.linkHeader}>
-                            {specificNextPost.blogType}
-                        </div>
-                    </div>
-                )}
-            </div>
+                <div className={styles.organisationSection}>
+                    {/* eslint-disable-next-line max-len */}
+                    We have worked with IFRC and other organizations to enhace their technological and analysis capabilities.
+                    Learn how we can help you to enhance yours.
+                </div>
+                <Button
+                    name={undefined}
+                    className={styles.freeButton}
+                    variant="primary"
+                    disabled
+                >
+                    Book a free consultation
+                </Button>
+            </PageContentWithSidebar>
         </Page>
     );
 }
