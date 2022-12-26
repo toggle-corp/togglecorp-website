@@ -83,7 +83,7 @@ function Consulting() {
                 <BannerWithImage
                     title="Research and Data Analysis"
                     imageUrl={organizationLogo}
-                    description=". We turn these insights into practical solutions for our clients to help them run their businesses more effectively."
+                    description="We turn these insights into practical solutions for our clients to help them run their businesses more effectively."
                     mode="light"
                     stats={(
                         <div className={styles.alsoSee}>
