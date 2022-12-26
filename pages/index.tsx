@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
 import Button from 'components/general/Button';
@@ -64,21 +65,27 @@ function Home() {
                             We assist humanitarian and development agencies help people reliably and efficiently.
                         </div>
                         <div className={styles.tags}>
-                            <div>
+                            <Link
+                                href="/technology"
+                            >
                                 Tech Development
-                            </div>
+                            </Link>
                             <div className={styles.dot}>
                                 •
                             </div>
-                            <div>
+                            <Link
+                                href="/analysis"
+                            >
                                 Research and Analysis
-                            </div>
+                            </Link>
                             <div className={styles.dot}>
                                 •
                             </div>
-                            <div>
+                            <Link
+                                href="/analysis"
+                            >
                                 Consulting
-                            </div>
+                            </Link>
                         </div>
                         <Button
                             className={styles.getStartedButton}
