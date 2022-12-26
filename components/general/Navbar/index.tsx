@@ -72,9 +72,6 @@ function Navbar(props: NavProps) {
                 <NavLink href="/careers">
                     Career
                 </NavLink>
-                <NavLink href="/services">
-                    Service
-                </NavLink>
                 <NavLink href="/about-us">
                     About
                 </NavLink>
