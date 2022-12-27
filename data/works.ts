@@ -1,3 +1,4 @@
+import { mapToList } from '@togglecorp/fujs';
 import workListOne from 'resources/work-list-1.webp';
 import {
     Organization,
@@ -7,6 +8,27 @@ import {
     smtmCapital,
     jips,
 } from './organizations';
+
+const tagsMapping = {
+    'secondary-data-review': 'Secondary Data Review',
+    'data-analysis': 'Data Analysis',
+    'report-writing': 'Report Writing',
+    'monitoring-and-evaluation': 'Monitoring And Evaluation',
+};
+
+export type Tag = keyof typeof tagsMapping;
+
+export const tags = mapToList(
+    tagsMapping,
+    (item, key) => ({
+        key: key as Tag,
+        title: item,
+    }),
+);
+
+export function getTagTitle(key: Tag) {
+    return tagsMapping[key];
+}
 
 export type WorkType = 'research' | 'development' | 'consulting';
 
@@ -20,6 +42,7 @@ export interface Work {
     whatWeDid: string[];
     skillsUsed: string;
     projectUrl: string;
+    tags: Tag[];
 }
 
 const works: Work[] = [
@@ -39,6 +62,7 @@ const works: Work[] = [
         ],
         skillsUsed: 'React on Wordpress, Django, Leaflet',
         projectUrl: 'https://go.ifrc.org/',
+        tags: ['secondary-data-review'],
     },
     {
         id: 'dfid',
@@ -56,6 +80,7 @@ const works: Work[] = [
         ],
         projectUrl: 'https://www.dvs-nepal.org',
         skillsUsed: 'ReactJS, Mapbox, Django',
+        tags: ['data-analysis'],
     },
     {
         id: 'npstocks',
@@ -74,6 +99,7 @@ const works: Work[] = [
         ],
         skillsUsed: 'React Native, Websocket, NodeJS, and Firebase (for authentication and analytics)',
         projectUrl: 'https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks&hl=en&gl=US&pli=1',
+        tags: ['report-writing'],
     },
     {
         id: 'innovation-project',
@@ -90,6 +116,7 @@ const works: Work[] = [
         ],
         skillsUsed: 'Docker, Docker Swarm, Flowkit, Airflow',
         projectUrl: 'https://www.jips.org',
+        tags: ['report-writing'],
     },
 ];
 

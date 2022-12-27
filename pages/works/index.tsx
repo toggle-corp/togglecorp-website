@@ -115,7 +115,7 @@ function WorksPage(props: WorksPageProps) {
                             title={project.projectTitle}
                             description={project.summary}
                             href={`/works/${project.id}`}
-                            tag={getProjectTypeTitle(project.projectType)}
+                            tags={[getProjectTypeTitle(project.projectType)]}
                         />
                     ))}
                 </div>

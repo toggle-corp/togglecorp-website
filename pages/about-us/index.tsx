@@ -98,7 +98,6 @@ function AboutUs() {
                             key={socialResponsibility.id}
                             imageSrc={socialResponsibility.image}
                             description={socialResponsibility.caption}
-                            tag="Learn More"
                         />
                     ))}
                 </div>

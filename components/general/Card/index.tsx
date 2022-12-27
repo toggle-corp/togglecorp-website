@@ -11,7 +11,7 @@ interface Props {
     imageSrc?: string;
     title?: string;
     description?: string;
-    tag?: string;
+    tags?: string[];
 }
 
 function Card(props: Props) {
@@ -21,7 +21,7 @@ function Card(props: Props) {
         imageSrc,
         title,
         description,
-        tag,
+        tags,
         href,
     } = props;
 
@@ -46,9 +46,9 @@ function Card(props: Props) {
                         {description}
                     </div>
                 )}
-                {tag && (
+                {tags && tags.length > 0 && (
                     <div className={styles.tag}>
-                        {tag}
+                        {tags.join(', ')}
                     </div>
                 )}
             </div>
