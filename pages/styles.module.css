@@ -1,6 +1,8 @@
 .home {
     .banner {
+        /* TODO: replace with image */
         background-color: #272727;
+
         color: var(--color-text-on-dark);
 
         .content {

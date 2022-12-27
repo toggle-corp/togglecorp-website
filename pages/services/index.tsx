@@ -19,6 +19,12 @@ import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/planning.png';
 import monitoringLogo from 'resources/monitoring.png';
 import workListOne from 'resources/work-list-1.webp';
+import {
+    keySelector,
+    titleSelector,
+    descriptionSelector,
+    imageSelector,
+} from 'utils/common';
 
 import styles from './styles.module.css';
 
@@ -157,10 +163,10 @@ function Service() {
             >
                 <AccordianWithImage
                     data={approaches}
-                    keySelector={(a) => a.key}
-                    labelSelector={(a) => a.title}
-                    descriptionSelector={(a) => a.description}
-                    imageUrlSelector={(a) => a.image}
+                    keySelector={keySelector}
+                    labelSelector={titleSelector}
+                    descriptionSelector={descriptionSelector}
+                    imageUrlSelector={imageSelector}
                 />
             </Section>
             <Section

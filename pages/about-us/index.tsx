@@ -13,6 +13,12 @@ import Container from 'components/general/Container';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
+import {
+    keySelector,
+    titleSelector,
+    descriptionSelector,
+    imageSelector,
+} from 'utils/common';
 
 import organizationLogo from 'resources/organization.webp';
 
@@ -61,10 +67,10 @@ function AboutUs() {
             >
                 <AccordionWithImage
                     data={cultures}
-                    keySelector={(c) => c.key}
-                    labelSelector={(c) => c.title}
-                    descriptionSelector={(c) => c.description}
-                    imageUrlSelector={(c) => c.image}
+                    keySelector={keySelector}
+                    labelSelector={titleSelector}
+                    descriptionSelector={descriptionSelector}
+                    imageUrlSelector={imageSelector}
                 />
             </Section>
             <Section
