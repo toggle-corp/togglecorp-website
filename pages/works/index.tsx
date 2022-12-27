@@ -6,12 +6,10 @@ import { GetStaticProps } from 'next';
 import { IoEllipseSharp } from 'react-icons/io5';
 import { _cs, unique } from '@togglecorp/fujs';
 
-import staticWorks, {
-    getProjectTypeTitle,
-    getWorkCoverImage,
-    Work,
-    WorkType,
-} from 'data/works';
+import { ProjectType, getProjectType } from 'data/projectTypes';
+import { getProjectCoverImage } from 'data/projectImages';
+import staticProjects, { Project } from 'data/projects';
+
 import Button from 'components/general/Button';
 import Page from 'components/general/Page';
 import Card from 'components/general/Card';
@@ -19,44 +17,43 @@ import Container from 'components/general/Container';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
 
-// import WorkDetailListPage from 'components/WorkDetailsListPage';
-
 import organizationLogo from 'resources/organization.webp';
 
 import styles from './styles.module.css';
 
-export const workFilterOptions: (WorkType | 'all')[] = [
+// FIXME: get this from staticProps
+export const projectTypeOptions: (ProjectType | 'all')[] = [
     'all',
     'research',
     'development',
     'consulting',
 ];
-interface WorksPageProps {
-    works: Work[];
+interface Props {
+    projects: Project[];
 }
 
-function WorksPage(props: WorksPageProps) {
+function WorksPage(props: Props) {
     const {
-        works,
+        projects,
     } = props;
 
     const [
         filteredProjectType,
         setFilteredProjectType,
-    ] = useState<WorkType | 'all'>('all');
+    ] = useState<ProjectType | 'all'>('all');
 
-    const totalProjects = works.length;
+    const totalProjects = projects.length;
 
-    const totalOrganizations = unique(works.map((work) => work.client.id)).length;
+    const totalOrganizations = unique(projects.map((project) => project.client)).length;
 
     const filteredProjects = useMemo(() => {
         if (filteredProjectType === 'all') {
-            return works;
+            return projects;
         }
-        return works.filter((work) => (
-            work.projectType === filteredProjectType
+        return projects.filter((project) => (
+            project.projectType === filteredProjectType
         ));
-    }, [works, filteredProjectType]);
+    }, [projects, filteredProjectType]);
 
     return (
         <Page
@@ -84,7 +81,7 @@ function WorksPage(props: WorksPageProps) {
         >
             <Container contentClassName={styles.workContent}>
                 <div className={styles.tabs}>
-                    {workFilterOptions.map((type, i) => (
+                    {projectTypeOptions.map((type, i) => (
                         <React.Fragment
                             key={type}
                         >
@@ -97,9 +94,9 @@ function WorksPage(props: WorksPageProps) {
                                 name={type}
                                 onClick={setFilteredProjectType}
                             >
-                                {type === 'all' ? 'All Works' : getProjectTypeTitle(type)}
+                                {type === 'all' ? 'All Works' : getProjectType(type).title}
                             </Button>
-                            {i < (workFilterOptions.length - 1) && (
+                            {i < (projectTypeOptions.length - 1) && (
                                 <IoEllipseSharp className={styles.dot} />
                             )}
                         </React.Fragment>
@@ -111,11 +108,11 @@ function WorksPage(props: WorksPageProps) {
                         <Card
                             key={project.id}
                             className={styles.project}
-                            imageSrc={getWorkCoverImage(project.id)}
+                            imageSrc={getProjectCoverImage(project.id)}
                             title={project.projectTitle}
                             description={project.summary}
                             href={`/works/${project.id}`}
-                            tags={[getProjectTypeTitle(project.projectType)]}
+                            tags={[getProjectType(project.projectType).title]}
                         />
                     ))}
                 </div>
@@ -124,9 +121,9 @@ function WorksPage(props: WorksPageProps) {
     );
 }
 
-export const getStaticProps: GetStaticProps<WorksPageProps> = async () => ({
+export const getStaticProps: GetStaticProps<Props> = async () => ({
     props: {
-        works: staticWorks,
+        projects: staticProjects,
     },
 });
 

@@ -1,15 +1,15 @@
-import CareerItem from 'components/careers/CareerItem';
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Header from 'components/general/Header';
 import Container from 'components/general/Container';
-
 import organizationLogo from 'resources/organization.webp';
-import vacancies from 'data/vacancies';
+
+import CareerItem from 'components/careers/CareerItem';
+import vacancies from 'components/careers/vacancies';
 
 import styles from './styles.module.css';
 
-function Career() {
+function CareerPage() {
     return (
         <Page
             pageTitle="Careers"
@@ -50,4 +50,4 @@ function Career() {
     );
 }
 
-export default Career;
+export default CareerPage;

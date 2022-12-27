@@ -14,13 +14,10 @@ import Button from 'components/general/Button';
 import BannerWithImage from 'components/general/BannerWithImage';
 import AccordianWithImage from 'components/general/AccordionWithImage';
 
-import staticWorks, {
-    Work,
-    Tag,
-    getTagTitle,
-} from 'data/works';
+import { TagId, getTag } from 'data/tags';
+import staticProjects, { Project } from 'data/projects';
+import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 
-import generalServices, { researchService } from 'data/services';
 import organizationListLogo from 'resources/organization-list.webp';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/planning.png';
@@ -35,6 +32,8 @@ import {
 
 import styles from './styles.module.css';
 
+const developmentProjectType = getProjectType('development');
+
 interface Approach {
     key: string;
     title: string;
@@ -45,66 +44,68 @@ interface Approach {
 const approaches: Approach[] = [
     {
         key: 'step1',
-        title: 'Step 1: Data Extraction',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work. ',
+        title: 'Step 1: Design doc with user stories',
+        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step2',
-        title: 'Step 2: Data Segregation',
-        description: 'Data collected are then classified and normalized into homogenous information for easy accessibility. An analytical framework, if required, is set in DEEP where our research and analysis team meticulously disaggregates it, finding its suitable fit within the framework. This process is called tagging.',
+        title: 'Step 2: Low fidelity mockups',
+        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step3',
-        title: 'Step 3: Review and Analysis',
-        description: 'This is the most delicate and intricate part of our work where we sift through massive amounts of data to reveal and interpret the information plausibly. Reliability and validity of data are ensured during the analysis by triangulation and usage of multiple sources of data as evidence for the analytical statements. In addition, frequent coordination with the experts is done to ensure the relevance and quality of the writing.',
+        title: 'Step 3: Creation of milestones',
+        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step4',
-        title: 'Step 4: Monitoring and Evaluation',
-        description: 'All the reports acquired after the secondary data review goes through effective monitoring to have internal and external accountability of the resource used and the results obtained. We have well-established internal measures and processes to ensure data validity. Our highly qualified and dedicated monitoring, quality control, and evaluation team follow standard guidelines in each step of their work to maintain transparency and accountability.',
+        title: 'Step 4: Iterate with continuous feedback from client',
+        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step5',
-        title: 'Step 5: Write-Up',
-        description: 'Finally, we draft the findings from the analysis to make the information more digestible. We provide both draft and analyzed data to identify crucial information from the supplementary. This draft is sent to the expert groups and clients for final review and publication.',
+        title: 'Step 5: Delivery and support',
+        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
 ];
 
 interface Props {
-    works: Work[],
-    tags: (Tag | 'all')[];
+    projects: Project[],
+    tags: (TagId | 'all')[];
 }
 
-function Analysis(props: Props) {
+function DevelopmentPage(props: Props) {
     const {
-        works,
+        projects,
         tags,
     } = props;
 
-    const [filteredServiceType, setFilteredServiceType] = useState<Tag | 'all'>('all');
+    const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>('all');
 
     const filteredProjects = useMemo(() => {
         if (filteredServiceType === 'all') {
-            return works;
+            return projects;
         }
-        return works.filter((service) => service.tags.includes(filteredServiceType));
-    }, [works, filteredServiceType]);
+        return projects.filter((service) => service.tags.includes(filteredServiceType));
+    }, [projects, filteredServiceType]);
 
-    const otherServices = generalServices.filter((service) => service.key !== researchService.key);
+    const otherServices = generalServices.filter((service) => (
+        service.key !== developmentProjectType.key
+    ));
 
     return (
         <Page
-            pageTitle={researchService.title}
+            pageTitle={developmentProjectType.title}
             banner={(
                 <BannerWithImage
-                    title={researchService.title}
-                    imageUrl={researchService.image}
-                    description={researchService.description}
+                    title={developmentProjectType.title}
+                    imageUrl={developmentProjectType.image}
+                    description={developmentProjectType.description}
                     mode="light"
                     stats={(
                         <div className={styles.alsoSee}>
@@ -169,34 +170,34 @@ function Analysis(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="We research, analyse, interpret and present data related to humanitarian crises"
+                description="Togglecorp is proud to offer technical expertise with a wide range of high level of tech stack such as:"
             >
                 <div className={styles.expertiseList}>
                     <Card
                         imageSrc={planningLogo}
-                        description="Research, analyze, interpret and present data related to humanitarian crises"
+                        description="Application Development: Javascript, Typescript, ReactJS, GraphQL Python, Django React Native, Expo"
                         variant="mini"
                     />
                     <Card
                         imageSrc={monitoringLogo}
-                        description="Research, analyze, interpret and present data related to humanitarian crises"
+                        description="Machine Learning Technologies: Python"
                         variant="mini"
                     />
                     <Card
                         imageSrc={planningLogo}
-                        description="Conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response"
+                        description="Visualization Technologies: MapboxGL, D3.js"
                         variant="mini"
                     />
                     <Card
-                        imageSrc={planningLogo}
-                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
+                        imageSrc={monitoringLogo}
+                        description="Build and Deployment: AWS, Azure"
                         variant="mini"
                     />
                 </div>
             </Section>
             <Section
                 title="Our Approach"
-                description="We believe in effective data sharing and information management during any humanitarian crisis. Access to data is just the beginning."
+                description="We always believe in our client’s products. So, to do that, all the work we do usually begins with an in depth requirement analysis. After going back and forth on our understanding of the project, we’ll finalize the doc and work on the next steps."
             >
                 <AccordianWithImage
                     data={approaches}
@@ -219,7 +220,7 @@ function Analysis(props: Props) {
                                 name={tag}
                                 onClick={setFilteredServiceType}
                             >
-                                {tag === 'all' ? 'All' : getTagTitle(tag)}
+                                {tag === 'all' ? 'All' : getTag(tag)}
                             </Button>
                         ))}
                     </div>
@@ -231,7 +232,7 @@ function Analysis(props: Props) {
                                 imageSrc={workListOne}
                                 title={project.projectTitle}
                                 description={project.summary}
-                                tags={project.tags.map(getTagTitle)}
+                                tags={project.tags.map(getTag)}
                             />
                         ))}
                     </div>
@@ -252,14 +253,16 @@ function Analysis(props: Props) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-    const researchWorks = staticWorks.filter((work) => work.projectType === researchService.key);
-    const researchTags = unique(researchWorks.flatMap((item) => item.tags));
+    const filteredProjects = staticProjects.filter((project) => (
+        project.projectType === developmentProjectType.key
+    ));
+    const usedTags = unique(filteredProjects.flatMap((item) => item.tags));
 
     const props: Props = {
-        works: researchWorks,
-        tags: ['all', ...researchTags],
+        projects: filteredProjects,
+        tags: ['all', ...usedTags],
     };
     return { props };
 };
 
-export default Analysis;
+export default DevelopmentPage;

@@ -36,7 +36,7 @@ function EmployeePage(props: EmployeePageProps) {
                 name={specificEmployeeData.name}
                 position={specificEmployeeData.position}
                 description={specificEmployeeData.description}
-                date={specificEmployeeData.date}
+                date={specificEmployeeData.joinedAt}
                 linkedInLink={specificEmployeeData.linkedInLink}
                 instagramLink={specificEmployeeData.instagramLink}
             />

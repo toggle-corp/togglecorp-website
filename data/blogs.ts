@@ -1,5 +1,7 @@
 import blogListOne from 'resources/work-list-1.webp';
 
+// FIXME: need to refactor
+
 export type BlogType = 'research' | 'libraries' | 'client' | 'case' | 'team';
 
 export interface Blog {
