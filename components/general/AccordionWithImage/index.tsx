@@ -57,7 +57,7 @@ function AccordionWithImage<D>(props: Props<D>) {
                             >
                                 {labelSelector(d)}
                             </Button>
-                            {isDefined(activeItem) && key === keySelector(activeItem) && (
+                            {isDefined(activeItem) && key === activeKey && (
                                 <>
                                     <img
                                         className={styles.imageInternal}
