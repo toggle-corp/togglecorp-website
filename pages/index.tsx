@@ -5,45 +5,26 @@ import Button from 'components/general/Button';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 
+import services from 'data/services';
+
 import workListOne from 'resources/work-list-1.webp';
 import clientsIcon from 'resources/tc-clients.webp';
-import researchImage from 'resources/research.png';
-import developmentImage from 'resources/development.png';
-import consultationImage from 'resources/consultation.png';
 
 import styles from './styles.module.css';
 
-const services = [
-    {
-        image: researchImage,
-        title: 'Research and Data Analysis',
-        description: 'The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees.',
-    },
-    {
-        image: developmentImage,
-        title: 'Software Development',
-        description: 'The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees.',
-    },
-    {
-        image: consultationImage,
-        title: 'Consultation',
-        description: 'The project is focused on monitoring Turkey’s refugee crisis and the refugee influx in Turkey which constitute mostly Syrian refugees.',
-    },
-];
-
 const recentWorks = [
     {
-        image: researchImage,
+        image: workListOne,
         title: 'Refugee Situational Analysis',
         description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics.',
     },
     {
-        image: researchImage,
+        image: workListOne,
         title: 'Post Distribution Monitoring (PDM) of BHAKARI Program by Mercy Corps',
         description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics.',
     },
     {
-        image: researchImage,
+        image: workListOne,
         title: 'Refugee Situational Analysis',
         description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics.',
     },
@@ -65,27 +46,20 @@ function Home() {
                             We assist humanitarian and development agencies help people reliably and efficiently.
                         </div>
                         <div className={styles.tags}>
-                            <Link
-                                href="/technology"
-                            >
-                                Tech Development
-                            </Link>
-                            <div className={styles.dot}>
-                                •
-                            </div>
-                            <Link
-                                href="/analysis"
-                            >
-                                Research and Analysis
-                            </Link>
-                            <div className={styles.dot}>
-                                •
-                            </div>
-                            <Link
-                                href="/analysis"
-                            >
-                                Consulting
-                            </Link>
+                            {services.map((service, i) => (
+                                <>
+                                    <Link
+                                        href={service.link}
+                                    >
+                                        {service.title}
+                                    </Link>
+                                    {i < services.length - 1 && (
+                                        <div className={styles.dot}>
+                                            •
+                                        </div>
+                                    )}
+                                </>
+                            ))}
                         </div>
                         <Button
                             className={styles.getStartedButton}
@@ -151,6 +125,7 @@ function Home() {
                     {services.map((service) => (
                         <Card
                             imageSrc={service.image}
+                            href={service.link}
                             title={service.title}
                             description={service.description}
                         />
