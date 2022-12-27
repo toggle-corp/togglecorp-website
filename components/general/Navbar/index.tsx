@@ -69,9 +69,6 @@ function Navbar(props: NavProps) {
                 <NavLink href="/blogs">
                     Blog
                 </NavLink>
-                <NavLink href="/employees">
-                    Employee
-                </NavLink>
                 <NavLink href="/careers">
                     Career
                 </NavLink>

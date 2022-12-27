@@ -155,6 +155,11 @@ function Service() {
                         description="We conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response"
                         variant="mini"
                     />
+                    <Card
+                        imageSrc={planningLogo}
+                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
+                        variant="mini"
+                    />
                 </div>
             </Section>
             <Section

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-large);
-    border-bottom: 1px solid var(--color-border-light);
+    border-bottom: var(--width-separator-thin) solid var(--color-border-light);
     padding: var(--spacing-medium) 0;
     color: var(--color-black);
 

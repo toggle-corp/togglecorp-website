@@ -25,6 +25,8 @@
 
     /* border */
     --color-border-light: #e5e5e5; /* default */
+    --color-border: rgba(0, 0, 0, .05);
+    --color-separator: rgba(0, 0, 0, .05);
 
     --width-content-max: 72rem;
 
@@ -58,6 +60,8 @@
     --radius-card: 0.5rem;
 
     --height-logo: 1.5rem;
+
+    --width-separator-thin: 1px;
 
     @media screen and (max-width: 900px) {
         --font-size-heading-extra-small: 1rem; /* h4 */

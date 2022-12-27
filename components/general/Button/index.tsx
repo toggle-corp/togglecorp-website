@@ -4,7 +4,7 @@ import { _cs } from '@togglecorp/fujs';
 import styles from './styles.module.css';
 
 export type ButtonVariant = (
-    'primary' | 'default' | 'outline' | 'outline-active' | 'tab'
+    'primary' | 'default' | 'outline' | 'outline-active' | 'tab' | 'transparent'
 );
 
 type ButtonProps<N> = {
@@ -42,6 +42,7 @@ export function useButtonFeatures(
         variant === 'tab' && styles.tab,
         variant === 'outline' && styles.outline,
         variant === 'outline-active' && styles.outlineActive,
+        variant === 'transparent' && styles.transparent,
     );
 
     const buttonChildren = (

@@ -4,6 +4,7 @@ import {
     isDefined,
 } from '@togglecorp/fujs';
 
+import Button from 'components/general/Button';
 import halfTogglecorpLogo from 'resources/half-tc-icon.png';
 import styles from './styles.module.css';
 
@@ -38,21 +39,24 @@ function AccordionWithImage<D>(props: Props<D>) {
 
                     return (
                         <div
-                            role="presentation"
                             key={key}
                             className={styles.item}
-                            onClick={() => setActiveItem(d)}
                         >
-                            <div className={styles.titleRow}>
-                                <img
-                                    className={styles.halfLogo}
-                                    src={halfTogglecorpLogo}
-                                    alt="tc logo"
-                                />
-                                <div className={styles.label}>
-                                    {labelSelector(d)}
-                                </div>
-                            </div>
+                            <Button
+                                className={styles.titleRow}
+                                name={d}
+                                variant="transparent"
+                                onClick={setActiveItem}
+                                icons={(
+                                    <img
+                                        className={styles.halfLogo}
+                                        src={halfTogglecorpLogo}
+                                        alt="tc logo"
+                                    />
+                                )}
+                            >
+                                {labelSelector(d)}
+                            </Button>
                             {isDefined(activeItem) && key === keySelector(activeItem) && (
                                 <>
                                     <img

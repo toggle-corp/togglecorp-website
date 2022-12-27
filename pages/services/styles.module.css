@@ -23,15 +23,20 @@
 
     .expertiseList {
         display: flex;
+        flex-wrap: wrap;
         gap: var(--spacing-large);
 
         >* {
-            flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
+            flex-basis: calc(100% / 3 - var(--spacing-large) / 1.5);
+            flex-grow: 1;
+            min-width: 20rem;
+            max-width: calc(50% - var(--spacing-large));
         }
 
         @media screen and (max-width: 900px) {
             >* {
                 flex-basis: 100%;
+                max-width: unset;
             }
         }
     }

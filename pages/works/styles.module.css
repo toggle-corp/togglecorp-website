@@ -19,7 +19,7 @@
         }
 
         .horizontalRow {
-            border-bottom: 1px solid transparent;
+            border-bottom: var(--width-separator-thin) solid transparent;
             border-color: var(--color-border-light);
         }
 
@@ -49,10 +49,10 @@
         .projectList {
             display: flex;
             flex-wrap: wrap;
-            gap: var(--spacing-medium);
+            gap: var(--spacing-large);
 
             .project {
-                flex-basis: calc(50% - var(--spacing-medium));
+                flex-basis: calc(50% - var(--spacing-large));
 
                 @media screen and (max-width: 900px) {
                     flex-basis: 100%;

@@ -1,28 +1,22 @@
 .accordion {
     display: flex;
-    position: relative;
-    z-index: 0;
     gap: var(--spacing-super-large);
 
     .itemList {
         align-self: center;
-        z-index: 1;
 
         .item {
             display: flex;
             flex-direction: column;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: var(--width-separator-thin) solid rgba(0, 0, 0, 0.05);
             padding: var(--spacing-medium) 0;
             gap: var(--spacing-medium);
 
             .titleRow {
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                width: 100%;
-                gap: var(--spacing-medium);
+                font-size: var(--font-size-large);
 
                 .halfLogo {
+                    filter: saturate(0%);
                     height: var(--font-size-heading-small);
                 }
 
@@ -51,7 +45,6 @@
 
     .image {
         flex-shrink: 0;
-        z-index: 1;
         margin-top: var(--spacing-extra-large);
         width: 24rem;
         height: 30rem;

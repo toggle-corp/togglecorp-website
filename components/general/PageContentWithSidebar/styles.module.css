@@ -37,14 +37,14 @@
         }
 
         .divider {
-            border-color: rgba(0, 0, 0, .05);
+            border-color: var(--color-separator);
             width: 100%;
         }
 
         .prevNextLinks {
             display: flex;
-            gap: var(--spacing-medium);
             justify-content: space-between;
+            gap: var(--spacing-medium);
 
             .link {
                 display: flex;
@@ -52,6 +52,7 @@
                 gap: var(--spacing-medium);
 
                 .icon {
+                    flex-shrink: 0;
                     font-size: var(--font-size-extra-large);
                 }
 
