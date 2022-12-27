@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
@@ -38,11 +36,7 @@ function Contact() {
                 />
             )}
         >
-            <Head>
-                <title>
-                    Contact
-                </title>
-            </Head>
+            <div />
         </Page>
     );
 }

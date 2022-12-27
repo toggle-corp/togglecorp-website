@@ -69,9 +69,6 @@ function Navbar(props: NavProps) {
                 <NavLink href="/blogs">
                     Blog
                 </NavLink>
-                <NavLink href="/employees">
-                    Employee
-                </NavLink>
                 <NavLink href="/careers">
                     Career
                 </NavLink>
@@ -82,17 +79,12 @@ function Navbar(props: NavProps) {
                     About
                 </NavLink>
             </div>
-            <Link
+            <NavLink
                 href="/contact-us"
-                passHref
+                className={styles.contactLink}
             >
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a
-                    className={styles.contactLink}
-                >
-                    Contact Us
-                </a>
-            </Link>
+                Contact Us
+            </NavLink>
         </Container>
     );
 }

@@ -1,6 +1,10 @@
 .navbar {
     background-color: var(--color-background);
-    padding: var(--spacing-large);
+    padding: var(--spacing-large) var(--spacing-super-large);
+
+    @media screen and (max-width: 900px) {
+        padding: var(--spacing-large);
+    }
 
     .content {
         display: flex;
@@ -9,6 +13,7 @@
         gap: var(--spacing-extra-large);
 
         .logo {
+            cursor: pointer;
             height: 32px;
         }
 

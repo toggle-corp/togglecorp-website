@@ -1,9 +1,13 @@
 .container {
-    padding: var(--spacing-large);
+    padding: var(--spacing-super-large);
 
     .content {
         margin: 0 auto;
         width: 100%;
         max-width: var(--width-content-max);
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: var(--spacing-super-large) var(--spacing-large);
     }
 }

@@ -4,7 +4,6 @@ import Head from 'next/head';
 
 import Navbar from 'components/general/Navbar';
 import Footer from 'components/general/Footer';
-import Container from 'components/general/Container';
 
 import styles from './styles.module.css';
 
@@ -13,6 +12,7 @@ interface Props {
     children: React.ReactNode;
     banner?: React.ReactNode;
     pageTitle: string;
+    mainContentClassName?: string;
 }
 
 function Page(props: Props) {
@@ -21,6 +21,7 @@ function Page(props: Props) {
         children,
         banner,
         pageTitle = 'Togglecorp',
+        mainContentClassName,
     } = props;
 
     return (
@@ -32,9 +33,9 @@ function Page(props: Props) {
             </Head>
             <Navbar />
             {banner}
-            <Container className={styles.mainContent}>
+            <div className={_cs(styles.mainContent, mainContentClassName)}>
                 {children}
-            </Container>
+            </div>
             <Footer />
         </div>
     );

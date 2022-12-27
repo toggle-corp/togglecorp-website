@@ -1,161 +1,61 @@
-.workList {
-    .organisationImage{
-        width: 100%;
-        @media screen and (max-width: 1300px) {
-            margin: calc(var(--spacing-super-small)*4) var(--spacing-super-small) 0 calc(var(--spacing-super-small)*2);
-            height: 26rem;
+.socialList,
+.galleryList {
+    display: flex;
+    gap: var(--spacing-large);
+    flex-wrap: wrap;
+
+    >* {
+        flex-basis: calc(50% - var(--spacing-large));
+
+        @media screen and (max-width: 900px) {
+            flex-basis: 100%;
         }
     }
-}
-.ourStory {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-super-small);
-    margin-top : calc(var(--spacing-super-small)*15);
-    line-height: 1.5;
 
-    .ourStoryHeading {
-        color: var(--color-primary);
-        font-size: var(--font-size-large);
-    }
-    .ourStorySubHeading {
-        margin-top: var(--spacing-super-small);
-        color: var(--color-text-dark);
-        font-size: var(--font-size-large);
-    }
-    .ourStoryDescription {
-        width: 30%;
-    }
 }
+
 .ourTeam {
-    margin-top: calc(var(--spacing-super-small)*7);
     background-color: var(--color-background-light);
 
-    .teamAtToggleCorp {
+    .activityList {
         display: flex;
-        flex-direction: column;
-    
-        .teamToggleHeading {
-            color: var(--color-primary);
-            font-size: var(--font-size-large);
-        }
-        .teamToggleCorpSubHeading{
-            margin-top: var(--spacing-super-small);
-            color: var(--color-text-dark);
-            font-size: var(--font-size-large);
-        }
-    }
-    .expertiseDetails {
-        display: flex;
-    }
-}
-.approach {
-    .descriptionHeading {
-        display: flex;
-        margin: var(--spacing-super-small) var(--spacing-super-small) var(--spacing-super-small) 0;
-        color: var(--color-text);
-        font-size: var(--font-size-large);
-        filter: grayscale(100%);
-    
-        &:active, &:hover {
-            filter: none;
-        }
-    }
-    .approachDetailDescription {
-        margin: var(--spacing-super-small);
-        font-size: var(--font-size-medium);
-    }
-}
-    
-.horizontalRow {
-    border: 0 none;
-    background-color: var(--color-border-light);
-    height: 1px;
-}
-    
-.lifeAtToggleCorp {
-    display: flex;
-    flex-direction: column;
-    /* margin-top: calc(var(--spacing-super-small)*5); */
+        gap: var(--spacing-medium);
+        flex-wrap: wrap;
 
-    .lifeToggleHeading {
+        >* {
+            flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
+            flex-grow: 1;
+            min-width: 20rem;
+            max-width: calc(50% - var(--spacing-medium) / 2);
+        }
+
+        @media screen and (max-width: 900px) {
+            >* {
+                flex-basis: 100%;
+                min-width: unset;
+                max-width: unset;
+            }
+        }
+    }
+}
+
+.careerSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    min-height: 16rem;
+
+    .careerTitle {
         color: var(--color-primary);
         font-size: var(--font-size-large);
     }
-    .lifeToggleCorpSubHeading{
-        margin-top: var(--spacing-super-small);
-        color: var(--color-text-dark);
-        font-size: var(--font-size-large);
-    }
-}
 
-.lifeToggleCorp {
-    display: flex;
-
-    .lifeToggleCorpImg{
-        &:hover {
-            transform: scale(1.03);
-            transition: all 200ms ease;
-        }
-    }
-}
-
-.socialList {
-    display: flex;
-
-    .socialListImg{
-        width: 100%;
-    }
-}
-    
-.careerAtToggleCorp {
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-    margin: calc(var(--spacing-super-small)*10);
-
-    .careerToggleHeading {
-        color: var(--color-primary);
-        font-size: var(--font-size-large);
-    }
-    .careerToggleCorpSubHeading{
-        margin: calc(var(--spacing-super-small)*2);
+    .careerDescription {
+        max-width: 48rem;
         text-align: center;
-        color: var(--color-text-dark);
+        color: var(--color-secondary);
         font-size: var(--font-size-large);
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .ourStory {
-        margin-top: calc(var(--spacing-super-small)*25);
-        
-        .ourStoryDescription {
-            width: 90%;
-        }
-    }
-    .ourTeam {
-        margin-top: calc(var(--spacing-super-small)*5);
-        .expertiseDetails {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    .lifeToggleCorp {
-        display: flex;
-        flex-direction: column;
-
-        .lifeToggleCorpImg{
-            width: auto;
-        }
-    }
-    .socialList {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        max-width: 100%;
-    }
-    .careerAtToggleCorp {
-        margin:var(--spacing-super-small);
     }
 }

@@ -2,23 +2,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     background-color: var(--color-header-dark);
-    padding: var(--spacing-small);
-    gap: var(--spacing-medium);
-
-    @media screen and (max-width: 1200px) {
-        margin: 0;
-    }
+    padding: var(--spacing-medium);
+    height: 100vh;
+    gap: var(--spacing-super-large);
 
     .logo {
-        height: 32px;
+        height: 3rem;
     }
 
     .card {
-        max-width: 720px;
+        width: 100%;
+        max-width: 50rem;
     }
 
-    .toggleLink {
-        display: flex;
+    .visitWebsiteLink {
+        color: var(--color-primary);
     }
 }

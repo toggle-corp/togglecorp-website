@@ -2,6 +2,6 @@
     .keyFigures {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--spacing-large);
+        gap: var(--spacing-super-large);
     }
 }

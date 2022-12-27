@@ -17,10 +17,14 @@ function CareerItem(props: CareerItemProps) {
 
     return (
         <div className={styles.careerSection}>
-            {position}
-            <div className={styles.applySection}>
+            <div className={styles.title}>
+                {position}
+            </div>
+            <div className={styles.type}>
                 {vacancy}
-                <div className={styles.applyButtons}>
+            </div>
+            <div className={styles.actions}>
+                <div className={styles.apply}>
                     {link}
                 </div>
             </div>

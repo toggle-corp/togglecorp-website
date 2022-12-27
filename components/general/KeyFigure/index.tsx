@@ -1,5 +1,6 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
+import Link from 'next/link';
 
 import styles from './styles.module.css';
 
@@ -7,20 +8,28 @@ interface Props {
     className?: string;
     label?: string;
     value?: number | string;
+    valueHref?: string;
 }
 
 function KeyFigure(props: Props) {
     const {
         className,
         label,
-        value,
+        value: valueFromProps,
+        valueHref,
     } = props;
+
+    const value = valueHref ? (
+        <Link href={valueHref}>
+            {valueFromProps}
+        </Link>
+    ) : valueFromProps;
 
     return (
         <div
             className={_cs(
                 styles.keyFigure,
-                typeof value === 'string' && styles.stringValue,
+                typeof valueFromProps === 'string' && styles.stringValue,
                 className,
             )}
         >

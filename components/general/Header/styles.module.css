@@ -10,6 +10,6 @@
 
     .description {
         color: var(--color-secondary);
-        font-size: var(--font-size-key-figure-value);
+        font-size: var(--font-size-extra-large);
     }
 }
