@@ -1,5 +1,7 @@
 import workListOne from 'resources/work-list-1.webp';
 
+// FIXME: move this to about-us
+
 interface SocialResponsibility {
     id: string;
     image: string;

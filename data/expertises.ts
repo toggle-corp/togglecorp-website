@@ -1,6 +1,8 @@
 import planningLogo from 'resources/planning.png';
 import monitoringLogo from 'resources/monitoring.png';
 
+// FIXME: move this to about-us
+
 export interface Expertise {
     key: string;
     title: string;

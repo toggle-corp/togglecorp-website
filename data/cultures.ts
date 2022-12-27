@@ -10,6 +10,8 @@ import team from 'resources/9-take-care-of-each-other.webp';
 import serve from 'resources/11-serve-the-community.webp';
 import kind from 'resources/10-kind.webp';
 
+// FIXME: move this to about-us
+
 interface Culture {
     key: string;
     title: string;

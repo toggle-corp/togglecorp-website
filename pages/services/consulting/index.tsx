@@ -25,37 +25,25 @@ import styles from './styles.module.css';
 const approaches = [
     {
         key: 'step1',
-        title: 'Step 1: Design doc with user stories',
+        title: 'Step 1: Data Extraction',
         description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step2',
-        title: 'Step 2: Low fidelity mockups',
+        title: 'Step 2: Data Segregation',
         description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step3',
-        title: 'Step 3: Creation of milestones',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
-        image: workListOne,
-    },
-    {
-        key: 'step4',
-        title: 'Step 4: Iterate with continuous feedback from client',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
-        image: workListOne,
-    },
-    {
-        key: 'step5',
-        title: 'Step 5: Delivery and support',
+        title: 'Step 3: Review and Analysis',
         description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
 ];
 
-export const researchTags = [
+const researchTags = [
     {
         name: 'All Research Works',
         value: 'all',
@@ -78,7 +66,7 @@ export const researchTags = [
     },
 ];
 
-function Technology() {
+function Consulting() {
     const [filteredServiceType, setFilteredServiceType] = useState<string>('all');
 
     const filteredProjects = useMemo(() => {
@@ -90,18 +78,18 @@ function Technology() {
 
     return (
         <Page
-            pageTitle="Development"
+            pageTitle="Our Services"
             banner={(
                 <BannerWithImage
-                    title="Development"
+                    title="Research and Data Analysis"
                     imageUrl={organizationLogo}
-                    description="We are focused on key areas of Development, Design and Programming. We specialize in data analysis and visualization using statistics and machine learning technologies."
+                    description="We turn these insights into practical solutions for our clients to help them run their businesses more effectively."
                     mode="light"
                     stats={(
                         <div className={styles.alsoSee}>
                             Also see:
                             <div className={styles.tags}>
-                                Software Developing
+                                Consulting
                             </div>
                         </div>
                     )}
@@ -148,34 +136,24 @@ function Technology() {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="Togglecorp is proud to offer technical expertise with a wide range of high level of tech stack such as:"
+                description="We research, analyse, interpret and present data related to humanitarian crises"
             >
                 <div className={styles.expertiseList}>
                     <Card
                         imageSrc={planningLogo}
-                        description="Application Development: Javascript, Typescript, ReactJS, GraphQL Python, Django React Native, Expo"
+                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
                         variant="mini"
                     />
                     <Card
                         imageSrc={monitoringLogo}
-                        description="Machine Learning Technologies: Python"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={planningLogo}
-                        description="Visualization Technologies: MapboxGL, D3.js"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={monitoringLogo}
-                        description="Build and Deployment: AWS, Azure"
+                        description="We conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response"
                         variant="mini"
                     />
                 </div>
             </Section>
             <Section
                 title="Our Approach"
-                description="We always believe in our client’s products. So, to do that, all the work we do usually begins with an in depth requirement analysis. After going back and forth on our understanding of the project, we’ll finalize the doc and work on the next steps."
+                description="We believe in effective data sharing and information management during any humanitarian crisis. Access to data is just the beginning."
             >
                 <AccordianWithImage
                     data={approaches}
@@ -229,4 +207,4 @@ function Technology() {
         </Page>
     );
 }
-export default Technology;
+export default Consulting;
