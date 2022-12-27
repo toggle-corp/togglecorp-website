@@ -2,10 +2,11 @@ import React, {
     useMemo,
     useState,
 } from 'react';
+import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { IoIosArrowRoundForward } from 'react-icons/io';
+import { unique } from '@togglecorp/fujs';
 
-import services from 'data.json';
 import Page from 'components/general/Page';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
@@ -13,7 +14,13 @@ import Button from 'components/general/Button';
 import BannerWithImage from 'components/general/BannerWithImage';
 import AccordianWithImage from 'components/general/AccordionWithImage';
 
-import organizationLogo from 'resources/organization.webp';
+import staticWorks, {
+    Work,
+    Tag,
+    getTagTitle,
+} from 'data/works';
+
+import generalServices, { researchService } from 'data/services';
 import organizationListLogo from 'resources/organization-list.webp';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/planning.png';
@@ -28,7 +35,14 @@ import {
 
 import styles from './styles.module.css';
 
-const approaches = [
+interface Approach {
+    key: string;
+    title: string;
+    description: string;
+    image: string;
+}
+
+const approaches: Approach[] = [
     {
         key: 'step1',
         title: 'Step 1: Data Extraction',
@@ -61,53 +75,54 @@ const approaches = [
     },
 ];
 
-const researchTags = [
-    {
-        name: 'All Research Works',
-        value: 'all',
-    },
-    {
-        name: 'Secondary Data Review',
-        value: 'secondary',
-    },
-    {
-        name: 'Data Analysis',
-        value: 'data',
-    },
-    {
-        name: 'Report Writing',
-        value: 'report',
-    },
-    {
-        name: 'Monitoring and Evaluation',
-        value: 'monitoring',
-    },
-];
+interface Props {
+    works: Work[],
+    tags: (Tag | 'all')[];
+}
 
-function Analysis() {
-    const [filteredServiceType, setFilteredServiceType] = useState<string>('all');
+function Analysis(props: Props) {
+    const {
+        works,
+        tags,
+    } = props;
+
+    const [filteredServiceType, setFilteredServiceType] = useState<Tag | 'all'>('all');
 
     const filteredProjects = useMemo(() => {
         if (filteredServiceType === 'all') {
-            return services.service;
+            return works;
         }
-        return services.service.filter((service) => service.researchType === filteredServiceType);
-    }, [filteredServiceType]);
+        return works.filter((service) => service.tags.includes(filteredServiceType));
+    }, [works, filteredServiceType]);
+
+    const otherServices = generalServices.filter((service) => service.key !== researchService.key);
 
     return (
         <Page
-            pageTitle="Our Services"
+            pageTitle={researchService.title}
             banner={(
                 <BannerWithImage
-                    title="Research and Data Analysis"
-                    imageUrl={organizationLogo}
-                    description=" We have professionals who have committed substantial time to research, study and analysis."
+                    title={researchService.title}
+                    imageUrl={researchService.image}
+                    description={researchService.description}
                     mode="light"
                     stats={(
                         <div className={styles.alsoSee}>
                             Also see:
                             <div className={styles.tags}>
-                                Research and Data Analysis
+                                {otherServices.map((service, i) => (
+                                    <Link
+                                        key={service.key}
+                                        href={service.link}
+                                        passHref
+                                    >
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a>
+                                            {service.title}
+                                            {i < otherServices.length - 1 && ', '}
+                                        </a>
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                     )}
@@ -197,14 +212,14 @@ function Analysis() {
             >
                 <div className={styles.researchContent}>
                     <div className={styles.researchTagList}>
-                        {researchTags.map((type) => (
+                        {tags.map((tag) => (
                             <Button
-                                variant={filteredServiceType === type.value ? 'outline-active' : 'outline'}
-                                key={type.value}
-                                name={type.value}
+                                variant={filteredServiceType === tag ? 'outline-active' : 'outline'}
+                                key={tag}
+                                name={tag}
                                 onClick={setFilteredServiceType}
                             >
-                                {type.name}
+                                {tag === 'all' ? 'All' : getTagTitle(tag)}
                             </Button>
                         ))}
                     </div>
@@ -214,9 +229,9 @@ function Analysis() {
                             <Card
                                 key={project.id}
                                 imageSrc={workListOne}
-                                title={project.serviceTitle}
+                                title={project.projectTitle}
                                 description={project.summary}
-                                tag={project.researchType}
+                                tags={project.tags.map(getTagTitle)}
                             />
                         ))}
                     </div>
@@ -235,4 +250,16 @@ function Analysis() {
         </Page>
     );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+    const researchWorks = staticWorks.filter((work) => work.projectType === researchService.key);
+    const researchTags = unique(researchWorks.flatMap((item) => item.tags));
+
+    const props: Props = {
+        works: researchWorks,
+        tags: ['all', ...researchTags],
+    };
+    return { props };
+};
+
 export default Analysis;
