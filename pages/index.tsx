@@ -1,36 +1,29 @@
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
 import Button from 'components/general/Button';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 
-import services from 'data/services';
+import { projectTypes } from 'data/projectTypes';
+import { getProjectCoverImage } from 'data/projectImages';
+import staticProjects, { Project } from 'data/projects';
 
 import workListOne from 'resources/work-list-1.webp';
 import clientsIcon from 'resources/tc-clients.webp';
 
 import styles from './styles.module.css';
 
-const recentWorks = [
-    {
-        image: workListOne,
-        title: 'Refugee Situational Analysis',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics.',
-    },
-    {
-        image: workListOne,
-        title: 'Post Distribution Monitoring (PDM) of BHAKARI Program by Mercy Corps',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics.',
-    },
-    {
-        image: workListOne,
-        title: 'Refugee Situational Analysis',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics.',
-    },
-];
+interface Props {
+    projects: Project[];
+}
 
-function Home() {
+function Home(props: Props) {
+    const {
+        projects,
+    } = props;
+
     return (
         <Page
             className={styles.home}
@@ -46,14 +39,14 @@ function Home() {
                             We assist humanitarian and development agencies help people reliably and efficiently.
                         </div>
                         <div className={styles.tags}>
-                            {services.map((service, i) => (
+                            {projectTypes.map((projectType, i) => (
                                 <>
                                     <Link
-                                        href={service.link}
+                                        href={projectType.link}
                                     >
-                                        {service.title}
+                                        {projectType.title}
                                     </Link>
-                                    {i < services.length - 1 && (
+                                    {i < projectTypes.length - 1 && (
                                         <div className={styles.dot}>
                                             •
                                         </div>
@@ -122,12 +115,12 @@ function Home() {
                 description="We research, analyse, interpret and present data related to humanitarian crises"
             >
                 <div className={styles.serviceList}>
-                    {services.map((service) => (
+                    {projectTypes.map((projectType) => (
                         <Card
-                            imageSrc={service.image}
-                            href={service.link}
-                            title={service.title}
-                            description={service.description}
+                            imageSrc={projectType.image}
+                            href={projectType.link}
+                            title={projectType.title}
+                            description={projectType.description}
                         />
                     ))}
                 </div>
@@ -137,19 +130,19 @@ function Home() {
                 description="We research, analyse, interpret and present data related to humanitarian crises"
             >
                 <div className={styles.recentWorkList}>
-                    {recentWorks.map((recentWork) => (
+                    {projects.map((recentWork) => (
                         <div className={styles.recentWorkCard}>
                             <img
                                 className={styles.workPreview}
-                                src={recentWork.image}
-                                alt={recentWork.title}
+                                src={getProjectCoverImage(recentWork.id)}
+                                alt={recentWork.projectTitle}
                             />
                             <div className={styles.details}>
                                 <h4>
-                                    {recentWork.title}
+                                    {recentWork.projectTitle}
                                 </h4>
                                 <div className={styles.description}>
-                                    {recentWork.description}
+                                    {recentWork.summary}
                                 </div>
                             </div>
                         </div>
@@ -176,5 +169,12 @@ function Home() {
         </Page>
     );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => ({
+    props: {
+        // FIXME: we need to sort by the latest first
+        projects: staticProjects.slice(0, 3),
+    },
+});
 
 export default Home;

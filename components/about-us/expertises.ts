@@ -1,8 +1,6 @@
 import planningLogo from 'resources/planning.png';
 import monitoringLogo from 'resources/monitoring.png';
 
-// FIXME: move this to about-us
-
 export interface Expertise {
     key: string;
     title: string;
@@ -18,7 +16,7 @@ const expertises: Expertise[] = [
         image: planningLogo,
     },
     {
-        key: '1',
+        key: '2',
         title: 'Monitoring',
         description: 'We conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response',
         image: monitoringLogo,

@@ -3,24 +3,24 @@ import React from 'react';
 
 import GalleryCard from 'components/general/GalleryCard';
 import Page from 'components/general/Page';
-
-import cultures from 'data/cultures';
-import gallery from 'data/gallery';
-import expertises from 'data/expertises';
-import socialResponsibilities from 'data/socialResponsibilities';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Container from 'components/general/Container';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
+
 import {
     keySelector,
     titleSelector,
     descriptionSelector,
     imageSelector,
 } from 'utils/common';
-
 import organizationLogo from 'resources/organization.webp';
+
+import cultures from 'components/about-us/cultures';
+import gallery from 'components/about-us/gallery';
+import expertises from 'components/about-us/expertises';
+import socialResponsibilities from 'components/about-us/socialResponsibilities';
 
 import styles from './styles.module.css';
 
