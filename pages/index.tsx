@@ -21,39 +21,29 @@ interface Props {
 }
 
 function Home(props: Props) {
-    const {
-        projects,
-    } = props;
+    const { projects } = props;
 
     return (
         <Page
             className={styles.home}
             pageTitle="Home"
             banner={(
-                <Container
-                    className={styles.banner}
-                    contentClassName={styles.content}
-                >
+                <Container className={styles.banner} contentClassName={styles.content}>
                     <div className={styles.introductionContent}>
                         <div className={styles.title}>
                             We build tech for your idea.
                         </div>
                         <div>
-                            {/* eslint-disable-next-line max-len */}
-                            Lorem ipsum dolor sit amet consectetur. Et ultrices adipiscing eget lacus libero massa at egestas. Pellentesque nec ullamcorper mauris nisi.
+                            A flawless digital
+                            community contributing to development and research striving
+                            towards improving existing processes
                         </div>
                         <div className={styles.tags}>
                             {projectTypes.map((projectType, i) => (
                                 <React.Fragment key={projectType.key}>
-                                    <Link
-                                        href={projectType.link}
-                                    >
-                                        {projectType.title}
-                                    </Link>
+                                    <Link href={projectType.link}>{projectType.title}</Link>
                                     {i < projectTypes.length - 1 && (
-                                        <div className={styles.dot}>
-                                            •
-                                        </div>
+                                        <div className={styles.dot}>•</div>
                                     )}
                                 </React.Fragment>
                             ))}
@@ -70,14 +60,8 @@ function Home(props: Props) {
             )}
         >
             <Container contentClassName={styles.clientsSection}>
-                <h3 className={styles.heading}>
-                    Trusted By
-                </h3>
-                <img
-                    className={styles.clientsImage}
-                    src={clientsIcon}
-                    alt="Clients"
-                />
+                <h3 className={styles.heading}>Trusted By</h3>
+                <img className={styles.clientsImage} src={clientsIcon} alt="Clients" />
             </Container>
             <Section
                 title="Who We Are"
@@ -86,37 +70,26 @@ function Home(props: Props) {
                 actions={(
                     <>
                         <div>
-                            {/* eslint-disable-next-line max-len */}
-                            Lorem ipsum dolor sit amet consectetur. Et ultrices adipiscing eget lacus libero massa at egestas. Pellentesque nec ullamcorper mauris nisi.
+                            We foster a learning culture that encourages every employee to
+                            grow their capabilities and careers with the values they believe
+                            in.
                         </div>
-                        <Button
-                            name={undefined}
-                            variant="outline-active"
-                        >
+                        <Button name={undefined} variant="outline-active">
                             Learn More
                         </Button>
                     </>
                 )}
             >
                 <div className={styles.introImages}>
-                    <img
-                        src={workListOne}
-                        alt="intro"
-                    />
-                    <img
-                        src={workListOne}
-                        alt="intro"
-                    />
-                    <img
-                        src={workListOne}
-                        alt="intro"
-                    />
+                    <img src={workListOne} alt="intro" />
+                    <img src={workListOne} alt="intro" />
+                    <img src={workListOne} alt="intro" />
                 </div>
             </Section>
             <Section
                 className={styles.ourServices}
                 title="Our Services"
-                description="We research, analyse, interpret and present data related to humanitarian crises"
+                description="We specialize in development, consultancy, research and analysis mostly related to humanitarian crises"
             >
                 <div className={styles.serviceList}>
                     {projectTypes.map((projectType) => (
@@ -136,22 +109,15 @@ function Home(props: Props) {
             >
                 <div className={styles.recentWorkList}>
                     {projects.map((recentWork) => (
-                        <div
-                            className={styles.recentWorkCard}
-                            key={recentWork.id}
-                        >
+                        <div className={styles.recentWorkCard} key={recentWork.id}>
                             <img
                                 className={styles.workPreview}
                                 src={getProjectCoverImage(recentWork.id)}
                                 alt={recentWork.projectTitle}
                             />
                             <div className={styles.details}>
-                                <h4>
-                                    {recentWork.projectTitle}
-                                </h4>
-                                <div className={styles.description}>
-                                    {recentWork.summary}
-                                </div>
+                                <h4>{recentWork.projectTitle}</h4>
+                                <div className={styles.description}>{recentWork.summary}</div>
                             </div>
                         </div>
                     ))}
@@ -161,16 +127,9 @@ function Home(props: Props) {
                 className={styles.bottomSection}
                 contentClassName={styles.content}
             >
-                <h3>
-                    Have a project you&apos;d like to talk to us about?
-                </h3>
-                <div>
-                    Tell us about your need, we&apos;d love to hear from you.
-                </div>
-                <Button
-                    name={undefined}
-                    variant="primary"
-                >
+                <h3>Have a project you&apos;d like to talk to us about?</h3>
+                <div>Tell us about your need, we&apos;d love to hear from you.</div>
+                <Button name={undefined} variant="primary">
                     Let&apos;s Get Started
                 </Button>
             </Container>
