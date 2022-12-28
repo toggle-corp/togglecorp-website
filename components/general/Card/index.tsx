@@ -34,9 +34,9 @@ function Card(props: Props) {
             />
             <div className={styles.details}>
                 {title && (
-                    <h4 className={styles.title}>
+                    <h5>
                         {title}
-                    </h4>
+                    </h5>
                 )}
                 {description && (
                     <div

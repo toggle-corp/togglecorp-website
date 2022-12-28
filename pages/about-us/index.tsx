@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 
 import GalleryCard from 'components/general/GalleryCard';
@@ -8,6 +7,7 @@ import Container from 'components/general/Container';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
+import ButtonLikeLink from 'components/general/ButtonLikeLink';
 
 import {
     keySelector,
@@ -110,9 +110,12 @@ function AboutUs() {
                     {/* eslint-disable-next-line max-len */}
                     We want people who work sincerely and have fun while do so. In return we provide you a space to grow your skills and an environment that respects you.
                 </div>
-                <Link href="/careers">
+                <ButtonLikeLink
+                    href="/careers"
+                    variant="primary"
+                >
                     See Career Opportunities
-                </Link>
+                </ButtonLikeLink>
             </Container>
         </Page>
     );

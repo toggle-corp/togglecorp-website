@@ -2,4 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-extra-large);
+
+    .vacancies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-medium);
+
+        >* {
+            flex-basis: calc(33% - var(--spacing-medium));
+        }
+    }
 }

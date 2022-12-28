@@ -7,31 +7,24 @@ export type ButtonVariant = (
     'primary' | 'default' | 'outline' | 'outline-active' | 'tab' | 'tab-active' | 'transparent'
 );
 
-type ButtonProps<N> = {
+export interface ButtonLikeProps {
     variant?: ButtonVariant;
     className?: string;
     children?: ReactNode;
-    default?: boolean;
     icons?: ReactNode;
     actions?: ReactNode;
     actionsClassName?: string;
-    name: N;
-    onClick?: (name: N) => void;
     disabled?: boolean;
-    type?: 'button' | 'submit' | 'reset';
-};
+}
 
-type ButtonFeatureKeys = 'variant' | 'className' | 'actionsClassName' | 'default' | 'icons' | 'actions' | 'children';
-
-export function useButtonFeatures(
-    props: Pick<ButtonProps<unknown>, ButtonFeatureKeys>,
-) {
+export function useButtonFeatures(props: ButtonLikeProps) {
     const {
         variant = 'default',
         className: classNameFromProps,
         icons,
         children,
         actions,
+        disabled,
     } = props;
 
     const buttonClassName = _cs(
@@ -44,6 +37,7 @@ export function useButtonFeatures(
         variant === 'outline' && styles.outline,
         variant === 'outline-active' && styles.outlineActive,
         variant === 'transparent' && styles.transparent,
+        disabled && styles.disabled,
     );
 
     const buttonChildren = (
@@ -72,7 +66,13 @@ export function useButtonFeatures(
     };
 }
 
-function Button<N>(props: ButtonProps<N>) {
+interface Props<N> extends ButtonLikeProps {
+    name: N;
+    onClick?: (name: N) => void;
+    type?: 'button' | 'submit' | 'reset';
+}
+
+function Button<N>(props: Props<N>) {
     const {
         variant,
         className,

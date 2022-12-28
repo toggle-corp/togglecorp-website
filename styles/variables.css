@@ -24,6 +24,7 @@
     --color-surface-background: #fdf9f7;
     --color-surface-footer: #032b43;
     --color-surface-disabled: #b3b3b3;
+    --color-surface-light: #f7f7f7;
 
     --color-separator: rgba(0, 0, 0, .08);
 
@@ -38,7 +39,7 @@
     --multiplier: 1.2599;
 
     --font-size-base: 1rem;
-    --font-size-heading-base: 1.5625;
+    --font-size-heading-base: 2rem;
 
     --font-size-small: var(--font-size-base);
     --font-size-medium: calc(var(--font-size-base) * var(--multiplier));
@@ -49,11 +50,11 @@
     --font-size-key-figure-value: 3rem;
     --font-size-description: 2rem;
 
-    --font-size-heading-extra-small: calc(var(--font-size-heading-base) / var(--multiplier));
-    --font-size-heading-small: var(--font-size-heading-base);
-    --font-size-heading-medium: calc(var(--font-size-heading-base) * var(--multiplier));
-    --font-size-heading-large: calc(var(--font-size-heading-base) * var(--multiplier) * var(--multiplier));
-    --font-size-heading-extra-large: calc(var(--font-size-heading-base) * var(--multiplier) * var(--multiplier) * var(--multiplier));
+    --font-size-heading-extra-small: calc(var(--font-size-heading-base) / (var(--multiplier) * var(--multiplier)));
+    --font-size-heading-small: calc(var(--font-size-heading-base) / var(--multiplier));
+    --font-size-heading-medium: var(--font-size-heading-base);
+    --font-size-heading-large: calc(var(--font-size-heading-base) * var(--multiplier));
+    --font-size-heading-extra-large: calc(var(--font-size-heading-base) * var(--multiplier) * var(--multiplier));
 
 
     --spacing-base: 1.25rem;

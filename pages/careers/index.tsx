@@ -24,24 +24,20 @@ function CareerPage() {
         >
             <Container contentClassName={styles.careerContent}>
                 <Header
-                    title="Our Culture and Core Values"
+                    title="Job openings"
                     description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
                 />
-                <div>
+                <div className={styles.vacancies}>
                     {vacancies.map((vacancy) => (
                         <CareerItem
                             key={vacancy.id}
                             position={vacancy.position}
-                            vacancy={vacancy.department}
-                            link={(
-                                <a
-                                    href={vacancy.formLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Apply
-                                </a>
-                            )}
+                            department={vacancy.department}
+                            openings={vacancy.openings}
+                            applyUrl={vacancy.formLink}
+                            category={vacancy.category}
+                            salary={vacancy.salary}
+                            applyBefore={vacancy.applyBefore}
                         />
                     ))}
                 </div>

@@ -39,6 +39,9 @@
 
     &.default {
         --background: none;
+        --padding: 0;
+        color: var(--color-primary);
+        font-weight: var(--font-weight-bold);
     }
 
     &.primary {
@@ -83,10 +86,8 @@
         --padding: 0;
     }
 
-    /*
     &.disabled {
         opacity: var(--opacity-disabled-element);
         cursor: not-allowed;
     }
-    */
 }
