@@ -82,7 +82,7 @@ function Home(props: Props) {
                 sideImageUrl={workListOne}
                 actions={(
                     <>
-                        <div className={styles.brief}>
+                        <div>
                             {/* eslint-disable-next-line max-len */}
                             Lorem ipsum dolor sit amet consectetur. Et ultrices adipiscing eget lacus libero massa at egestas. Pellentesque nec ullamcorper mauris nisi.
                         </div>

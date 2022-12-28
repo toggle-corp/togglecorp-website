@@ -44,10 +44,6 @@
         }
     }
 
-    .brief {
-        font-size: var(--font-size-large);
-    }
-
     .introImages {
         display: flex;
         flex-wrap: wrap;

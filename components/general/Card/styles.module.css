@@ -1,13 +1,13 @@
 .card {
     display: flex;
     flex-direction: column;
-    border: var(--width-separator-thin) solid var(--color-border-light);
+    border: var(--width-separator-thin) solid var(--color-separator);
     border-radius: var(--radius-card);
     overflow: hidden;
 
     &.mini {
         background-color: var(--color-surface-white);
-        padding: var(--spacing-large);
+        padding: var(--spacing-medium);
         gap: var(--spacing-medium);
 
         .image {
@@ -18,13 +18,11 @@
             display: flex;
             flex-direction: column;
             gap: var(--spacing-medium);
-            font-size: var(--font-size-large);
         }
     }
 
     &.normal {
         .image {
-            transition: 1s filter ease-in-out, 3s transform ease-in-out;
             border-top-left-radius: var(--radius-card);
             border-top-right-radius: var(--radius-card);
             background-color: rgba(0, 0, 0, .05);
@@ -32,11 +30,6 @@
             height: 20rem;
             object-fit: cover;
             object-position: center center;
-            filter: saturate(30%);
-
-            &:hover {
-                filter: saturate(100%);
-            }
         }
 
         .details {
@@ -44,11 +37,7 @@
             flex-direction: column;
             flex-grow: 1;
             padding: var(--spacing-medium);
-            gap: var(--spacing-medium);
-
-            .title {
-                font-size: var(--font-size-heading-extra-small);
-            }
+            gap: var(--spacing-small);
 
             .description {
                 display: -webkit-box;
