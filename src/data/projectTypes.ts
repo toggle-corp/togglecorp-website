@@ -14,21 +14,24 @@ interface ProjectTypeItem {
 export const development: ProjectTypeItem = {
     image: developmentImage,
     title: 'Tech Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed volutpat odio. Etiam ullamcorper velit vitae felis molestie facilisis. Cras.',
+    description:
+    'We build customized solutions for your business technology needs through our skilled leadership and technical teams',
     link: '/services/development',
 };
 
 export const research: ProjectTypeItem = {
     image: researchImage,
     title: 'Research and Analysis',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dui nunc, suscipit quis mi quis, porttitor feugiat nibh. Aliquam non.',
+    description:
+    'We specialize in secondary data review with a humanitarian focus on qualitative research, report writing, and data analysis',
     link: '/services/research',
 };
 
 export const consulting: ProjectTypeItem = {
     image: consultationImage,
     title: 'Consultation',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat luctus efficitur. Vivamus blandit ultricies velit, a convallis lacus pharetra.',
+    description:
+    'We help clients improve their businesses through research-backed, practical solutions in fields such as IT, software design, database design, research and analysis, and management',
     link: '/services/consulting',
 };
 
@@ -40,13 +43,10 @@ const projectTypesMapping = {
 
 export type ProjectType = keyof typeof projectTypesMapping;
 
-export const projectTypes = mapToList(
-    projectTypesMapping,
-    (item, key) => ({
-        key: key as ProjectType,
-        ...item,
-    }),
-);
+export const projectTypes = mapToList(projectTypesMapping, (item, key) => ({
+    key: key as ProjectType,
+    ...item,
+}));
 
 export function getProjectType(key: ProjectType) {
     return {
