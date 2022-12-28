@@ -31,6 +31,7 @@ function BannerWithImage(props: Props) {
                 contentClassName={styles.content}
             >
                 <div className={styles.left}>
+                    <span />
                     <div className={styles.title}>
                         {title}
                     </div>
@@ -46,14 +47,19 @@ function BannerWithImage(props: Props) {
                     />
                 )}
             </Container>
-            <Container
-                className={styles.bottomSection}
-                contentClassName={styles.content}
-            >
-                <div className={styles.statsContainer}>
-                    {stats}
-                </div>
-            </Container>
+            {stats && (
+                <Container
+                    className={styles.bottomSection}
+                    contentClassName={styles.content}
+                >
+                    <div className={styles.statsContainer}>
+                        {stats}
+                    </div>
+                </Container>
+            )}
+            {!stats && imageUrl && (
+                <div className={styles.reserveHeight} />
+            )}
         </div>
     );
 }

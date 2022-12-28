@@ -102,8 +102,7 @@
         gap: var(--spacing-large);
 
         .text {
-            line-height: 1.5;
-            font-size: var(--font-size-heading-extra-small);
+            font-size: var(--font-size-large);
         }
 
         .knowMoreLink {

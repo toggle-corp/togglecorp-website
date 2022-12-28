@@ -1,14 +1,12 @@
 .home {
     .banner {
         /* TODO: replace with image */
-        background-color: #272727;
-
-        color: var(--color-text-on-dark);
+        background-color: var(--color-secondary);
+        color: var(--color-text-white);
 
         .content {
             display: flex;
             align-items: center;
-            min-height: 50vh;
 
             .introductionContent {
                 display: flex;
@@ -17,7 +15,8 @@
                 max-width: 36rem;
 
                 .description {
-                    font-size: var(--font-size-heading-large);
+                    line-height: 1.25;
+                    font-size: var(--font-size-banner-description);
                 }
 
                 .tags {
@@ -45,7 +44,6 @@
     }
 
     .brief {
-        line-height: 1.5;
         font-size: var(--font-size-large);
     }
 

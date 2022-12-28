@@ -4,11 +4,9 @@
     gap: var(--spacing-large);
     border-bottom: var(--width-separator-thin) solid var(--color-border-light);
     padding: var(--spacing-medium) 0;
-    color: var(--color-black);
 
     .title {
         flex-grow: 1;
-        font-size: var(--font-size-carrer-title);
     }
 
     .actions {

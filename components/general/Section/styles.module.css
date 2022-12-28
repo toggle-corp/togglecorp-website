@@ -11,13 +11,13 @@
 
         .title {
             color: var(--color-primary);
-            font-size: var(--font-size-large);
         }
 
         .description {
             max-width: 56rem;
+            line-height: 1.25;
             color: var(--color-secondary);
-            font-size: var(--font-size-extra-large);
+            font-size: var(--font-size-description);
         }
 
         .predefinedContainer {

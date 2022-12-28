@@ -45,9 +45,9 @@ function Banner(props: Props) {
             )}
             {/* NOTE: this is to increase gap */}
             <span />
-            <div className={styles.title}>
+            <h2>
                 {title}
-            </div>
+            </h2>
             {stats}
         </Container>
     );

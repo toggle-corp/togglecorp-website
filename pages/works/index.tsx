@@ -16,6 +16,7 @@ import Card from 'components/general/Card';
 import Container from 'components/general/Container';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
+import Separator from 'components/general/Separator';
 
 import organizationLogo from 'resources/organization.webp';
 
@@ -102,7 +103,7 @@ function WorksPage(props: Props) {
                         </React.Fragment>
                     ))}
                 </div>
-                <div className={styles.horizontalRow} />
+                <Separator />
                 <div className={styles.projectList}>
                     {filteredProjects.map((project) => (
                         <Card

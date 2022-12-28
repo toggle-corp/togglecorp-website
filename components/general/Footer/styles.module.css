@@ -1,11 +1,10 @@
 .footer {
-    background-color: var(--color-footer-dark);
-    color: var(--color-text-on-dark);
+    background-color: var(--color-surface-footer);
+    color: var(--color-text-white);
 
     .content {
         display: flex;
         flex-wrap: wrap;
-        padding: var(--spacing-extra-large) 0;
         gap: var(--spacing-large);
 
         .left {
