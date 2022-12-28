@@ -32,6 +32,8 @@ function BannerWithImage(props: Props) {
             >
                 <div className={styles.left}>
                     <span />
+                    <span />
+                    <span />
                     <div className={styles.title}>
                         {title}
                     </div>

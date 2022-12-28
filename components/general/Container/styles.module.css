@@ -6,8 +6,4 @@
         width: 100%;
         max-width: var(--width-content-max);
     }
-
-    @media screen and (max-width: 900px) {
-        padding: var(--spacing-super-large) var(--spacing-large);
-    }
 }

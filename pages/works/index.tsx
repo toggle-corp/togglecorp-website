@@ -3,20 +3,20 @@ import React, {
     useState,
 } from 'react';
 import { GetStaticProps } from 'next';
-import { IoEllipseSharp } from 'react-icons/io5';
-import { _cs, unique } from '@togglecorp/fujs';
+import { unique } from '@togglecorp/fujs';
 
 import { ProjectType, getProjectType } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';
 import staticProjects, { Project } from 'data/projects';
 
-import Button from 'components/general/Button';
 import Page from 'components/general/Page';
 import Card from 'components/general/Card';
 import Container from 'components/general/Container';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
 import Separator from 'components/general/Separator';
+import Tabs from 'components/general/Tabs';
+import { selfSelector } from 'utils/common';
 
 import organizationLogo from 'resources/organization.webp';
 
@@ -56,6 +56,10 @@ function WorksPage(props: Props) {
         ));
     }, [projects, filteredProjectType]);
 
+    const labelSelector = React.useCallback((projectType: ProjectType | 'all') => (
+        projectType === 'all' ? 'All Works' : getProjectType(projectType).title
+    ), []);
+
     return (
         <Page
             className={styles.works}
@@ -81,28 +85,13 @@ function WorksPage(props: Props) {
             )}
         >
             <Container contentClassName={styles.workContent}>
-                <div className={styles.tabs}>
-                    {projectTypeOptions.map((type, i) => (
-                        <React.Fragment
-                            key={type}
-                        >
-                            <Button
-                                variant="tab"
-                                className={_cs(
-                                    styles.tab,
-                                    filteredProjectType === type && styles.active,
-                                )}
-                                name={type}
-                                onClick={setFilteredProjectType}
-                            >
-                                {type === 'all' ? 'All Works' : getProjectType(type).title}
-                            </Button>
-                            {i < (projectTypeOptions.length - 1) && (
-                                <IoEllipseSharp className={styles.dot} />
-                            )}
-                        </React.Fragment>
-                    ))}
-                </div>
+                <Tabs
+                    options={projectTypeOptions}
+                    value={filteredProjectType}
+                    onChange={setFilteredProjectType}
+                    keySelector={selfSelector}
+                    labelSelector={labelSelector}
+                />
                 <Separator />
                 <div className={styles.projectList}>
                     {filteredProjects.map((project) => (

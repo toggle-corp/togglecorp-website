@@ -1,0 +1,19 @@
+.tabs {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+
+    .dot {
+        color: var(--color-text-dark-gray);
+        font-size: 0.5em;
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+
+        .dot {
+            display: none;
+        }
+    }
+}
