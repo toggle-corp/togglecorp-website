@@ -17,9 +17,9 @@ function CareerItem(props: CareerItemProps) {
 
     return (
         <div className={styles.careerSection}>
-            <div className={styles.title}>
+            <h4 className={styles.title}>
                 {position}
-            </div>
+            </h4>
             <div className={styles.type}>
                 {vacancy}
             </div>

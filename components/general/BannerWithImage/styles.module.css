@@ -1,6 +1,6 @@
 .bannerWithImage {
     --image-offset-y: 14rem;
-    --image-width: calc(10% + 22rem);
+    --image-width: calc(10% + 18rem);
     --image-height: 30rem;
     --section-min-height: 20rem;
 
@@ -19,7 +19,7 @@
         color: var(--color-text-on-dark);
 
         &.light {
-            background-color: var(--color-header-light);
+            background-color: var(--color-surface-header);
             color: var(--color-secondary);
         }
 
@@ -40,14 +40,15 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                gap: var(--spacing-large);
+                gap: var(--spacing-extra-large);
 
                 .title {
                     color: var(--color-primary);
-                    font-size: var(--font-size-large);
+                    font-weight: var(--font-weight-bold);
                 }
 
                 .description {
+                    line-height: 1.25;
                     font-size: var(--font-size-banner-description);
                 }
             }
@@ -83,14 +84,20 @@
         }
     }
 
+    .reserveHeight {
+        height: var(--image-offset-y);
+    }
+
     &.noImage {
         --section-min-height: 26rem;
+        --image-width: calc(10% + 20rem);
 
         @media screen and (max-width: 900px) {
             --section-min-height: 18rem;
         }
 
         .topSection {
+
             .content {
                 .left {
                     max-width: calc(var(--width-content-max) - var(--image-width));
