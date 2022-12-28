@@ -9,6 +9,7 @@ const projectContent: {
     dfid: dynamic(() => import('data/contents/DFID')),
     npstocks: dynamic(() => import('data/contents/Npstocks')),
     'innovation-project': dynamic(() => import('data/contents/InnovationProject')),
+    'durable-solutions': dynamic(() => import('data/contents/DurableSolution')),
 };
 
 // eslint-disable-next-line import/prefer-default-export

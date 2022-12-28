@@ -10,6 +10,7 @@ const projectCoverImages: {
     dfid: workListOne,
     npstocks: workListOne,
     'innovation-project': workListOne,
+    'durable-solutions': workListOne,
 };
 
 // eslint-disable-next-line import/prefer-default-export
