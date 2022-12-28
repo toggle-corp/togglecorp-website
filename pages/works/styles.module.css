@@ -11,36 +11,6 @@
         gap: var(--spacing-extra-large);
         padding: var(--spacing-medium) 0;
 
-        .tabs{
-            display: flex;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: var(--spacing-medium);
-        }
-
-        .tab {
-            border-bottom: 3px solid transparent;
-            padding-bottom: var(--spacing-small);
-
-            &.active {
-                border-bottom-color: var(--color-primary);
-                color: var(--color-primary);
-            }
-        }
-
-        .dot {
-            color: var(--color-text-dark-gray);
-            font-size: 0.5em;
-        }
-
-        @media screen and (max-width: 900px) {
-            flex-direction: column;
-
-            .dot {
-                display: none;
-            }
-        }
-
         .projectList {
             display: flex;
             flex-wrap: wrap;

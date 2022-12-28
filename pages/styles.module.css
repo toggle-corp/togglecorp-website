@@ -22,9 +22,10 @@
                 .tags {
                     display: flex;
                     flex-wrap: wrap;
+                    line-height: 1;
                     color: var(--color-primary);
                     font-size: var(--font-size-large);
-                    gap: var(--spacing-medium);
+                    gap: var(--spacing-small);
 
                     @media screen and (max-width: 900px) {
                         flex-direction: column;

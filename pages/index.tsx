@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import Page from 'components/general/Page';
@@ -40,7 +41,7 @@ function Home(props: Props) {
                         </div>
                         <div className={styles.tags}>
                             {projectTypes.map((projectType, i) => (
-                                <>
+                                <React.Fragment key={projectType.key}>
                                     <Link
                                         href={projectType.link}
                                     >
@@ -51,7 +52,7 @@ function Home(props: Props) {
                                             •
                                         </div>
                                     )}
-                                </>
+                                </React.Fragment>
                             ))}
                         </div>
                         <Button
@@ -117,6 +118,7 @@ function Home(props: Props) {
                 <div className={styles.serviceList}>
                     {projectTypes.map((projectType) => (
                         <Card
+                            key={projectType.key}
                             imageSrc={projectType.image}
                             href={projectType.link}
                             title={projectType.title}
@@ -131,7 +133,10 @@ function Home(props: Props) {
             >
                 <div className={styles.recentWorkList}>
                     {projects.map((recentWork) => (
-                        <div className={styles.recentWorkCard}>
+                        <div
+                            className={styles.recentWorkCard}
+                            key={recentWork.id}
+                        >
                             <img
                                 className={styles.workPreview}
                                 src={getProjectCoverImage(recentWork.id)}

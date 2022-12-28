@@ -49,7 +49,7 @@
     --font-size-key-figure-value: 3rem;
     --font-size-description: 2rem;
 
-    --font-size-heading-extra-small: calc(var(--font-size-heading-base) * 1 / var(--multiplier));
+    --font-size-heading-extra-small: calc(var(--font-size-heading-base) / var(--multiplier));
     --font-size-heading-small: var(--font-size-heading-base);
     --font-size-heading-medium: calc(var(--font-size-heading-base) * var(--multiplier));
     --font-size-heading-large: calc(var(--font-size-heading-base) * var(--multiplier) * var(--multiplier));
@@ -58,12 +58,12 @@
 
     --spacing-base: 1.25rem;
 
-    --spacing-extra-small: calc(var(--spacing-base) * 1 / var(--multiplier));
-    --spacing-small: var(--spacing-base);
-    --spacing-medium: calc(var(--spacing-base) * var(--multiplier));
-    --spacing-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier));
-    --spacing-extra-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier));
-    --spacing-super-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
+    --spacing-extra-small: calc(var(--spacing-base) / (var(--multiplier) * var(--multiplier)));
+    --spacing-small: calc(var(--spacing-base) / var(--multiplier));
+    --spacing-medium: var(--spacing-base);
+    --spacing-large: calc(var(--spacing-base) * var(--multiplier));
+    --spacing-extra-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier));
+    --spacing-super-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier));
 
     --radius-button: 0.25rem;
     --radius-card: 0.5rem;
@@ -76,7 +76,7 @@
     @media screen and (max-width: 900px) {
         --font-size-heading-base: 1.25rem;
         --font-size-base: 0.875rem;
-        --spacing-base: 0.5rem;
+        --spacing-base: 0.875rem;
 
         --font-size-banner-description: 2rem;
         --font-size-key-figure-value: 2rem;
