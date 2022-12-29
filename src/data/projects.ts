@@ -114,7 +114,7 @@ const projects: Project[] = [
         client: 'world-vision',
         summary: 'Golden Community’s main work revolves around improving the health of newborn babies. Hence, Sustain is a project created to support newborn babies’ health and reduce infant mortality rate. It is a progressive web application (PWA) used to collect information from a logical set of questionnaires. Sustain used the information collected from the application for analysis, creating reports, and journals. While the Sustain app can run on all devices, its primary target were tablets. Sustain supports around 100 users per day.',
         skills: ['django', 'react', 'mapbox', 'd3'],
-        projectUrl: '',
+        projectUrl: 'https://www.kitabbazar.org/',
         tags: ['monitoring-and-evaluation'],
     },
     {
@@ -136,7 +136,7 @@ const projects: Project[] = [
         client: 'idmc',
         summary: 'Platform to explore and centralised data from different sources and generate reports and interactive visualizations',
         skills: ['mapbox', 'd3', 'react'],
-        projectUrl: 'https://beta.thedeep.io/',
+        projectUrl: '',
         tags: ['monitoring-and-evaluation'],
     },
     {
@@ -362,7 +362,7 @@ const projects: Project[] = [
     {
         id: 'sdg-analysis',
         projectType: 'research',
-        projectTitle: 'Global COVID-19 Situational Analysis',
+        projectTitle: 'SDG Analysis',
         projectDuration: 'February 2020 and January 2022',
         client: 'undco',
         summary: 'Our role was to support  UNDCO Okular Analytics in reviewing the reform of the coordination architecture and the progress towards the 17 Sustainable Development Goals (SDGs) through reviewing and analyzing the responses. The questions focused on changes in the government’s response towards the United Nations Country Team (UNCT) in response to the reform environment; changes in the UNCT’s work responding to the new reform environment during the given year; modalities of engagement with the UNDCO regional team in terms of support received, achievements and challenges; most significant achievements in delivering together for the 2030 Agenda; support to the national government in the advancing the achievement so the SDGs and key challenges in joint work collaborating to achieve SDGs. We produced a dataset containing all findings from the six questions structured by country and region and sorted the information using a tailored analytical framework, assisting in the development of one global report and five regional reports and recommendations for future rounds with the support of experts.',
