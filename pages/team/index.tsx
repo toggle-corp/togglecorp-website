@@ -5,8 +5,8 @@ import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Section from 'components/general/Section';
 import EmployeeCard from 'components/employees/EmployeeCard';
+import { getEmployeeImage } from 'data/employeeImages';
 
-import employeeIcon from 'resources/employee-img.webp';
 import staticTeam, { Employee } from 'data/employees';
 
 import organizationLogo from 'resources/organization.webp';
@@ -43,7 +43,7 @@ function Team(props: Props) {
                 <div className={styles.memberGroup}>
                     {devTeam?.map((member) => (
                         <EmployeeCard
-                            imageSrc={employeeIcon}
+                            imageSrc={getEmployeeImage(member.id)}
                             key={member.id}
                             name={member.name}
                             position={member.position}
@@ -62,7 +62,7 @@ function Team(props: Props) {
                 <div className={styles.memberGroup}>
                     {analysisTeam?.map((member) => (
                         <EmployeeCard
-                            imageSrc={employeeIcon}
+                            imageSrc={getEmployeeImage(member.id)}
                             key={member.id}
                             name={member.name}
                             position={member.position}
@@ -81,7 +81,7 @@ function Team(props: Props) {
                 <div className={styles.memberGroup}>
                     {operationsTeam?.map((member) => (
                         <EmployeeCard
-                            imageSrc={employeeIcon}
+                            imageSrc={getEmployeeImage(member.id)}
                             key={member.id}
                             name={member.name}
                             position={member.position}

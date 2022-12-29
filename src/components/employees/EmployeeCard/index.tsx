@@ -25,8 +25,7 @@ interface EmployeeCardProps {
 function EmployeeCard(props: EmployeeCardProps) {
     const {
         className,
-        imageSrc,
-        name,
+        imageSrc, name,
         position,
         description,
         date,
@@ -64,7 +63,10 @@ function EmployeeCard(props: EmployeeCardProps) {
                         {position}
                     </div>
                 </div>
-                <div className={styles.description}>
+                <div
+                    className={styles.description}
+                    title={description}
+                >
                     {description}
                 </div>
                 <div className={styles.employeeDate}>
