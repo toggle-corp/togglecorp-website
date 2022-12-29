@@ -3,7 +3,6 @@ import React from 'react';
 import GalleryCard from 'components/general/GalleryCard';
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
-import Container from 'components/general/Container';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
@@ -34,6 +33,14 @@ function AboutUs() {
                     imageUrl={organizationLogo}
                     description="A place to grow your creativity, to imagine a better future and to work on the issues we believe in."
                     mode="light"
+                    actions={(
+                        <ButtonLikeLink
+                            href="/team/"
+                            variant="primary"
+                        >
+                            See our team
+                        </ButtonLikeLink>
+                    )}
                 />
             )}
         >
@@ -102,21 +109,19 @@ function AboutUs() {
                     ))}
                 </div>
             </Section>
-            <Container contentClassName={styles.careerSection}>
-                <div className={styles.careerTitle}>
-                    Career at Togglecorp
-                </div>
-                <div className={styles.careerDescription}>
-                    {/* eslint-disable-next-line max-len */}
-                    We want people who work sincerely and have fun while do so. In return we provide you a space to grow your skills and an environment that respects you.
-                </div>
+            <Section
+                className={styles.careerSection}
+                title="Career at Togglecorp"
+                description="We want people who work sincerely and have fun while do so. In return we provide you a space to grow your skills and an environment that respects you."
+                centeredContent
+            >
                 <ButtonLikeLink
                     href="/careers"
                     variant="primary"
                 >
                     See Career Opportunities
                 </ButtonLikeLink>
-            </Container>
+            </Section>
         </Page>
     );
 }

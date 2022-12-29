@@ -1,19 +1,21 @@
 .cardSection {
     display: flex;
-    border: var(--width-separator-thin) solid var(--color-border-light);
-    border-radius: calc(var(--radius-card));
-    background-color: var(--color-background-light);
-    height: 16rem;
+    border: var(--width-separator-thin) solid var(--color-separator);
+    border-radius: var(--radius-card);
+    background-color: var(--color-surface-white);
 
     .displayImage {
+        border-radius: unset;
+        border-top-left-radius: var(--radius-card);
+        border-bottom-left-radius: var(--radius-card);
         height: 100%;
     }
 
     .details {
-        gap: var(--spacing-medium);
         display: flex;
         flex-direction: column;
         padding: var(--spacing-medium);
+        gap: var(--spacing-medium);
 
         .position {
             color: var(--color-primary);
@@ -26,18 +28,32 @@
             -webkit-box-orient: vertical;
         }
 
-        .horizontalRow {
-            border: none;
-            background-color: var(--color-border-light);
-            height: 1px;
-        }
-
         .employeeDate {
             color: var(--color-text-light);
         }
 
         .socialMediaIcons {
             display: flex;
+        }
+    }
+
+    &.list {
+        flex-direction: column;
+
+        .displayImage {
+            border-radius: unset;
+            border-top-left-radius: var(--radius-card);
+            border-top-right-radius: var(--radius-card);
+            width: 100%;
+            height: 12rem;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .details {
+            .description {
+                -webkit-line-clamp: 3;
+            }
         }
     }
 }

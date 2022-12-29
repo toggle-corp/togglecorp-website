@@ -1,0 +1,4 @@
+.labelValue {
+    display: flex;
+    gap: var(--spacing-extra-small);
+}
