@@ -1,0 +1,17 @@
+.memberGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+
+    >* {
+        flex-basis: calc(100% / 3 - var(--spacing-medium) * 2 / 3);
+
+        @media screen and (max-width: 1200px) {
+            flex-basis: calc(100% / 2 - var(--spacing-medium));
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-basis: 100%;
+        }
+    }
+}

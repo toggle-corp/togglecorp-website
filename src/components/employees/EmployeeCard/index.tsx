@@ -19,6 +19,7 @@ interface EmployeeCardProps {
     date: string;
     linkedInLink?: string;
     instagramLink?: string;
+    variant?: 'list' | 'detail';
 }
 
 function EmployeeCard(props: EmployeeCardProps) {
@@ -31,10 +32,17 @@ function EmployeeCard(props: EmployeeCardProps) {
         date,
         linkedInLink,
         instagramLink,
+        variant = 'detail',
     } = props;
 
     return (
-        <div className={_cs(styles.cardSection, className)}>
+        <div
+            className={_cs(
+                styles.cardSection,
+                variant === 'list' && styles.list,
+                className,
+            )}
+        >
             <img
                 className={styles.displayImage}
                 src={imageSrc}
@@ -42,9 +50,16 @@ function EmployeeCard(props: EmployeeCardProps) {
             />
             <div className={styles.details}>
                 <div>
-                    <h3>
-                        {name}
-                    </h3>
+                    {variant === 'detail' && (
+                        <h3>
+                            {name}
+                        </h3>
+                    )}
+                    {variant === 'list' && (
+                        <h5>
+                            {name}
+                        </h5>
+                    )}
                     <div className={styles.position}>
                         {position}
                     </div>
@@ -52,34 +67,35 @@ function EmployeeCard(props: EmployeeCardProps) {
                 <div className={styles.description}>
                     {description}
                 </div>
-                <div className={styles.horizontalRow} />
                 <div className={styles.employeeDate}>
-                    Joined Togglecorp on
+                    Joined on:
                     {' '}
                     {dateFormatter.format(Date.parse(date))}
                 </div>
-                <div className={styles.socialMediaIcons}>
-                    {linkedInLink && (
-                        <a
-                            href={linkedInLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoLinkedin size={24} />
-                        </a>
-                    )}
-                    {instagramLink && (
-                        <a
-                            href={instagramLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoInstagram
-                                size={24}
-                            />
-                        </a>
-                    )}
-                </div>
+                {(linkedInLink || instagramLink) && (
+                    <div className={styles.socialMediaIcons}>
+                        {linkedInLink && (
+                            <a
+                                href={linkedInLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoLinkedin size={24} />
+                            </a>
+                        )}
+                        {instagramLink && (
+                            <a
+                                href={instagramLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoInstagram
+                                    size={24}
+                                />
+                            </a>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     );

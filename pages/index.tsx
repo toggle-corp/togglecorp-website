@@ -35,9 +35,12 @@ function Home(props: Props) {
                     contentClassName={styles.content}
                 >
                     <div className={styles.introductionContent}>
-                        <div className={styles.description}>
+                        <div className={styles.title}>
+                            We build tech for your idea.
+                        </div>
+                        <div>
                             {/* eslint-disable-next-line max-len */}
-                            We assist humanitarian and development agencies help people reliably and efficiently.
+                            Lorem ipsum dolor sit amet consectetur. Et ultrices adipiscing eget lacus libero massa at egestas. Pellentesque nec ullamcorper mauris nisi.
                         </div>
                         <div className={styles.tags}>
                             {projectTypes.map((projectType, i) => (

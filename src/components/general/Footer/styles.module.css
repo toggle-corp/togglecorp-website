@@ -5,34 +5,28 @@
     .content {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--spacing-large);
+        justify-content: space-between;
+        gap: var(--spacing-super-large);
 
-        .left {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            gap: var(--spacing-large);
-
-            .helpText {
-                /* FIXME: use appropriate variable */
-                font-size: var(--font-size-heading-medium);
-            }
-
-            .email {
-                color: var(--color-primary);
-                /* FIXME: use appropriate variable */
-                font-size: var(--font-size-heading-extra-small);
-            }
+        .logo {
+            height: 3rem;
         }
 
-        .logoContainer {
-            display: flex;
-            align-items: flex-end;
-            flex-shrink: 0;
-
-            .logo {
-                height: 60px;
-            }
+        .description {
+            max-width: 15rem;
         }
+    }
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+
+    .sectionContent {
+        display: flex;
+        flex-direction: column;
+        font-size: var(--font-size-small);
+        gap: var(--spacing-small);
     }
 }

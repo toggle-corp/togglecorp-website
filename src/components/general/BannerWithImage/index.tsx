@@ -12,6 +12,7 @@ interface Props {
     imageUrl?: string;
     stats?: React.ReactNode;
     mode?: 'dark' | 'light';
+    actions?: React.ReactNode;
 }
 
 function BannerWithImage(props: Props) {
@@ -22,6 +23,7 @@ function BannerWithImage(props: Props) {
         imageUrl,
         stats,
         mode = 'dark',
+        actions,
     } = props;
 
     return (
@@ -40,6 +42,7 @@ function BannerWithImage(props: Props) {
                     <div className={styles.description}>
                         {description}
                     </div>
+                    {actions}
                 </div>
                 {imageUrl && (
                     <img

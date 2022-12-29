@@ -1,30 +1,9 @@
 import React from 'react';
 
 import ButtonLikeLink from 'components/general/ButtonLikeLink';
+import LabelValue from 'components/general/LabelValue';
+
 import styles from './styles.module.css';
-
-interface LabelValueProps {
-    label: React.ReactNode;
-    value: React.ReactNode;
-}
-
-function LabelValue(props: LabelValueProps) {
-    const {
-        label,
-        value,
-    } = props;
-
-    return (
-        <div className={styles.labelValue}>
-            <div>
-                {label}
-            </div>
-            <div>
-                {value}
-            </div>
-        </div>
-    );
-}
 
 interface CareerItemProps {
     position: React.ReactNode;

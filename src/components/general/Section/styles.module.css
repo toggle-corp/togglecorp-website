@@ -56,5 +56,13 @@
             }
         }
     }
+
+    &.centeredContent {
+        .content {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
 }
 

@@ -11,6 +11,7 @@ interface Props {
     actions?: React.ReactNode;
     children: React.ReactNode;
     sideImageUrl?: string;
+    centeredContent?: boolean;
 }
 
 function Section(props: Props) {
@@ -21,6 +22,7 @@ function Section(props: Props) {
         children: childrenFromProps,
         actions,
         sideImageUrl,
+        centeredContent,
     } = props;
 
     const predefinedContent = (
@@ -66,7 +68,11 @@ function Section(props: Props) {
 
     return (
         <Container
-            className={_cs(styles.section, className)}
+            className={_cs(
+                styles.section,
+                centeredContent && styles.centeredContent,
+                className,
+            )}
             contentClassName={styles.content}
         >
             {children}
