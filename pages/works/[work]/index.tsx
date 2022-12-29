@@ -83,7 +83,7 @@ function WorkPage(props: Props) {
                     description: getClient(prevProject.client).name,
                 } : undefined}
             >
-                <div>
+                <div className={styles.projectSummary}>
                     <h3>
                         About the Project
                     </h3>

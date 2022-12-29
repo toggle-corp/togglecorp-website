@@ -3,7 +3,7 @@ import { ProjectType } from 'data/projectTypes';
 import { SkillId } from 'data/skills';
 import { ClientId } from 'data/clients';
 
-export type ProjectId = 'ifrc-go' | 'dfid' | 'npstocks' | 'innovation-project' | 'durable-solutions' | 'dfid-infographics' | 'management-information-system' | 'sustain' | 'kitab-bazar' | 'deep' | 'idmc-media' | 'idmc-gidd' | 'helix' | 'sikka' | 'child' | 'paalika' | 'pdm' | 'lgbtiq' | 'fragility-study' | 'refugee-situation' | 'hno-support' | 'covid-19' | 'urban-context' | 'emr' | 'ifrc-appeal' | 'humanitarian-access' | 'lebanon-yemen' | 'ifrc-questionaire' | 'ebola-review' | 'ukraine-russia-war' | 'global-covid-19' | 'sdg-analysis' | 'scoring-matrix';
+export type ProjectId = 'ifrc-go' | 'dfid' | 'npstocks' | 'innovation-project' | 'durable-solutions' | 'dfid-infographics' | 'management-information-system' | 'sustain' | 'kitab-bazar' | 'deep' | 'idmc-media' | 'idmc-gidd' | 'helix' | 'sikka' | 'child-sponsor' | 'paalika' | 'pdm' | 'lgbtiq' | 'fragility-study' | 'refugee-situation' | 'hno-support' | 'covid-19' | 'urban-context' | 'emr' | 'ifrc-appeal' | 'humanitarian-access' | 'lebanon-yemen' | 'ifrc-questionaire' | 'ebola-review' | 'ukraine-russia-war' | 'global-covid-19' | 'sdg-analysis' | 'scoring-matrix';
 
 export interface Project {
     id: ProjectId;
@@ -120,7 +120,7 @@ const projects: Project[] = [
     {
         id: 'deep',
         projectType: 'development',
-        projectTitle: 'Kitab Bazar',
+        projectTitle: 'Deep',
         projectDuration: 'Completed',
         client: 'dfs',
         summary: 'Platform to explore and centralised data from different sources and generate reports and interactive visualizations',
@@ -173,7 +173,7 @@ const projects: Project[] = [
         tags: ['monitoring-and-evaluation'],
     },
     {
-        id: 'child',
+        id: 'child-sponsor',
         projectType: 'development',
         projectTitle: 'Child sponsership and Data Visualization',
         projectDuration: 'Completed',
