@@ -9,7 +9,7 @@ import { ProjectId } from 'data/projects';
 
 // NOTE: we need to separate out images because they cannot be passed through getStaticProps
 const projectCoverImages: {
-    [key in ProjectId]: string;
+    [key in ProjectId]?: string;
 } = {
     'ifrc-go': ifrcGo,
     dfid: workListOne,
