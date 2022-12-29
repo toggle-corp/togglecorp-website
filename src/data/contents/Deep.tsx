@@ -1,11 +1,11 @@
 import ListContent from 'components/general/ListContent';
 
 function DeepContent() {
-    const whatWeDidList = [];
+    const whatWeDidList: string[] = [];
 
-    const challengesList = [];
+    const challengesList: string[] = [];
 
-    const learningOutcomesList = [];
+    const learningOutcomesList: string[] = [];
 
     return (
         <ListContent
