@@ -1,7 +1,4 @@
-import React, {
-    useMemo,
-    useState,
-} from 'react';
+import React, { useMemo, useState } from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { IoIosArrowRoundForward } from 'react-icons/io';
@@ -16,7 +13,10 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 
 import { TagId, getTag } from 'data/tags';
 import staticProjects, { Project } from 'data/projects';
-import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
+import {
+    projectTypes as generalServices,
+    getProjectType,
+} from 'data/projectTypes';
 
 import organizationListLogo from 'resources/organization-list.webp';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
@@ -45,47 +45,51 @@ const approaches: Approach[] = [
     {
         key: 'step1',
         title: 'Step 1: Design doc with user stories',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        description:
+      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step2',
         title: 'Step 2: Low fidelity mockups',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        description:
+      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step3',
         title: 'Step 3: Creation of milestones',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        description:
+      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step4',
         title: 'Step 4: Iterate with continuous feedback from client',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        description:
+      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
     {
         key: 'step5',
         title: 'Step 5: Delivery and support',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        description:
+      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
         image: workListOne,
     },
 ];
 
 interface Props {
-    projects: Project[],
+    projects: Project[];
     tags: (TagId | 'all')[];
 }
 
 function DevelopmentPage(props: Props) {
-    const {
-        projects,
-        tags,
-    } = props;
+    const { projects, tags } = props;
 
-    const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>('all');
+    const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>(
+        'all',
+    );
 
     const filteredProjects = useMemo(() => {
         if (filteredServiceType === 'all') {
@@ -94,9 +98,9 @@ function DevelopmentPage(props: Props) {
         return projects.filter((service) => service.tags.includes(filteredServiceType));
     }, [projects, filteredServiceType]);
 
-    const otherServices = generalServices.filter((service) => (
-        service.key !== developmentProjectType.key
-    ));
+    const otherServices = generalServices.filter(
+        (service) => service.key !== developmentProjectType.key,
+    );
 
     return (
         <Page
@@ -112,11 +116,7 @@ function DevelopmentPage(props: Props) {
                             Also see:
                             <div className={styles.tags}>
                                 {otherServices.map((service, i) => (
-                                    <Link
-                                        key={service.key}
-                                        href={service.link}
-                                        passHref
-                                    >
+                                    <Link key={service.key} href={service.link} passHref>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a>
                                             {service.title}
@@ -132,9 +132,7 @@ function DevelopmentPage(props: Props) {
         >
             <Section>
                 <div className={styles.organizationsWorkedWith}>
-                    <h3>
-                        Humanitarian organizations we’ve worked with
-                    </h3>
+                    <h3>Humanitarian organizations we’ve worked with</h3>
                     <img
                         className={styles.organizationImg}
                         src={organizationListLogo}
@@ -152,12 +150,12 @@ function DevelopmentPage(props: Props) {
                     <div className={styles.productDescription}>
                         <div className={styles.text}>
                             {/* eslint-disable-next-line max-len */}
-                            One of the platform that we&apos;ve worked on, DEEP, centralizes, accelerates and strengthens the inter-agency response to humanitarian crises. It hosts the largest analysis framework repository in the international humanitarian sector.
+                            One of the platform that we&apos;ve worked on, DEEP, centralizes,
+                            accelerates and strengthens the inter-agency response to
+                            humanitarian crises. It hosts the largest analysis framework
+                            repository in the international humanitarian sector.
                         </div>
-                        <Link
-                            href="/works"
-                            passHref
-                        >
+                        <Link href="/works" passHref>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className={styles.knowMoreLink}>
                                 Know more about DEEP
@@ -170,7 +168,7 @@ function DevelopmentPage(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="Togglecorp is proud to offer technical expertise with a wide range of high level of tech stack such as:"
+                description="We are proud to offer our wide range of technical expertise using high-level tech stack"
             >
                 <div className={styles.expertiseList}>
                     <Card
@@ -197,7 +195,7 @@ function DevelopmentPage(props: Props) {
             </Section>
             <Section
                 title="Our Approach"
-                description="We always believe in our client’s products. So, to do that, all the work we do usually begins with an in depth requirement analysis. After going back and forth on our understanding of the project, we’ll finalize the doc and work on the next steps."
+                description="We offer an integrated approach to enable organizations to achieve scalable, digital and future ready operations and aspire to commit to long term partnership and collaborative innovation"
             >
                 <AccordianWithImage
                     data={approaches}
@@ -215,7 +213,9 @@ function DevelopmentPage(props: Props) {
                     <div className={styles.researchTagList}>
                         {tags.map((tag) => (
                             <Button
-                                variant={filteredServiceType === tag ? 'outline-active' : 'outline'}
+                                variant={
+                                    filteredServiceType === tag ? 'outline-active' : 'outline'
+                                }
                                 key={tag}
                                 name={tag}
                                 onClick={setFilteredServiceType}
@@ -236,10 +236,7 @@ function DevelopmentPage(props: Props) {
                             />
                         ))}
                     </div>
-                    <Link
-                        href="/works"
-                        passHref
-                    >
+                    <Link href="/works" passHref>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a className={styles.arrowLink}>
                             See all of the works
@@ -253,9 +250,9 @@ function DevelopmentPage(props: Props) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-    const filteredProjects = staticProjects.filter((project) => (
-        project.projectType === developmentProjectType.key
-    ));
+    const filteredProjects = staticProjects.filter(
+        (project) => project.projectType === developmentProjectType.key,
+    );
     const usedTags = unique(filteredProjects.flatMap((item) => item.tags));
 
     const props: Props = {

@@ -46,15 +46,16 @@ function AboutUs() {
         >
             <Section
                 title="Our Story"
-                description="Founded in 2016 with for research and development of digital applications that makes this world [a tiny bit] better."
+                description="Togglecorp was founded in 2016 with the goal of developing software products that enhance the user experience"
             >
-                {/* eslint-disable-next-line max-len */}
-                We have a diverse team consisting of software engineers, research specialists, designers , content writers, ...
+                With a multicultural staff, Togglecorp specializes in information
+                sourcing and management procedures, frontend design, and data
+                visualization technologies.
             </Section>
             <Section
                 className={styles.ourTeam}
                 title="We are proud of the team we have built"
-                description="A place that nurtures, cares, and respects. A place where the best and the brightest are appreciated."
+                description="At Togglecorp, we focus on having quality time and quality work, and at the same time, we focus on the all-round development of our employees. Work is fun at TC!"
             >
                 <div className={styles.activityList}>
                     {expertises.map((activity) => (
@@ -82,7 +83,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Life at Togglecorp"
-                description="A team that bonds together and works together"
+                description="Spending all day at your desk and staring at your screen is not easy. Having fun is what makes all of us want to show up to work every day."
             >
                 <div className={styles.galleryList}>
                     {gallery.map((galleryItem) => (
