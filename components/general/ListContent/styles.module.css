@@ -1,0 +1,11 @@
+.listContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+
+    .content {
+        ol {
+            margin: 0;
+        }
+    }
+}
