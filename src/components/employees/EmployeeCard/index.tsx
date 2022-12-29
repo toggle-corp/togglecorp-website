@@ -12,7 +12,7 @@ const dateFormatter = new Intl.DateTimeFormat('default', {
 
 interface EmployeeCardProps {
     className?: string;
-    imageSrc: string;
+    imageSrc?: string;
     name: string;
     position: string;
     description: string;
@@ -25,7 +25,8 @@ interface EmployeeCardProps {
 function EmployeeCard(props: EmployeeCardProps) {
     const {
         className,
-        imageSrc, name,
+        imageSrc = '',
+        name,
         position,
         description,
         date,

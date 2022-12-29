@@ -36,7 +36,7 @@ import subinaRajopadhyaya from 'resources/employee/subina-rajopadhyaya.png';
 import { EmployeeId } from 'data/employees';
 
 const employeeImages: {
-    [key in EmployeeId]: string;
+    [key in EmployeeId]?: string;
 } = {
     'aditya-khatri': adityaKhatri,
     'amar-shahi': amarShahi,
