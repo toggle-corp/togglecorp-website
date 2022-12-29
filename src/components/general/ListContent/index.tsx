@@ -24,31 +24,31 @@ function ListContent(props: Props) {
                 <h3>
                     What we did:
                 </h3>
-                <ol>
+                <ul>
                     {whatWeDidDescriptions?.map((whatWeDidDescription) => (
                         <li>{whatWeDidDescription}</li>
                     ))}
-                </ol>
+                </ul>
             </div>
             <div className={styles.content}>
                 <h3>
                     Challenges:
                 </h3>
-                <ol>
+                <ul>
                     {challengesDescriptions?.map((challengesDescription) => (
                         <li>{challengesDescription}</li>
                     ))}
-                </ol>
+                </ul>
             </div>
             <div className={styles.content}>
                 <h3>
                     Learning outcomes:
                 </h3>
-                <ol>
+                <ul>
                     {learningOutcomesDescriptions?.map((learningOutcomesDescription) => (
                         <li>{learningOutcomesDescription}</li>
                     ))}
-                </ol>
+                </ul>
             </div>
         </div>
     );

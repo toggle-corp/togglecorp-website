@@ -4,7 +4,11 @@
     gap: var(--spacing-large);
 
     .content {
-        ol {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-small);
+
+        ul {
             margin: 0;
         }
     }
