@@ -83,7 +83,7 @@ function WorkPage(props: Props) {
                     description: getClient(prevProject.client).name,
                 } : undefined}
             >
-                <div className={styles.projectSummary}>
+                <div className={styles.section}>
                     <h3>
                         About the Project
                     </h3>
@@ -94,27 +94,14 @@ function WorkPage(props: Props) {
                 <div>
                     <Content />
                 </div>
-                <div className={styles.caseStudy}>
-                    Skills Used
+                <div className={styles.section}>
+                    <h5>
+                        Skills Used
+                    </h5>
+                    <div className={styles.skills}>
+                        {project.skills.map(getSkill).map((skill) => skill.name).join(', ')}
+                    </div>
                 </div>
-                <div className={styles.reviewSection}>
-                    {project.skills.map(getSkill).map((skill) => skill.name).join(', ')}
-                </div>
-                <div className={styles.organisationSection}>
-                    {/* eslint-disable-next-line max-len */}
-                    We have worked with IFRC and other organizations to enhace their technological and analysis capabilities
-                </div>
-                <div className={styles.organisationSection}>
-                    Learn how we can help you to enhance yours.
-                </div>
-                <Button
-                    name={undefined}
-                    className={styles.freeButton}
-                    variant="primary"
-                    disabled
-                >
-                    Book a free consultation
-                </Button>
             </PageContentWithSidebar>
         </Page>
     );
