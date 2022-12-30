@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io';
 import { _cs } from '@togglecorp/fujs';
+import Link from 'next/link';
 
 import styles from './styles.module.css';
 
@@ -13,6 +14,7 @@ const dateFormatter = new Intl.DateTimeFormat('default', {
 interface EmployeeCardProps {
     className?: string;
     imageSrc?: string;
+    href?: string;
     name: string;
     position: string;
     description: string;
@@ -32,10 +34,11 @@ function EmployeeCard(props: EmployeeCardProps) {
         date,
         linkedInLink,
         instagramLink,
+        href,
         variant = 'detail',
     } = props;
 
-    return (
+    const children = (
         <div
             className={_cs(
                 styles.cardSection,
@@ -101,6 +104,26 @@ function EmployeeCard(props: EmployeeCardProps) {
                 )}
             </div>
         </div>
+    );
+
+    if (!href) {
+        return (
+            <div className={className}>
+                {children}
+            </div>
+        );
+    }
+
+    return (
+        <Link
+            href={href}
+            passHref
+        >
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className={className}>
+                {children}
+            </a>
+        </Link>
     );
 }
 
