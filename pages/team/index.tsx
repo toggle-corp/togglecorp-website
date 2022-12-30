@@ -88,6 +88,7 @@ function Team(props: Props) {
                             description={member.description}
                             date={member.joinedAt}
                             variant="list"
+                            href={`/team/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />
