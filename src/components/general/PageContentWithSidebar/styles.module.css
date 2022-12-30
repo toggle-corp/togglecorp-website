@@ -2,7 +2,7 @@
     .containerContent {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-extra-large);
+        gap: var(--spacing-super-large);
 
         .previewImage {
             width: 100%;
@@ -22,7 +22,7 @@
             .sideBarContainer {
                 display: flex;
                 flex-direction: column;
-                gap: var(--spacing-large);
+                gap: var(--spacing-extra-large);
                 flex-shrink: 0;
                 width: 16rem;
             }
@@ -31,7 +31,7 @@
                 display: flex;
                 flex-direction: column;
                 max-width: 40rem;
-                gap: var(--spacing-large);
+                gap: var(--spacing-extra-large);
                 line-height: 1.5;
             }
         }
