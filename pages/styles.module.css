@@ -1,5 +1,6 @@
 .home {
     .banner {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) -12%, #FF5000 300%);
         /* TODO: replace with image */
         background-color: var(--color-surface-header);
         padding: var(--spacing-ultra-large) var(--spacing-super-large);
