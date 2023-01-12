@@ -176,7 +176,7 @@ function ConsultingPage(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="We research, analyse, interpret and present data related to humanitarian crises"
+                description="Want some expert consultancy? We are all ears!"
             >
                 <div className={styles.expertiseList}>
                     <Card
