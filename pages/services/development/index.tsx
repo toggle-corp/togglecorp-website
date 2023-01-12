@@ -46,35 +46,35 @@ const approaches: Approach[] = [
         key: 'step1',
         title: 'Step 1: Design doc with user stories',
         description:
-      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+      'Understanding a user’s perspective is imperative. So, the first thing we do after gathering initial requirements and information designs a document with potential user stories and flows.',
         image: workListOne,
     },
     {
         key: 'step2',
         title: 'Step 2: Low fidelity mockups',
         description:
-      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+      'With the user’s perspective clear and fully understood, we dive into creating low-fidelity mockups that visually represent the flow of the product/project. ',
         image: workListOne,
     },
     {
         key: 'step3',
         title: 'Step 3: Creation of milestones',
         description:
-      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+      'Milestones are significant for measuring progress. Since we have an integrated approach, we set milestones depending on the size and complexity of the project.',
         image: workListOne,
     },
     {
         key: 'step4',
         title: 'Step 4: Iterate with continuous feedback from client',
         description:
-      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+      'We value and maintain excellent relationships with our clients. After every small deployment, we collect feedback from our clients to make sure we are working towards achieving the same goal. ',
         image: workListOne,
     },
     {
         key: 'step5',
         title: 'Step 5: Delivery and support',
         description:
-      'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+      'After achieving all the goals and objectives, we deliver the product/project to our clients. But our work does not end there. After the final deployment and release, we support our clients’ queries and small fixes for a fixed period of time.',
         image: workListOne,
     },
 ];
@@ -168,7 +168,7 @@ function DevelopmentPage(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="We are proud to offer our wide range of technical expertise using high-level tech stack"
+                description="Let’s solve problems together with our selection of high-level tech stack"
             >
                 <div className={styles.expertiseList}>
                     <Card
@@ -195,7 +195,7 @@ function DevelopmentPage(props: Props) {
             </Section>
             <Section
                 title="Our Approach"
-                description="We offer an integrated approach to enable organizations to achieve scalable, digital and future ready operations and aspire to commit to long term partnership and collaborative innovation"
+                description="Togglecorp believes in an integrated approach that enables organizations to achieve long-term innovation."
             >
                 <AccordianWithImage
                     data={approaches}

@@ -170,7 +170,7 @@ function ResearchPage(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="We research, analyse, interpret and present data related to humanitarian crises"
+                description="We specialize in research, analysis, interpretation, and presentation of data mainly related to humanitarian crises."
             >
                 <div className={styles.expertiseList}>
                     <Card

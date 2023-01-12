@@ -67,7 +67,7 @@ function WorksPage(props: Props) {
             banner={(
                 <BannerWithImage
                     title="Our Works"
-                    description="We work closely with several national and international humanitarian organizations."
+                    description="Strong client relationship is the foundation of our success"
                     imageUrl={organizationLogo}
                     stats={(
                         <div className={styles.keyFigures}>
