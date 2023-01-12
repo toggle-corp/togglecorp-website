@@ -31,12 +31,11 @@ function Home(props: Props) {
                 <Container className={styles.banner} contentClassName={styles.content}>
                     <div className={styles.introductionContent}>
                         <div className={styles.title}>
-                            We build tech for your idea.
+                            Toggling ideas into reality.
                         </div>
                         <div>
-                            A flawless digital
-                            community contributing to development and research striving
-                            towards improving existing processes
+                            A flawless digital community contributing to development
+                            and research striving towards improving existing processes
                         </div>
                         <div className={styles.tags}>
                             {projectTypes.map((projectType, i) => (
@@ -65,14 +64,15 @@ function Home(props: Props) {
             </Container>
             <Section
                 title="Who We Are"
-                description="A place that nurtures, cares, and respects. A place where the best and the brightest are appreciated."
+                description="A cohesive group of brilliant-minded individuals solving real-world problems."
                 sideImageUrl={workListOne}
                 actions={(
                     <>
                         <div>
-                            We foster a learning culture that encourages every employee to
-                            grow their capabilities and careers with the values they believe
-                            in.
+                            A well-experienced firm having worked with several national
+                            and international clients aiming to help businesses solve
+                            their problems with development, data tagging,
+                            analysis, and visualizations.
                         </div>
                         <Button name={undefined} variant="outline-active">
                             Learn More
@@ -104,8 +104,8 @@ function Home(props: Props) {
                 </div>
             </Section>
             <Section
-                title="Our Recent Works"
-                description="We research, analyse, interpret and present data related to humanitarian crises"
+                title="Highlighted Works"
+                description="Togglecorp has assisted multiple clients in achieving their vision by driving change and continuous improvement"
             >
                 <div className={styles.recentWorkList}>
                     {projects.map((recentWork) => (

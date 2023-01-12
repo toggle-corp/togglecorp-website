@@ -83,7 +83,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Life at Togglecorp"
-                description="Spending all day at your desk and staring at your screen is not easy. Having fun is what makes all of us want to show up to work every day."
+                description="We spend all day staring at screens and working (apart from lunch break). KIDDING! We have fun as much as we work at Togglecorp."
             >
                 <div className={styles.galleryList}>
                     {gallery.map((galleryItem) => (
