@@ -13,6 +13,7 @@ interface Props {
     stats?: React.ReactNode;
     mode?: 'dark' | 'light';
     actions?: React.ReactNode;
+    maps?: string;
 }
 
 function BannerWithImage(props: Props) {
@@ -24,6 +25,7 @@ function BannerWithImage(props: Props) {
         stats,
         mode = 'dark',
         actions,
+        maps,
     } = props;
 
     return (
@@ -65,6 +67,21 @@ function BannerWithImage(props: Props) {
             {!stats && imageUrl && (
                 <div className={styles.reserveHeight} />
             )}
+            <Container
+                className={styles.mapSection}
+            >
+                <div className={styles.mapOuter}>
+                    <iframe
+                        className={styles.gmapIframe}
+                        title="gaathaMap"
+                        width={1150}
+                        height={450}
+                        id="gmap_canvas"
+                        src={maps}
+                        frameBorder="0"
+                    />
+                </div>
+            </Container>
         </div>
     );
 }

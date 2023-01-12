@@ -11,7 +11,6 @@ import { getProjectContent } from 'data/contents';
 import staticProjects, { Project } from 'data/projects';
 
 import Page from 'components/general/Page';
-import Button from 'components/general/Button';
 
 import styles from './styles.module.css';
 
