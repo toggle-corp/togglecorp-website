@@ -44,20 +44,38 @@ interface Approach {
 const approaches: Approach[] = [
     {
         key: 'step1',
-        title: 'Step 1: Data Extraction',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        title: 'Step 1: Problem Identification',
+        description: 'Understanding the problem is essential before diving into solutions. So, firstly, our team of experts meets the client to gather as much information as possible to understand the problem. ',
         image: workListOne,
     },
     {
         key: 'step2',
-        title: 'Step 2: Data Segregation',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        title: 'Step 2: Discussions',
+        description: 'After the initial meeting with the client to understand the problem, we have in-depth internal discussions about the problem the client is facing. We brainstorm as many solutions as possible and select the best solutions to present to the client later.',
         image: workListOne,
     },
     {
         key: 'step3',
-        title: 'Step 3: Review and Analysis',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work.',
+        title: 'Step 3: Propose Solutions',
+        description: 'Not all solutions fit the client’s needs. So, the next step would be to meet with the client and present our solutions on paper. Here, we discuss the best potential solutions that we have in mind.',
+        image: workListOne,
+    },
+    {
+        key: 'step4',
+        title: 'Step 4: Agree on Solution',
+        description: 'As the discussion continues, we will try to visualize each solution as it would be implemented. Along the way, we will cross some out, and pick some out to implement. This will be an iterative process, and finally, the best solution will be found. ',
+        image: workListOne,
+    },
+    {
+        key: 'step5',
+        title: 'Step 5: Implementation',
+        description: 'The next step would be to implement the solutions. We visit the client and implement the solution. Necessary training and guidance will be provided as not everybody might understand the solution.',
+        image: workListOne,
+    },
+    {
+        key: 'step6',
+        title: 'Step 6: Monitoring and Iterating',
+        description: 'Change should be gradual. So, we implement the solutions in iterations (for about a year). The final step would then be to monitor the implemented solution. We will monitor the provided solution for a year. If we think some changes are necessary, we edit the proposed solution and implement the updated version of the sort.',
         image: workListOne,
     },
 ];

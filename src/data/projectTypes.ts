@@ -15,7 +15,7 @@ export const development: ProjectTypeItem = {
     image: developmentImage,
     title: 'Tech Development',
     description:
-    'We build customized solutions for your business technology needs through our skilled leadership and technical teams',
+    'Togglecorp’s magical developers tailor solutions for your business technology needs through our skilled leadership and technical teams',
     link: '/services/development',
 };
 
@@ -23,7 +23,7 @@ export const research: ProjectTypeItem = {
     image: researchImage,
     title: 'Research and Analysis',
     description:
-    'We specialize in secondary data review with a humanitarian focus on qualitative research, report writing, and data analysis',
+    'Togglecorp’s expert data analysts specialize in secondary data review focusing on humanitarian qualitative research, report writing, and analysis.',
     link: '/services/research',
 };
 
@@ -31,7 +31,7 @@ export const consulting: ProjectTypeItem = {
     image: consultationImage,
     title: 'Consultation',
     description:
-    'We help clients improve their businesses through research-backed, practical solutions in fields such as IT, software design, database design, research and analysis, and management',
+    'Togglecorp aims to help your business strive by researching and analyzing your business needs and providing practical solutions.',
     link: '/services/consulting',
 };
 
