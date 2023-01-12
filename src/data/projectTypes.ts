@@ -23,7 +23,7 @@ export const research: ProjectTypeItem = {
     image: researchImage,
     title: 'Research and Analysis',
     description:
-    'Togglecorp’s expert data analysts specialize in secondary data review focusing on humanitarian qualitative research, report writing, and analysis.',
+    'We specialize in secondary data review with a humanitarian focus on qualitative research, report writing, and data analysis.',
     link: '/services/research',
 };
 
