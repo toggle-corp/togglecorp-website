@@ -28,12 +28,13 @@
             -webkit-box-orient: vertical;
         }
 
-        .employeeDate {
-            color: var(--color-text-light);
-        }
-
-        .socialMediaIcons {
+        .shareLink {
             display: flex;
+            justify-content: space-between;
+
+            .socialMediaIcons {
+                display: flex;
+            }
         }
     }
 

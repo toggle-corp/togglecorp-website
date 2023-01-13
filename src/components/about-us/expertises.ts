@@ -17,8 +17,14 @@ const expertises: Expertise[] = [
     },
     {
         key: '2',
-        title: 'Monitoring',
-        description: 'We conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response',
+        title: 'Passionate & Enthusiastic',
+        description: 'Give our team any problem or challenge, they are ready to solve it with sheer determination, passion, and enthusiasm',
+        image: monitoringLogo,
+    },
+    {
+        key: '3',
+        title: 'Amusement',
+        description: 'Our young and energetic team are sure to brighten up your day be it with random dance, out-of-scale music, good food, or just by listening',
         image: monitoringLogo,
     },
 ];

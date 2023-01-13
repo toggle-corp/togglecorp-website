@@ -20,15 +20,17 @@ function Contact() {
                     description="We love getting emails and calls. Even better, if it’s about work."
                     mode="light"
                     stats={(
-                        <div className={styles.keyFigures}>
-                            <KeyFigure
-                                label="Say Hello"
-                                value="info@togglecorp.com"
-                            />
-                            <KeyFigure
-                                label="Career"
-                                value="career@togglecorp.com"
-                            />
+                        <div className={styles.contactDetails}>
+                            <div className={styles.keyFigures}>
+                                <KeyFigure
+                                    label="Say Hello"
+                                    value="info@togglecorp.com"
+                                />
+                                <KeyFigure
+                                    label="Career"
+                                    value="career@togglecorp.com"
+                                />
+                            </div>
                             <KeyFigure
                                 label="Phone"
                                 value="+9779801345678"
