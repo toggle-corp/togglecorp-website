@@ -67,21 +67,23 @@ function BannerWithImage(props: Props) {
             {!stats && imageUrl && (
                 <div className={styles.reserveHeight} />
             )}
-            <Container
-                className={styles.mapSection}
-            >
-                <div className={styles.mapOuter}>
-                    <iframe
-                        className={styles.gmapIframe}
-                        title="gaathaMap"
-                        width={1150}
-                        height={450}
-                        id="gmap_canvas"
-                        src={maps}
-                        frameBorder="0"
-                    />
-                </div>
-            </Container>
+            {maps && (
+                <Container
+                    className={styles.mapSection}
+                >
+                    <div className={styles.mapOuter}>
+                        <iframe
+                            className={styles.gmapIframe}
+                            title="gaathaMap"
+                            width={1150}
+                            height={450}
+                            id="gmap_canvas"
+                            src={maps}
+                            frameBorder="0"
+                        />
+                    </div>
+                </Container>
+            )}
         </div>
     );
 }

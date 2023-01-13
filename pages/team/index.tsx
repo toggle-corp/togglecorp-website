@@ -47,9 +47,10 @@ function Team(props: Props) {
                             key={member.id}
                             name={member.name}
                             position={member.position}
+                            funnyDescription={member.funnyDescription}
                             description={member.description}
-                            date={member.joinedAt}
                             variant="list"
+                            employeeCardLink={`/team/employees/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />
@@ -66,9 +67,10 @@ function Team(props: Props) {
                             key={member.id}
                             name={member.name}
                             position={member.position}
+                            funnyDescription={member.funnyDescription}
                             description={member.description}
-                            date={member.joinedAt}
                             variant="list"
+                            employeeCardLink={`/team/employees/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />
@@ -85,10 +87,10 @@ function Team(props: Props) {
                             key={member.id}
                             name={member.name}
                             position={member.position}
+                            funnyDescription={member.funnyDescription}
                             description={member.description}
-                            date={member.joinedAt}
                             variant="list"
-                            href={`/team/${member.id}`}
+                            employeeCardLink={`/team/employees/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />

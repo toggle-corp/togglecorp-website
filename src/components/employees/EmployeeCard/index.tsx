@@ -1,15 +1,9 @@
 import React from 'react';
-import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io';
+import { IoLogoInstagram, IoLogoLinkedin, IoIosShareAlt } from 'react-icons/io';
 import { _cs } from '@togglecorp/fujs';
 import Link from 'next/link';
 
 import styles from './styles.module.css';
-
-// FIXME: move this to utils
-const dateFormatter = new Intl.DateTimeFormat('default', {
-    year: 'numeric',
-    month: 'short',
-});
 
 interface EmployeeCardProps {
     className?: string;
@@ -17,10 +11,11 @@ interface EmployeeCardProps {
     href?: string;
     name: string;
     position: string;
-    description: string;
-    date: string;
+    funnyDescription?: string;
+    description?: string;
     linkedInLink?: string;
     instagramLink?: string;
+    employeeCardLink?: string;
     variant?: 'list' | 'detail';
 }
 
@@ -31,9 +26,10 @@ function EmployeeCard(props: EmployeeCardProps) {
         name,
         position,
         description,
-        date,
+        funnyDescription,
         linkedInLink,
         instagramLink,
+        employeeCardLink,
         href,
         variant = 'detail',
     } = props;
@@ -68,40 +64,55 @@ function EmployeeCard(props: EmployeeCardProps) {
                     </div>
                 </div>
                 <div
-                    className={styles.description}
                     title={description}
                 >
-                    {description}
+                    {variant === 'list' && (
+                        <div
+                            className={styles.description}
+                        >
+                            {funnyDescription}
+                        </div>
+                    )}
+                    {variant === 'detail' && (
+                        <div>
+                            {description}
+                        </div>
+                    )}
+
                 </div>
-                <div className={styles.employeeDate}>
-                    Joined on:
-                    {' '}
-                    {dateFormatter.format(Date.parse(date))}
+                <div className={styles.shareLink}>
+                    {(linkedInLink || instagramLink) && (
+                        <div className={styles.socialMediaIcons}>
+                            {linkedInLink && (
+                                <a
+                                    href={linkedInLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <IoLogoLinkedin size={24} />
+                                </a>
+                            )}
+                            {instagramLink && (
+                                <a
+                                    href={instagramLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <IoLogoInstagram
+                                        size={24}
+                                    />
+                                </a>
+                            )}
+                        </div>
+                    )}
+                    {(variant === 'list' || employeeCardLink) && (
+                        <a
+                            href={employeeCardLink}
+                        >
+                            <IoIosShareAlt size={24} />
+                        </a>
+                    )}
                 </div>
-                {(linkedInLink || instagramLink) && (
-                    <div className={styles.socialMediaIcons}>
-                        {linkedInLink && (
-                            <a
-                                href={linkedInLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <IoLogoLinkedin size={24} />
-                            </a>
-                        )}
-                        {instagramLink && (
-                            <a
-                                href={instagramLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <IoLogoInstagram
-                                    size={24}
-                                />
-                            </a>
-                        )}
-                    </div>
-                )}
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import staticEmployees, { Employee } from 'data/employees';
 import EmployeeCard from 'components/employees/EmployeeCard';
 
 import tcLogo from 'resources/togglecorp-dark.svg';
-import employeeIcon from 'resources/employee-img.webp';
+import { getEmployeeImage } from 'data/employeeImages';
 
 import styles from './styles.module.css';
 
@@ -32,11 +32,11 @@ function EmployeePage(props: EmployeePageProps) {
             <EmployeeCard
                 className={styles.card}
                 key={specificEmployeeData.id}
-                imageSrc={employeeIcon}
+                imageSrc={getEmployeeImage(specificEmployeeData.id)}
                 name={specificEmployeeData.name}
                 position={specificEmployeeData.position}
+                funnyDescription={specificEmployeeData.funnyDescription}
                 description={specificEmployeeData.description}
-                date={specificEmployeeData.joinedAt}
                 linkedInLink={specificEmployeeData.linkedInLink}
                 instagramLink={specificEmployeeData.instagramLink}
             />
