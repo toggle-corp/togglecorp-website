@@ -1,37 +1,39 @@
 type Department = 'development' | 'analysis' | 'operations';
 export type EmployeeId = 'aditya-khatri'
-| 'amar-shahi'
-| 'ankit-mehta'
-| 'anusha-khadka'
-| 'barsha-thakuri'
-| 'bibek-pandey'
-| 'bimal-pandey'
-| 'kanchi-tamang'
-| 'karina-gopali'
-| 'keyur-khadka'
-| 'kisan-pahari'
-| 'kriti-chhetri'
-| 'navin-ayer'
-| 'nika-shakya'
-| 'pooja-sharma'
-| 'prinisha-baidhya'
-| 'priyesh-gautam'
-| 'puran-ban'
-| 'ranjan-shrestha'
-| 'rishi-khatri'
-| 'ruby-thapaliya'
-| 'safar-ligal'
-| 'saguna-thapa'
-| 'sameer-rai'
-| 'shreeti-kafle'
-| 'shreeya-shrestha'
-| 'shreeyash-shrestha'
-| 'shristi-manandhar'
-| 'shubh-dhital'
-| 'smriti-kafle'
-| 'sneha-pandey'
-| 'subina-rajopadhyaya'
-| 'uday-maharjan';
+    | 'amar-shahi'
+    | 'ankit-mehta'
+    | 'anusha-khadka'
+    | 'barsha-thakuri'
+    | 'bibek-pandey'
+    | 'bimal-pandey'
+    | 'kanchi-tamang'
+    | 'karina-gopali'
+    | 'keyur-khadka'
+    | 'kisan-pahari'
+    | 'kriti-chhetri'
+    | 'navin-ayer'
+    | 'nika-shakya'
+    | 'pooja-sharma'
+    | 'prinisha-baidhya'
+    | 'priyesh-gautam'
+    | 'puran-ban'
+    | 'ranjan-shrestha'
+    | 'rishi-khatri'
+    | 'ruby-thapaliya'
+    | 'safar-ligal'
+    | 'saguna-thapa'
+    | 'sameer-rai'
+    | 'shreeti-kafle'
+    | 'shreeya-shrestha'
+    | 'shreeyash-shrestha'
+    | 'shristi-manandhar'
+    | 'shubh-dhital'
+    | 'smriti-kafle'
+    | 'sneha-pandey'
+    | 'subina-rajopadhyaya'
+    | 'uday-maharjan'
+    | 'shreeti-kafle'
+    | 'sneha-pandey';
 
 export interface Employee {
     id: EmployeeId;
@@ -114,8 +116,16 @@ const bimalPandey: Employee = {
 const keyurKhadka: Employee = {
     id: 'keyur-khadka',
     name: 'Keyur Khadka',
-    position: 'Developer',
-    funnyDescription: 'Stay hard! (PS: Context is important!)',
+    position: 'Assistant Project Manager',
+    funnyDescription: 'Stay hard! (P.S: Context is important!)',
+    department: 'development',
+};
+
+const udayMaharjan: Employee = {
+    id: 'uday-maharjan',
+    name: 'Uday Maharjan',
+    position: 'Assistant Project Manager',
+    funnyDescription: 'What is your school\'s name? School Maharjan',
     department: 'development',
 };
 
@@ -167,6 +177,22 @@ const kriti: Employee = {
     department: 'analysis',
 };
 
+const shreetiKafle: Employee = {
+    id: 'shreeti-kafle',
+    name: 'Shreeti Kafle',
+    position: 'Analyst',
+    funnyDescription: 'Pitai khancha ahile!',
+    department: 'analysis',
+};
+
+const snehaPandey: Employee = {
+    id: 'sneha-pandey',
+    name: 'Sneha Pandey',
+    position: 'Analyst',
+    funnyDescription: 'Testo nabhana na...',
+    department: 'analysis',
+};
+
 const employees: Employee[] = [
     adityaKhatri,
     amarShahi,
@@ -176,13 +202,15 @@ const employees: Employee[] = [
     bibekPandey,
     bimalPandey,
     keyurKhadka,
+    udayMaharjan,
     priyeshGautam,
-
     safarLigal,
     smritiKafle,
     subinaRajopadhyay,
     shubhDhital,
     kriti,
+    snehaPandey,
+    shreetiKafle,
 ];
 
 export default employees;

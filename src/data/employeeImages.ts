@@ -29,9 +29,11 @@ import safarLigal from 'resources/employee/safar-ligal.png';
 // import shristiManandhar from 'resources/employee/shristi-manandhar.png';
 import shubhDhital from 'resources/employee/shubh-dhital.png';
 import smritiKafle from 'resources/employee/smriti-kafle.png';
-// import snehaPandey from 'resources/employee/sneha-pandey.png';
+import snehaPandey from 'resources/employee/sneha-pandey.png';
 import subinaRajopadhyaya from 'resources/employee/subina-rajopadhyaya.png';
-// import udayMaharjan from 'resources/employee/uday-maharjan.png';
+import udayMaharjan from 'resources/employee/uday-maharjan.png';
+import kritiChhetri from 'resources/employee/kriti-chhetri.png';
+import shreetiKafle from 'resources/employee/shreeti-kafle.png';
 
 import { EmployeeId } from 'data/employees';
 
@@ -44,7 +46,7 @@ const employeeImages: {
     'anusha-khadka': anushaKhadka,
     'barsha-thakuri': barshaThakuri,
     // 'bibek-pandey': bibekPandey,
-    'kriti-chhetri': employeeIcon,
+    'kriti-chhetri': kritiChhetri,
     'safar-ligal': safarLigal,
     'subina-rajopadhyaya': subinaRajopadhyaya,
     'keyur-khadka': keyurKhadka,
@@ -53,6 +55,9 @@ const employeeImages: {
     'priyesh-gautam': priyeshGautam,
     'smriti-kafle': smritiKafle,
     'shubh-dhital': shubhDhital,
+    'sneha-pandey': snehaPandey,
+    'shreeti-kafle': shreetiKafle,
+    'uday-maharjan': udayMaharjan,
 };
 
 // eslint-disable-next-line import/prefer-default-export
