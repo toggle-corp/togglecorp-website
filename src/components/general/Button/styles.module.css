@@ -18,7 +18,7 @@
     line-height: 1;
     color: var(--color);
     font-family: inherit;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-button);
     font-weight: var(--font-weight-bold);
     gap: var(--spacing-small);
 
@@ -70,6 +70,7 @@
     &.outline {
         --background: var(--color-surface-white);
         --border-color: rgba(0, 0, 0, 0.1);
+        border-radius: var(--outline-button-border-radius);
         font-weight: var(--font-weight-normal);
     }
 
@@ -77,6 +78,7 @@
         --background: var(--color-surface-white);
         --border-color: var(--color-primary);
         --color: var(--color-primary);
+        border-radius: var(--outline-button-border-radius);
         font-weight: var(--font-weight-normal);
     }
 

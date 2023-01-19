@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: var(--spacing-extra-large);
+        gap: var(--spacing-super-large);
 
         .logo {
             cursor: pointer;
@@ -17,7 +17,8 @@
             display: flex;
             flex-grow: 1;
             flex-wrap: wrap;
-            gap: var(--spacing-large);
+            justify-content: flex-end;
+            gap: var(--spacing-super-large);
         }
 
         .contactLink {
