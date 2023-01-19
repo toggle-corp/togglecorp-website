@@ -35,6 +35,7 @@
 
             .sideImage {
                 flex-shrink: 0;
+                border-radius: var(--radius-card);
                 width: calc(45% + 5rem);
                 height: 28rem;
                 object-fit: cover;

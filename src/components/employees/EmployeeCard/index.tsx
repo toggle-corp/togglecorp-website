@@ -1,5 +1,10 @@
 import React from 'react';
-import { IoLogoInstagram, IoLogoLinkedin, IoIosShareAlt } from 'react-icons/io';
+import {
+    IoLogoInstagram,
+    IoLogoLinkedin,
+} from 'react-icons/io';
+import { IoOpenOutline } from 'react-icons/io5';
+
 import { _cs } from '@togglecorp/fujs';
 import Link from 'next/link';
 
@@ -38,7 +43,8 @@ function EmployeeCard(props: EmployeeCardProps) {
         <div
             className={_cs(
                 styles.cardSection,
-                variant === 'list' && styles.list,
+                (variant === 'list' && styles.list)
+                || (variant === 'detail' && styles.detail),
                 className,
             )}
         >
@@ -57,6 +63,11 @@ function EmployeeCard(props: EmployeeCardProps) {
                     {variant === 'list' && (
                         <h5>
                             {name}
+                            <a
+                                href={employeeCardLink}
+                            >
+                                <IoOpenOutline />
+                            </a>
                         </h5>
                     )}
                     <div className={styles.position}>
@@ -80,36 +91,25 @@ function EmployeeCard(props: EmployeeCardProps) {
                     )}
 
                 </div>
-                <div className={styles.shareLink}>
-                    {(linkedInLink || instagramLink) && (
-                        <div className={styles.socialMediaIcons}>
-                            {linkedInLink && (
-                                <a
-                                    href={linkedInLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <IoLogoLinkedin size={24} />
-                                </a>
-                            )}
-                            {instagramLink && (
-                                <a
-                                    href={instagramLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <IoLogoInstagram
-                                        size={24}
-                                    />
-                                </a>
-                            )}
-                        </div>
-                    )}
-                    {(variant === 'list' || employeeCardLink) && (
+                <div className={styles.socialMediaIcons}>
+                    {(variant === 'detail' || linkedInLink) && (
                         <a
-                            href={employeeCardLink}
+                            href={linkedInLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            <IoIosShareAlt size={24} />
+                            <IoLogoLinkedin size={24} />
+                        </a>
+                    )}
+                    {(variant === 'detail' || instagramLink) && (
+                        <a
+                            href={instagramLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <IoLogoInstagram
+                                size={24}
+                            />
                         </a>
                     )}
                 </div>

@@ -110,7 +110,7 @@
     .recentWorkList {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-super-large);
+        gap: var(--spacing-highlighted-works);
 
         .recentWorkCard {
             display: flex;
@@ -131,6 +131,13 @@
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-medium);
+                
+                .description {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
             }
 
             &:nth-child(even) {
@@ -154,8 +161,7 @@
     }
 
     .bottomSection {
-        /* FIXME: use design token */
-        background-color: #fff1eb;
+        background-image: url('/rectangle-pattern.png');
 
         .content {
             display: flex;
@@ -165,6 +171,40 @@
             min-height: 20rem;
             gap: var(--spacing-large);
             text-align: center;
+        }
+    }
+    
+    .scrollTopButton{
+        position: relative;
+    }
+    .scrollTop {
+        position: fixed;
+        bottom: 40px;
+        right: 25px;
+        z-index: 20;
+
+        &:hover {
+            animation: none;
+            background: #fff;
+            color: #551B54;
+            border: 2px solid #551B54;
+        }
+    }
+    @keyframes movebtn {
+        0%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(20px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        75%{
+            transform: translateY(-20px);
+        }
+        100%{
+            transform: translateY(0px);
         }
     }
 }

@@ -19,14 +19,14 @@
 }
 
 .expertise {
-    background-color: var(--color-background-light);
+    background-color: var(--color-surface-light);
 
     .expertiseList {
         display: flex;
         gap: var(--spacing-large);
 
         >* {
-            flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
+            flex-basis: calc(50% - var(--spacing-medium) / 1.5);
         }
 
         @media screen and (max-width: 900px) {
