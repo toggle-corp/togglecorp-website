@@ -1,6 +1,7 @@
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
+import Section from 'components/general/Section';
 
 import organizationLogo from 'resources/organization.webp';
 
@@ -42,6 +43,10 @@ function Contact() {
             )}
         >
             <div />
+            <Section
+                // TODO: Add collage photos
+                title="Life at Togglecorp"
+            />
         </Page>
     );
 }

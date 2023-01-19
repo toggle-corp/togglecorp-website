@@ -10,7 +10,6 @@ import Card from 'components/general/Card';
 import { projectTypes } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';
 import staticProjects, { Project } from 'data/projects';
-
 import workListOne from 'resources/work-list-1.webp';
 import clientsIcon from 'resources/tc-clients.webp';
 
@@ -52,7 +51,7 @@ function Home(props: Props) {
                             name={undefined}
                             variant="primary"
                         >
-                            Get Started
+                            View Services
                         </Button>
                     </div>
                 </Container>

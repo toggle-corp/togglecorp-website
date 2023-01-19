@@ -4,6 +4,9 @@ import {
     IoLocation,
     IoCall,
     IoMail,
+    IoLogoFacebook,
+    IoLogoInstagram,
+    IoLogoLinkedin,
 } from 'react-icons/io5';
 
 import Container from 'components/general/Container';
@@ -74,6 +77,9 @@ function Footer(props: Props) {
                     Home
                 </div>
                 <div>
+                    About Us
+                </div>
+                <div>
                     Services
                 </div>
                 <div>
@@ -81,9 +87,6 @@ function Footer(props: Props) {
                 </div>
                 <div>
                     Contact
-                </div>
-                <div>
-                    About Us
                 </div>
             </FooterSection>
             <FooterSection
@@ -99,7 +102,10 @@ function Footer(props: Props) {
                     Consulting
                 </div>
                 <div>
-                    UI / UX Design
+                    Interface Design
+                </div>
+                <div>
+                    Interaction Design
                 </div>
             </FooterSection>
             <FooterSection title="Contact information">
@@ -136,7 +142,43 @@ function Footer(props: Props) {
                         </a>
                     )}
                 />
+                <FooterSection title="Contact With Us">
+                    <div className={styles.socialMediaIcons}>
+                        <Link
+                            href="https://www.instagram.com/"
+                            passHref
+                        >
+                            <IoLogoFacebook
+                                className={styles.socialMedia}
+                            />
+                        </Link>
+                        <Link
+                            href="https://www.instagram.com/togglecorp/"
+                            passHref
+                        >
+                            <IoLogoInstagram
+                                className={styles.socialMedia}
+                            />
+                        </Link>
+                        <Link
+                            href="https://www.linkedin.com/togglecorp/"
+                            passHref
+                        >
+                            <IoLogoLinkedin
+                                className={styles.socialMedia}
+                            />
+                        </Link>
+                    </div>
+                </FooterSection>
             </FooterSection>
+            <hr className={styles.divider} />
+            <div className={styles.copyRight}>
+                <div>Copy 2022 Togglecorp Solutions Pvt Ltd. All rights reserved.</div>
+                <div className={styles.privacy}>
+                    <p> Privacy</p>
+                    <p>Terms and Conditions</p>
+                </div>
+            </div>
         </Container>
     );
 }

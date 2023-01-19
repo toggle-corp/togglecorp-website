@@ -7,6 +7,7 @@ import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
 import ButtonLikeLink from 'components/general/ButtonLikeLink';
+import developmentImage from 'resources/development.png';
 
 import {
     keySelector,
@@ -44,6 +45,47 @@ function AboutUs() {
                 />
             )}
         >
+            <Section
+                title="Our story"
+            >
+                <div className={styles.recentWorkList}>
+                    <div className={styles.recentWorkCard}>
+                        <div className={styles.details}>
+                            <h4>
+                                Founded in 2016 with for research and development
+                                of digital applications that makes this world [a tiny bit] better.
+                            </h4>
+                            <div className={styles.description}>
+                                We have a diverse team consisting of software engineers, research
+                                specialists, designers , content writers, We have a diverse team
+                                consisting of software engineers, research specialists, designers.
+                            </div>
+                        </div>
+                        <img
+                            className={styles.workPreview}
+                            src={developmentImage}
+                            alt="our story"
+                        />
+                    </div>
+                    <div className={styles.recentWorkCard}>
+                        <div className={styles.details}>
+                            <div className={styles.description}>
+                                We have a diverse team consisting of software engineers,
+                                research specialists, designers , content writers, We have a
+                                diverse team consisting of software engineers, research specialists,
+                                designers , content writers, We have a diverse team consisting
+                                of software engineers, research specialists, designers,
+                                content writers, .....
+                            </div>
+                        </div>
+                        <img
+                            className={styles.workPreview}
+                            src={developmentImage}
+                            alt="our story"
+                        />
+                    </div>
+                </div>
+            </Section>
             <Section
                 title="Our Story"
                 description="Togglecorp was founded in 2016 with the goal of developing software products that enhance the user experience"

@@ -7,4 +7,20 @@
         flex-grow: 1;
         background-color: var(--color-background);
     }
+
+    .scrollTopButton{
+        position: relative;
+    }
+
+    .scrollTop {
+        position: fixed;
+        right: var(--spacing-super-large);
+        bottom: var(--spacing-extra-large);
+        z-index: 20;
+        color: var(--color-primary);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

@@ -6,11 +6,11 @@
 
     &.stringValue {
         .label {
-            color: var(--color-primary);
+            color: var(--color-text);
         }
 
         .value {
-            color: var(--color-text);
+            color: var(--color-primary);
             font-size: var(--font-size-medium);
         }
     }

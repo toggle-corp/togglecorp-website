@@ -16,6 +16,7 @@
 
     --color-text-on-dark: var(--color-text-white);
     --color-text-on-dark-light: var(--color-text-light-gray);
+    --color-background-social-media: rgba(255, 255, 255, 0.1);
 
 
     /* surface colors */
@@ -37,7 +38,9 @@
 
     /* Major Third progression */
     --multiplier: 1.2599;
+    --font-size-button: 1rem;
 
+    --font-size-accordion-description: 1.125rem;
     --font-size-base: 1.25rem;
     --font-size-heading-base: 2rem;
 
@@ -68,13 +71,16 @@
     --spacing-mega-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-ultra-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
 
+    --spacing-highlighted-works: 3.5rem;
+
     --radius-button: 0.25rem;
     --radius-card: 0.5rem;
-
+    --outline-button-border-radius: 1rem;
     --height-logo: 1.5rem;
 
     --width-separator-thin: 1px;
     --width-separator-medium: 2px;
+    --padding-social-media-icon: 4px;
 
     @media screen and (max-width: 900px) {
         --font-size-heading-base: 1.75rem;

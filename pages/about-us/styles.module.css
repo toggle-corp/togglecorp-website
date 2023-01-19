@@ -13,8 +13,61 @@
     }
 }
 
+.recentWorkList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-highlighted-works);
+
+    .recentWorkCard {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-super-large);
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-medium);
+            
+            .description {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .workPreview {
+            flex-basis: 50%;
+            flex-shrink: 0;
+            border-radius: 0.5rem;
+            width: 50%;
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            gap: var(--spacing-medium);
+
+            .workPreview {
+                flex-basis: unset;
+                width: 100%;
+            }
+
+            &:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
 .ourTeam {
-    background-color: var(--color-background-light);
+    background-color: var(--color-surface-light);
 
     .activityList {
         display: flex;
