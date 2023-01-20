@@ -23,11 +23,11 @@
     --color-surface-white: #ffffff;
     --color-surface-header: #fff1eb;
     --color-surface-background: #fdf9f7;
-    --color-surface-footer: #032b43;
+    --color-surface-footer: #021F31;
     --color-surface-disabled: #b3b3b3;
     --color-surface-light: #f7f7f7;
 
-    --color-separator: rgba(0, 0, 0, .08);
+    --color-seprator: #004874;
 
     --width-content-max: 72rem;
 
