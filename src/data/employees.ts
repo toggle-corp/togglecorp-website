@@ -230,7 +230,7 @@ const kriti: Employee = {
 
 const kanchiTamang: Employee = {
     id: 'kanchi-tamang',
-    name: 'kanchi Tamang',
+    name: 'Kanchi Tamang',
     position: 'Chef',
     description: '',
     funnyDescription: '',
@@ -239,7 +239,7 @@ const kanchiTamang: Employee = {
 
 const kisanPahari: Employee = {
     id: 'kisan-pahari',
-    name: 'Kisan Pahari',
+    name: 'Kishan Pahari',
     position: 'Chef',
     description: '',
     funnyDescription: '',
@@ -314,7 +314,7 @@ const rishiKhatri: Employee = {
     name: 'Rishi Khatri',
     position: 'Developer',
     description: 'Rishi will always remember......',
-    funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    funnyDescription: 'Togglecorp Airlines ma tapailai swaagat cha.. Dhanyewaad',
     department: 'development',
     githubLink: 'https://github.com/k9845',
     linkedInLink: 'https://www.linkedin.com/in/rishi-khatri-73635519a/',
@@ -389,7 +389,7 @@ const shreeyashShrestha: Employee = {
     name: 'Shreeyash Laya La Shrestha',
     position: 'Developer',
     description: '"Crafting code and building beautiful solutions with a passion for continuous learning and growth. Always striving to create and inspire change through technology."',
-    funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    funnyDescription: 'Maaraamaar, kaataakaat. Ghatiyaa haru!',
     department: 'development',
     instagramLink: 'https://www.instagram.com/shreeyash__',
     facebookLink: 'https://www.facebook.com/shreeyash07',
@@ -401,7 +401,7 @@ const rupRanjanshi: Employee = {
     name: 'Rup Narayan Rajbanshi',
     position: 'Python Developer',
     description: 'I am what I am. I am in my own world',
-    funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    funnyDescription: 'Oh sathi!',
     department: 'development',
     githubLink: 'https://github.com/Rup-Narayan-Rajbanshi',
     facebookLink: 'https://www.facebook.com/rupnarayan.rajbanshi',
@@ -413,7 +413,7 @@ const ranjanShrestha: Employee = {
     name: 'Ranjan Shrestha',
     position: 'ML Engineer',
     description: 'My interests change over time. It used to be Traveling and Photography but now it is driving. Wish for better road infrastructure so that I can drive over 100 kph.',
-    funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    funnyDescription: 'Soooooo yesterday i worked on the',
     department: 'development',
     linkedInLink: 'https://www.linkedin.com/in/ranjan-shrestha-25779164/',
 };
