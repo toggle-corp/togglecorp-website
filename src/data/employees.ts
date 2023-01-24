@@ -1,4 +1,5 @@
 type Department = 'development' | 'analysis' | 'operations';
+
 export type EmployeeId = 'aditya-khatri'
     | 'amar-shahi'
     | 'ankit-mehta'
@@ -267,7 +268,7 @@ const NavinAyer: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/navin-ayer-6453b8b4',
 };
 
-const NikaShakya: Employee = {
+const nikaShakya: Employee = {
     id: 'nika-shakya',
     name: 'Nika Shakya',
     position: 'Data Analyst',
@@ -277,7 +278,7 @@ const NikaShakya: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/nika-shakya-00b825200/',
 };
 
-const PoojaSharma: Employee = {
+const poojaSharma: Employee = {
     id: 'pooja-sharma',
     name: 'Pooja Sharma',
     position: 'Data Analyst',
@@ -298,7 +299,7 @@ const prinishaBaidya: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/prinisha-baidya-394b74187',
 };
 
-const PuranBan: Employee = {
+const puranBan: Employee = {
     id: 'puran-ban',
     name: 'Puran Ban',
     position: 'Developer',
@@ -474,37 +475,37 @@ const employees: Employee[] = [
     adityaKhatri,
     amarShahi,
     ankitMehta,
-    anushaKhadka,
-    barshaThakuri,
-    bibekPandey,
-    bimalPandey,
-    keyurKhadka,
+    NavinAyer,
+    safarLigal,
     udayMaharjan,
+    keyurKhadka,
+    subinaRajopadhyay,
+    smritiKafle,
+    barshaThakuri,
+    kriti,
+    shreetiKafle,
+    prinishaBaidya,
+    snehaPandey,
+    anushaKhadka,
+    bibekPandey,
+    sameerRai,
+    bimalPandey,
     priyeshGautam,
     kanchiTamang,
     kisanPahari,
+    shreeyaShrestha,
     karinaGopali,
-    NavinAyer,
-    NikaShakya,
-    PoojaSharma,
-    prinishaBaidya,
-    PuranBan,
+    nikaShakya,
+    poojaSharma,
+    puranBan,
     rishiKhatri,
-    safarLigal,
-    smritiKafle,
-    subinaRajopadhyay,
     shubhDhital,
-    kriti,
-    snehaPandey,
-    shreetiKafle,
     bimalSaud,
     sadikshyaHamal,
     shristiManandhar,
-    shreeyaShrestha,
     shreeyashShrestha,
     rupRanjanshi,
     ranjanShrestha,
-    sameerRai,
     sushmaAdhikari,
     rubyThapaliya,
     sagunaThapa,
