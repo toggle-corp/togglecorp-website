@@ -6,32 +6,36 @@ import anushaKhadka from 'resources/employee/anusha-khadka.png';
 import barshaThakuri from 'resources/employee/barsha-thakuri.png';
 import bibekPandey from 'resources/employee/bibek-pandey.png';
 import bimalPandey from 'resources/employee/bimal-pandey.png';
+import bimalSaud from 'resources/employee/bimal-saud.png';
 // import kanchiTamang from 'resources/employee/kanchi-tamang.png';
-// import karinaGopali from 'resources/employee/karina-gopali.png';
+import karinaGopali from 'resources/employee/karina.png';
 import keyurKhadka from 'resources/employee/keyur-khadka.png';
-// import kisanPahari from 'resources/employee/kisan-pahari.png';
+import kishanPahari from 'resources/employee/nishan.png';
 import kritiChhetri from 'resources/employee/kriti-chhetri.png';
 import navinAyer from 'resources/employee/navin.png';
-// import nikaShakya from 'resources/employee/nika-shakya.png';
-// import poojaSharma from 'resources/employee/pooja-sharma.png';
-// import prinishaBaidhya from 'resources/employee/prinisha-baidhya.png';
+import nikaShakya from 'resources/employee/nika.png';
+import poojaSharma from 'resources/employee/pooja.png';
+import prinishaBaidya from 'resources/employee/prinisha.png';
 import priyeshGautam from 'resources/employee/priyesh-gautam.png';
-// import puranBan from 'resources/employee/puran-ban.png';
+import puranBan from 'resources/employee/puran-ban.png';
 import ranjanShrestha from 'resources/employee/ranjan.png';
 // import rishiKhatri from 'resources/employee/rishi-khatri.png';
-// import rubyThapaliya from 'resources/employee/ruby-thapaliya.png';
+import rubyThapaliya from 'resources/employee/ruby.png';
 import safarLigal from 'resources/employee/safar-ligal.png';
+import sadikshyaHamal from 'resources/employee/sadikshya.png';
 import sagunaThapa from 'resources/employee/saguna.png';
-// import sameerRai from 'resources/employee/sameer-rai.png';
+import sameerRai from 'resources/employee/sameer-rai.png';
 import shreetiKafle from 'resources/employee/shreeti-kafle.png';
-// import shreeyaShrestha from 'resources/employee/shreeya-shrestha.png';
-// import shreeyashShrestha from 'resources/employee/shreeyash-shrestha.png';
-// import shristiManandhar from 'resources/employee/shristi-manandhar.png';
+import shreeyaShrestha from 'resources/employee/shya.png';
+import shreeyashShrestha from 'resources/employee/shreeyash.png';
+import shristiManandhar from 'resources/employee/shristi.png';
 import shubhDhital from 'resources/employee/shubh-dhital.png';
 import smritiKafle from 'resources/employee/smriti-kafle.png';
 import snehaPandey from 'resources/employee/sneha-pandey.png';
 import subinaRajopadhyaya from 'resources/employee/subina-rajopadhyaya.png';
 import udayMaharjan from 'resources/employee/uday-maharjan.png';
+import rup from 'resources/employee/rup.png';
+import sushmaAdhikari from 'resources/employee/sushma.png';
 
 import { EmployeeId } from 'data/employees';
 
@@ -43,7 +47,6 @@ const employeeImages: {
     'ankit-mehta': ankitMehta,
     'anusha-khadka': anushaKhadka,
     'barsha-thakuri': barshaThakuri,
-    // 'bibek-pandey': bibekPandey,
     'safar-ligal': safarLigal,
     'subina-rajopadhyaya': subinaRajopadhyaya,
     'keyur-khadka': keyurKhadka,
@@ -58,6 +61,24 @@ const employeeImages: {
     'sneha-pandey': snehaPandey,
     'uday-maharjan': udayMaharjan,
     'saguna-thapa': sagunaThapa,
+    'bimal-saud': bimalSaud,
+    'karina-gopali': karinaGopali,
+    'kisan-pahari': kishanPahari,
+    'nika-shakya': nikaShakya,
+    'pooja-sharma': poojaSharma,
+    'prinisha-baidya': prinishaBaidya,
+    'puran-ban': puranBan,
+    'ranjan-shrestha': ranjanShrestha,
+    'ruby-thapaliya': rubyThapaliya,
+    'sadikshya-hamal': sadikshyaHamal,
+    'saguna-thapa': sagunaThapa,
+    'sameer-rai': sameerRai,
+    'shreeya-shrestha': shreeyaShrestha,
+    'shreeyash-shrestha': shreeyashShrestha,
+    'shristi-manandhar': shristiManandhar,
+    'rup-rajbanshi': rup,
+    'sushma-adhikari': sushmaAdhikari,
+
 };
 
 // eslint-disable-next-line import/prefer-default-export
