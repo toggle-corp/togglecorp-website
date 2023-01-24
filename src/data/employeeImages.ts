@@ -19,7 +19,7 @@ import prinishaBaidya from 'resources/employee/prinisha.png';
 import priyeshGautam from 'resources/employee/priyesh-gautam.png';
 import puranBan from 'resources/employee/puran-ban.png';
 import ranjanShrestha from 'resources/employee/ranjan.png';
-// import rishiKhatri from 'resources/employee/rishi-khatri.png';
+import rishiKhatri from 'resources/employee/rishi-khatri.png';
 import rubyThapaliya from 'resources/employee/ruby.png';
 import safarLigal from 'resources/employee/safar-ligal.png';
 import sadikshyaHamal from 'resources/employee/sadikshya.png';
@@ -71,13 +71,13 @@ const employeeImages: {
     'ranjan-shrestha': ranjanShrestha,
     'ruby-thapaliya': rubyThapaliya,
     'sadikshya-hamal': sadikshyaHamal,
-    'saguna-thapa': sagunaThapa,
     'sameer-rai': sameerRai,
     'shreeya-shrestha': shreeyaShrestha,
     'shreeyash-shrestha': shreeyashShrestha,
     'shristi-manandhar': shristiManandhar,
     'rup-rajbanshi': rup,
     'sushma-adhikari': sushmaAdhikari,
+    'rishi-khatri': rishiKhatri,
 
 };
 
