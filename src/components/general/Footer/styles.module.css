@@ -45,23 +45,23 @@
             }
         }
     }
+}
 
-    .divider {
-        border-color: var(--color-seprator);
-        width: 100%;
-    }
+.copyrightContainer {
+    background-color: var(--color-surface-footer);
+    color: var(--color-text-white);
+    border-top: 0.8px solid;
+    border-color: var(--color-seprator);
 
     .copyRight {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         font-size: var(--font-size-small);
-        gap: var(--spacing-large);
 
         .privacy {
             display: flex;
-            gap: var(--spacing-medium);
+            gap: var(--spacing-ultra-large);
         }
     }
 }
