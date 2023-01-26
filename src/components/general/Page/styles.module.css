@@ -8,16 +8,23 @@
         background-color: var(--color-background);
     }
 
-    .scrollTopButton{
+    .scrollTopButton {
         position: relative;
     }
 
     .scrollTop {
         position: fixed;
-        right: var(--spacing-super-large);
+        right: var(--spacing-mega-large);
         bottom: var(--spacing-extra-large);
         z-index: 20;
         color: var(--color-primary);
+        background-color: var(--color-surface-light);
+        padding: var(--spacing-extra-small);
+        width: 3rem;
+        height: 3rem;
+        border-radius: var(--outline-button-border-radius);
+        border: var(--width-separator-thin) solid;
+        border-color: var(--color-primary);
 
         &:hover {
             cursor: pointer;
