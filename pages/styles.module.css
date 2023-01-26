@@ -57,6 +57,7 @@
             height: 20rem;
             object-fit: cover;
             object-position: center;
+            border-radius: var(--radius-card);
         }
 
         @media screen and (max-width: 900px) {
@@ -162,6 +163,9 @@
 
     .bottomSection {
         background-image: url('/rectangle-pattern.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .content {
             display: flex;
