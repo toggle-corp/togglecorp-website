@@ -74,7 +74,7 @@ function BannerWithImage(props: Props) {
                     <div className={styles.mapOuter}>
                         <iframe
                             className={styles.gmapIframe}
-                            title="gaathaMap"
+                            title="togglecorpMap"
                             width={1150}
                             height={450}
                             id="gmap_canvas"
