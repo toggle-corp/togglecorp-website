@@ -54,6 +54,7 @@ function Page(props: Props) {
                 <FaArrowUp
                     className={styles.scrollTop}
                     onClick={goToTop}
+                    size={24}
                 />
             </div>
         </div>
