@@ -83,7 +83,7 @@
     }
 
     .ourServices {
-        background-color: var(--color-background-light);
+        background-color: var(--color-surface-light);
 
         .serviceList {
             display: flex;
@@ -131,7 +131,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-medium);
-                
+
                 .description {
                     display: -webkit-box;
                     overflow: hidden;
@@ -173,10 +173,11 @@
             text-align: center;
         }
     }
-    
-    .scrollTopButton{
+
+    .scrollTopButton {
         position: relative;
     }
+
     .scrollTop {
         position: fixed;
         bottom: 40px;
@@ -190,22 +191,26 @@
             border: 2px solid #551B54;
         }
     }
+
     @keyframes movebtn {
-        0%{
+        0% {
             transform: translateY(0px);
         }
-        25%{
+
+        25% {
             transform: translateY(20px);
         }
-        50%{
+
+        50% {
             transform: translateY(0px);
         }
-        75%{
+
+        75% {
             transform: translateY(-20px);
         }
-        100%{
+
+        100% {
             transform: translateY(0px);
         }
     }
 }
-
