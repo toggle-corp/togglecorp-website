@@ -6,7 +6,7 @@
 
     &.stringValue {
         .label {
-            color: var(--color-text);
+            color: var(--color-secondary);
         }
 
         .value {
