@@ -173,7 +173,7 @@ function Footer(props: Props) {
             </FooterSection>
             <hr className={styles.divider} />
             <div className={styles.copyRight}>
-                <div>Copy 2022 Togglecorp Solutions Pvt Ltd. All rights reserved.</div>
+                <div>Copyright 2022 Togglecorp Solutions Pvt Ltd. All rights reserved.</div>
                 <div className={styles.privacy}>
                     <p> Privacy</p>
                     <p>Terms and Conditions</p>
