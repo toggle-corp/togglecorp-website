@@ -49,137 +49,146 @@ function Footer(props: Props) {
     const { className } = props;
 
     return (
-        <Container
-            className={_cs(styles.footer, className)}
-            contentClassName={styles.content}
-        >
-            <FooterSection
-                title={(
-                    <Link
-                        href="/"
-                        passHref
-                    >
-                        <img
-                            className={styles.logo}
-                            src={tcLogo}
-                            alt="TC"
-                        />
-                    </Link>
-                )}
-                contentClassName={styles.description}
+        <>
+            <Container
+                className={_cs(styles.footer, className)}
+                contentClassName={styles.content}
             >
-                For almost 10 years, our team of experts have worked together with a single goal.
-            </FooterSection>
-            <FooterSection
-                title="Company"
-            >
-                <div>
-                    Home
-                </div>
-                <div>
-                    About Us
-                </div>
-                <div>
-                    Services
-                </div>
-                <div>
-                    Blog
-                </div>
-                <div>
-                    Contact
-                </div>
-            </FooterSection>
-            <FooterSection
-                title="Services"
-            >
-                <div>
-                    Software Development
-                </div>
-                <div>
-                    Data Analysis
-                </div>
-                <div>
-                    Consulting
-                </div>
-                <div>
-                    Interface Design
-                </div>
-                <div>
-                    Interaction Design
-                </div>
-            </FooterSection>
-            <FooterSection title="Contact information">
-                <LabelValue
-                    value="Manbhawan, Lalitpur, Nepal"
-                    label={<IoLocation />}
-                />
-                <LabelValue
-                    value={(
-                        <>
-                            <a href="tel:+977-9841331922">
-                                +977-9841331922
-                            </a>
-                            <span>
-                                ,&nbsp;
-                            </span>
-                            <a href="tel:+977-9849831936">
-                                +977-9849831936
-                            </a>
-                        </>
+                <FooterSection
+                    title={(
+                        <Link
+                            href="/"
+                            passHref
+                        >
+                            <img
+                                className={styles.logo}
+                                src={tcLogo}
+                                alt="TC"
+                            />
+                        </Link>
                     )}
-                    label={<IoCall />}
-                />
-                <LabelValue
-                    label={<IoMail />}
-                    value={(
-                        <a
-                            className={styles.email}
-                            target="_blank"
-                            href="mailto:info@togglecorp.com"
-                            rel="noreferrer noopener"
-                        >
-                            info@togglecorp.com
-                        </a>
-                    )}
-                />
-                <FooterSection title="Contact With Us">
-                    <div className={styles.socialMediaIcons}>
-                        <Link
-                            href="https://www.instagram.com/"
-                            passHref
-                        >
-                            <IoLogoFacebook
-                                className={styles.socialMedia}
-                            />
-                        </Link>
-                        <Link
-                            href="https://www.instagram.com/togglecorp/"
-                            passHref
-                        >
-                            <IoLogoInstagram
-                                className={styles.socialMedia}
-                            />
-                        </Link>
-                        <Link
-                            href="https://www.linkedin.com/togglecorp/"
-                            passHref
-                        >
-                            <IoLogoLinkedin
-                                className={styles.socialMedia}
-                            />
-                        </Link>
+                    contentClassName={styles.description}
+                >
+                    For almost 10 years, our team of experts have worked together with a single goal.
+                </FooterSection>
+                <FooterSection
+                    title="Company"
+                >
+                    <div>
+                        Home
+                    </div>
+                    <div>
+                        About Us
+                    </div>
+                    <div>
+                        Services
+                    </div>
+                    <div>
+                        Blog
+                    </div>
+                    <div>
+                        Contact
                     </div>
                 </FooterSection>
-            </FooterSection>
-            <hr className={styles.divider} />
-            <div className={styles.copyRight}>
-                <div>Copyright 2022 Togglecorp Solutions Pvt Ltd. All rights reserved.</div>
-                <div className={styles.privacy}>
-                    <p> Privacy</p>
-                    <p>Terms and Conditions</p>
+                <FooterSection
+                    title="Services"
+                >
+                    <div>
+                        Software Development
+                    </div>
+                    <div>
+                        Data Analysis
+                    </div>
+                    <div>
+                        Consulting
+                    </div>
+                    <div>
+                        Interface Design
+                    </div>
+                    <div>
+                        Interaction Design
+                    </div>
+                </FooterSection>
+                <FooterSection title="Contact information">
+                    <LabelValue
+                        value="Manbhawan, Lalitpur, Nepal"
+                        label={<IoLocation />}
+                    />
+                    <LabelValue
+                        value={(
+                            <>
+                                <a href="tel:+977-9841331922">
+                                    +977-9841331922
+                                </a>
+                                <span>
+                                    ,&nbsp;
+                                </span>
+                                <a href="tel:+977-9849831936">
+                                    +977-9849831936
+                                </a>
+                            </>
+                        )}
+                        label={<IoCall />}
+                    />
+                    <LabelValue
+                        label={<IoMail />}
+                        value={(
+                            <a
+                                className={styles.email}
+                                target="_blank"
+                                href="mailto:info@togglecorp.com"
+                                rel="noreferrer noopener"
+                            >
+                                info@togglecorp.com
+                            </a>
+                        )}
+                    />
+                    <FooterSection title="Contact With Us">
+                        <div className={styles.socialMediaIcons}>
+                            <Link
+                                href="https://www.instagram.com/"
+                                passHref
+                            >
+                                <IoLogoFacebook
+                                    className={styles.socialMedia}
+                                />
+                            </Link>
+                            <Link
+                                href="https://www.instagram.com/togglecorp/"
+                                passHref
+                            >
+                                <IoLogoInstagram
+                                    className={styles.socialMedia}
+                                />
+                            </Link>
+                            <Link
+                                href="https://www.linkedin.com/togglecorp/"
+                                passHref
+                            >
+                                <IoLogoLinkedin
+                                    className={styles.socialMedia}
+                                />
+                            </Link>
+                        </div>
+                    </FooterSection>
+                </FooterSection>
+            </Container>
+            <Container className={styles.copyrightContainer}>
+                <div className={styles.copyRight}>
+                    <div>
+                        Copyright
+                        {' '}
+                        {new Date().getFullYear()}
+                        {' '}
+                        Togglecorp Solutions Pvt Ltd. All rights reserved.
+                    </div>
+                    <div className={styles.privacy}>
+                        <p> Privacy</p>
+                        <p>Terms and Conditions</p>
+                    </div>
                 </div>
-            </div>
-        </Container>
+            </Container>
+        </>
     );
 }
 
