@@ -88,15 +88,20 @@
         .mapOuter {
             display: block;
 
-            @media screen and (max-width: 1020px) {
+            @media screen and (max-width: 800px) {
                 position: relative;
                 width: 100%;
                 height: 22rem;
                 overflow: hidden;
+                border-radius: var(--radius-card);
             }
 
             .gmapIframe {
-                @media screen and (max-width: 1020px) {
+                width: 100%;
+                height: 37rem;
+                border-radius: var(--radius-card);
+
+                @media screen and (max-width: 800px) {
                     position: absolute;
                     top: 0;
                     left: 0;
