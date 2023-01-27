@@ -1,7 +1,9 @@
 :root {
     /* brand colors */
-    --color-primary: #ff5500; /* orangish */
-    --color-secondary: #032B43; /* dark bluish */
+    --color-primary: #ff5500;
+    /* orangish */
+    --color-secondary: #032B43;
+    /* dark bluish */
 
     /* text colors */
     --color-text-black: #313131;
@@ -11,8 +13,10 @@
     /* fixme: we probably need another color for this */
     --color-text-on-disabled: #333333;
 
-    --color-text: var(--color-text-black); /* black */
-    --color-text-light: var(--color-text-dark-gray); /* dark gray */
+    --color-text: var(--color-text-black);
+    /* black */
+    --color-text-light: var(--color-text-dark-gray);
+    /* dark gray */
 
     --color-text-on-dark: var(--color-text-white);
     --color-text-on-dark-light: var(--color-text-light-gray);
@@ -28,6 +32,7 @@
     --color-surface-light: #f7f7f7;
 
     --color-seprator: #004874;
+    --color-accordion-separator: #E5E5E5;
 
     --width-content-max: 72rem;
 
@@ -91,4 +96,3 @@
         --font-size-key-figure-value: 2rem;
     }
 }
-
