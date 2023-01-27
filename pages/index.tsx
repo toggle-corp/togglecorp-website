@@ -129,7 +129,7 @@ function Home(props: Props) {
                 <h3>Have a project you&apos;d like to talk to us about?</h3>
                 <div>Tell us about your need, we&apos;d love to hear from you.</div>
                 <Button name={undefined} variant="primary">
-                    Let&apos;s Get Started
+                    See how we can help you
                 </Button>
             </Container>
         </Page>
