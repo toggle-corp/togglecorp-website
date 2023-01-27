@@ -5,6 +5,8 @@ import { _cs } from '@togglecorp/fujs';
 import tcLogo from 'resources/togglecorp-normal.svg';
 import Container from 'components/general/Container';
 
+import Button from 'components/general/Button';
+
 import styles from './styles.module.css';
 
 interface NavLinkProps {
@@ -77,7 +79,12 @@ function Navbar(props: NavProps) {
                 href="/contact-us"
                 className={styles.contactLink}
             >
-                Contact Us
+                <Button
+                    name={undefined}
+                    variant="primary"
+                >
+                    Contact Us
+                </Button>
             </NavLink>
         </Container>
     );
