@@ -78,7 +78,7 @@
         --background: var(--color-surface-white);
         --border-color: var(--color-primary);
         --color: var(--color-primary);
-        border-radius: var(--outline-button-border-radius);
+        border-radius: var(--radius-button);
         font-weight: var(--font-weight-normal);
     }
 
