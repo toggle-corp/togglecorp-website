@@ -96,6 +96,7 @@
                 flex-grow: 1;
                 min-width: 20rem;
                 max-width: calc(50% - var(--spacing-medium) / 2);
+                background-color: var(--color-surface-white);
             }
 
             @media screen and (max-width: 900px) {
