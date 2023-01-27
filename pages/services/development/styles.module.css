@@ -64,6 +64,7 @@
 
             >* {
                 flex-basis: calc(50% - var(--spacing-medium));
+                background-color: var(--color-surface-white);
             }
 
             @media screen and (max-width: 900px) {
