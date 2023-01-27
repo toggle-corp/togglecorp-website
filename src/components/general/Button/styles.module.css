@@ -1,5 +1,5 @@
 .button {
-    --padding: var(--spacing-extra-small) var(--spacing-small);
+    --padding: var(--spacing-extra-small) var(--spacing-large);
     --border-color: transparent;
     --background: var(--color-background);
     --color: var(--color-text);
