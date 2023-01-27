@@ -17,7 +17,7 @@ function CareerPage() {
                 <BannerWithImage
                     title="Career at Togglecorp"
                     imageUrl={organizationLogo}
-                    description="We are constantly seeking new talents that can contribute to our cultural values; someone who shares our vision but can also bring diversity"
+                    description="We seek new talents who contribute to our values & visions"
                     mode="light"
                 />
             )}

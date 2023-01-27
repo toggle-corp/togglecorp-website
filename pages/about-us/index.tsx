@@ -32,7 +32,7 @@ function AboutUs() {
                 <BannerWithImage
                     title="About Us"
                     imageUrl={organizationLogo}
-                    description="A place to grow your creativity, to imagine a better future and to work on the issues we believe in."
+                    description="A place to grow your creativity & work on the issues you believe in"
                     mode="light"
                     actions={(
                         <ButtonLikeLink

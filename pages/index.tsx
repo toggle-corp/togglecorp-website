@@ -30,7 +30,7 @@ function Home(props: Props) {
                 <Container className={styles.banner} contentClassName={styles.content}>
                     <div className={styles.introductionContent}>
                         <div className={styles.title}>
-                            Toggling ideas into reality.
+                            Toggling ideas into reality
                         </div>
                         <div>
                             A flawless digital community contributing to development
