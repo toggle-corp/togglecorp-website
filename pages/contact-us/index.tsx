@@ -16,9 +16,9 @@ function Contact() {
             className={styles.workList}
             banner={(
                 <BannerWithImage
-                    title="Career at Togglecorp"
+                    title="Connect With Us"
                     imageUrl={organizationLogo}
-                    description="We love getting emails and calls. Even better, if it’s about work."
+                    description="We love getting emails and calls. We just hope that they find us well"
                     mode="light"
                     stats={(
                         <div className={styles.contactDetails}>
