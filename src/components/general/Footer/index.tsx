@@ -81,13 +81,10 @@ function Footer(props: Props) {
                         About Us
                     </div>
                     <div>
+                        Contact Us
+                    </div>
+                    <div>
                         Services
-                    </div>
-                    <div>
-                        Blog
-                    </div>
-                    <div>
-                        Contact
                     </div>
                 </FooterSection>
                 <FooterSection
@@ -101,12 +98,6 @@ function Footer(props: Props) {
                     </div>
                     <div>
                         Consulting
-                    </div>
-                    <div>
-                        Interface Design
-                    </div>
-                    <div>
-                        Interaction Design
                     </div>
                 </FooterSection>
                 <FooterSection title="Contact information">
