@@ -22,6 +22,7 @@
         }
 
         .contactLink {
+            margin-left: var(--spacing-super-large);
             flex-shrink: 0;
         }
     }
