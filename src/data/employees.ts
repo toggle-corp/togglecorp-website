@@ -232,18 +232,18 @@ const kriti: Employee = {
 const kanchiTamang: Employee = {
     id: 'kanchi-tamang',
     name: 'Kanchi Tamang',
-    position: 'Chef',
+    position: 'Office Assistant',
     description: '',
-    funnyDescription: '',
+    funnyDescription: 'Kripaya office sakdo safa sugar rakhdinu hola',
     department: 'operations',
 };
 
 const kisanPahari: Employee = {
     id: 'kisan-pahari',
-    name: 'Kishan Pahari',
+    name: 'Nishan Pahari',
     position: 'Chef',
     description: '',
-    funnyDescription: '',
+    funnyDescription: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
     department: 'operations',
 };
 
