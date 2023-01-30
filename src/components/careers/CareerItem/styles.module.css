@@ -8,9 +8,25 @@
     gap: var(--spacing-small);
     font-size: var(--font-size-small);
 
+    .departmentLabel {
+        color: var(--color-text-dark-gray);
+    }
+
+    .divider {
+        color: white;
+        width: 100%;
+        border-top: 1px;
+        border-color: #DFDFDF;
+    }
+
     .actions {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+
+        .applyDate {
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-text-dark-gray);
+        }
     }
 }
-
