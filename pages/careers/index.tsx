@@ -25,7 +25,7 @@ function CareerPage() {
             <Container contentClassName={styles.careerContent}>
                 <Header
                     title="Job openings"
-                    description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
+                    description="We are a team of problem-solvers working together solving real world problems. Join us and let's solve problems together"
                 />
                 <div className={styles.vacancies}>
                     {vacancies.map((vacancy) => (
