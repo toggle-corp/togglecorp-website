@@ -2,6 +2,7 @@ import React from 'react';
 
 import ButtonLikeLink from 'components/general/ButtonLikeLink';
 import LabelValue from 'components/general/LabelValue';
+import { IoCalendarClearOutline } from 'react-icons/io5';
 
 import styles from './styles.module.css';
 
@@ -31,7 +32,7 @@ function CareerItem(props: CareerItemProps) {
             <h4>
                 {position}
             </h4>
-            <div>
+            <div className={styles.departmentLabel}>
                 {department}
             </div>
             <div>
@@ -52,9 +53,14 @@ function CareerItem(props: CareerItemProps) {
                     value={salary}
                 />
             </div>
+            <hr className={styles.divider} />
             <div className={styles.actions}>
+                <div className={styles.applyDate}>
+                    <IoCalendarClearOutline color="grey" size={20} />
+                    &nbsp;&nbsp;April 22, 2023
+                </div>
                 <ButtonLikeLink href={applyUrl}>
-                    Apply
+                    Apply Now
                 </ButtonLikeLink>
             </div>
         </div>
