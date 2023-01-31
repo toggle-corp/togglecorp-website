@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "css-lint": "stylelint 'pages/**/*.css' 'components/**/*.css'",
+        "css-lint": "stylelint 'pages/**/*.css' 'src/**/*.css'",
         "typecheck": "tsc",
         "export": "next build && next export"
     },

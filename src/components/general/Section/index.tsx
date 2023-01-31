@@ -9,7 +9,7 @@ interface Props {
     title?: string;
     description?: string;
     actions?: React.ReactNode;
-    children: React.ReactNode;
+    children?: React.ReactNode;
     sideImageUrl?: string;
     centeredContent?: boolean;
 }

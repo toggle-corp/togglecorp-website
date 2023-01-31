@@ -73,57 +73,46 @@ function BlogPage(props: BlogPageProps) {
                     summary={(
                         <div>
                             <ol>
-                                <li
-                                    className={styles.projectDescription}
-                                >
+                                <li>
                                     {specificBlogData.whatWeDid[0]}
                                 </li>
-                                <li
-                                    className={styles.projectDescription}
-                                >
+                                <li>
                                     {specificBlogData.whatWeDid[1]}
                                 </li>
-                                <li
-                                    className={styles.projectDescription}
-                                >
+                                <li>
                                     {specificBlogData.whatWeDid[2]}
                                 </li>
-                                <li
-                                    className={styles.projectDescription}
-                                >
+                                <li>
                                     {specificBlogData.whatWeDid[3]}
                                 </li>
-                                <li
-                                    className={styles.projectDescription}
-                                >
+                                <li>
                                     {specificBlogData.whatWeDid[4]}
                                 </li>
                             </ol>
                         </div>
                     )}
                 />
-                <div className={styles.descriptionList}>
-                    <p className={styles.paragraph}>
+                <div>
+                    <p>
                         {/* eslint-disable-next-line max-len */}
                         Voluptatibus pariatur perferendis vel eius odit enim. Eius officiis dolor id aliquid et eligendi autem asperiores. Est rem fugit voluptatem alias fuga. Aut blanditiis quo laudantium dicta quidem ullam sapiente sit.
                     </p>
-                    <p className={styles.paragraph}>
+                    <p>
                         {/* eslint-disable-next-line max-len */}
                         Quasi soluta omnis quaerat voluptatem sapiente. Molestiae molestiae tenetur officia qui. Voluptate nihil sint provident exercitationem velit recusandae libero. Culpa delectus ipsum error sunt.
                     </p>
-                    <p className={styles.paragraph}>
+                    <p>
                         {/* eslint-disable-next-line max-len */}
                         Veritatis consequuntur ea sed deleniti deserunt. Atque deserunt quia quasi mollitia. Distinctio sit atque quasi nesciunt amet fugit ullam. Aut corrupti fuga sint dicta distinctio. Eveniet earum saepe quaerat quaerat est.
                     </p>
                 </div>
-                <div className={styles.organisationSection}>
+                <div>
                     {/* eslint-disable-next-line max-len */}
                     We have worked with IFRC and other organizations to enhace their technological and analysis capabilities.
                     Learn how we can help you to enhance yours.
                 </div>
                 <Button
                     name={undefined}
-                    className={styles.freeButton}
                     variant="primary"
                     disabled
                 >

@@ -13,10 +13,9 @@
     }
 
     .divider {
-        color: white;
+        border-top: var(--width-separator-thin) solid var(--color-separator);
         width: 100%;
-        border-top: 1px;
-        border-color: #DFDFDF;
+        color: white;
     }
 
     .actions {

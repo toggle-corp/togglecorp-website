@@ -1,6 +1,6 @@
 .home {
     .banner {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) -12%, #FF5000 300%);
+        background: linear-gradient(90deg, var(--color-surface-banner-gradient-stop)  -12%, var(--color-surface-banner-gradient-start) 300%);
         /* TODO: replace with image */
         background-color: var(--color-surface-header);
         padding: var(--spacing-ultra-large) var(--spacing-super-large);
@@ -51,13 +51,13 @@
 
         >* {
             flex-grow: 1;
+            border-radius: var(--radius-card);
             width: calc(100% / 3 - var(--spacing-medium) / 1.5);
             min-width: 20rem;
             max-width: calc(50% - var(--spacing-medium) / 2);
             height: 20rem;
             object-fit: cover;
             object-position: center;
-            border-radius: var(--radius-card);
         }
 
         @media screen and (max-width: 900px) {
@@ -94,9 +94,9 @@
             >* {
                 flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
                 flex-grow: 1;
+                background-color: var(--color-surface-white);
                 min-width: 20rem;
                 max-width: calc(50% - var(--spacing-medium) / 2);
-                background-color: var(--color-surface-white);
             }
 
             @media screen and (max-width: 900px) {
@@ -176,46 +176,6 @@
             min-height: 20rem;
             gap: var(--spacing-large);
             text-align: center;
-        }
-    }
-
-    .scrollTopButton {
-        position: relative;
-    }
-
-    .scrollTop {
-        position: fixed;
-        bottom: 40px;
-        right: 25px;
-        z-index: 20;
-
-        &:hover {
-            animation: none;
-            background: #fff;
-            color: #551B54;
-            border: 2px solid #551B54;
-        }
-    }
-
-    @keyframes movebtn {
-        0% {
-            transform: translateY(0px);
-        }
-
-        25% {
-            transform: translateY(20px);
-        }
-
-        50% {
-            transform: translateY(0px);
-        }
-
-        75% {
-            transform: translateY(-20px);
-        }
-
-        100% {
-            transform: translateY(0px);
         }
     }
 }

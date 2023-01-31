@@ -17,14 +17,13 @@
         right: var(--spacing-mega-large);
         bottom: var(--spacing-extra-large);
         z-index: 20;
-        color: var(--color-primary);
+        border: var(--width-separator-thin) solid var(--color-primary);
+        border-radius: var(--outline-button-border-radius);
         background-color: var(--color-surface-light);
         padding: var(--spacing-extra-small);
         width: 3rem;
         height: 3rem;
-        border-radius: var(--outline-button-border-radius);
-        border: var(--width-separator-thin) solid;
-        border-color: var(--color-primary);
+        color: var(--color-primary);
 
         &:hover {
             cursor: pointer;
