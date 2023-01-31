@@ -48,15 +48,14 @@
 }
 
 .copyrightContainer {
+    border-top: var(--width-separator-thin) solid var(--color-separator);
     background-color: var(--color-surface-footer);
     color: var(--color-text-white);
-    border-top: 0.8px solid;
-    border-color: var(--color-seprator);
 
     .copyRight {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
         font-size: var(--font-size-small);
 
         .privacy {

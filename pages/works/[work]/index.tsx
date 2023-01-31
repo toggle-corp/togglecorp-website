@@ -97,7 +97,7 @@ function WorkPage(props: Props) {
                     <h5>
                         Skills Used
                     </h5>
-                    <div className={styles.skills}>
+                    <div>
                         {project.skills.map(getSkill).map((skill) => skill.name).join(', ')}
                     </div>
                 </div>

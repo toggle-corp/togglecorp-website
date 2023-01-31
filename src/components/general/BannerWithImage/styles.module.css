@@ -5,10 +5,10 @@
     --section-min-height: 20rem;
 
     @media screen and (max-width: 900px) {
-        --image-offset-y: 200px;
+        --image-offset-y: 12.5rem;
         --section-min-height: 26rem;
         --image-width: 100%;
-        --image-height: 400px;
+        --image-height: 25rem;
     }
 
     .topSection {
@@ -90,16 +90,16 @@
 
             @media screen and (max-width: 800px) {
                 position: relative;
+                border-radius: var(--radius-card);
                 width: 100%;
                 height: 22rem;
                 overflow: hidden;
-                border-radius: var(--radius-card);
             }
 
             .gmapIframe {
+                border-radius: var(--radius-card);
                 width: 100%;
                 height: 37rem;
-                border-radius: var(--radius-card);
 
                 @media screen and (max-width: 800px) {
                     position: absolute;

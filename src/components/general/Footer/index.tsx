@@ -69,7 +69,8 @@ function Footer(props: Props) {
                     )}
                     contentClassName={styles.description}
                 >
-                    For almost 10 years, our team of experts have worked together with a single goal.
+                    For almost 10 years, our team of experts have
+                    worked together with a single goal.
                 </FooterSection>
                 <FooterSection
                     title="Company"
@@ -125,7 +126,6 @@ function Footer(props: Props) {
                         label={<IoMail />}
                         value={(
                             <a
-                                className={styles.email}
                                 target="_blank"
                                 href="mailto:info@togglecorp.com"
                                 rel="noreferrer noopener"

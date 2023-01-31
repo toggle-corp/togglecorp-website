@@ -10,7 +10,7 @@
 
         .logo {
             cursor: pointer;
-            height: 32px;
+            height: var(--height-logo);
         }
 
         .menuList {
@@ -22,8 +22,8 @@
         }
 
         .contactLink {
-            margin-left: var(--spacing-super-large);
             flex-shrink: 0;
+            margin-left: var(--spacing-super-large);
         }
     }
 }

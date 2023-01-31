@@ -163,7 +163,7 @@ export function ApproachSection(props: ApproachSectionProps) {
                 <div className={styles.description}>
                     {description}
                 </div>
-                <div className={styles.approachImage}>
+                <div>
                     {image}
                 </div>
             </div>

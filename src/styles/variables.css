@@ -31,7 +31,11 @@
     --color-surface-disabled: #b3b3b3;
     --color-surface-light: #f7f7f7;
 
-    --color-seprator: #004874;
+    --color-surface-banner-gradient-start: #FF5000;
+    --color-surface-banner-gradient-stop: #ffffff;
+
+    /* FIXME: do we even need two different color for separators? */
+    --color-separator: #004874;
     --color-accordion-separator: #E5E5E5;
 
     --width-content-max: 72rem;
@@ -81,7 +85,7 @@
     --radius-button: 0.25rem;
     --radius-card: 0.5rem;
     --outline-button-border-radius: 1rem;
-    --height-logo: 1.5rem;
+    --height-logo: 2rem;
 
     --width-separator-thin: 1px;
     --width-separator-medium: 2px;
