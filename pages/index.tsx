@@ -88,7 +88,7 @@ function Home(props: Props) {
             <Section
                 className={styles.ourServices}
                 title="Our Services"
-                description="We specialize in development, consultancy, research and analysis mostly related to humanitarian crises"
+                description="We specialize in development, consultancy, research and analysis."
             >
                 <div className={styles.serviceList}>
                     {projectTypes.map((projectType) => (
@@ -127,7 +127,7 @@ function Home(props: Props) {
                 contentClassName={styles.content}
             >
                 <h3>Have a project you&apos;d like to talk to us about?</h3>
-                <div>Tell us about your need, we&apos;d love to hear from you.</div>
+                <div>Tell us about your need, we&apos;d love to collaborate with you.</div>
                 <Button name={undefined} variant="primary">
                     See how we can help you
                 </Button>

@@ -137,7 +137,7 @@ function Footer(props: Props) {
                     <FooterSection title="Contact With Us">
                         <div className={styles.socialMediaIcons}>
                             <Link
-                                href="https://www.instagram.com/"
+                                href="https://www.facebook.com/togglecorp"
                                 passHref
                             >
                                 <IoLogoFacebook
