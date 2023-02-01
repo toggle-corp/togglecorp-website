@@ -21,6 +21,7 @@ import cultures from 'components/about-us/cultures';
 import gallery from 'components/about-us/gallery';
 import expertises from 'components/about-us/expertises';
 import socialResponsibilities from 'components/about-us/socialResponsibilities';
+import Button from 'components/general/Button';
 
 import styles from './styles.module.css';
 
@@ -60,6 +61,12 @@ function AboutUs() {
                                 specialists, designers , content writers, We have a diverse team
                                 consisting of software engineers, research specialists, designers.
                             </div>
+                            <Button
+                                name={undefined}
+                                variant="outline-active"
+                            >
+                                View More
+                            </Button>
                         </div>
                         <img
                             className={styles.workPreview}
@@ -68,18 +75,18 @@ function AboutUs() {
                         />
                     </div>
                     <div className={styles.recentWorkCard}>
-                        <div className={styles.details}>
-                            <div className={styles.description}>
-                                We have a diverse team consisting of software engineers,
-                                research specialists, designers , content writers, We have a
-                                diverse team consisting of software engineers, research specialists,
-                                designers , content writers, We have a diverse team consisting
-                                of software engineers, research specialists, designers,
-                                content writers, .....
-                            </div>
-                        </div>
                         <img
-                            className={styles.workPreview}
+                            className={styles.workPreviewImg}
+                            src={developmentImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.workPreviewImg}
+                            src={developmentImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.workPreviewImg}
                             src={developmentImage}
                             alt="our story"
                         />

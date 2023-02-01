@@ -73,8 +73,11 @@ function Home(props: Props) {
                             their problems with development, data tagging,
                             analysis, and visualizations.
                         </div>
-                        <Button name={undefined} variant="outline-active">
-                            Learn More
+                        <Button
+                            name={undefined}
+                            variant="outline-active"
+                        >
+                            View More
                         </Button>
                     </>
                 )}
