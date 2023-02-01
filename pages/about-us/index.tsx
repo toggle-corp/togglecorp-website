@@ -97,7 +97,7 @@ function AboutUs() {
             <Section
                 className={styles.ourTeam}
                 title="We are proud of the team we have built"
-                description="At Togglecorp, we focus on having quality time and quality work, and at the same time, we focus on the all-round development of our employees. Work is fun at TC!"
+                description="At Togglecorp, we focus on having quality time and work, and at the same time, we focus on the all-round development and growth of our employees. Work is fun at TC!"
             >
                 <div className={styles.activityList}>
                     {expertises.map((activity) => (

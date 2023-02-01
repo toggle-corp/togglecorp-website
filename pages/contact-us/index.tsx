@@ -34,7 +34,7 @@ function Contact() {
                             </div>
                             <KeyFigure
                                 label="Phone"
-                                value="+9779801345678"
+                                value="+977 9841331922"
                             />
                         </div>
                     )}
