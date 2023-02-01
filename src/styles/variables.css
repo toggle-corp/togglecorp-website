@@ -35,7 +35,7 @@
     --color-surface-banner-gradient-stop: #ffffff;
 
     /* FIXME: do we even need two different color for separators? */
-    --color-separator: #004874;
+    --color-separator: rgba(0, 0, 0, 0.1);
     --color-accordion-separator: #E5E5E5;
 
     --width-content-max: 72rem;
