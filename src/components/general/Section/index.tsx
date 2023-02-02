@@ -5,6 +5,7 @@ import Container from 'components/general/Container';
 import styles from './styles.module.css';
 
 interface Props {
+    id?: string;
     className?: string;
     title?: string;
     description?: string;
@@ -16,6 +17,7 @@ interface Props {
 
 function Section(props: Props) {
     const {
+        id,
         className,
         title,
         description,
@@ -68,6 +70,7 @@ function Section(props: Props) {
 
     return (
         <Container
+            id={id}
             className={_cs(
                 styles.section,
                 centeredContent && styles.centeredContent,

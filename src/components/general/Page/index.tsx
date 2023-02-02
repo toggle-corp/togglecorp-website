@@ -26,7 +26,6 @@ function Page(props: Props) {
     } = props;
 
     const ref = useRef<HTMLDivElement>(null);
-
     const goToTop = () => {
         if (ref.current) {
             ref.current.scrollIntoView({

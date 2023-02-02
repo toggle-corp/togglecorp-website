@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import Page from 'components/general/Page';
@@ -6,12 +6,15 @@ import Container from 'components/general/Container';
 import Button from 'components/general/Button';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
+import ButtonLikeLink from 'components/general/ButtonLikeLink';
+import BannerWithImage from 'components/general/BannerWithImage';
 
 import { projectTypes } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';
 import staticProjects, { Project } from 'data/projects';
 import workListOne from 'resources/work-list-1.webp';
 import clientsIcon from 'resources/tc-clients.webp';
+import bannerImage from 'resources/banner.png';
 
 import styles from './styles.module.css';
 
@@ -22,41 +25,96 @@ interface Props {
 function Home(props: Props) {
     const { projects } = props;
 
+    const handleScrollToServices = useCallback(() => {
+        const element = document.getElementById('services-section');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     return (
         <Page
             className={styles.home}
             pageTitle="Home"
             banner={(
-                <Container className={styles.banner} contentClassName={styles.content}>
-                    <div className={styles.introductionContent}>
-                        <div className={styles.title}>
-                            Toggling ideas into reality
+                <BannerWithImage
+                    className={styles.banner}
+                    title="Toggling ideas into reality"
+                    description={(
+                        <div className={styles.introductionContent}>
+                            <div className={styles.title}>
+                                Toggling ideas into reality
+                            </div>
+                            <div>
+                                A flawless digital community contributing to development
+                                and research striving towards improving existing processes
+                            </div>
+                            <div className={styles.tags}>
+                                {projectTypes.map((projectType, i) => (
+                                    <React.Fragment key={projectType.key}>
+                                        <Link href={projectType.link}>{projectType.title}</Link>
+                                        {i < projectTypes.length - 1 && (
+                                            <div className={styles.dot}>•</div>
+                                        )}
+                                    </React.Fragment>
+                                ))}
+                            </div>
+                            <Button
+                                className={styles.getStartedButton}
+                                name={undefined}
+                                variant="primary"
+                                onClick={handleScrollToServices}
+                            >
+                                View Services
+                            </Button>
                         </div>
-                        <div>
-                            A flawless digital community contributing to development
-                            and research striving towards improving existing processes
-                        </div>
-                        <div className={styles.tags}>
-                            {projectTypes.map((projectType, i) => (
-                                <React.Fragment key={projectType.key}>
-                                    <Link href={projectType.link}>{projectType.title}</Link>
-                                    {i < projectTypes.length - 1 && (
-                                        <div className={styles.dot}>•</div>
-                                    )}
-                                </React.Fragment>
-                            ))}
-                        </div>
-                        <Button
-                            className={styles.getStartedButton}
-                            name={undefined}
-                            variant="primary"
-                        >
-                            View Services
-                        </Button>
-                    </div>
-                </Container>
+                    )}
+                    imageUrl={bannerImage}
+                    mode="transparent"
+                />
             )}
         >
+            {/*  <Page
+        //     className={styles.home}
+        //     pageTitle="Home"
+        //     banner={(
+        //         <Container
+        //             className={styles.banner}
+        //             contentClassName={styles.content}
+        //         >
+        //             <div className={styles.introductionContent}>
+        //                 <div className={styles.title}>
+        //                     Toggling ideas into reality
+        //                 </div>
+        //                 <div>
+        //                     A flawless digital community contributing to development
+        //                     and research striving towards improving existing processes
+        //                 </div>
+        //                 <div className={styles.tags}>
+        //                     {projectTypes.map((projectType, i) => (
+        //                         <React.Fragment key={projectType.key}>
+        //                             <Link href={projectType.link}>{projectType.title}</Link>
+        //                             {i < projectTypes.length - 1 && (
+        //                                 <div className={styles.dot}>•</div>
+        //                             )}
+        //                         </React.Fragment>
+        //                     ))}
+        //                 </div>
+        //                 <Button
+        //                     className={styles.getStartedButton}
+        //                     name={undefined}
+        //                     variant="primary"
+        //                 >
+        //                     View Services
+        //                 </Button>
+        //             </div>
+        //             <img
+        //                 // className={styles.bannerImage}
+        //                 src={bannerImage}
+        //                 alt="banner"
+        //             />
+        //         </Container>
+            )} */}
             <Container contentClassName={styles.clientsSection}>
                 <h3 className={styles.heading}>Trusted By</h3>
                 <img className={styles.clientsImage} src={clientsIcon} alt="Clients" />
@@ -74,12 +132,13 @@ function Home(props: Props) {
                             problems with development, data tagging and
                             analysis, and visualizations.
                         </div>
-                        <Button
-                            name={undefined}
+                        <ButtonLikeLink
+                            className={styles.viewMoreButton}
                             variant="outline-active"
+                            href="/about-us"
                         >
                             View More
-                        </Button>
+                        </ButtonLikeLink>
                     </>
                 )}
             >
@@ -90,6 +149,7 @@ function Home(props: Props) {
                 </div>
             </Section>
             <Section
+                id="services-section"
                 className={styles.ourServices}
                 title="Our Services"
                 description="We specialize in development, consultancy, research and analysis."
@@ -132,9 +192,12 @@ function Home(props: Props) {
             >
                 <h3>Have a project you&apos;d like to talk to us about?</h3>
                 <div>Tell us about your need, we&apos;d love to collaborate with you.</div>
-                <Button name={undefined} variant="primary">
+                <ButtonLikeLink
+                    href="/contact-us"
+                    variant="primary"
+                >
                     See how we can help you
-                </Button>
+                </ButtonLikeLink>
             </Container>
         </Page>
     );

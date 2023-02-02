@@ -8,10 +8,10 @@ import styles from './styles.module.css';
 interface Props {
     className?: string;
     title?: string;
-    description?: string;
+    description?: React.ReactNode;
     imageUrl?: string;
     stats?: React.ReactNode;
-    mode?: 'dark' | 'light';
+    mode?: 'dark' | 'light' | 'transparent';
     actions?: React.ReactNode;
     maps?: string;
 }
@@ -31,7 +31,12 @@ function BannerWithImage(props: Props) {
     return (
         <div className={_cs(styles.bannerWithImage, !imageUrl && styles.noImage, className)}>
             <Container
-                className={_cs(styles.topSection, mode === 'light' && styles.light)}
+                className={_cs(
+                    styles.topSection,
+                    mode === 'light' && styles.light,
+                    mode === 'transparent' && styles.transparent,
+                    mode === 'dark' && styles.dark,
+                )}
                 contentClassName={styles.content}
             >
                 <div className={styles.bannerContent}>

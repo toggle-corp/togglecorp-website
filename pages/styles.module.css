@@ -1,47 +1,48 @@
 .home {
     .banner {
-        background: linear-gradient(90deg, var(--color-surface-banner-gradient-stop)  -12%, var(--color-surface-banner-gradient-start) 300%);
+        background: linear-gradient(90deg, var(--color-surface-banner-gradient-stop) -12%, var(--color-surface-banner-gradient-start) 300%);
         /* TODO: replace with image */
         background-color: var(--color-surface-header);
-        padding: var(--spacing-ultra-large) var(--spacing-super-large);
+        /* padding: var(--spacing-ultra-large) var(--spacing-super-large); */
         min-height: 32rem;
 
-        .content {
+        .introductionContent {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            max-width: 36rem;
+            gap: var(--spacing-super-large);
+            font-size: var(--font-size-medium);
 
-            .introductionContent {
+            .title {
+                line-height: 1.25;
+                font-size: var(--font-size-banner-description);
+            }
+
+            .tags {
                 display: flex;
-                flex-direction: column;
-                max-width: 36rem;
-                gap: var(--spacing-super-large);
+                flex-wrap: wrap;
+                line-height: 1;
+                color: var(--color-primary);
+                gap: var(--spacing-small);
 
-                .title {
-                    line-height: 1.25;
-                    font-size: var(--font-size-banner-description);
-                }
+                @media screen and (max-width: 900px) {
+                    flex-direction: column;
 
-                .tags {
-                    display: flex;
-                    flex-wrap: wrap;
-                    line-height: 1;
-                    color: var(--color-primary);
-                    gap: var(--spacing-small);
-
-                    @media screen and (max-width: 900px) {
-                        flex-direction: column;
-
-                        .dot {
-                            display: none;
-                        }
+                    .dot {
+                        display: none;
                     }
                 }
+            }
 
-                .getStartedButton {
-                    align-self: flex-start;
-                }
+            .getStartedButton {
+                align-self: flex-start;
             }
         }
+    }
+
+    .viewMoreButton {
+        align-self: flex-start !important;
+        border-radius: var(--radius-button) !important;
     }
 
     .introImages {
@@ -123,6 +124,7 @@
                 flex-basis: 50%;
                 flex-shrink: 0;
                 border-radius: 0.5rem;
+                padding: var(--spacing-extra-small);
                 width: 50%;
                 height: 20rem;
                 object-fit: cover;
