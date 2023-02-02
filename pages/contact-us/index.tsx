@@ -23,31 +23,22 @@ function Contact() {
                     stats={(
                         <div className={styles.contactDetails}>
                             <div className={styles.keyFigures}>
-                                <div>
-                                    <KeyFigure
-                                        label="Say Hello"
-                                    />
-                                    <a href="mailto:info@togglecorp.com" className={styles.value}>
-                                        info@togglecorp.com
-                                    </a>
-                                </div>
-                                <div>
-                                    <KeyFigure
-                                        label="Career"
-                                    />
-                                    <a href="mailto:career@togglecorp.com" className={styles.value}>
-                                        career@togglecorp.com
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
                                 <KeyFigure
-                                    label="Phone"
+                                    label="Say Hello"
+                                    valueHref="mailto:info@togglecorp.com"
+                                    value="info@togglecorp.com"
                                 />
-                                <a href="tel:+977-9841331922" className={styles.value}>
-                                    +977-9841331922
-                                </a>
+                                <KeyFigure
+                                    label="Career"
+                                    value="career@togglecorp.com"
+                                    valueHref="mailto:career@togglecorp.com"
+                                />
                             </div>
+                            <KeyFigure
+                                label="Phone"
+                                value="+977-9841331922"
+                                valueHref="tel:+977-9841331922"
+                            />
                         </div>
                     )}
                     maps={mapLink}
