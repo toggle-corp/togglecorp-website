@@ -9,7 +9,7 @@ import { getEmployeeImage } from 'data/employeeImages';
 
 import staticTeam, { Employee } from 'data/employees';
 
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/team/banner.jpeg';
 import styles from './styles.module.css';
 
 interface Props {
@@ -33,7 +33,7 @@ function Team(props: Props) {
                     title="Our Team"
                     description="Meet our passionate team of creators and problem-solvers."
                     mode="light"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                 />
             )}
         >
