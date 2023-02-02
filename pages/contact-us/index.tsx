@@ -3,7 +3,7 @@ import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
 import Section from 'components/general/Section';
 
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/contactUs/banner.jpeg';
 
 import styles from './styles.module.css';
 
@@ -17,25 +17,37 @@ function Contact() {
             banner={(
                 <BannerWithImage
                     title="Connect With Us"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                     description="We love getting emails and calls. We just hope that they find us well"
                     mode="light"
                     stats={(
                         <div className={styles.contactDetails}>
                             <div className={styles.keyFigures}>
-                                <KeyFigure
-                                    label="Say Hello"
-                                    value="info@togglecorp.com"
-                                />
-                                <KeyFigure
-                                    label="Career"
-                                    value="career@togglecorp.com"
-                                />
+                                <div>
+                                    <KeyFigure
+                                        label="Say Hello"
+                                    />
+                                    <a href="mailto:info@togglecorp.com" className={styles.value}>
+                                        info@togglecorp.com
+                                    </a>
+                                </div>
+                                <div>
+                                    <KeyFigure
+                                        label="Career"
+                                    />
+                                    <a href="mailto:career@togglecorp.com" className={styles.value}>
+                                        career@togglecorp.com
+                                    </a>
+                                </div>
                             </div>
-                            <KeyFigure
-                                label="Phone"
-                                value="+977 9841331922"
-                            />
+                            <div>
+                                <KeyFigure
+                                    label="Phone"
+                                />
+                                <a href="tel:+977-9841331922" className={styles.value}>
+                                    +977-9841331922
+                                </a>
+                            </div>
                         </div>
                     )}
                     maps={mapLink}
