@@ -31,7 +31,7 @@ export const consulting: ProjectTypeItem = {
     image: consultationImage,
     title: 'Consultation',
     description:
-        'We aim to help your business strive by providing practical and efficient solutions.',
+        'We help your business by providing practical and efficient solutions.',
     link: '/services/consulting',
 };
 
