@@ -10,9 +10,4 @@
         flex-direction: column;
         gap: var(--spacing-super-large);
     }
-
-    .value {
-        color: var(--color-primary);
-        font-size: var(--font-size-medium);
-    }
 }
