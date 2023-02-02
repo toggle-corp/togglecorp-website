@@ -152,19 +152,6 @@ function AboutUs() {
                     ))}
                 </div>
             </Section>
-            {/* <Section
-                className={styles.careerSection}
-                // title="Career at Togglecorp"
-                description="We want people who work sincerely and have fun while do so. In return we provide you a space to grow your skills and an environment that respects you."
-                centeredContent
-            >
-                <ButtonLikeLink
-                    href="/careers"
-                    variant="primary"
-                >
-                    See Career Opportunities
-                </ButtonLikeLink>
-            </Section> */}
             <Container
                 className={styles.bottomSection}
                 contentClassName={styles.content}
