@@ -18,7 +18,7 @@ import Separator from 'components/general/Separator';
 import Tabs from 'components/general/Tabs';
 import { selfSelector } from 'utils/common';
 
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/works/banner.jpeg';
 
 import styles from './styles.module.css';
 
@@ -68,7 +68,7 @@ function WorksPage(props: Props) {
                 <BannerWithImage
                     title="Our Works"
                     description="Strong client relationship is the foundation of our success"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                     stats={(
                         <div className={styles.keyFigures}>
                             <KeyFigure
