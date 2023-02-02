@@ -68,9 +68,10 @@ function Home(props: Props) {
                 actions={(
                     <>
                         <div>
-                            A well-experienced firm having worked with several national
-                            and international clients aiming to help businesses solve
-                            their problems with development, data tagging,
+                            An experienced team having worked with several national
+                            and international clients,
+                            including humanitarian organizations, aiming to help solve
+                            problems with development, data tagging and
                             analysis, and visualizations.
                         </div>
                         <Button
@@ -107,7 +108,7 @@ function Home(props: Props) {
             </Section>
             <Section
                 title="Highlighted Works"
-                description="Togglecorp has assisted multiple clients in achieving their vision by driving change and continuous improvement"
+                description="Togglecorp has assisted multiple organizations achieve their vision by driving change and continuous improvement"
             >
                 <div className={styles.recentWorkList}>
                     {projects.map((recentWork) => (
