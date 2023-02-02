@@ -96,3 +96,17 @@
     background-color: var(--color-surface-header);
     min-height: 16rem;
 }
+
+.bottomSection {
+    background-color: var(--color-surface-header);
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 20rem;
+        gap: var(--spacing-large);
+        text-align: center;
+    }
+}

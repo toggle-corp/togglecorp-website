@@ -8,6 +8,7 @@ import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
 import ButtonLikeLink from 'components/general/ButtonLikeLink';
 import developmentImage from 'resources/development.png';
+import Container from 'components/general/Container';
 
 import {
     keySelector,
@@ -15,7 +16,7 @@ import {
     descriptionSelector,
     imageSelector,
 } from 'utils/common';
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/aboutUs/banner.jpeg';
 
 import cultures from 'components/about-us/cultures';
 import gallery from 'components/about-us/gallery';
@@ -32,7 +33,7 @@ function AboutUs() {
             banner={(
                 <BannerWithImage
                     title="About Us"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                     description="A place to grow your creativity & work on the issues you believe in"
                     mode="light"
                     actions={(
@@ -94,14 +95,6 @@ function AboutUs() {
                 </div>
             </Section>
             <Section
-                title="Our Story"
-                description="Togglecorp was founded in 2016 with the goal of developing software products that enhance the user experience"
-            >
-                With a multicultural staff, Togglecorp specializes in information
-                sourcing and management procedures, frontend design, and data
-                visualization technologies.
-            </Section>
-            <Section
                 className={styles.ourTeam}
                 title="We are proud of the team we have built"
                 description="At Togglecorp, we focus on having quality time and work, and at the same time, we focus on the all-round development and growth of our employees. Work is fun at TC!"
@@ -159,9 +152,9 @@ function AboutUs() {
                     ))}
                 </div>
             </Section>
-            <Section
+            {/* <Section
                 className={styles.careerSection}
-                title="Career at Togglecorp"
+                // title="Career at Togglecorp"
                 description="We want people who work sincerely and have fun while do so. In return we provide you a space to grow your skills and an environment that respects you."
                 centeredContent
             >
@@ -171,7 +164,23 @@ function AboutUs() {
                 >
                     See Career Opportunities
                 </ButtonLikeLink>
-            </Section>
+            </Section> */}
+            <Container
+                className={styles.bottomSection}
+                contentClassName={styles.content}
+            >
+                <h4>
+                    We want people who work sincerely and have fun while do so.
+                    In return we provide you a space to grow your skills
+                    and an environment that respects you.
+                </h4>
+                <ButtonLikeLink
+                    href="/careers"
+                    variant="primary"
+                >
+                    See Career Opportunities
+                </ButtonLikeLink>
+            </Container>
         </Page>
     );
 }
