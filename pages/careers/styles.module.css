@@ -13,3 +13,20 @@
         }
     }
 }
+
+.bottomSection {
+    background-image: url('/rectangle-pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 20rem;
+        gap: var(--spacing-large);
+        text-align: center;
+    }
+}

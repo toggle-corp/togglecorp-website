@@ -2,7 +2,8 @@ import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Header from 'components/general/Header';
 import Container from 'components/general/Container';
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/career/banner.jpeg';
+import Button from 'components/general/Button';
 
 import CareerItem from 'components/careers/CareerItem';
 import vacancies from 'components/careers/vacancies';
@@ -16,7 +17,7 @@ function CareerPage() {
             banner={(
                 <BannerWithImage
                     title="Career at Togglecorp"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                     description="We seek new talents who contribute to our values & visions"
                     mode="light"
                 />
@@ -41,6 +42,18 @@ function CareerPage() {
                         />
                     ))}
                 </div>
+            </Container>
+            <Container
+                className={styles.bottomSection}
+                contentClassName={styles.content}
+            >
+                <h3>Want to work with us apart from the available vacancies?</h3>
+                <div>Reach out to us and we&apos;ll let you know more</div>
+                <Button name={undefined} variant="primary">
+                    <a href="mailto:career@togglecorp.com">
+                        Drop your CV
+                    </a>
+                </Button>
             </Container>
         </Page>
     );
