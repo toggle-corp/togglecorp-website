@@ -43,9 +43,11 @@ function WorksPage(props: Props) {
         setFilteredProjectType,
     ] = useState<ProjectType | 'all'>('all');
 
-    const totalProjects = projects.length;
+    // const totalProjects = projects.length;
+    const totalProjects = '250+';
 
-    const totalOrganizations = unique(projects.map((project) => project.client)).length;
+    // const totalOrganizations = unique(projects.map((project) => project.client)).length;
+    const totalOrganizations = '20+';
 
     const filteredProjects = useMemo(() => {
         if (filteredProjectType === 'all') {
