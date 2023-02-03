@@ -7,7 +7,7 @@ import listen from 'resources/6-listen.webp';
 import back from 'resources/2-got-your-back.webp';
 import humble from 'resources/4-humble.webp';
 import team from 'resources/9-take-care-of-each-other.webp';
-import serve from 'resources/11-serve-the-community.webp';
+import serve from 'resources/serve-community.jpeg';
 import kind from 'resources/10-kind.webp';
 
 // FIXME: move this to about-us
@@ -52,7 +52,7 @@ const cultures: Culture[] = [
     },
     {
         key: 'listen',
-        title: 'We Listen',
+        title: 'We listen',
         description: 'We go the extra mile to listen to feedback from our team and our clients. We want you to think about us as your “venting” machine. Going through a break up? You dog is sick? Have a suggestion on the next office retreat? We are all ears.',
         image: listen,
     },
@@ -64,13 +64,13 @@ const cultures: Culture[] = [
     },
     {
         key: 'serve',
-        title: 'Serve Community',
+        title: 'Serve community',
         description: 'At Togglecorp, one of the core values that binds us together is the sense of serving the community either through direct contributions or through the work we do. We take pride in our partnerships with our clients and help them build solutions that will benefit the society as a whole. We want to do more and give back to the society in the years to come.',
         image: serve,
     },
     {
         key: 'humble',
-        title: 'Be Humble',
+        title: 'Be humble',
         description: 'We believe that no matter what happens, we should always be respectful of everyone. We are not arrogant and we do not treat others differently from how we would want to be treated.',
         image: humble,
     },
@@ -82,7 +82,7 @@ const cultures: Culture[] = [
     },
     {
         key: 'partnership',
-        title: 'Value Partnerships',
+        title: 'Value partnerships',
         description: 'We know our clients and our vendors all want to solve a problem and be successful at what they do. When we take on a work, we are in a journey with them. Similarly, when someone joins Togglecorp, we value what they bring to the table and want them to learn and succeed during their time with us.',
         image: partnership,
     },
