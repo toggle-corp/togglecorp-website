@@ -3,7 +3,7 @@ import React, {
     useState,
 } from 'react';
 import { GetStaticProps } from 'next';
-import { unique } from '@togglecorp/fujs';
+// import { unique } from '@togglecorp/fujs';
 
 import { ProjectType, getProjectType } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';

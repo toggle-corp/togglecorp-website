@@ -37,8 +37,8 @@
             .socialMedia {
                 border-radius: var(--radius-button);
                 background-color: var(--color-background-social-media);
-                padding: var(--padding-social-media-icon);
                 cursor: pointer;
+                padding: var(--padding-social-media-icon);
 
                 &:hover {
                     background-color: var(--color-primary);
