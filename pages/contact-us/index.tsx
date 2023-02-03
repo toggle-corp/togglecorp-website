@@ -4,6 +4,13 @@ import KeyFigure from 'components/general/KeyFigure';
 import Section from 'components/general/Section';
 
 import bannerImage from 'resources/contactUs/banner.jpeg';
+import firstImage from 'resources/contactUs/collage/7.jpeg';
+import secondImage from 'resources/contactUs/collage/5.jpeg';
+import thirdImage from 'resources/contactUs/collage/4.jpeg';
+import fourthImage from 'resources/contactUs/collage/2.jpeg';
+import fifthImage from 'resources/contactUs/collage/1.jpeg';
+import sixthImage from 'resources/contactUs/collage/3.jpeg';
+import seventhImage from 'resources/contactUs/collage/6.jpeg';
 
 import styles from './styles.module.css';
 
@@ -47,9 +54,52 @@ function Contact() {
         >
             <div />
             <Section
-                // TODO: Add collage photos
                 title="Life at Togglecorp"
-            />
+            >
+                <div className={styles.collageContainer}>
+                    <div className={styles.imageContainer}>
+                        <img
+                            className={styles.smallImg}
+                            src={firstImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={secondImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={thirdImage}
+                            alt="our story"
+                        />
+                    </div>
+                    <div className={styles.imageContainer}>
+                        <img
+                            className={styles.mediumImg}
+                            src={fourthImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.mediumImg}
+                            src={fifthImage}
+                            alt="our story"
+                        />
+                    </div>
+                    <div className={styles.imageContainer}>
+                        <img
+                            className={styles.largeImg}
+                            src={sixthImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={seventhImage}
+                            alt="our story"
+                        />
+                    </div>
+                </div>
+            </Section>
         </Page>
     );
 }

@@ -9,6 +9,15 @@ import KeyFigure from 'components/general/KeyFigure';
 import CareerItem from 'components/careers/CareerItem';
 import vacancies from 'components/careers/vacancies';
 
+import Section from 'components/general/Section';
+
+import firstImage from 'resources/career/collage/1.jpeg';
+import secondImage from 'resources/career/collage/2.jpeg';
+import thirdImage from 'resources/career/collage/3.jpeg';
+import fourthImage from 'resources/career/collage/4.jpeg';
+import fifthImage from 'resources/career/collage/5.jpeg';
+import sixthImage from 'resources/career/collage/6.jpeg';
+import seventhImage from 'resources/career/collage/7.jpeg';
 import styles from './styles.module.css';
 
 function CareerPage() {
@@ -60,6 +69,54 @@ function CareerPage() {
                     ))}
                 </div>
             </Container>
+            <Section
+                title="Life at Togglecorp"
+                description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
+            >
+                <div className={styles.collageContainer}>
+                    <div className={styles.imageContainer}>
+                        <img
+                            className={styles.smallImg}
+                            src={firstImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={secondImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={thirdImage}
+                            alt="our story"
+                        />
+                    </div>
+                    <div className={styles.imageContainer}>
+                        <img
+                            className={styles.mediumImg}
+                            src={fourthImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.mediumImg}
+                            src={fifthImage}
+                            alt="our story"
+                        />
+                    </div>
+                    <div className={styles.imageContainer}>
+                        <img
+                            className={styles.largeImg}
+                            src={sixthImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={seventhImage}
+                            alt="our story"
+                        />
+                    </div>
+                </div>
+            </Section>
             <Container
                 className={styles.bottomSection}
                 contentClassName={styles.content}
