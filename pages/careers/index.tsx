@@ -4,6 +4,7 @@ import Header from 'components/general/Header';
 import Container from 'components/general/Container';
 import bannerImage from 'resources/career/banner.jpeg';
 import Button from 'components/general/Button';
+import KeyFigure from 'components/general/KeyFigure';
 
 import CareerItem from 'components/careers/CareerItem';
 import vacancies from 'components/careers/vacancies';
@@ -20,6 +21,22 @@ function CareerPage() {
                     imageUrl={bannerImage}
                     description="We seek new talents who contribute to our values & visions"
                     mode="light"
+                    stats={(
+                        <div className={styles.contactDetails}>
+                            <div className={styles.keyFigures}>
+                                <KeyFigure
+                                    label="Career"
+                                    value="career@togglecorp.com"
+                                    valueHref="mailto:career@togglecorp.com"
+                                />
+                                <KeyFigure
+                                    label="Phone"
+                                    value="+977-9841331922"
+                                    valueHref="tel:+977-9841331922"
+                                />
+                            </div>
+                        </div>
+                    )}
                 />
             )}
         >

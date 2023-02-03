@@ -1,3 +1,16 @@
+.keyFigures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-super-large);
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-super-large);
+    padding: 3rem 0 0 0;
+}
+
 .careerContent {
     display: flex;
     flex-direction: column;
@@ -13,6 +26,7 @@
         }
     }
 }
+
 
 .bottomSection {
     background-image: url('/rectangle-pattern.png');
