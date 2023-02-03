@@ -1,8 +1,8 @@
 .bannerWithImage {
-    --image-offset-y: 14rem;
+    --image-offset-y: 11rem;
     --image-width: calc(10% + 18rem);
     --image-height: 30rem;
-    --section-min-height: 20rem;
+    --section-min-height: 33rem;
 
     @media screen and (max-width: 900px) {
         --image-offset-y: 12.5rem;
@@ -23,6 +23,17 @@
             color: var(--color-secondary);
         }
 
+        .bannerContent {
+            display: flex;
+            flex-grow: 1;
+            gap: var(--spacing-super-large);
+
+            @media screen and (max-width: 900px) {
+                flex-wrap: wrap;
+                object-fit: cover;
+            }
+        }
+
         .content {
             display: flex;
             align-items: flex-end;
@@ -39,7 +50,6 @@
             .left {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 gap: var(--spacing-extra-large);
 
                 .title {

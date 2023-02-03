@@ -34,25 +34,25 @@ function BannerWithImage(props: Props) {
                 className={_cs(styles.topSection, mode === 'light' && styles.light)}
                 contentClassName={styles.content}
             >
-                <div className={styles.left}>
-                    <span />
-                    <span />
-                    <span />
-                    <div className={styles.title}>
-                        {title}
+                <div className={styles.bannerContent}>
+
+                    <div className={styles.left}>
+                        <div className={styles.title}>
+                            {title}
+                        </div>
+                        <div className={styles.description}>
+                            {description}
+                        </div>
+                        {actions}
                     </div>
-                    <div className={styles.description}>
-                        {description}
-                    </div>
-                    {actions}
+                    {imageUrl && (
+                        <img
+                            className={styles.bannerImage}
+                            src={imageUrl}
+                            alt={imageUrl ? title : ''}
+                        />
+                    )}
                 </div>
-                {imageUrl && (
-                    <img
-                        className={styles.bannerImage}
-                        src={imageUrl}
-                        alt={imageUrl ? title : ''}
-                    />
-                )}
             </Container>
             {stats && (
                 <Container
