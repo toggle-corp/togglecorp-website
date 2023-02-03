@@ -1,6 +1,6 @@
-import researchImage from 'resources/research.png';
-import developmentImage from 'resources/development.png';
-import consultationImage from 'resources/consultation.png';
+import researchImage from 'resources/analyst.jpeg';
+import developmentImage from 'resources/development.jpeg';
+import consultationImage from 'resources/consulting.jpeg';
 
 import { mapToList } from '@togglecorp/fujs';
 
