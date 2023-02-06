@@ -7,7 +7,7 @@ import Section from 'components/general/Section';
 import Card from 'components/general/Card';
 import AccordionWithImage from 'components/general/AccordionWithImage';
 import ButtonLikeLink from 'components/general/ButtonLikeLink';
-import developmentImage from 'resources/development.png';
+import Container from 'components/general/Container';
 
 import {
     keySelector,
@@ -15,13 +15,15 @@ import {
     descriptionSelector,
     imageSelector,
 } from 'utils/common';
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/aboutUs/banner.jpeg';
+import firstImage from 'resources/aboutUs/ourStory/1.jpeg';
+import secondImage from 'resources/aboutUs/ourStory/2.jpeg';
+import thirdImage from 'resources/aboutUs/ourStory/3.jpeg';
 
 import cultures from 'components/about-us/cultures';
 import gallery from 'components/about-us/gallery';
 import expertises from 'components/about-us/expertises';
 import socialResponsibilities from 'components/about-us/socialResponsibilities';
-import Button from 'components/general/Button';
 
 import styles from './styles.module.css';
 
@@ -32,7 +34,7 @@ function AboutUs() {
             banner={(
                 <BannerWithImage
                     title="About Us"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                     description="A place to grow your creativity & work on the issues you believe in"
                     mode="light"
                     actions={(
@@ -48,58 +50,41 @@ function AboutUs() {
         >
             <Section
                 title="Our story"
+                description="In the summer of 2016, one of our founders noticed a need for a solution in the humanitarian sector that would ease the process of consuming reports and news articles."
             >
                 <div className={styles.recentWorkList}>
                     <div className={styles.recentWorkCard}>
-                        <div className={styles.details}>
-                            <h4>
-                                Founded in 2016 with for research and development
-                                of digital applications that makes this world [a tiny bit] better.
-                            </h4>
-                            <div className={styles.description}>
-                                We have a diverse team consisting of software engineers, research
-                                specialists, designers , content writers, We have a diverse team
-                                consisting of software engineers, research specialists, designers.
-                            </div>
-                            <Button
-                                name={undefined}
-                                variant="outline-active"
-                            >
-                                View More
-                            </Button>
-                        </div>
                         <img
                             className={styles.workPreview}
-                            src={developmentImage}
+                            src={firstImage}
                             alt="our story"
                         />
+                        <div className={styles.details}>
+                            <div className={styles.description}>
+                                Hence, Togglecorp&apos;s inception was to solve a specific problem
+                                in the humanitarian world. However, one thing led to another
+                                and another and another…
+                            </div>
+                            <div className={styles.description}>
+                                Soon enough, we started catering solutions for other national
+                                and international non-profit organizations as well and
+                                continued on solving real-world problems.
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.recentWorkCard}>
                         <img
                             className={styles.workPreviewImg}
-                            src={developmentImage}
+                            src={thirdImage}
                             alt="our story"
                         />
                         <img
                             className={styles.workPreviewImg}
-                            src={developmentImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.workPreviewImg}
-                            src={developmentImage}
+                            src={secondImage}
                             alt="our story"
                         />
                     </div>
                 </div>
-            </Section>
-            <Section
-                title="Our Story"
-                description="Togglecorp was founded in 2016 with the goal of developing software products that enhance the user experience"
-            >
-                With a multicultural staff, Togglecorp specializes in information
-                sourcing and management procedures, frontend design, and data
-                visualization technologies.
             </Section>
             <Section
                 className={styles.ourTeam}
@@ -159,19 +144,22 @@ function AboutUs() {
                     ))}
                 </div>
             </Section>
-            <Section
-                className={styles.careerSection}
-                title="Career at Togglecorp"
-                description="We want people who work sincerely and have fun while do so. In return we provide you a space to grow your skills and an environment that respects you."
-                centeredContent
+            <Container
+                className={styles.bottomSection}
+                contentClassName={styles.content}
             >
+                <h4>
+                    We want people who work sincerely and have fun while do so.
+                    In return we provide you a space to grow your skills
+                    and an environment that respects you.
+                </h4>
                 <ButtonLikeLink
                     href="/careers"
                     variant="primary"
                 >
                     See Career Opportunities
                 </ButtonLikeLink>
-            </Section>
+            </Container>
         </Page>
     );
 }

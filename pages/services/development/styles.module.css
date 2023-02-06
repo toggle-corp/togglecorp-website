@@ -1,6 +1,8 @@
 .alsoSee {
     display: flex;
     gap: var(--spacing-small);
+    padding: 3rem 0 0 0;
+
 
     .tags {
         color: var(--color-primary);

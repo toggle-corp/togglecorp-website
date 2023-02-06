@@ -1,3 +1,16 @@
+.keyFigures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-super-large);
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-super-large);
+    padding: 3rem 0 0 0;
+}
+
 .careerContent {
     display: flex;
     flex-direction: column;
@@ -11,5 +24,77 @@
         >* {
             flex-basis: calc(33% - var(--spacing-medium));
         }
+    }
+}
+
+.collageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+
+    .imageContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--spacing-extra-large);
+
+        .largeImg {
+            flex-basis: 66.5%;
+            flex-shrink: 0;
+            border-radius: var(--radius-card);
+            width: 50%;
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .mediumImg {
+            flex-basis: 48.5%;
+            flex-shrink: 0;
+            border-radius: var(--radius-card);
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .smallImg {
+            flex-basis: 100%;
+            border-radius: var(--radius-card);
+            width: 22rem;
+            height: 20rem;
+            object-fit: cover;
+            gap: 0;
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            gap: var(--spacing-medium);
+
+            .mediumImg {
+                flex-basis: unset;
+                width: 100%;
+            }
+
+            &:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.bottomSection {
+    background-image: url('/rectangle-pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 20rem;
+        gap: var(--spacing-large);
+        text-align: center;
     }
 }

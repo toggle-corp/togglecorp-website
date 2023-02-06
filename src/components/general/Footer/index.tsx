@@ -69,37 +69,23 @@ function Footer(props: Props) {
                     )}
                     contentClassName={styles.description}
                 >
-                    For almost 10 years, our team of experts have
+                    For years, our team of experts have
                     worked together with a single goal.
                 </FooterSection>
                 <FooterSection
                     title="Company"
                 >
-                    <div>
-                        Home
-                    </div>
-                    <div>
-                        About Us
-                    </div>
-                    <div>
-                        Contact Us
-                    </div>
-                    <div>
-                        Services
-                    </div>
+                    <Link href="/"> Home </Link>
+                    <Link href="/about-us"> About Us </Link>
+                    <Link href="/contact-us"> Contact Us </Link>
+                    <Link href="/works"> Services </Link>
                 </FooterSection>
                 <FooterSection
                     title="Services"
                 >
-                    <div>
-                        Software Development
-                    </div>
-                    <div>
-                        Data Analysis
-                    </div>
-                    <div>
-                        Consulting
-                    </div>
+                    <Link href="/services/development"> Software Development </Link>
+                    <Link href="/services/research"> Data Analysis </Link>
+                    <Link href="/services/consulting"> Consulting </Link>
                 </FooterSection>
                 <FooterSection title="Contact information">
                     <LabelValue

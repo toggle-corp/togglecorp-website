@@ -3,7 +3,7 @@ import React, {
     useState,
 } from 'react';
 import { GetStaticProps } from 'next';
-import { unique } from '@togglecorp/fujs';
+// import { unique } from '@togglecorp/fujs';
 
 import { ProjectType, getProjectType } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';
@@ -18,7 +18,7 @@ import Separator from 'components/general/Separator';
 import Tabs from 'components/general/Tabs';
 import { selfSelector } from 'utils/common';
 
-import organizationLogo from 'resources/organization.webp';
+import bannerImage from 'resources/works/banner.jpeg';
 
 import styles from './styles.module.css';
 
@@ -43,9 +43,11 @@ function WorksPage(props: Props) {
         setFilteredProjectType,
     ] = useState<ProjectType | 'all'>('all');
 
-    const totalProjects = projects.length;
+    // const totalProjects = projects.length;
+    const totalProjects = '250+';
 
-    const totalOrganizations = unique(projects.map((project) => project.client)).length;
+    // const totalOrganizations = unique(projects.map((project) => project.client)).length;
+    const totalOrganizations = '20+';
 
     const filteredProjects = useMemo(() => {
         if (filteredProjectType === 'all') {
@@ -68,7 +70,7 @@ function WorksPage(props: Props) {
                 <BannerWithImage
                     title="Our Works"
                     description="Strong client relationship is the foundation of our success"
-                    imageUrl={organizationLogo}
+                    imageUrl={bannerImage}
                     stats={(
                         <div className={styles.keyFigures}>
                             <KeyFigure
