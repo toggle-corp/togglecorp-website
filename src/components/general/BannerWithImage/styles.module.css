@@ -14,13 +14,24 @@
     .topSection {
         display: flex;
         flex-direction: column;
-        background-color: var(--color-secondary);
+        /*NOTE: Disabled to maintain desired background color based upon modes */
+        /* background-color: var(--color-secondary); */
         min-height: var(--section-min-height);
         color: var(--color-text-on-dark);
 
         &.light {
             background-color: var(--color-surface-header);
             color: var(--color-secondary);
+        }
+
+        &.transparent {
+            background-color: none;
+            color: var(--color-secondary);
+            min-height: 0;
+        }
+
+        &.dark {
+            background-color: var(--color-secondary);
         }
 
         .bannerContent {

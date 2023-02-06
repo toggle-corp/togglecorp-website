@@ -4,7 +4,7 @@
         /* TODO: replace with image */
         background-color: var(--color-surface-header);
         /* padding: var(--spacing-ultra-large) var(--spacing-super-large); */
-        min-height: 32rem;
+        max-height: 32rem;
 
         .introductionContent {
             display: flex;
@@ -38,6 +38,10 @@
                 align-self: flex-start;
             }
         }
+    }
+
+    .homeBannerImage {
+        margin-left: auto !important;
     }
 
     .viewMoreButton {
@@ -79,8 +83,91 @@
             text-align: center;
         }
 
-        .clientsImage {
-            width: 100%;
+        .clientLogoGroup {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-ultra-large);
+
+            .clientGroupOne {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-ultra-large);
+
+                .britishEmbassy {
+                    width: 10rem;
+                    height: 2.6rem;
+                }
+
+                .idmc {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .unhcr {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .americanRedCross {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .worldVision {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+            }
+
+            .clientGroupTwo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-small);
+
+                .jips {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .peopleInNeed {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .dataFriendlySpace {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .ifrc {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+
+                .sntm {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+            }
+
+            .clientGroupThree {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-ultra-large);
+
+                .boldCode {
+                    width: 10rem;
+                    height: 2.6rem;
+                }
+
+                .okularAnalytics {
+                    width: 10rem;
+                    height: 3.3rem;
+                }
+            }
         }
     }
 

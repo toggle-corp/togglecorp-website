@@ -10,6 +10,7 @@ interface Props {
     title?: string;
     description?: React.ReactNode;
     imageUrl?: string;
+    imageClassName?: string;
     stats?: React.ReactNode;
     mode?: 'dark' | 'light' | 'transparent';
     actions?: React.ReactNode;
@@ -19,6 +20,7 @@ interface Props {
 function BannerWithImage(props: Props) {
     const {
         className,
+        imageClassName,
         title,
         description,
         imageUrl,
@@ -52,7 +54,7 @@ function BannerWithImage(props: Props) {
                     </div>
                     {imageUrl && (
                         <img
-                            className={styles.bannerImage}
+                            className={_cs(styles.bannerImage, mode === 'transparent' && styles.imageClassName)}
                             src={imageUrl}
                             alt={imageUrl ? title : ''}
                         />

@@ -13,7 +13,18 @@ import { projectTypes } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';
 import staticProjects, { Project } from 'data/projects';
 import workListOne from 'resources/work-list-1.webp';
-import clientsIcon from 'resources/tc-clients.webp';
+import boldCodeIcon from 'resources/trustedBy/boldcode.svg';
+import okularAnalyticsIcon from 'resources/trustedBy/OkularAnalytics.svg';
+import britishEmbassyIcon from 'resources/trustedBy/BritishEmbassy.svg';
+import idmcIcon from 'resources/trustedBy/IDMC.svg';
+import unhcrIcon from 'resources/trustedBy/UNHCR.svg';
+import americanRedCrossIcon from 'resources/trustedBy/AmericanRedCross.svg';
+import worldVisionIcon from 'resources/trustedBy/WorldVision.svg';
+import jipsIcon from 'resources/trustedBy/JIPS.svg';
+import peopleInNeedIcon from 'resources/trustedBy/PeopleInNeed.svg';
+import dataFriendlySpaceIcon from 'resources/trustedBy/DFS.svg';
+import ifrcIcon from 'resources/trustedBy/IFRC.svg';
+import sntmIcon from 'resources/trustedBy/SNTM_Capital.svg';
 import bannerImage from 'resources/banner.png';
 
 import styles from './styles.module.css';
@@ -39,7 +50,8 @@ function Home(props: Props) {
             banner={(
                 <BannerWithImage
                     className={styles.banner}
-                    title="Toggling ideas into reality"
+                    imageClassName={styles.homeBannerImage}
+                    imageUrl={bannerImage}
                     description={(
                         <div className={styles.introductionContent}>
                             <div className={styles.title}>
@@ -69,55 +81,33 @@ function Home(props: Props) {
                             </Button>
                         </div>
                     )}
-                    imageUrl={bannerImage}
                     mode="transparent"
                 />
             )}
         >
-            {/*  <Page
-        //     className={styles.home}
-        //     pageTitle="Home"
-        //     banner={(
-        //         <Container
-        //             className={styles.banner}
-        //             contentClassName={styles.content}
-        //         >
-        //             <div className={styles.introductionContent}>
-        //                 <div className={styles.title}>
-        //                     Toggling ideas into reality
-        //                 </div>
-        //                 <div>
-        //                     A flawless digital community contributing to development
-        //                     and research striving towards improving existing processes
-        //                 </div>
-        //                 <div className={styles.tags}>
-        //                     {projectTypes.map((projectType, i) => (
-        //                         <React.Fragment key={projectType.key}>
-        //                             <Link href={projectType.link}>{projectType.title}</Link>
-        //                             {i < projectTypes.length - 1 && (
-        //                                 <div className={styles.dot}>•</div>
-        //                             )}
-        //                         </React.Fragment>
-        //                     ))}
-        //                 </div>
-        //                 <Button
-        //                     className={styles.getStartedButton}
-        //                     name={undefined}
-        //                     variant="primary"
-        //                 >
-        //                     View Services
-        //                 </Button>
-        //             </div>
-        //             <img
-        //                 // className={styles.bannerImage}
-        //                 src={bannerImage}
-        //                 alt="banner"
-        //             />
-        //         </Container>
-            )} */}
             <Container contentClassName={styles.clientsSection}>
                 <h3 className={styles.heading}>Trusted By</h3>
-                <img className={styles.clientsImage} src={clientsIcon} alt="Clients" />
+                <div className={styles.clientLogoGroup}>
+                    <div className={styles.clientGroupOne}>
+                        <img className={styles.britishEmbassy} src={britishEmbassyIcon} alt="Clients" />
+                        <img className={styles.idmc} src={idmcIcon} alt="Clients" />
+                        <img className={styles.unhcr} src={unhcrIcon} alt="Clients" />
+                        <img className={styles.americanRedCross} src={americanRedCrossIcon} alt="Clients" />
+                        <img className={styles.worldVision} src={worldVisionIcon} alt="Clients" />
+                    </div>
+                    <div className={styles.clientGroupTwo}>
+                        <img className={styles.jips} src={jipsIcon} alt="Clients" />
+                        <img className={styles.peopleInNeed} src={peopleInNeedIcon} alt="Clients" />
+                        <img className={styles.dataFriendlySpace} src={dataFriendlySpaceIcon} alt="Clients" />
+                        <img className={styles.ifrc} src={ifrcIcon} alt="Clients" />
+                        <img className={styles.sntm} src={sntmIcon} alt="Clients" />
+                    </div>
+                    <div className={styles.clientGroupThree}>
+                        <img className={styles.okularAnalytics} src={okularAnalyticsIcon} alt="Clients" />
+                        <img className={styles.boldCode} src={boldCodeIcon} alt="Clients" />
+                    </div>
+                </div>
+                {/* <img className={styles.clientsImage} src={clientsIcon} alt="Clients" /> */}
             </Container>
             <Section
                 title="Who We Are"
