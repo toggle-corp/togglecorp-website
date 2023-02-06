@@ -13,11 +13,12 @@ import Section from 'components/general/Section';
 
 import firstImage from 'resources/career/collage/1.jpeg';
 import secondImage from 'resources/career/collage/2.jpeg';
-import thirdImage from 'resources/career/collage/3.jpeg';
+import thirdImage from 'resources/career/collage/5.jpeg';
 import fourthImage from 'resources/career/collage/4.jpeg';
-import fifthImage from 'resources/career/collage/5.jpeg';
-import sixthImage from 'resources/career/collage/6.jpeg';
-import seventhImage from 'resources/career/collage/7.jpeg';
+import fifthImage from 'resources/career/collage/10.jpeg';
+import sixthImage from 'resources/career/collage/9.jpeg';
+import seventhImage from 'resources/career/collage/8.jpeg';
+
 import styles from './styles.module.css';
 
 function CareerPage() {
