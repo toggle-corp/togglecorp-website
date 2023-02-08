@@ -1,7 +1,7 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { _cs } from '@togglecorp/fujs';
 import Head from 'next/head';
-import { FaArrowUp, FaHandHolding } from 'react-icons/fa';
+import { FaArrowUp } from 'react-icons/fa';
 
 import Navbar from 'components/general/Navbar';
 import Footer from 'components/general/Footer';

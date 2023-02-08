@@ -14,8 +14,6 @@
     .topSection {
         display: flex;
         flex-direction: column;
-        /*NOTE: Disabled to maintain desired background color based upon modes */
-        /* background-color: var(--color-secondary); */
         min-height: var(--section-min-height);
         color: var(--color-text-on-dark);
 
@@ -25,7 +23,7 @@
         }
 
         &.transparent {
-            background-color: none;
+            background: linear-gradient(90deg, var(--color-surface-banner-gradient-stop) -12%, var(--color-surface-banner-gradient-start) 300%);
             color: var(--color-secondary);
         }
 

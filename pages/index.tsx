@@ -57,9 +57,12 @@ function Home(props: Props) {
                 <BannerWithImage
                     className={styles.banner}
                     contentClassName={styles.bannerContent}
-                    imageUrl={bannerImage}
+                    topSectionClassName={styles.topSection}
+                    topSectionContentClassName={styles.topSectionContent}
                     title="Toggling ideas into reality"
                     titleClassName={styles.homeTitle}
+                    imageUrl={bannerImage}
+                    mode="transparent"
                     description={(
                         <div className={styles.introductionContent}>
                             <div>
@@ -86,34 +89,81 @@ function Home(props: Props) {
                             </Button>
                         </div>
                     )}
-                    mode="transparent"
                 />
             )}
         >
             <Container contentClassName={styles.clientsSection}>
-                <h3 className={styles.heading}>Trusted By</h3>
                 <div className={styles.clientLogoGroup}>
+                    <h3 className={styles.heading}>Trusted By</h3>
                     <div className={styles.clientGroupOne}>
-                        <img className={styles.britishEmbassy} src={britishEmbassyIcon} alt="Clients" />
-                        <img className={styles.idmc} src={idmcIcon} alt="Clients" />
-                        <img className={styles.unhcr} src={unhcrIcon} alt="Clients" />
-                        <img className={styles.americanRedCross} src={americanRedCrossIcon} alt="Clients" />
-                        <img className={styles.worldVision} src={worldVisionIcon} alt="Clients" />
+                        <img
+                            className={styles.trustedIcons}
+                            src={britishEmbassyIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={idmcIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={unhcrIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={americanRedCrossIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={worldVisionIcon}
+                            alt="Clients"
+                        />
                     </div>
                     <div className={styles.clientGroupTwo}>
-                        <img className={styles.jips} src={jipsIcon} alt="Clients" />
-                        <img className={styles.peopleInNeed} src={peopleInNeedIcon} alt="Clients" />
-                        <img className={styles.dataFriendlySpace} src={dataFriendlySpaceIcon} alt="Clients" />
-                        <img className={styles.ifrc} src={ifrcIcon} alt="Clients" />
-                        <img className={styles.sntm} src={sntmIcon} alt="Clients" />
+                        <img
+                            className={styles.trustedIcons}
+                            src={jipsIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={peopleInNeedIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={dataFriendlySpaceIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={ifrcIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={sntmIcon}
+                            alt="Clients"
+                        />
                     </div>
                     <div className={styles.clientGroupThree}>
-                        <img className={styles.okularAnalytics} src={okularAnalyticsIcon} alt="Clients" />
-                        <img className={styles.boldCode} src={boldCodeIcon} alt="Clients" />
+                        <img
+                            className={styles.trustedIcons}
+                            src={okularAnalyticsIcon}
+                            alt="Clients"
+                        />
+                        <img
+                            className={styles.trustedIcons}
+                            src={boldCodeIcon}
+                            alt="Clients"
+                        />
                     </div>
                 </div>
-                {/* <img className={styles.clientsImage} src={clientsIcon} alt="Clients" /> */}
             </Container>
+
             <Section
                 title="Who We Are"
                 description="A cohesive group of brilliant-minded individuals solving real-world problems."
@@ -148,7 +198,7 @@ function Home(props: Props) {
             >
                 <div className={styles.projectCount}>
                     <div className={styles.statBox}>
-                        <IoFileTrayFullSharp size={42} color="#FF9972" />
+                        <IoFileTrayFullSharp size={42} color="var(--color-primary-light)" />
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 250+
@@ -159,7 +209,7 @@ function Home(props: Props) {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosRibbon size={42} color="#FF9972" />
+                        <IoIosRibbon size={42} color="var(--color-primary-light)" />
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 20+
@@ -170,7 +220,7 @@ function Home(props: Props) {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosPeople size={42} color="#FF9972" />
+                        <IoIosPeople size={42} color="var(--color-primary-light)" />
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 40+
