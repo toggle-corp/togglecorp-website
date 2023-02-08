@@ -27,7 +27,6 @@
         &.transparent {
             background-color: none;
             color: var(--color-secondary);
-            min-height: 0;
         }
 
         &.dark {

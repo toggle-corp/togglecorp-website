@@ -7,10 +7,11 @@ import styles from './styles.module.css';
 
 interface Props {
     className?: string;
-    title?: string;
+    title?: React.ReactNode;
+    titleClassName?: string;
     description?: React.ReactNode;
     imageUrl?: string;
-    imageClassName?: string;
+    contentClassName?: string;
     stats?: React.ReactNode;
     mode?: 'dark' | 'light' | 'transparent';
     actions?: React.ReactNode;
@@ -20,7 +21,8 @@ interface Props {
 function BannerWithImage(props: Props) {
     const {
         className,
-        imageClassName,
+        contentClassName,
+        titleClassName,
         title,
         description,
         imageUrl,
@@ -41,10 +43,9 @@ function BannerWithImage(props: Props) {
                 )}
                 contentClassName={styles.content}
             >
-                <div className={styles.bannerContent}>
-
+                <div className={_cs(contentClassName, styles.bannerContent)}>
                     <div className={styles.left}>
-                        <div className={styles.title}>
+                        <div className={_cs(titleClassName, styles.title)}>
                             {title}
                         </div>
                         <div className={styles.description}>
@@ -54,7 +55,7 @@ function BannerWithImage(props: Props) {
                     </div>
                     {imageUrl && (
                         <img
-                            className={_cs(styles.bannerImage, mode === 'transparent' && styles.imageClassName)}
+                            className={_cs(styles.bannerImage)}
                             src={imageUrl}
                             alt={imageUrl ? title : ''}
                         />

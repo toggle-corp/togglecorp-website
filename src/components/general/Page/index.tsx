@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { _cs } from '@togglecorp/fujs';
 import Head from 'next/head';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowUp, FaHandHolding } from 'react-icons/fa';
 
 import Navbar from 'components/general/Navbar';
 import Footer from 'components/general/Footer';
@@ -26,6 +26,7 @@ function Page(props: Props) {
     } = props;
 
     const ref = useRef<HTMLDivElement>(null);
+
     const goToTop = () => {
         if (ref.current) {
             ref.current.scrollIntoView({
@@ -37,7 +38,10 @@ function Page(props: Props) {
     };
 
     return (
-        <div className={_cs(styles.page, className)} ref={ref}>
+        <div
+            className={_cs(styles.page, className)}
+            ref={ref}
+        >
             <Head>
                 <title>
                     {pageTitle}
@@ -45,7 +49,9 @@ function Page(props: Props) {
             </Head>
             <Navbar />
             {banner}
-            <div className={_cs(styles.mainContent, mainContentClassName)}>
+            <div
+                className={_cs(styles.mainContent, mainContentClassName)}
+            >
                 {children}
             </div>
             <Footer />

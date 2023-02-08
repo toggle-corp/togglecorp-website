@@ -30,12 +30,12 @@
 .collageContainer {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-base);
+    gap: var(--spacing-large);
 
     .imageContainer {
         display: flex;
         justify-content: space-between;
-        gap: var(--spacing-extra-large);
+        gap: var(--spacing-large);
 
         .largeImg {
             flex-basis: 66.5%;

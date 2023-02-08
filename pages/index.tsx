@@ -1,6 +1,9 @@
 import React, { useCallback } from 'react';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
+import { IoIosRibbon, IoIosPeople } from 'react-icons/io';
+import { IoFileTrayFullSharp } from 'react-icons/io5';
+
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
 import Button from 'components/general/Button';
@@ -12,8 +15,11 @@ import BannerWithImage from 'components/general/BannerWithImage';
 import { projectTypes } from 'data/projectTypes';
 import { getProjectCoverImage } from 'data/projectImages';
 import staticProjects, { Project } from 'data/projects';
-import workListOne from 'resources/work-list-1.webp';
-import boldCodeIcon from 'resources/trustedBy/boldcode.svg';
+import whoWeAreOne from 'resources/homeSection/who_we_are_1.png';
+import whoWeAreTwo from 'resources/homeSection/who_we_are_2.png';
+import whoWeAreThree from 'resources/homeSection/who_we_are_3.png';
+import whoWeAreFour from 'resources/homeSection/who_we_are_4.png';
+import boldCodeIcon from 'resources/trustedBy/BoldCode.svg';
 import okularAnalyticsIcon from 'resources/trustedBy/OkularAnalytics.svg';
 import britishEmbassyIcon from 'resources/trustedBy/BritishEmbassy.svg';
 import idmcIcon from 'resources/trustedBy/IDMC.svg';
@@ -50,13 +56,12 @@ function Home(props: Props) {
             banner={(
                 <BannerWithImage
                     className={styles.banner}
-                    imageClassName={styles.homeBannerImage}
+                    contentClassName={styles.bannerContent}
                     imageUrl={bannerImage}
+                    title="Toggling ideas into reality"
+                    titleClassName={styles.homeTitle}
                     description={(
                         <div className={styles.introductionContent}>
-                            <div className={styles.title}>
-                                Toggling ideas into reality
-                            </div>
                             <div>
                                 A flawless digital community contributing to development
                                 and research striving towards improving existing processes
@@ -112,7 +117,7 @@ function Home(props: Props) {
             <Section
                 title="Who We Are"
                 description="A cohesive group of brilliant-minded individuals solving real-world problems."
-                sideImageUrl={workListOne}
+                sideImageUrl={whoWeAreThree}
                 actions={(
                     <>
                         <div>
@@ -133,9 +138,48 @@ function Home(props: Props) {
                 )}
             >
                 <div className={styles.introImages}>
-                    <img src={workListOne} alt="intro" />
-                    <img src={workListOne} alt="intro" />
-                    <img src={workListOne} alt="intro" />
+                    <img src={whoWeAreFour} alt="intro" />
+                    <img src={whoWeAreOne} alt="intro" />
+                    <img src={whoWeAreTwo} alt="intro" />
+                </div>
+            </Section>
+            <Section
+                className={styles.statSection}
+            >
+                <div className={styles.projectCount}>
+                    <div className={styles.statBox}>
+                        <IoFileTrayFullSharp size={42} color="#FF9972" />
+                        <div className={styles.statInfo}>
+                            <span className={styles.statNumber}>
+                                250+
+                            </span>
+                            <span className={styles.statDescription}>
+                                Projects Completed
+                            </span>
+                        </div>
+                    </div>
+                    <div className={styles.statBox}>
+                        <IoIosRibbon size={42} color="#FF9972" />
+                        <div className={styles.statInfo}>
+                            <span className={styles.statNumber}>
+                                20+
+                            </span>
+                            <span className={styles.statDescription}>
+                                Satisfied Clients
+                            </span>
+                        </div>
+                    </div>
+                    <div className={styles.statBox}>
+                        <IoIosPeople size={42} color="#FF9972" />
+                        <div className={styles.statInfo}>
+                            <span className={styles.statNumber}>
+                                40+
+                            </span>
+                            <span className={styles.statDescription}>
+                                Active Employees
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </Section>
             <Section

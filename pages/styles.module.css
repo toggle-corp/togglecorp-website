@@ -4,7 +4,14 @@
         /* TODO: replace with image */
         background-color: var(--color-surface-header);
         /* padding: var(--spacing-ultra-large) var(--spacing-super-large); */
-        max-height: 32rem;
+        max-height: 35rem;
+
+
+        .homeTitle {
+            color: #004874 !important;
+            line-height: 1.25 !important;
+            font-size: var(--font-size-banner-description) !important;
+        }
 
         .introductionContent {
             display: flex;
@@ -13,17 +20,14 @@
             gap: var(--spacing-super-large);
             font-size: var(--font-size-medium);
 
-            .title {
-                line-height: 1.25;
-                font-size: var(--font-size-banner-description);
-            }
-
             .tags {
                 display: flex;
                 flex-wrap: wrap;
                 line-height: 1;
                 color: var(--color-primary);
                 gap: var(--spacing-small);
+                font-size: var(--font-size-small);
+                font-weight: var(--font-weight-bold);
 
                 @media screen and (max-width: 900px) {
                     flex-direction: column;
@@ -40,8 +44,10 @@
         }
     }
 
-    .homeBannerImage {
-        margin-left: auto !important;
+    .bannerContent {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--spacing-extra-large) 0 !important;
     }
 
     .viewMoreButton {
@@ -78,9 +84,12 @@
         display: flex;
         flex-direction: column;
         gap: var(--spacing-large);
+        padding-top: 7rem;
 
         .heading {
             text-align: center;
+            font-weight: var(--font-weight-light);
+            font-size: var(--font-size-medium);
         }
 
         .clientLogoGroup {
@@ -90,9 +99,8 @@
 
             .clientGroupOne {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                gap: var(--spacing-ultra-large);
 
                 .britishEmbassy {
                     width: 10rem;
@@ -166,6 +174,39 @@
                 .okularAnalytics {
                     width: 10rem;
                     height: 3.3rem;
+                }
+            }
+        }
+    }
+
+    .statSection {
+        background-color: #004874;
+
+        .projectCount {
+            display: flex;
+            justify-content: space-between;
+            background-color: #004874;
+
+            .statBox {
+                display: flex;
+                align-items: center;
+                gap: var(--spacing-medium);
+
+                .statInfo {
+                    display: flex;
+                    flex-direction: column;
+
+                    .statNumber {
+                        color: white;
+                        font-weight: bold;
+                        font-size: var(--font-size-large);
+                    }
+
+                    .statDescription {
+                        color: white;
+                        font-weight: 500;
+                        font-size: var(--font-size-small);
+                    }
                 }
             }
         }
