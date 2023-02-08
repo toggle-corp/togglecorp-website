@@ -21,7 +21,32 @@
 }
 
 .expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-surface-light);
+
+    .outerCircle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        height: 40rem;
+        width: 40rem;
+        border: 2px dashed var(--color-secondary);
+        border-radius: 50%;
+
+        .innerCircle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20rem;
+            width: 20rem;
+            border: 1px dashed var(--color-secondary);
+            border-radius: 50%;
+        }
+    }
 
     .expertiseList {
         display: flex;
