@@ -14,8 +14,6 @@ body {
     margin: 0;
     background-color: var(--color-surface-background);
     padding: 0;
-    height: 100vh;
-    overflow: auto;
     line-height: 1.5;
     color: var(--color-text-black);
     font-family: 'Source Sans 3', sans-serif;
