@@ -50,7 +50,7 @@ function AboutUs() {
         >
             <Section
                 title="Our story"
-                description="In the summer of 2016, one of our founders noticed a need for a solution in the humanitarian sector that would ease the process of consuming reports and news articles."
+                description="While volunteering in the UN after the earthquake, one of our co-founders encountered humanitarians discussing ways to handle the data related problems in the sector."
             >
                 <div className={styles.recentWorkList}>
                     <div className={styles.recentWorkCard}>
@@ -61,14 +61,17 @@ function AboutUs() {
                         />
                         <div className={styles.details}>
                             <div className={styles.description}>
-                                Hence, Togglecorp&apos;s inception was to solve a specific problem
-                                in the humanitarian world. However, one thing led to another
-                                and another and another…
+                                Discussions began, attracting a few more people,
+                                leading them to start working on a project without
+                                thinking what it would entail to.
+                                Little did they know it was a start of
+                                something amazing.
                             </div>
                             <div className={styles.description}>
-                                Soon enough, we started catering solutions for other national
-                                and international non-profit organizations as well and
-                                continued on solving real-world problems.
+                                Years later, Togglecorp has catered solutions for several national
+                                and international organizations,
+                                and continued on solving real-world problems.
+                                We cannot wait to see what comes next.
                             </div>
                         </div>
                     </div>
