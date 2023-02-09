@@ -7,7 +7,6 @@ import {
     IoLogoTwitter,
     IoGlobeOutline,
     IoLogoStackoverflow,
-    IoOpenOutline,
 } from 'react-icons/io5';
 
 import { _cs } from '@togglecorp/fujs';
@@ -75,15 +74,15 @@ function EmployeeCard(props: EmployeeCardProps) {
                             {name}
                         </h3>
                     )}
-                    {variant === 'list' && (
-                        <h5>
-                            {name}
-                            <a
-                                href={employeeCardLink}
-                            >
-                                <IoOpenOutline />
-                            </a>
-                        </h5>
+                    {variant === 'list' && employeeCardLink && (
+                        <Link
+                            href={employeeCardLink}
+                            passHref
+                        >
+                            <h5 className={styles.cardName}>
+                                {name}
+                            </h5>
+                        </Link>
                     )}
                     <div className={styles.position}>
                         {position}
