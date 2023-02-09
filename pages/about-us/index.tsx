@@ -89,7 +89,7 @@ function AboutUs() {
             <Section
                 className={styles.ourTeam}
                 title="We are proud of the team we have built"
-                description="At Togglecorp, we focus on having quality time and work, and at the same time, we focus on the all-round development and growth of our employees. Work is fun at TC!"
+                description="At Togglecorp, we focus on having quality time and work. At the same time, on the all-round development and growth of our team. Work is fun at TC!"
             >
                 <div className={styles.activityList}>
                     {expertises.map((activity) => (
@@ -117,7 +117,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Life at Togglecorp"
-                description="We spend all day staring at screens and working (apart from lunch break). KIDDING! We have fun as much as we work at Togglecorp."
+                description="Having fun as much as we work is the essence of Togglecorp."
             >
                 <div className={styles.galleryList}>
                     {gallery.map((galleryItem) => (
@@ -149,8 +149,7 @@ function AboutUs() {
                 contentClassName={styles.content}
             >
                 <h4>
-                    We want people who work sincerely and have fun while do so.
-                    In return we provide you a space to grow your skills
+                    We provide you a space to grow your skills, have fun,
                     and an environment that respects you.
                 </h4>
                 <ButtonLikeLink

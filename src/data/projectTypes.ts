@@ -13,7 +13,7 @@ interface ProjectTypeItem {
 
 export const development: ProjectTypeItem = {
     image: developmentImage,
-    title: 'Tech Development',
+    title: 'Development',
     description:
         'Our magicians tailor solutions for your business needs.',
     link: '/services/development',
