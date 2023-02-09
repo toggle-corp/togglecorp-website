@@ -27,39 +27,15 @@
     justify-content: center;
     background-color: var(--color-surface-light);
 
-    .outerCircle {
+    .expertiseGraphBox {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
         align-self: center;
-        height: 40rem;
-        width: 40rem;
-        border: 2px dashed var(--color-secondary);
-        border-radius: 50%;
+        max-width: 32rem;
+        max-height: 32rem;
 
-        .innerCircle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 20rem;
-            width: 20rem;
-            border: 1px dashed var(--color-secondary);
-            border-radius: 50%;
-        }
-    }
-
-    .expertiseList {
-        display: flex;
-        gap: var(--spacing-large);
-
-        >* {
-            flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
-        }
-
-        @media screen and (max-width: 900px) {
-            >* {
-                flex-basis: 100%;
-            }
+        .expertisePicture {
+            width: 100%;
         }
     }
 }

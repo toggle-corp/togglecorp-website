@@ -19,15 +19,8 @@ import {
 } from 'data/projectTypes';
 
 import organizationListLogo from 'resources/organization-list.webp';
-import expertiseLogo from 'resources/servicesSection/expertiseGraph.png';
+import expertiseLogo from 'resources/ourExpertise/expertiseGraph.png';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import planningLogo from 'resources/planning.png';
-import monitoringLogo from 'resources/monitoring.png';
-import imgOne from 'resources/ourExpertise/AWS.png';
-import imgTwo from 'resources/ourExpertise/Azure.png';
-import imgThree from 'resources/ourExpertise/d3.png';
-import imgFour from 'resources/ourExpertise/django.png'
-
 import workListOne from 'resources/work-list-1.webp';
 import {
     keySelector,
@@ -141,8 +134,8 @@ function DevelopmentPage(props: Props) {
                     <h3>Humanitarian organizations we’ve worked with</h3>
                     <img
                         className={styles.organizationImg}
-                        src={expertiseLogo}
-                        alt="Expertise Graph"
+                        src={organizationListLogo}
+                        alt="Organization List"
                     />
                 </div>
             </Section>
@@ -176,33 +169,12 @@ function DevelopmentPage(props: Props) {
                 title="Our Expertise"
                 description="Let’s solve problems together with our selection of high-level tech stack"
             >
-                <div className={styles.expertiseList}>
+                <div className={styles.expertiseGraphBox}>
                     <img
-                        className={styles.organizationImg}
-                        src={organizationListLogo}
-                        alt="Organization List"
+                        className={styles.expertisePicture}
+                        src={expertiseLogo}
+                        alt="Expertise Graph"
                     />
-                    {/* <Card
-                        imageSrc={planningLogo}
-                        description="Application Development:
-                        Javascript, Typescript, ReactJS, GraphQL Python, Django React Native, Expo"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={monitoringLogo}
-                        description="Machine Learning Technologies: Python"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={planningLogo}
-                        description="Visualization Technologies: MapboxGL, D3.js"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={monitoringLogo}
-                        description="Build and Deployment: AWS, Azure"
-                        variant="mini"
-                    /> */}
                 </div>
             </Section>
             <Section
