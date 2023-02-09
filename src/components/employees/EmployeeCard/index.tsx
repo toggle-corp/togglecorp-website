@@ -7,7 +7,6 @@ import {
     IoLogoTwitter,
     IoGlobeOutline,
     IoLogoStackoverflow,
-    IoOpenOutline,
 } from 'react-icons/io5';
 
 import { _cs } from '@togglecorp/fujs';
@@ -75,7 +74,10 @@ function EmployeeCard(props: EmployeeCardProps) {
                             {name}
                         </h3>
                     )}
-                    {variant === 'list' && (
+
+                    {/* Barsha, please have a look at this. I removed the <a tag and
+                    replaced it with link so that the whole of the name is clickable */}
+                    {variant === 'list' && employeeCardLink && (
                         <Link
                             href={employeeCardLink}
                             passHref
