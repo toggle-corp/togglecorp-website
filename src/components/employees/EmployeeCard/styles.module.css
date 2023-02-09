@@ -18,6 +18,10 @@
         padding: var(--spacing-medium);
         gap: var(--spacing-medium);
 
+        .cardName {
+            cursor: pointer;
+        }
+
         .position {
             color: var(--color-primary);
         }
@@ -53,6 +57,7 @@
             }
         }
     }
+
     &.detail {
 
         .socialMediaIcons {
