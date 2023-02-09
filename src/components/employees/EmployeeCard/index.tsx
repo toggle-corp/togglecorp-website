@@ -74,9 +74,6 @@ function EmployeeCard(props: EmployeeCardProps) {
                             {name}
                         </h3>
                     )}
-
-                    {/* Barsha, please have a look at this. I removed the <a tag and
-                    replaced it with link so that the whole of the name is clickable */}
                     {variant === 'list' && employeeCardLink && (
                         <Link
                             href={employeeCardLink}
