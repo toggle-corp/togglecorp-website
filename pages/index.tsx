@@ -1,8 +1,6 @@
 import React, { useCallback } from 'react';
 import Link from 'next/link';
-import { GetStaticProps } from 'next';
-import { IoIosRibbon, IoIosPeople } from 'react-icons/io';
-import { IoFileTrayFullSharp } from 'react-icons/io5';
+import { IoIosRibbon, IoIosPeople, IoIosFiling } from 'react-icons/io';
 
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
@@ -13,12 +11,13 @@ import ButtonLikeLink from 'components/general/ButtonLikeLink';
 import BannerWithImage from 'components/general/BannerWithImage';
 
 import { projectTypes } from 'data/projectTypes';
-import { getProjectCoverImage } from 'data/projectImages';
-import staticProjects, { Project } from 'data/projects';
-import whoWeAreOne from 'resources/homeSection/who_we_are_1.png';
-import whoWeAreTwo from 'resources/homeSection/who_we_are_2.png';
-import whoWeAreThree from 'resources/homeSection/who_we_are_3.png';
-import whoWeAreFour from 'resources/homeSection/who_we_are_4.png';
+import whoWeAreOne from 'resources/homeSection/whoWeAre1.png';
+import whoWeAreTwo from 'resources/homeSection/whoWeAre2.png';
+import whoWeAreThree from 'resources/homeSection/whoWeAre3.png';
+import whoWeAreFour from 'resources/homeSection/whoWeAre4.png';
+import deepBanner from 'resources/homeSection/deep.png';
+import npStocks from 'resources/np-stocks.webp';
+import analysisBanner from 'resources/homeSection/analysis.png';
 import boldCodeIcon from 'resources/trustedBy/BoldCode.svg';
 import okularAnalyticsIcon from 'resources/trustedBy/OkularAnalytics.svg';
 import britishEmbassyIcon from 'resources/trustedBy/BritishEmbassy.svg';
@@ -30,18 +29,12 @@ import jipsIcon from 'resources/trustedBy/JIPS.svg';
 import peopleInNeedIcon from 'resources/trustedBy/PeopleInNeed.svg';
 import dataFriendlySpaceIcon from 'resources/trustedBy/DFS.svg';
 import ifrcIcon from 'resources/trustedBy/IFRC.svg';
-import sntmIcon from 'resources/trustedBy/SNTM_Capital.svg';
+import smtmIcon from 'resources/trustedBy/smtmCapital.svg';
 import bannerImage from 'resources/banner.png';
 
 import styles from './styles.module.css';
 
-interface Props {
-    projects: Project[];
-}
-
-function Home(props: Props) {
-    const { projects } = props;
-
+function Home() {
     const handleScrollToServices = useCallback(() => {
         const element = document.getElementById('services-section');
         if (element) {
@@ -99,66 +92,66 @@ function Home(props: Props) {
                         <img
                             className={styles.trustedIcons}
                             src={britishEmbassyIcon}
-                            alt="Clients"
+                            alt="british-embassy"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={idmcIcon}
-                            alt="Clients"
+                            alt="IDMC"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={unhcrIcon}
-                            alt="Clients"
+                            alt="UNHCR"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={americanRedCrossIcon}
-                            alt="Clients"
+                            alt="american-red-cross"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={worldVisionIcon}
-                            alt="Clients"
+                            alt="world-vision-icons"
                         />
                     </div>
                     <div className={styles.clientGroupTwo}>
                         <img
                             className={styles.trustedIcons}
                             src={jipsIcon}
-                            alt="Clients"
+                            alt="jips"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={peopleInNeedIcon}
-                            alt="Clients"
+                            alt="people-in-need"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={dataFriendlySpaceIcon}
-                            alt="Clients"
+                            alt="data-friendly-space"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={ifrcIcon}
-                            alt="Clients"
+                            alt="IFRC"
                         />
                         <img
                             className={styles.trustedIcons}
-                            src={sntmIcon}
-                            alt="Clients"
+                            src={smtmIcon}
+                            alt="SMTM"
                         />
                     </div>
                     <div className={styles.clientGroupThree}>
                         <img
                             className={styles.trustedIcons}
                             src={okularAnalyticsIcon}
-                            alt="Clients"
+                            alt="Okular"
                         />
                         <img
                             className={styles.trustedIcons}
                             src={boldCodeIcon}
-                            alt="Clients"
+                            alt="BoldCode"
                         />
                     </div>
                 </div>
@@ -198,7 +191,7 @@ function Home(props: Props) {
             >
                 <div className={styles.projectCount}>
                     <div className={styles.statBox}>
-                        <IoFileTrayFullSharp size={42} color="var(--color-primary-light)" />
+                        <IoIosFiling size={42} className={styles.statIcon} />
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 250+
@@ -209,7 +202,7 @@ function Home(props: Props) {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosRibbon size={42} color="var(--color-primary-light)" />
+                        <IoIosRibbon size={42} className={styles.statIcon} />
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 20+
@@ -220,7 +213,7 @@ function Home(props: Props) {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosPeople size={42} color="var(--color-primary-light)" />
+                        <IoIosPeople size={42} className={styles.statIcon} />
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 40+
@@ -255,19 +248,61 @@ function Home(props: Props) {
                 description="Togglecorp has assisted multiple organizations achieve their vision by driving change and continuous improvement"
             >
                 <div className={styles.recentWorkList}>
-                    {projects.map((recentWork) => (
-                        <div className={styles.recentWorkCard} key={recentWork.id}>
-                            <img
-                                className={styles.workPreview}
-                                src={getProjectCoverImage(recentWork.id)}
-                                alt={recentWork.projectTitle}
-                            />
-                            <div className={styles.details}>
-                                <h4>{recentWork.projectTitle}</h4>
-                                <div className={styles.description}>{recentWork.summary}</div>
+                    <div className={styles.recentWorkCard}>
+                        <img
+                            className={styles.workPreview}
+                            src={deepBanner}
+                            alt="DEEP"
+                        />
+                        <div className={styles.details}>
+                            <h4>DEEP</h4>
+                            <div className={styles.description}>
+                                The DEEP offers a suite of tools
+                                and collaborative workflows that meet the needs
+                                for compiling, storing, and structuring qualitative
+                                information. It was initially established in 2016 in
+                                the aftermath of the Nepal Earthquake to strengthen
+                                collective sense-making and analysis.
                             </div>
                         </div>
-                    ))}
+                    </div>
+                    <div className={styles.recentWorkCard}>
+                        <img
+                            className={styles.workPreview}
+                            src={analysisBanner}
+                            alt="Global COVID-19 Situational Analysis"
+                        />
+                        <div className={styles.details}>
+                            <h4>Global COVID-19 Situational Analysis</h4>
+                            <div className={styles.description}>
+                                Funded by USAID, this project focused on
+                                providing extensive information
+                                regarding the impact of COVID-19
+                                on refugees and migrants and identifying
+                                the unmet needs of affected people due
+                                to COVID-19 and the pre-existing
+                                humanitarian crisis in Columbia,
+                                Burkina Faso, DRC, Nigeria, Syria, and Bangladesh.
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.recentWorkCard}>
+                        <img
+                            className={styles.workPreview}
+                            src={npStocks}
+                            alt="NP Stocks"
+                        />
+                        <div className={styles.details}>
+                            <h4>NPStocks</h4>
+                            <div className={styles.description}>
+                                NPstocks is a stock application created for Nepali stock market.
+                                It is an application that aids the users with
+                                decision making in investing in the secondary
+                                share market with real-time share market data and multiple
+                                appealing visual charts.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Section>
             <Container
@@ -286,12 +321,4 @@ function Home(props: Props) {
         </Page>
     );
 }
-
-export const getStaticProps: GetStaticProps<Props> = async () => ({
-    props: {
-        // FIXME: we need to sort by the latest first
-        projects: staticProjects.slice(0, 3),
-    },
-});
-
 export default Home;
