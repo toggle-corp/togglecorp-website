@@ -63,16 +63,14 @@ function Navbar(props: NavProps) {
                 />
             </Link>
             <div className={styles.menuList}>
-                <NavLink
-                    href="/works"
-                >
-                    Work
-                </NavLink>
                 <NavLink href="/careers">
                     Career
                 </NavLink>
                 <NavLink href="/about-us">
                     About
+                </NavLink>
+                <NavLink href="/team">
+                    Our Team
                 </NavLink>
             </div>
             <NavLink

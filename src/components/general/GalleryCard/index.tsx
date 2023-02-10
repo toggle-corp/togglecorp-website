@@ -6,8 +6,8 @@ import styles from './styles.module.css';
 interface Props {
     className?: string;
     imageUrl: string;
-    imageAlt: string;
-    caption: React.ReactNode;
+    imageAlt?: string;
+    caption?: React.ReactNode;
 }
 
 // NOTE: used in about-us page

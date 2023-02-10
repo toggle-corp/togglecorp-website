@@ -1,11 +1,12 @@
-import workListOne from 'resources/work-list-1.webp';
-import yomari from '../../resources/aboutUs/collage/yomari.jpeg';
-import samosa from '../../resources/aboutUs/collage/samosa.jpeg';
-import chatpatey_party from '../../resources/aboutUs/collage/chatpatey_party.jpeg';
-import fifa from '../../resources/aboutUs/collage/fifa.jpeg';
-import meeting from '../../resources/aboutUs/collage/meeting.jpeg';
-import celebration from '../../resources/aboutUs/collage/celebration.jpeg';
-import movie from '../../resources/aboutUs/collage/movie.jpeg';
+import guitar from 'resources/guitar.png';
+import panipuri from 'resources/aboutUs/collage/panipuri.png';
+import yomari from 'resources/aboutUs/collage/yomari.jpeg';
+import samosa from 'resources/aboutUs/collage/samosa.jpeg';
+import chatpateyParty from 'resources/aboutUs/collage/chatpatey-party.jpeg';
+import fifa from 'resources/aboutUs/collage/fifa.jpeg';
+import meeting from 'resources/aboutUs/collage/meeting.jpeg';
+import celebration from 'resources/aboutUs/collage/celebration.jpeg';
+import movie from 'resources/aboutUs/collage/movie.jpeg';
 
 interface GalleryItem {
     id: string;
@@ -29,9 +30,9 @@ const gallery: GalleryItem[] = [
     },
     {
         id: '3',
-        image: chatpatey_party,
+        image: chatpateyParty,
         imageAlt: 'logo',
-        caption: 'From panipuri eating competition to playing sequence, just name it and we do it!',
+        caption: '"Guys, let\'s gather up at the kitchen. We have a special treat for you. Hurry up, you don\'t want to miss it". Whenever any one of us hears this, we can be sure we\'re going to have fun (and something good).',
     },
     {
         id: '4',
@@ -41,9 +42,9 @@ const gallery: GalleryItem[] = [
     },
     {
         id: '5',
-        image: movie,
+        image: panipuri,
         imageAlt: 'logo',
-        caption: 'Let\'s not forget our weekly movie night. A Harry Potter fan?? How about a marathon with popcorn and momos?',
+        caption: 'From panipuri eating competition to playing sequence, just name it and we do it!',
     },
     {
         id: '6',
@@ -53,15 +54,21 @@ const gallery: GalleryItem[] = [
     },
     {
         id: '7',
+        image: guitar,
+        imageAlt: 'logo',
+        caption: 'Be it blasting through the speakers or a live gig from our in-house band, music flows through Togglecorp',
+    },
+    {
+        id: '8',
         image: fifa,
         imageAlt: 'logo',
         caption: 'As the great Dani Rojas once said, "Football is life!". From playing futsal in real life to futsal in PS4, we do it all.',
     },
     {
-        id: '8',
-        image: workListOne,
+        id: '9',
+        image: movie,
         imageAlt: 'logo',
-        caption: 'Be it blasting through the speakers or playing it ourselves in instruments, music flows through Togglecorp',
+        caption: 'Let\'s not forget our weekly movie night. A Harry Potter fan?? How about a marathon with popcorn and momos?',
     },
 ];
 

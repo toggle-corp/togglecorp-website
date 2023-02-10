@@ -1,6 +1,6 @@
-import researchImage from 'resources/analyst.jpeg';
-import developmentImage from 'resources/development.jpeg';
-import consultationImage from 'resources/consulting.jpeg';
+import researchImg from 'resources/research.png';
+import techDevelopment from 'resources/development.png';
+import consultation from 'resources/consultation.png';
 
 import { mapToList } from '@togglecorp/fujs';
 
@@ -12,7 +12,7 @@ interface ProjectTypeItem {
 }
 
 export const development: ProjectTypeItem = {
-    image: developmentImage,
+    image: techDevelopment,
     title: 'Development',
     description:
         'Our magicians tailor solutions for your business needs.',
@@ -20,7 +20,7 @@ export const development: ProjectTypeItem = {
 };
 
 export const research: ProjectTypeItem = {
-    image: researchImage,
+    image: researchImg,
     title: 'Research and Analysis',
     description:
         'We create a meaningful picture of data through research and analysis.',
@@ -28,7 +28,7 @@ export const research: ProjectTypeItem = {
 };
 
 export const consulting: ProjectTypeItem = {
-    image: consultationImage,
+    image: consultation,
     title: 'Consultation',
     description:
         'We help your business by providing practical and efficient solutions.',

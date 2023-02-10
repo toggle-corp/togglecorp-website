@@ -1,26 +1,47 @@
-import workListOne from 'resources/work-list-1.webp';
-
-// FIXME: move this to about-us
+import sanitizer from 'resources/sanitizers.webp';
+import foodDistribution from 'resources/food-distribution.webp';
+import students from 'resources/students.webp';
+import tempCheck from 'resources/temp-check.webp';
+import childAwareness from 'resources/child-awareness.webp';
+// import awareness from 'resources/awareness.webp';
+import lunchDistribution from 'resources/lunch-distribution.webp';
 
 interface SocialResponsibility {
     id: string;
     image: string;
     imageAlt: string,
-    caption: string;
 }
 
 const socialResponsibilities: SocialResponsibility[] = [
     {
         id: '1',
-        image: workListOne,
+        image: sanitizer,
         imageAlt: 'logo',
-        caption: 'An open-sourced library to do something really cool',
     },
     {
-        id: '1',
-        image: workListOne,
+        id: '2',
+        image: foodDistribution,
         imageAlt: 'logo',
-        caption: 'Teaching and learning with under-priviliedged kids from Jawalakhel',
+    },
+    {
+        id: '3',
+        image: students,
+        imageAlt: 'logo',
+    },
+    {
+        id: '4',
+        image: tempCheck,
+        imageAlt: 'logo',
+    },
+    {
+        id: '5',
+        image: childAwareness,
+        imageAlt: 'logo',
+    },
+    {
+        id: '6',
+        image: lunchDistribution,
+        imageAlt: 'logo',
     },
 ];
 
