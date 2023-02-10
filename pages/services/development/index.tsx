@@ -19,9 +19,8 @@ import {
 } from 'data/projectTypes';
 
 import organizationListLogo from 'resources/organization-list.webp';
+import expertiseLogo from 'resources/ourExpertise/expertiseGraph.png';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import planningLogo from 'resources/planning.png';
-import monitoringLogo from 'resources/monitoring.png';
 import workListOne from 'resources/work-list-1.webp';
 import {
     keySelector,
@@ -46,35 +45,35 @@ const approaches: Approach[] = [
         key: 'step1',
         title: 'Step 1: Design doc with user stories',
         description:
-      'Understanding a user’s perspective is imperative. So, the first thing we do after gathering initial requirements and information designs a document with potential user stories and flows.',
+            'Understanding a user’s perspective is imperative. So, the first thing we do after gathering initial requirements and information designs a document with potential user stories and flows.',
         image: workListOne,
     },
     {
         key: 'step2',
         title: 'Step 2: Low fidelity mockups',
         description:
-      'With the user’s perspective clear and fully understood, we dive into creating low-fidelity mockups that visually represent the flow of the product/project. ',
+            'With the user’s perspective clear and fully understood, we dive into creating low-fidelity mockups that visually represent the flow of the product/project. ',
         image: workListOne,
     },
     {
         key: 'step3',
         title: 'Step 3: Creation of milestones',
         description:
-      'Milestones are significant for measuring progress. Since we have an integrated approach, we set milestones depending on the size and complexity of the project.',
+            'Milestones are significant for measuring progress. Since we have an integrated approach, we set milestones depending on the size and complexity of the project.',
         image: workListOne,
     },
     {
         key: 'step4',
         title: 'Step 4: Iterate with continuous feedback from client',
         description:
-      'We value and maintain excellent relationships with our clients. After every small deployment, we collect feedback from our clients to make sure we are working towards achieving the same goal. ',
+            'We value and maintain excellent relationships with our clients. After every small deployment, we collect feedback from our clients to make sure we are working towards achieving the same goal. ',
         image: workListOne,
     },
     {
         key: 'step5',
         title: 'Step 5: Delivery and support',
         description:
-      'After achieving all the goals and objectives, we deliver the product/project to our clients. But our work does not end there. After the final deployment and release, we support our clients’ queries and small fixes for a fixed period of time.',
+            'After achieving all the goals and objectives, we deliver the product/project to our clients. But our work does not end there. After the final deployment and release, we support our clients’ queries and small fixes for a fixed period of time.',
         image: workListOne,
     },
 ];
@@ -170,26 +169,11 @@ function DevelopmentPage(props: Props) {
                 title="Our Expertise"
                 description="Let’s solve problems together with our selection of high-level tech stack"
             >
-                <div className={styles.expertiseList}>
-                    <Card
-                        imageSrc={planningLogo}
-                        description="Application Development: Javascript, Typescript, ReactJS, GraphQL Python, Django React Native, Expo"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={monitoringLogo}
-                        description="Machine Learning Technologies: Python"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={planningLogo}
-                        description="Visualization Technologies: MapboxGL, D3.js"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={monitoringLogo}
-                        description="Build and Deployment: AWS, Azure"
-                        variant="mini"
+                <div className={styles.expertiseGraphBox}>
+                    <img
+                        className={styles.expertisePicture}
+                        src={expertiseLogo}
+                        alt="Expertise Graph"
                     />
                 </div>
             </Section>
