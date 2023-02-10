@@ -4,7 +4,7 @@
             .topSectionContent {
                 .bannerContent {
                     .homeTitle {
-                        color: var(--color-surface-footer-light);
+                        color: var(--color-text-black);
                         line-height: 1.25;
                         font-size: var(--font-size-banner-description);
                     }
@@ -48,8 +48,9 @@
 
         .heading {
             text-align: center;
-            font-weight: var(--font-weight-light);
+            font-weight: var(--font-weight-bold);
             font-size: var(--font-size-medium);
+            color: var(--color-text-light);
         }
 
         .clientLogoGroup {

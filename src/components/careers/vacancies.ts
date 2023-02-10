@@ -54,4 +54,7 @@ const vacancies: Vacancy[] = [
     },
 ];
 
+// Note: When no vacancies, just uncomment below:
+// const vacancies: Vacancy[] | undefined = undefined;
+
 export default vacancies;

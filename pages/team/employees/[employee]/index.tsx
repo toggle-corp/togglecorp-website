@@ -46,7 +46,7 @@ function EmployeePage(props: EmployeePageProps) {
             >
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={styles.visitWebsiteLink}>
-                    Visit Toggle Website
+                    Visit Togglecorp Website
                 </a>
             </Link>
         </div>
