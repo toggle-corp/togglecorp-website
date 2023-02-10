@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { _cs } from '@togglecorp/fujs';
 import Head from 'next/head';
 import { FaArrowUp } from 'react-icons/fa';
@@ -26,15 +26,26 @@ function Page(props: Props) {
     } = props;
 
     const ref = useRef<HTMLDivElement>(null);
+    const [showTopBtn, setShowTopBtn] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowTopBtn(true);
+            } else {
+                setShowTopBtn(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     const goToTop = () => {
-        if (ref.current) {
-            ref.current.scrollIntoView({
-                block: 'start',
-                inline: 'nearest',
-                behavior: 'smooth',
-            });
-        }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
     };
 
     return (
@@ -56,11 +67,13 @@ function Page(props: Props) {
             </div>
             <Footer />
             <div className={styles.scrollTopButton}>
-                <FaArrowUp
-                    className={styles.scrollTop}
-                    onClick={goToTop}
-                    size={24}
-                />
+                {showTopBtn && (
+                    <FaArrowUp
+                        className={styles.scrollTop}
+                        onClick={goToTop}
+                        size={24}
+                    />
+                )}
             </div>
         </div>
     );
