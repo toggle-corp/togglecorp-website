@@ -14,13 +14,21 @@
     .topSection {
         display: flex;
         flex-direction: column;
-        background-color: var(--color-secondary);
         min-height: var(--section-min-height);
         color: var(--color-text-on-dark);
 
         &.light {
             background-color: var(--color-surface-header);
             color: var(--color-secondary);
+        }
+
+        &.transparent {
+            background: linear-gradient(90deg, var(--color-surface-banner-gradient-stop) -12%, var(--color-surface-banner-gradient-start) 300%);
+            color: var(--color-secondary);
+        }
+
+        &.dark {
+            background-color: var(--color-secondary);
         }
 
         .bannerContent {

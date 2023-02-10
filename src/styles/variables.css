@@ -1,8 +1,10 @@
 :root {
     /* brand colors */
     --color-primary: #ff5500;
+    --color-primary-light: #FF9972;
     /* orangish */
     --color-secondary: #032B43;
+    --color-surface-footer-light: #004874;
     /* dark bluish */
 
     /* text colors */
@@ -79,6 +81,7 @@
     --spacing-super-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-mega-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-ultra-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
+    --spacing-extra-ultra-large: 6rem;
 
     --spacing-highlighted-works: 3.5rem;
 

@@ -152,17 +152,11 @@ function Footer(props: Props) {
             </Container>
             <Container className={styles.copyrightContainer}>
                 <div className={styles.copyRight}>
-                    <div>
-                        Copyright
-                        {' '}
-                        {new Date().getFullYear()}
-                        {' '}
-                        Togglecorp Solutions Pvt Ltd. All rights reserved.
-                    </div>
-                    <div className={styles.privacy}>
-                        <p> Privacy</p>
-                        <p>Terms and Conditions</p>
-                    </div>
+                    Copyright
+                    {' '}
+                    {new Date().getFullYear()}
+                    {' '}
+                    Togglecorp Solutions Pvt Ltd. All rights reserved.
                 </div>
             </Container>
         </>

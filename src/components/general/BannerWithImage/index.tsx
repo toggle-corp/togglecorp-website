@@ -8,10 +8,14 @@ import styles from './styles.module.css';
 interface Props {
     className?: string;
     title?: string;
-    description?: string;
+    titleClassName?: string;
+    description?: React.ReactNode;
     imageUrl?: string;
+    contentClassName?: string;
+    topSectionClassName?: string;
+    topSectionContentClassName?: string;
     stats?: React.ReactNode;
-    mode?: 'dark' | 'light';
+    mode?: 'dark' | 'light' | 'transparent';
     actions?: React.ReactNode;
     maps?: string;
 }
@@ -19,6 +23,10 @@ interface Props {
 function BannerWithImage(props: Props) {
     const {
         className,
+        contentClassName,
+        titleClassName,
+        topSectionClassName,
+        topSectionContentClassName,
         title,
         description,
         imageUrl,
@@ -31,13 +39,21 @@ function BannerWithImage(props: Props) {
     return (
         <div className={_cs(styles.bannerWithImage, !imageUrl && styles.noImage, className)}>
             <Container
-                className={_cs(styles.topSection, mode === 'light' && styles.light)}
-                contentClassName={styles.content}
+                className={_cs(
+                    topSectionClassName,
+                    styles.topSection,
+                    mode === 'light' && styles.light,
+                    mode === 'transparent' && styles.transparent,
+                    mode === 'dark' && styles.dark,
+                )}
+                contentClassName={_cs(
+                    styles.content,
+                    topSectionContentClassName,
+                )}
             >
-                <div className={styles.bannerContent}>
-
+                <div className={_cs(contentClassName, styles.bannerContent)}>
                     <div className={styles.left}>
-                        <div className={styles.title}>
+                        <div className={_cs(titleClassName, styles.title)}>
                             {title}
                         </div>
                         <div className={styles.description}>
@@ -47,7 +63,7 @@ function BannerWithImage(props: Props) {
                     </div>
                     {imageUrl && (
                         <img
-                            className={styles.bannerImage}
+                            className={_cs(styles.bannerImage)}
                             src={imageUrl}
                             alt={imageUrl ? title : ''}
                         />

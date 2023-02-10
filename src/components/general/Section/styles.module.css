@@ -2,7 +2,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-extra-large);
+        gap: var(--spacing-medium);
         padding: var(--spacing-large) 0;
 
         @media screen and (max-width: 900px) {

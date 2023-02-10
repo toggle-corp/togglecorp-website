@@ -38,7 +38,10 @@ function Page(props: Props) {
     };
 
     return (
-        <div className={_cs(styles.page, className)} ref={ref}>
+        <div
+            className={_cs(styles.page, className)}
+            ref={ref}
+        >
             <Head>
                 <title>
                     {pageTitle}
@@ -46,7 +49,9 @@ function Page(props: Props) {
             </Head>
             <Navbar />
             {banner}
-            <div className={_cs(styles.mainContent, mainContentClassName)}>
+            <div
+                className={_cs(styles.mainContent, mainContentClassName)}
+            >
                 {children}
             </div>
             <Footer />

@@ -1,47 +1,97 @@
 .home {
     .banner {
-        background: linear-gradient(90deg, var(--color-surface-banner-gradient-stop)  -12%, var(--color-surface-banner-gradient-start) 300%);
-        /* TODO: replace with image */
-        background-color: var(--color-surface-header);
-        padding: var(--spacing-ultra-large) var(--spacing-super-large);
-        min-height: 32rem;
-
-        .content {
-            display: flex;
-            align-items: center;
-
-            .introductionContent {
-                display: flex;
-                flex-direction: column;
-                max-width: 36rem;
-                gap: var(--spacing-super-large);
-
-                .title {
-                    line-height: 1.25;
-                    font-size: var(--font-size-banner-description);
-                }
-
-                .tags {
-                    display: flex;
-                    flex-wrap: wrap;
-                    line-height: 1;
-                    color: var(--color-primary);
-                    gap: var(--spacing-small);
-
-                    @media screen and (max-width: 900px) {
-                        flex-direction: column;
-
-                        .dot {
-                            display: none;
-                        }
+        .topSection {
+            .topSectionContent {
+                .bannerContent {
+                    .homeTitle {
+                        color: var(--color-surface-footer-light);
+                        line-height: 1.25;
+                        font-size: var(--font-size-banner-description);
                     }
-                }
-
-                .getStartedButton {
-                    align-self: flex-start;
                 }
             }
         }
+    }
+
+    .introductionContent {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-super-large);
+        font-size: var(--font-size-medium);
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1;
+            color: var(--color-primary);
+            gap: var(--spacing-small);
+            font-size: var(--font-size-small);
+            font-weight: var(--font-weight-bold);
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+
+                .dot {
+                    display: none;
+                }
+            }
+        }
+
+        .getStartedButton {
+            align-self: flex-start;
+        }
+    }
+
+    .clientsSection {
+        display: flex;
+        flex-direction: column;
+
+        .heading {
+            text-align: center;
+            font-weight: var(--font-weight-light);
+            font-size: var(--font-size-medium);
+        }
+
+        .clientLogoGroup {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-ultra-large);
+
+            .trustedIcons {
+                width: 9rem;
+                height: 3.3rem;
+            }
+
+            .clientGroupOne {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-extra-ultra-large);
+            }
+
+            .clientGroupTwo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-large);
+            }
+
+            .clientGroupThree {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: var(--spacing-ultra-large);
+            }
+        }
+    }
+
+
+    .viewMoreButton {
+        align-self: flex-start;
+        border-radius: var(--radius-button);
     }
 
     .introImages {
@@ -69,17 +119,38 @@
         }
     }
 
-    .clientsSection {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-large);
+    .statSection {
+        background-color: var(--color-surface-footer-light);
 
-        .heading {
-            text-align: center;
-        }
+        .projectCount {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: var(--spacing-small);
+            background-color: var(--color-surface-footer-light);
 
-        .clientsImage {
-            width: 100%;
+            .statBox {
+                display: flex;
+                align-items: center;
+                gap: var(--spacing-medium);
+
+                .statInfo {
+                    display: flex;
+                    flex-direction: column;
+
+                    .statNumber {
+                        color: var(--color-surface-white);
+                        font-weight: var(--font-weight-bold);
+                        font-size: var(--font-size-large);
+                    }
+
+                    .statDescription {
+                        color: var(--color-surface-white);
+                        font-weight: var(--font-weight-bold);
+                        font-size: var(--font-size-small);
+                    }
+                }
+            }
         }
     }
 
@@ -123,6 +194,7 @@
                 flex-basis: 50%;
                 flex-shrink: 0;
                 border-radius: 0.5rem;
+                padding: var(--spacing-extra-small);
                 width: 50%;
                 height: 20rem;
                 object-fit: cover;
