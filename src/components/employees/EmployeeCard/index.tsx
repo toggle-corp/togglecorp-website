@@ -29,7 +29,6 @@ interface EmployeeCardProps {
     blogLink?: string,
     twitterLink?: string,
     stackoverflowLink?: string,
-    employeeCardLink?: string;
     variant?: 'list' | 'detail';
 }
 
@@ -48,7 +47,6 @@ function EmployeeCard(props: EmployeeCardProps) {
         blogLink,
         twitterLink,
         stackoverflowLink,
-        employeeCardLink,
         href,
         variant = 'detail',
     } = props;
@@ -74,15 +72,10 @@ function EmployeeCard(props: EmployeeCardProps) {
                             {name}
                         </h3>
                     )}
-                    {variant === 'list' && employeeCardLink && (
-                        <Link
-                            href={employeeCardLink}
-                            passHref
-                        >
-                            <h5 className={styles.cardName}>
-                                {name}
-                            </h5>
-                        </Link>
+                    {variant === 'list' && (
+                        <h5>
+                            {name}
+                        </h5>
                     )}
                     <div className={styles.position}>
                         {position}

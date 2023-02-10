@@ -139,10 +139,10 @@ function AboutUs() {
             >
                 <div className={styles.socialList}>
                     {socialResponsibilities.map((socialResponsibility) => (
-                        <Card
+                        <GalleryCard
                             key={socialResponsibility.id}
-                            imageSrc={socialResponsibility.image}
-                            description={socialResponsibility.caption}
+                            imageUrl={socialResponsibility.image}
+                            imageAlt={socialResponsibility.imageAlt}
                         />
                     ))}
                 </div>

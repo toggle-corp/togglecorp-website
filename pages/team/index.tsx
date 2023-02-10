@@ -50,7 +50,7 @@ function Team(props: Props) {
                             funnyDescription={member.funnyDescription}
                             description={member.description}
                             variant="list"
-                            employeeCardLink={`/team/employees/${member.id}`}
+                            href={`/team/employees/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />
@@ -70,7 +70,7 @@ function Team(props: Props) {
                             funnyDescription={member.funnyDescription}
                             description={member.description}
                             variant="list"
-                            employeeCardLink={`/team/employees/${member.id}`}
+                            href={`/team/employees/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />
@@ -90,7 +90,7 @@ function Team(props: Props) {
                             funnyDescription={member.funnyDescription}
                             description={member.description}
                             variant="list"
-                            employeeCardLink={`/team/employees/${member.id}`}
+                            href={`/team/employees/${member.id}`}
                             instagramLink={member.instagramLink}
                             linkedInLink={member.linkedInLink}
                         />

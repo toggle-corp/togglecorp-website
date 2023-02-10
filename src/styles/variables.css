@@ -93,6 +93,8 @@
     --width-separator-thin: 1px;
     --width-separator-medium: 2px;
     --padding-social-media-icon: 4px;
+    --employee-border-bottom: 0.87rem;
+    --employee-border-margin: 4px;
 
     @media screen and (max-width: 900px) {
         --font-size-heading-base: 1.75rem;
