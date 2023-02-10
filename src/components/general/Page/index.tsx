@@ -64,10 +64,10 @@ function Page(props: Props) {
             <div className={styles.scrollTopButton}>
                 {showTopBtn && (
                     <FaArrowUp
-                    className={styles.scrollTop}
-                    onClick={goToTop}
-                    size={24}
-                />
+                        className={styles.scrollTop}
+                        onClick={goToTop}
+                        size={24}
+                    />
                 )}
             </div>
         </div>
