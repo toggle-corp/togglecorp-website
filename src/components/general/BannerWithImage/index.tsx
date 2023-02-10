@@ -63,9 +63,9 @@ function BannerWithImage(props: Props) {
                     </div>
                     {imageUrl && (
                         <img
-                            className={_cs(styles.bannerImage)}
+                            className={styles.bannerImage}
                             src={imageUrl}
-                            alt={imageUrl ? title : ''}
+                            alt={title}
                         />
                     )}
                 </div>

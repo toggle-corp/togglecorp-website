@@ -134,6 +134,10 @@
                 align-items: center;
                 gap: var(--spacing-medium);
 
+                .statIcon {
+                    color: var(--color-primary-light);
+                }
+
                 .statInfo {
                     display: flex;
                     flex-direction: column;
@@ -193,8 +197,7 @@
             .workPreview {
                 flex-basis: 50%;
                 flex-shrink: 0;
-                border-radius: 0.5rem;
-                padding: var(--spacing-extra-small);
+                border-radius: var(--radius-button);
                 width: 50%;
                 height: 20rem;
                 object-fit: cover;
@@ -209,7 +212,7 @@
                 .description {
                     display: -webkit-box;
                     overflow: hidden;
-                    -webkit-line-clamp: 3;
+                    -webkit-line-clamp: 5;
                     -webkit-box-orient: vertical;
                 }
             }
