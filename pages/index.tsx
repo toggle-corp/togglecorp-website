@@ -30,7 +30,7 @@ import peopleInNeedIcon from 'resources/trustedBy/PeopleInNeed.svg';
 import dataFriendlySpaceIcon from 'resources/trustedBy/DFS.svg';
 import ifrcIcon from 'resources/trustedBy/IFRC.svg';
 import smtmIcon from 'resources/trustedBy/smtmCapital.svg';
-import bannerImage from 'resources/banner.png';
+import bannerImage from 'resources/homeSection/banner.jpeg';
 
 import styles from './styles.module.css';
 

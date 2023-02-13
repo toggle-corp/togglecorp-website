@@ -174,11 +174,6 @@ function ResearchPage(props: Props) {
             >
                 <div className={styles.expertiseList}>
                     <Card
-                        imageSrc={planningLogo}
-                        description="Research, analyze, interpret and present data related to humanitarian crises"
-                        variant="mini"
-                    />
-                    <Card
                         imageSrc={monitoringLogo}
                         description="Research, analyze, interpret and present data related to humanitarian crises"
                         variant="mini"
