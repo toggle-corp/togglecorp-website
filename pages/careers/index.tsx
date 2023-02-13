@@ -1,3 +1,5 @@
+import { _cs, isNotDefined } from '@togglecorp/fujs';
+
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import Header from 'components/general/Header';
@@ -50,26 +52,33 @@ function CareerPage() {
                 />
             )}
         >
-            <Container contentClassName={styles.careerContent}>
-                <Header
-                    title="Job openings"
-                    description="We are a team of problem-solvers working together solving real world problems. Join us and let's solve problems together"
-                />
-                <div className={styles.vacancies}>
-                    {vacancies.map((vacancy) => (
-                        <CareerItem
-                            key={vacancy.id}
-                            position={vacancy.position}
-                            department={vacancy.department}
-                            openings={vacancy.openings}
-                            applyUrl={vacancy.formLink}
-                            category={vacancy.category}
-                            salary={vacancy.salary}
-                            applyBefore={vacancy.applyBefore}
-                        />
-                    ))}
-                </div>
-            </Container>
+            {vacancies && (
+                <Container contentClassName={styles.careerContent}>
+                    <Header
+                        title="Job openings"
+                        description="We are a team of problem-solvers working together solving real world problems. Join us and let's solve problems together."
+                    />
+                    <div
+                        className={_cs(
+                            styles.vacancies,
+                            (isNotDefined(vacancies) && styles.noVacancies),
+                        )}
+                    >
+                        {vacancies.map((vacancy) => (
+                            <CareerItem
+                                key={vacancy.id}
+                                position={vacancy.position}
+                                department={vacancy.department}
+                                openings={vacancy.openings}
+                                applyUrl={vacancy.formLink}
+                                category={vacancy.category}
+                                salary={vacancy.salary}
+                                applyBefore={vacancy.applyBefore}
+                            />
+                        ))}
+                    </div>
+                </Container>
+            )}
             <Section
                 title="Life at Togglecorp"
                 description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
@@ -122,9 +131,20 @@ function CareerPage() {
                 className={styles.bottomSection}
                 contentClassName={styles.content}
             >
-                <h3>Want to work with us apart from the available vacancies?</h3>
-                <div>Reach out to us and we&apos;ll let you know more</div>
-                <Button name={undefined} variant="primary">
+                {vacancies ? (
+                    <>
+                        <h3>Want to work with us apart from the available vacancies?</h3>
+                        <div>Reach out to us and we&apos;ll let you know more</div>
+                    </>
+                ) : (
+                    <h3>
+                        No vacancies available at the moment. But feel free to drop your CV.
+                    </h3>
+                )}
+                <Button
+                    name={undefined}
+                    variant="primary"
+                >
                     <a href="mailto:career@togglecorp.com">
                         Drop your CV
                     </a>

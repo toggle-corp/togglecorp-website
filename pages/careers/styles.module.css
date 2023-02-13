@@ -25,6 +25,15 @@
             flex-basis: calc(33% - var(--spacing-medium));
         }
     }
+
+    .noVacancies {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: var(--color-text-dark-gray);
+        gap: var(--spacing-small);
+    }
 }
 
 .collageContainer {
@@ -48,7 +57,7 @@
         }
 
         .mediumImg {
-            flex-basis: 48.5%;
+            flex-basis: 49%;
             flex-shrink: 0;
             border-radius: var(--radius-card);
             width: 100%;
@@ -71,6 +80,11 @@
             gap: var(--spacing-medium);
 
             .mediumImg {
+                flex-basis: unset;
+                width: 100%;
+            }
+
+            .largeImg {
                 flex-basis: unset;
                 width: 100%;
             }
