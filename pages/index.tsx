@@ -58,7 +58,7 @@ function Home() {
                     mode="transparent"
                     description={(
                         <div className={styles.introductionContent}>
-                            <div>
+                            <div className={styles.bannerDescription}>
                                 A flawless digital community contributing to development
                                 and research striving towards improving existing processes
                             </div>
@@ -181,9 +181,9 @@ function Home() {
                 )}
             >
                 <div className={styles.introImages}>
-                    <img src={whoWeAreFour} alt="intro" />
-                    <img src={whoWeAreOne} alt="intro" />
-                    <img src={whoWeAreTwo} alt="intro" />
+                    <img src={whoWeAreFour} alt="Who we are" />
+                    <img src={whoWeAreOne} alt="Who we are" />
+                    <img src={whoWeAreTwo} alt="Who we are" />
                 </div>
             </Section>
             <Section
@@ -191,7 +191,9 @@ function Home() {
             >
                 <div className={styles.projectCount}>
                     <div className={styles.statBox}>
-                        <IoIosFiling size={42} className={styles.statIcon} />
+                        <div className={styles.statBoxContainer}>
+                            <IoIosFiling size={32} color="white" />
+                        </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 250+
@@ -202,7 +204,9 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosRibbon size={42} className={styles.statIcon} />
+                        <div className={styles.statBoxContainer}>
+                            <IoIosRibbon size={32} color="white" />
+                        </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 20+
@@ -213,7 +217,9 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosPeople size={42} className={styles.statIcon} />
+                        <div className={styles.statBoxContainer}>
+                            <IoIosPeople size={32} color="white" />
+                        </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 40+

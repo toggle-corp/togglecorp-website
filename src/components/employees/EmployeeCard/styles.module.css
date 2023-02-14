@@ -53,10 +53,11 @@
                 -webkit-line-clamp: 3;
             }
         }
+
         &:hover {
-            padding-bottom: var(--employee-border-margin);
-            border-bottom: var(--employee-border-bottom) solid var(--color-primary);
             transition-duration: 0.2s;
+            border-bottom: var(--employee-border-bottom) solid var(--color-primary);
+            padding-bottom: var(--employee-border-margin);
         }
     }
 

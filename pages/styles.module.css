@@ -4,8 +4,8 @@
             .topSectionContent {
                 .bannerContent {
                     .homeTitle {
-                        color: var(--color-text-black);
                         line-height: 1.25;
+                        color: var(--color-text-black);
                         font-size: var(--font-size-banner-description);
                     }
                 }
@@ -19,13 +19,17 @@
         gap: var(--spacing-super-large);
         font-size: var(--font-size-medium);
 
+        .bannerDescription {
+            font-size: var(--font-size-large);
+        }
+
         .tags {
             display: flex;
             flex-wrap: wrap;
             line-height: 1;
             color: var(--color-primary);
             gap: var(--spacing-small);
-            font-size: var(--font-size-small);
+            font-size: var(--font-size-medium);
             font-weight: var(--font-weight-bold);
 
             @media screen and (max-width: 900px) {
@@ -48,9 +52,9 @@
 
         .heading {
             text-align: center;
-            font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-medium);
             color: var(--color-text-light);
+            font-size: var(--font-size-large);
+            font-weight: var(--font-weight-normal);
         }
 
         .clientLogoGroup {
@@ -65,25 +69,25 @@
 
             .clientGroupOne {
                 display: flex;
+                align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
                 gap: var(--spacing-extra-ultra-large);
             }
 
             .clientGroupTwo {
                 display: flex;
+                align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
                 gap: var(--spacing-large);
             }
 
             .clientGroupThree {
                 display: flex;
+                align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
                 gap: var(--spacing-ultra-large);
             }
         }
@@ -135,8 +139,14 @@
                 align-items: center;
                 gap: var(--spacing-medium);
 
-                .statIcon {
-                    color: var(--color-primary-light);
+                .statBoxContainer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: var(--radius-button);
+                    background-color: var(--color-primary-light);
+                    width: var(--spacing-highlighted-works);
+                    height: var(--spacing-highlighted-works);
                 }
 
                 .statInfo {
@@ -145,13 +155,12 @@
 
                     .statNumber {
                         color: var(--color-surface-white);
+                        font-size: var(--font-size-extra-large);
                         font-weight: var(--font-weight-bold);
-                        font-size: var(--font-size-large);
                     }
 
                     .statDescription {
                         color: var(--color-surface-white);
-                        font-weight: var(--font-weight-bold);
                         font-size: var(--font-size-small);
                     }
                 }
@@ -209,11 +218,17 @@
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-medium);
+                padding: 0 var(--spacing-ultra-large) 0 var(--spacing-ultra-large);
+
+                @media screen and (max-width: 900px) {
+                    padding: 0;
+                }
 
                 .description {
                     display: -webkit-box;
                     overflow: hidden;
-                    -webkit-line-clamp: 5;
+                    font-size: var(--font-size-accordion-description);
+                    -webkit-line-clamp: 6;
                     -webkit-box-orient: vertical;
                 }
             }

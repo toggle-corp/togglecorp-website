@@ -22,15 +22,15 @@
 
 .expertise {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     background-color: var(--color-surface-light);
 
     .expertiseGraphBox {
         display: flex;
-        flex-wrap: wrap;
         align-self: center;
+        flex-wrap: wrap;
         max-width: 32rem;
         max-height: 32rem;
 
