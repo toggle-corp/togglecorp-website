@@ -1,5 +1,5 @@
-import guitar from 'resources/guitar.png';
-import panipuri from 'resources/aboutUs/collage/panipuri.png';
+import guitar from 'resources/aboutUs/collage/guitar.jpeg';
+import panipuri from 'resources/aboutUs/collage/panipuri.jpeg';
 import yomari from 'resources/aboutUs/collage/yomari.jpeg';
 import samosa from 'resources/aboutUs/collage/samosa.jpeg';
 import chatpateyParty from 'resources/aboutUs/collage/chatpatey-party.jpeg';
