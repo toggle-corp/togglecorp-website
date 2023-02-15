@@ -17,6 +17,7 @@ function EmployeePage(props: EmployeePageProps) {
     const {
         specificEmployeeData,
     } = props;
+
     return (
         <div className={styles.employeePage}>
             <Link
@@ -39,6 +40,11 @@ function EmployeePage(props: EmployeePageProps) {
                 description={specificEmployeeData.description}
                 linkedInLink={specificEmployeeData.linkedInLink}
                 instagramLink={specificEmployeeData.instagramLink}
+                facebookLink={specificEmployeeData.facebookLink}
+                stackoverflowLink={specificEmployeeData.stackoverflowLink}
+                githubLink={specificEmployeeData.githubLink}
+                blogLink={specificEmployeeData.blogLink}
+                twitterLink={specificEmployeeData.twitterLink}
             />
             <Link
                 href="/"

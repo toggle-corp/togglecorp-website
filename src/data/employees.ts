@@ -36,6 +36,7 @@ export type EmployeeId = 'aditya-khatri'
     | 'sneha-pandey'
     | 'subina-rajopadhyaya'
     | 'sushma-adhikari'
+    | 'pranesh-shrestha'
     | 'uday-maharjan';
 
 export interface Employee {
@@ -261,7 +262,7 @@ const NavinAyer: Employee = {
     id: 'navin-ayer',
     name: 'Navin Ayer',
     position: 'Developer',
-    description: '',
+    description: '¯\\_(ツ)_/¯',
     funnyDescription: 'Too late, too sad, too bad',
     department: 'development',
     githubLink: 'https://github.com/thenav56',
@@ -463,6 +464,17 @@ const sushmaAdhikari: Employee = {
     instagramLink: 'https://instagram.com/_sushmaa_',
 };
 
+const praneshShrestha: Employee = {
+    id: 'pranesh-shrestha',
+    name: 'Pranesh Shrestha',
+    position: 'UI/UX Designer',
+    description: 'Hello, I am Pranesh and I have an attention span of a 2-year-old.',
+    funnyDescription: 'Aja Tuesday ho!',
+    department: 'development',
+    facebookLink: 'https://www.facebook.com/pranesh.shrestha.501/',
+    instagramLink: 'https://www.instagram.com/pranesh_chaa',
+};
+
 // const puran-ban': Employee = {
 //     id: 'pooja-sharma',
 //     name: 'Pooja Sharma',
@@ -509,6 +521,7 @@ const employees: Employee[] = [
     rupRanjanshi,
     ranjanShrestha,
     sagunaThapa,
+    praneshShrestha,
 ];
 
 export default employees;

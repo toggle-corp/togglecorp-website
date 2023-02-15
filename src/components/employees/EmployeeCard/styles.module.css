@@ -65,12 +65,15 @@
 
         .socialMediaIcons {
             display: flex;
+            gap: var(--spacing-extra-small);
         }
 
         .displayImage {
             border-radius: unset;
             border-top-left-radius: var(--radius-card);
             border-top-right-radius: var(--radius-card);
+            border-bottom-right-radius: var(--radius-card);
+            border-bottom-left-radius: var(--radius-card);
             width: 18rem;
             height: 16rem;
             object-fit: cover;

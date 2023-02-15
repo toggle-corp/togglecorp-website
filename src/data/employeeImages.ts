@@ -35,6 +35,7 @@ import subinaRajopadhyaya from 'resources/employee/subina.jpeg';
 import udayMaharjan from 'resources/employee/uday.jpeg';
 import rup from 'resources/employee/rup.jpeg';
 import sushmaAdhikari from 'resources/employee/sushma.jpeg';
+import praneshShrestha from 'resources/employee/pranesh.jpeg';
 
 import { EmployeeId } from 'data/employees';
 
@@ -78,7 +79,7 @@ const employeeImages: {
     'sushma-adhikari': sushmaAdhikari,
     'rishi-khatri': rishiKhatri,
     'kanchi-tamang': kanchiTamang,
-
+    'pranesh-shrestha': praneshShrestha,
 };
 
 // eslint-disable-next-line import/prefer-default-export
