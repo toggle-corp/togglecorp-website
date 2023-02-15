@@ -1,4 +1,3 @@
-import employeeIcon from 'resources/employee-img.webp';
 import adityaKhatri from 'resources/employee/aditya.jpeg';
 import amarShahi from 'resources/employee/amar.jpeg';
 import ankitMehta from 'resources/employee/ankit-mehta.png';
@@ -7,7 +6,7 @@ import barshaThakuri from 'resources/employee/barsha.jpeg';
 import bibekPandey from 'resources/employee/bibek.jpeg';
 import bimalPandey from 'resources/employee/bimal-pandey.jpeg';
 import bimalSaud from 'resources/employee/bimal-saud.jpeg';
-// import kanchiTamang from 'resources/employee/kanchi-tamang.png';
+import kanchiTamang from 'resources/employee/kanchi.jpeg';
 import karinaGopali from 'resources/employee/karina.jpeg';
 import keyurKhadka from 'resources/employee/keyur.jpeg';
 import kishanPahari from 'resources/employee/nishan.jpeg';
@@ -26,7 +25,7 @@ import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
 import sagunaThapa from 'resources/employee/saguna.png';
 import sameerRai from 'resources/employee/sameer.jpeg';
 import shreetiKafle from 'resources/employee/shreeti.jpeg';
-import shreeyaShrestha from 'resources/employee/shya.png';
+import shreeyaShrestha from 'resources/employee/shya.jpeg';
 import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
 import shristiManandhar from 'resources/employee/shristi.jpeg';
 import shubhDhital from 'resources/employee/shubh.jpeg';
@@ -78,6 +77,7 @@ const employeeImages: {
     'rup-rajbanshi': rup,
     'sushma-adhikari': sushmaAdhikari,
     'rishi-khatri': rishiKhatri,
+    'kanchi-tamang': kanchiTamang,
 
 };
 
