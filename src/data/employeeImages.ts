@@ -22,7 +22,7 @@ import rishiKhatri from 'resources/employee/rishi.jpeg';
 import rubyThapaliya from 'resources/employee/ruby.jpeg';
 import safarLigal from 'resources/employee/safar-ligal.png';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
-import sagunaThapa from 'resources/employee/saguna.png';
+import sagunaThapa from 'resources/employee/saguna.jpeg';
 import sameerRai from 'resources/employee/sameer.jpeg';
 import shreetiKafle from 'resources/employee/shreeti.jpeg';
 import shreeyaShrestha from 'resources/employee/shya.jpeg';
