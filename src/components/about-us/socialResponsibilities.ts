@@ -3,7 +3,6 @@ import foodDistribution from 'resources/aboutUs/socialResponsibility/food-distri
 import students from 'resources/aboutUs/socialResponsibility/students.webp';
 import tempCheck from 'resources/aboutUs/socialResponsibility/temp-check.webp';
 import childAwareness from 'resources/aboutUs/socialResponsibility/child-awareness.webp';
-// import awareness from 'resources/aboutUs/socialResponsibility/awareness.webp';
 import lunchDistribution from 'resources/aboutUs/socialResponsibility/lunch-distribution.webp';
 
 interface SocialResponsibility {

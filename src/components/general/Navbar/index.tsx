@@ -81,7 +81,6 @@ function Navbar(props: NavProps) {
             >
                 <Button
                     name={undefined}
-                    // variant="primary"
                     variant={pathname === '/contact-us' ? 'primary-active' : 'primary'}
                 >
                     Contact Us

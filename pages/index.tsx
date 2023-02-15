@@ -192,7 +192,10 @@ function Home() {
                 <div className={styles.projectCount}>
                     <div className={styles.statBox}>
                         <div className={styles.statBoxContainer}>
-                            <IoIosFiling size={32} className={styles.statIcon} />
+                            <IoIosFiling
+                                size={32}
+                                className={styles.statIcon}
+                            />
                         </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
@@ -205,7 +208,10 @@ function Home() {
                     </div>
                     <div className={styles.statBox}>
                         <div className={styles.statBoxContainer}>
-                            <IoIosRibbon size={32} className={styles.statIcon} />
+                            <IoIosRibbon
+                                size={32}
+                                className={styles.statIcon}
+                            />
                         </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
@@ -218,7 +224,10 @@ function Home() {
                     </div>
                     <div className={styles.statBox}>
                         <div className={styles.statBoxContainer}>
-                            <IoIosPeople size={32} className={styles.statIcon} />
+                            <IoIosPeople
+                                size={32}
+                                className={styles.statIcon}
+                            />
                         </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
