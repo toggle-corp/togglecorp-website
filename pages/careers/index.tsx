@@ -17,9 +17,9 @@ import firstImage from 'resources/career/collage/1.jpeg';
 import secondImage from 'resources/career/collage/2.jpeg';
 import thirdImage from 'resources/career/collage/5.jpeg';
 import fourthImage from 'resources/career/collage/4.jpeg';
-import fifthImage from 'resources/career/collage/10.jpeg';
+import fifthImage from 'resources/career/collage/resizePoolside.jpeg';
 import sixthImage from 'resources/career/collage/9.jpeg';
-import seventhImage from 'resources/career/collage/8.jpeg';
+import seventhImage from 'resources/career/collage/resizeMarkhu.jpeg';
 
 import styles from './styles.module.css';
 
@@ -85,45 +85,59 @@ function CareerPage() {
             >
                 <div className={styles.collageContainer}>
                     <div className={styles.imageContainer}>
-                        <img
-                            className={styles.smallImg}
-                            src={firstImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.smallImg}
-                            src={secondImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.smallImg}
-                            src={thirdImage}
-                            alt="our story"
-                        />
+                        <div className={styles.smallImgBox}>
+                            <img
+                                className={styles.smallImg}
+                                src={firstImage}
+                                alt="our story"
+                            />
+                        </div>
+                        <div className={styles.smallImgBox}>
+                            <img
+                                className={styles.smallImg}
+                                src={secondImage}
+                                alt="our story"
+                            />
+                        </div>
+                        <div className={styles.smallImgBox}>
+                            <img
+                                className={styles.smallImg}
+                                src={thirdImage}
+                                alt="our story"
+                            />
+                        </div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <img
-                            className={styles.mediumImg}
-                            src={fourthImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.mediumImg}
-                            src={fifthImage}
-                            alt="our story"
-                        />
+                        <div className={styles.mediumImgBox}>
+                            <img
+                                className={styles.mediumImg}
+                                src={fourthImage}
+                                alt="our story"
+                            />
+                        </div>
+                        <div className={styles.mediumImgBox}>
+                            <img
+                                className={styles.mediumImg}
+                                src={fifthImage}
+                                alt="our story"
+                            />
+                        </div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <img
-                            className={styles.largeImg}
-                            src={sixthImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.smallImg}
-                            src={seventhImage}
-                            alt="our story"
-                        />
+                        <div className={styles.largeImgBox}>
+                            <img
+                                className={styles.largeImg}
+                                src={sixthImage}
+                                alt="our story"
+                            />
+                        </div>
+                        <div className={styles.largeImgBox}>
+                            <img
+                                className={styles.largeImg}
+                                src={seventhImage}
+                                alt="our story"
+                            />
+                        </div>
                     </div>
                 </div>
             </Section>
