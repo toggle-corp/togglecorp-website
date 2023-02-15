@@ -252,7 +252,7 @@ const karinaGopali: Employee = {
     name: 'Karina Gopali',
     position: 'Data Analyst',
     description: 'I am a person who believes in myself, enjoy food and music. I live very joyful life with a lot of laughter and good time. I believe that whatever happens in your life, you should always face it with a smile.',
-    funnyDescription: 'Hello Dai... Ekata book store ma aunus na',
+    funnyDescription: 'Aja chatpatey kham na',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/karina_gopali_',
 };
@@ -375,6 +375,17 @@ const sadikshyaHamal: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/sadikshya-hamal',
 };
 
+const rubyThapaliya: Employee = {
+    id: 'ruby-thapaliya',
+    name: 'Ruby Thapaliya',
+    position: 'Data Analyst',
+    description: 'Myself Ruby from Western Nepal. I\'ve always been outspoken, energetic and inquisitive to new things. I believe making someone laugh everyday makes my life worth living. I often give advice to people and have been keen to learn from their mistakes. As long as there\'s life, there\'s hope so everyone should keep striving to their desired purpose.',
+    funnyDescription: 'Affff cooourse!',
+    department: 'analysis',
+    instagramLink: 'https://www.instagram.com/ruby_thapaliya/',
+    facebookLink: 'https://www.facebook.com/profile.php?id=100007191255458',
+};
+
 const shristiManandhar: Employee = {
     id: 'shristi-manandhar',
     name: 'Shristi Manandhar',
@@ -429,17 +440,6 @@ const sameerRai: Employee = {
     githubLink: 'https://github.com/samshara',
 };
 
-const rubyThapaliya: Employee = {
-    id: 'ruby-thapaliya',
-    name: 'Ruby Thapaliya',
-    position: 'Data Analyst',
-    description: 'Myself Ruby from Western Nepal. I\'ve always been outspoken, energetic and inquisitive to new things. I believe making someone laugh everyday makes my life worth living. I often give advice to people and have been keen to learn from their mistakes. As long as there\'s life, there\'s hope so everyone should keep striving to their desired purpose.',
-    funnyDescription: 'Affff cooourse!',
-    department: 'analysis',
-    instagramLink: 'https://www.instagram.com/ruby_thapaliya/',
-    facebookLink: 'https://www.facebook.com/profile.php?id=100007191255458',
-};
-
 const sagunaThapa: Employee = {
     id: 'saguna-thapa',
     name: 'Saguna Thapa',
@@ -472,9 +472,9 @@ const sushmaAdhikari: Employee = {
 //     department: '',
 // }
 const employees: Employee[] = [
+    ankitMehta,
     adityaKhatri,
     amarShahi,
-    ankitMehta,
     NavinAyer,
     safarLigal,
     udayMaharjan,
@@ -499,15 +499,15 @@ const employees: Employee[] = [
     poojaSharma,
     puranBan,
     rishiKhatri,
+    shreeyashShrestha,
     shubhDhital,
     bimalSaud,
     sadikshyaHamal,
+    rubyThapaliya,
+    sushmaAdhikari,
     shristiManandhar,
-    shreeyashShrestha,
     rupRanjanshi,
     ranjanShrestha,
-    sushmaAdhikari,
-    rubyThapaliya,
     sagunaThapa,
 ];
 
