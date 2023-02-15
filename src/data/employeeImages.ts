@@ -1,41 +1,41 @@
-import employeeIcon from 'resources/employee-img.webp';
-import adityaKhatri from 'resources/employee/aditya-khatri.png';
-import amarShahi from 'resources/employee/amar-shahi.png';
+import adityaKhatri from 'resources/employee/aditya.jpeg';
+import amarShahi from 'resources/employee/amar.jpeg';
 import ankitMehta from 'resources/employee/ankit-mehta.png';
-import anushaKhadka from 'resources/employee/anusha-khadka.png';
-import barshaThakuri from 'resources/employee/barsha-thakuri.png';
-import bibekPandey from 'resources/employee/bibek-pandey.png';
-import bimalPandey from 'resources/employee/bimal-pandey.png';
-import bimalSaud from 'resources/employee/bimal-saud.png';
-// import kanchiTamang from 'resources/employee/kanchi-tamang.png';
-import karinaGopali from 'resources/employee/karina.png';
-import keyurKhadka from 'resources/employee/keyur-khadka.png';
-import kishanPahari from 'resources/employee/nishan.png';
-import kritiChhetri from 'resources/employee/kriti-chhetri.png';
-import navinAyer from 'resources/employee/navin.png';
-import nikaShakya from 'resources/employee/nika.png';
-import poojaSharma from 'resources/employee/pooja.png';
-import prinishaBaidya from 'resources/employee/prinisha.png';
-import priyeshGautam from 'resources/employee/priyesh-gautam.png';
-import puranBan from 'resources/employee/puran-ban.png';
-import ranjanShrestha from 'resources/employee/ranjan.png';
-import rishiKhatri from 'resources/employee/rishi-khatri.png';
-import rubyThapaliya from 'resources/employee/ruby.png';
+import anushaKhadka from 'resources/employee/anusha.jpeg';
+import barshaThakuri from 'resources/employee/barsha.jpeg';
+import bibekPandey from 'resources/employee/bibek.jpeg';
+import bimalPandey from 'resources/employee/bimal-pandey.jpeg';
+import bimalSaud from 'resources/employee/bimal-saud.jpeg';
+import kanchiTamang from 'resources/employee/kanchi.jpeg';
+import karinaGopali from 'resources/employee/karina.jpeg';
+import keyurKhadka from 'resources/employee/keyur.jpeg';
+import kishanPahari from 'resources/employee/nishan.jpeg';
+import kritiChhetri from 'resources/employee/kriti.jpeg';
+import navinAyer from 'resources/employee/navin.jpeg';
+import nikaShakya from 'resources/employee/nika.jpeg';
+import poojaSharma from 'resources/employee/pooja.jpeg';
+import prinishaBaidya from 'resources/employee/prinisha.jpeg';
+import priyeshGautam from 'resources/employee/priyesh.jpeg';
+import puranBan from 'resources/employee/puran.jpeg';
+import ranjanShrestha from 'resources/employee/ranjan.jpeg';
+import rishiKhatri from 'resources/employee/rishi.jpeg';
+import rubyThapaliya from 'resources/employee/ruby.jpeg';
 import safarLigal from 'resources/employee/safar-ligal.png';
-import sadikshyaHamal from 'resources/employee/sadikshya.png';
-import sagunaThapa from 'resources/employee/saguna.png';
-import sameerRai from 'resources/employee/sameer-rai.png';
-import shreetiKafle from 'resources/employee/shreeti-kafle.png';
-import shreeyaShrestha from 'resources/employee/shya.png';
-import shreeyashShrestha from 'resources/employee/shreeyash.png';
-import shristiManandhar from 'resources/employee/shristi.png';
-import shubhDhital from 'resources/employee/shubh-dhital.png';
-import smritiKafle from 'resources/employee/smriti-kafle.png';
-import snehaPandey from 'resources/employee/sneha-pandey.png';
-import subinaRajopadhyaya from 'resources/employee/subina-rajopadhyaya.png';
-import udayMaharjan from 'resources/employee/uday-maharjan.png';
-import rup from 'resources/employee/rup.png';
-import sushmaAdhikari from 'resources/employee/sushma.png';
+import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
+import sagunaThapa from 'resources/employee/saguna.jpeg';
+import sameerRai from 'resources/employee/sameer.jpeg';
+import shreetiKafle from 'resources/employee/shreeti.jpeg';
+import shreeyaShrestha from 'resources/employee/shya.jpeg';
+import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
+import shristiManandhar from 'resources/employee/shristi.jpeg';
+import shubhDhital from 'resources/employee/shubh.jpeg';
+import smritiKafle from 'resources/employee/smriti.jpeg';
+import snehaPandey from 'resources/employee/sneha.jpeg';
+import subinaRajopadhyaya from 'resources/employee/subina.jpeg';
+import udayMaharjan from 'resources/employee/uday.jpeg';
+import rup from 'resources/employee/rup.jpeg';
+import sushmaAdhikari from 'resources/employee/sushma.jpeg';
+import praneshShrestha from 'resources/employee/pranesh.jpeg';
 
 import { EmployeeId } from 'data/employees';
 
@@ -78,7 +78,8 @@ const employeeImages: {
     'rup-rajbanshi': rup,
     'sushma-adhikari': sushmaAdhikari,
     'rishi-khatri': rishiKhatri,
-
+    'kanchi-tamang': kanchiTamang,
+    'pranesh-shrestha': praneshShrestha,
 };
 
 // eslint-disable-next-line import/prefer-default-export

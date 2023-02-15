@@ -11,13 +11,13 @@ import ButtonLikeLink from 'components/general/ButtonLikeLink';
 import BannerWithImage from 'components/general/BannerWithImage';
 
 import { projectTypes } from 'data/projectTypes';
-import whoWeAreOne from 'resources/homeSection/whoWeAre1.png';
-import whoWeAreTwo from 'resources/homeSection/whoWeAre2.png';
-import whoWeAreThree from 'resources/homeSection/whoWeAre3.png';
-import whoWeAreFour from 'resources/homeSection/whoWeAre4.png';
-import deepBanner from 'resources/homeSection/deep.png';
-import npStocks from 'resources/np-stocks.webp';
-import analysisBanner from 'resources/homeSection/analysis.png';
+import whoWeAreOne from 'resources/homeSection/whoWeAre6.jpeg';
+import whoWeAreTwo from 'resources/homeSection/whoWeAre5.jpeg';
+import whoWeAreThree from 'resources/homeSection/whoWeAre3.jpeg';
+import whoWeAreFour from 'resources/homeSection/whoWeAre8.jpeg';
+import deepBanner from 'resources/homeSection/deep.jpeg';
+import npStocks from 'resources/homeSection/np-stocks.webp';
+import analysisBanner from 'resources/homeSection/analysis.jpeg';
 import boldCodeIcon from 'resources/trustedBy/BoldCode.svg';
 import okularAnalyticsIcon from 'resources/trustedBy/OkularAnalytics.svg';
 import britishEmbassyIcon from 'resources/trustedBy/BritishEmbassy.svg';
@@ -30,7 +30,7 @@ import peopleInNeedIcon from 'resources/trustedBy/PeopleInNeed.svg';
 import dataFriendlySpaceIcon from 'resources/trustedBy/DFS.svg';
 import ifrcIcon from 'resources/trustedBy/IFRC.svg';
 import smtmIcon from 'resources/trustedBy/smtmCapital.svg';
-import bannerImage from 'resources/banner.png';
+import bannerImage from 'resources/homeSection/banner.jpeg';
 
 import styles from './styles.module.css';
 
@@ -58,7 +58,7 @@ function Home() {
                     mode="transparent"
                     description={(
                         <div className={styles.introductionContent}>
-                            <div>
+                            <div className={styles.bannerDescription}>
                                 A flawless digital community contributing to development
                                 and research striving towards improving existing processes
                             </div>
@@ -181,9 +181,9 @@ function Home() {
                 )}
             >
                 <div className={styles.introImages}>
-                    <img src={whoWeAreFour} alt="intro" />
-                    <img src={whoWeAreOne} alt="intro" />
-                    <img src={whoWeAreTwo} alt="intro" />
+                    <img src={whoWeAreFour} alt="Who we are" />
+                    <img src={whoWeAreOne} alt="Who we are" />
+                    <img src={whoWeAreTwo} alt="Who we are" />
                 </div>
             </Section>
             <Section
@@ -191,7 +191,12 @@ function Home() {
             >
                 <div className={styles.projectCount}>
                     <div className={styles.statBox}>
-                        <IoIosFiling size={42} className={styles.statIcon} />
+                        <div className={styles.statBoxContainer}>
+                            <IoIosFiling
+                                size={32}
+                                className={styles.statIcon}
+                            />
+                        </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 250+
@@ -202,7 +207,12 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosRibbon size={42} className={styles.statIcon} />
+                        <div className={styles.statBoxContainer}>
+                            <IoIosRibbon
+                                size={32}
+                                className={styles.statIcon}
+                            />
+                        </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 20+
@@ -213,7 +223,12 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.statBox}>
-                        <IoIosPeople size={42} className={styles.statIcon} />
+                        <div className={styles.statBoxContainer}>
+                            <IoIosPeople
+                                size={32}
+                                className={styles.statIcon}
+                            />
+                        </div>
                         <div className={styles.statInfo}>
                             <span className={styles.statNumber}>
                                 40+

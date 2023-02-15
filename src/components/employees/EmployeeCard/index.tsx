@@ -99,7 +99,7 @@ function EmployeeCard(props: EmployeeCardProps) {
 
                 </div>
                 <div className={styles.socialMediaIcons}>
-                    {(variant === 'detail' || linkedInLink) && (
+                    {(variant === 'detail' && linkedInLink) && (
                         <a
                             href={linkedInLink}
                             target="_blank"
@@ -108,7 +108,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             <IoLogoLinkedin size={24} />
                         </a>
                     )}
-                    {(variant === 'detail' || instagramLink) && (
+                    {(variant === 'detail' && instagramLink) && (
                         <a
                             href={instagramLink}
                             target="_blank"
@@ -119,7 +119,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             />
                         </a>
                     )}
-                    {(variant === 'detail' || githubLink) && (
+                    {(variant === 'detail' && githubLink) && (
                         <a
                             href={githubLink}
                             target="_blank"
@@ -130,7 +130,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             />
                         </a>
                     )}
-                    {(variant === 'detail' || facebookLink) && (
+                    {(variant === 'detail' && facebookLink) && (
                         <a
                             href={facebookLink}
                             target="_blank"
@@ -141,7 +141,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             />
                         </a>
                     )}
-                    {(variant === 'detail' || twitterLink) && (
+                    {(variant === 'detail' && twitterLink) && (
                         <a
                             href={twitterLink}
                             target="_blank"
@@ -152,7 +152,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             />
                         </a>
                     )}
-                    {(variant === 'detail' || stackoverflowLink) && (
+                    {(variant === 'detail' && stackoverflowLink) && (
                         <a
                             href={stackoverflowLink}
                             target="_blank"
@@ -163,7 +163,7 @@ function EmployeeCard(props: EmployeeCardProps) {
                             />
                         </a>
                     )}
-                    {(variant === 'detail' || blogLink) && (
+                    {(variant === 'detail' && blogLink) && (
                         <a
                             href={blogLink}
                             target="_blank"

@@ -47,6 +47,8 @@ interface NavProps {
 function Navbar(props: NavProps) {
     const { className } = props;
 
+    const { pathname } = useRouter();
+
     return (
         <Container
             className={_cs(styles.navbar, className)}
@@ -63,14 +65,14 @@ function Navbar(props: NavProps) {
                 />
             </Link>
             <div className={styles.menuList}>
-                <NavLink href="/careers">
-                    Career
-                </NavLink>
                 <NavLink href="/about-us">
                     About
                 </NavLink>
+                <NavLink href="/careers">
+                    Career
+                </NavLink>
                 <NavLink href="/team">
-                    Our Team
+                    Team
                 </NavLink>
             </div>
             <NavLink
@@ -79,7 +81,7 @@ function Navbar(props: NavProps) {
             >
                 <Button
                     name={undefined}
-                    variant="primary"
+                    variant={pathname === '/contact-us' ? 'primary-active' : 'primary'}
                 >
                     Contact Us
                 </Button>

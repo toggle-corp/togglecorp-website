@@ -13,7 +13,7 @@ const expertises: Expertise[] = [
     {
         key: '1',
         title: 'Multicultural',
-        description: 'Our team members come from different social and cultural background. Likewise, we work with clients from different socio-cultural background',
+        description: 'Our team members come from different socio-cultural backgrounds. Likewise, we work with clients from different socio-cultural background',
         image: mutiCultureLogo,
     },
     {
@@ -25,7 +25,7 @@ const expertises: Expertise[] = [
     {
         key: '3',
         title: 'Amusement',
-        description: 'Our young and energetic team are sure to brighten up your day be it with random dance, out-of-scale music, good food, or just by listening',
+        description: 'Our young and energetic team are sure to brighten up your day, be it with random dance moves, out-of-scale music, good food, or just by listening',
         image: amusementLogo,
     },
 ];

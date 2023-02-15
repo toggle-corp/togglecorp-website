@@ -78,6 +78,7 @@ function Footer(props: Props) {
                     <Link href="/"> Home </Link>
                     <Link href="/about-us"> About Us </Link>
                     <Link href="/contact-us"> Contact Us </Link>
+                    <Link href="/team"> Our Team </Link>
                 </FooterSection>
                 <FooterSection
                     title="Services"

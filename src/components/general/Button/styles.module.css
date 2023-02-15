@@ -49,6 +49,11 @@
         --color: var(--color-text-on-dark);
     }
 
+    &.primaryActive {
+        --background: var(--color-primary-active);
+        --color: var(--color-text-on-dark);
+    }
+
     &.tab {
         --background: transparent;
         --color: var(--color-secondary);

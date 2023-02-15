@@ -36,6 +36,7 @@ export type EmployeeId = 'aditya-khatri'
     | 'sneha-pandey'
     | 'subina-rajopadhyaya'
     | 'sushma-adhikari'
+    | 'pranesh-shrestha'
     | 'uday-maharjan';
 
 export interface Employee {
@@ -252,7 +253,7 @@ const karinaGopali: Employee = {
     name: 'Karina Gopali',
     position: 'Data Analyst',
     description: 'I am a person who believes in myself, enjoy food and music. I live very joyful life with a lot of laughter and good time. I believe that whatever happens in your life, you should always face it with a smile.',
-    funnyDescription: '',
+    funnyDescription: 'Aja chatpatey kham na',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/karina_gopali_',
 };
@@ -261,7 +262,7 @@ const NavinAyer: Employee = {
     id: 'navin-ayer',
     name: 'Navin Ayer',
     position: 'Developer',
-    description: '',
+    description: '¯\\_(ツ)_/¯',
     funnyDescription: 'Too late, too sad, too bad',
     department: 'development',
     githubLink: 'https://github.com/thenav56',
@@ -272,8 +273,8 @@ const nikaShakya: Employee = {
     id: 'nika-shakya',
     name: 'Nika Shakya',
     position: 'Data Analyst',
-    description: 'Hi i am Nika Shakya. I received my bachelors degree in public health and currently i am working as junior data analyst. Talking about my personal interests i enjoy doing art stuffs, listening to music and love spending time in nature. Adding to that i love watching series in my free time.',
-    funnyDescription: '',
+    description: 'Hi, I am Nika Shakya. I received my bachelors degree in public health and currently i am working as junior data analyst. Talking about my personal interests i enjoy doing art stuffs, listening to music and love spending time in nature. Adding to that i love watching series in my free time.',
+    funnyDescription: 'Khureey! Arasso!',
     department: 'analysis',
     linkedInLink: 'https://www.linkedin.com/in/nika-shakya-00b825200/',
 };
@@ -283,7 +284,7 @@ const poojaSharma: Employee = {
     name: 'Pooja Sharma',
     position: 'Data Analyst',
     description: 'In a world where you can be anyone, I choose to be myself. I love spicy food, enjoy music and spending time with my loved ones.',
-    funnyDescription: '',
+    funnyDescription: 'Guys, kosai sanga pantop cha?',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/kharelpuza960/',
 };
@@ -358,7 +359,7 @@ const shreeyaShrestha: Employee = {
 const bimalSaud: Employee = {
     id: 'bimal-saud',
     name: 'Bimal Saud',
-    position: 'Admin/Operation Officer',
+    position: 'Operations/Admin Officer',
     description: 'I\'m passionate about my work and I know how to get the job done.',
     funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     department: 'operations',
@@ -375,12 +376,23 @@ const sadikshyaHamal: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/sadikshya-hamal',
 };
 
+const rubyThapaliya: Employee = {
+    id: 'ruby-thapaliya',
+    name: 'Ruby Thapaliya',
+    position: 'Data Analyst',
+    description: 'Myself Ruby from Western Nepal. I\'ve always been outspoken, energetic and inquisitive to new things. I believe making someone laugh everyday makes my life worth living. I often give advice to people and have been keen to learn from their mistakes. As long as there\'s life, there\'s hope so everyone should keep striving to their desired purpose.',
+    funnyDescription: 'Affff cooourse!',
+    department: 'analysis',
+    instagramLink: 'https://www.instagram.com/ruby_thapaliya/',
+    facebookLink: 'https://www.facebook.com/profile.php?id=100007191255458',
+};
+
 const shristiManandhar: Employee = {
     id: 'shristi-manandhar',
     name: 'Shristi Manandhar',
     position: 'Data Analyst',
     description: 'I love watching Anime and Korean dramas. Also; Happily introverted :P. People say that I am hard worker and a team player :)',
-    funnyDescription: '',
+    funnyDescription: 'Ma ghar janalaho k',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/shristee/',
 };
@@ -429,23 +441,12 @@ const sameerRai: Employee = {
     githubLink: 'https://github.com/samshara',
 };
 
-const rubyThapaliya: Employee = {
-    id: 'ruby-thapaliya',
-    name: 'Ruby Thapaliya',
-    position: 'Data Analyst',
-    description: 'Myself Ruby from Western Nepal. I\'ve always been outspoken, energetic and inquisitive to new things. I believe making someone laugh everyday makes my life worth living. I often give advice to people and have been keen to learn from their mistakes. As long as there\'s life, there\'s hope so everyone should keep striving to their desired purpose.',
-    funnyDescription: 'Of course!',
-    department: 'analysis',
-    instagramLink: 'https://www.instagram.com/ruby_thapaliya/',
-    facebookLink: 'https://www.facebook.com/profile.php?id=100007191255458',
-};
-
 const sagunaThapa: Employee = {
     id: 'saguna-thapa',
     name: 'Saguna Thapa',
     position: 'Data Analyst',
     description: 'I enjoy reading, spending time with family and friends, watching a television show and listening to music. I am self-disciplined, introverted and always ready to work hard.',
-    funnyDescription: '',
+    funnyDescription: 'Saiiyaan',
     department: 'analysis',
     facebookLink: 'https://www.facebook.com/saguna.thapa.794',
     linkedInLink: 'https://www.linkedin.com/in/saguna-thapa-8a5929223',
@@ -456,11 +457,22 @@ const sushmaAdhikari: Employee = {
     name: 'Sushma Adhikari',
     position: 'Data Analyst',
     description: 'I am a music lover. Music makes me smile, laughter which all I want in my life. I believe whatever makes your soul happy do that.',
-    funnyDescription: '',
+    funnyDescription: 'Aja Tuesday ho!',
     department: 'analysis',
     linkedInLink: 'https://www.linkedin.com/in/sushma-adhikari-00b5431a1',
     facebookLink: 'https://www.facebook.com/sushma.adhikari.1023',
     instagramLink: 'https://instagram.com/_sushmaa_',
+};
+
+const praneshShrestha: Employee = {
+    id: 'pranesh-shrestha',
+    name: 'Pranesh Shrestha',
+    position: 'UI/UX Designer',
+    description: 'Hello, I am Pranesh and I have an attention span of a 2-year-old.',
+    funnyDescription: 'Aja Tuesday ho!',
+    department: 'development',
+    facebookLink: 'https://www.facebook.com/pranesh.shrestha.501/',
+    instagramLink: 'https://www.instagram.com/pranesh_chaa',
 };
 
 // const puran-ban': Employee = {
@@ -472,9 +484,9 @@ const sushmaAdhikari: Employee = {
 //     department: '',
 // }
 const employees: Employee[] = [
+    ankitMehta,
     adityaKhatri,
     amarShahi,
-    ankitMehta,
     NavinAyer,
     safarLigal,
     udayMaharjan,
@@ -499,16 +511,17 @@ const employees: Employee[] = [
     poojaSharma,
     puranBan,
     rishiKhatri,
+    shreeyashShrestha,
     shubhDhital,
     bimalSaud,
     sadikshyaHamal,
+    rubyThapaliya,
+    sushmaAdhikari,
     shristiManandhar,
-    shreeyashShrestha,
     rupRanjanshi,
     ranjanShrestha,
-    sushmaAdhikari,
-    rubyThapaliya,
     sagunaThapa,
+    praneshShrestha,
 ];
 
 export default employees;

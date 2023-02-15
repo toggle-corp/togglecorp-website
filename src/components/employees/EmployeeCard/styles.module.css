@@ -53,10 +53,11 @@
                 -webkit-line-clamp: 3;
             }
         }
+
         &:hover {
-            padding-bottom: var(--employee-border-margin);
-            border-bottom: var(--employee-border-bottom) solid var(--color-primary);
             transition-duration: 0.2s;
+            border-bottom: var(--employee-border-bottom) solid var(--color-primary);
+            padding-bottom: var(--employee-border-margin);
         }
     }
 
@@ -64,12 +65,15 @@
 
         .socialMediaIcons {
             display: flex;
+            gap: var(--spacing-extra-small);
         }
 
         .displayImage {
             border-radius: unset;
             border-top-left-radius: var(--radius-card);
             border-top-right-radius: var(--radius-card);
+            border-bottom-left-radius: var(--radius-card);
+            border-bottom-right-radius: var(--radius-card);
             width: 18rem;
             height: 16rem;
             object-fit: cover;
