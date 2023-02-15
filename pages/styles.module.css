@@ -147,6 +147,10 @@
                     background-color: var(--color-primary-light);
                     width: var(--spacing-highlighted-works);
                     height: var(--spacing-highlighted-works);
+
+                    .statIcon {
+                        color: var(--color-surface-white);
+                    }
                 }
 
                 .statInfo {
