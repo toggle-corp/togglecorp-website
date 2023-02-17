@@ -11,7 +11,7 @@ function Document() {
             <Head>
                 <link
                     rel="shortcut icon"
-                    href="/favicon.webp"
+                    href="/favicon.png"
                 />
                 <link
                     rel="preconnect"

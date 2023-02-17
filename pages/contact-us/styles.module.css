@@ -33,7 +33,7 @@
             }
 
             .mediumImg {
-                flex-basis: 48.5%;
+                flex-basis: 49%;
                 flex-shrink: 0;
                 border-radius: var(--radius-card);
                 width: 100%;
@@ -55,7 +55,17 @@
                 flex-direction: column;
                 gap: var(--spacing-medium);
 
+                .smallImg {
+                    flex-basis: unset;
+                    width: 100%;
+                }
+
                 .mediumImg {
+                    flex-basis: unset;
+                    width: 100%;
+                }
+
+                .largeImg {
                     flex-basis: unset;
                     width: 100%;
                 }

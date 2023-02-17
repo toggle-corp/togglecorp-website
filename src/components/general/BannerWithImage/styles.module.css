@@ -130,7 +130,6 @@
         }
 
         @media screen and (max-width: 900px) {
-            margin-top: calc(var(--image-offset-y) - var(--spacing-super-large));
             min-height: unset;
 
             .statsContainer {

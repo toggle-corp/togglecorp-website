@@ -67,6 +67,11 @@
                 height: 3.3rem;
             }
 
+            .darkIconMode {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+
             .clientGroupOne {
                 display: flex;
                 align-items: center;

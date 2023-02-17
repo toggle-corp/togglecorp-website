@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import Link from 'next/link';
 import { IoIosRibbon, IoIosPeople, IoIosFiling } from 'react-icons/io';
+import { _cs } from '@togglecorp/fujs';
 
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
@@ -20,14 +21,14 @@ import npStocks from 'resources/homeSection/np-stocks.webp';
 import analysisBanner from 'resources/homeSection/analysis.jpeg';
 import boldCodeIcon from 'resources/trustedBy/BoldCode.svg';
 import okularAnalyticsIcon from 'resources/trustedBy/OkularAnalytics.svg';
-import britishEmbassyIcon from 'resources/trustedBy/BritishEmbassy.svg';
+import britishEmbassyIcon from 'resources/trustedBy/britishNew.png';
 import idmcIcon from 'resources/trustedBy/IDMC.svg';
 import unhcrIcon from 'resources/trustedBy/UNHCR.svg';
 import americanRedCrossIcon from 'resources/trustedBy/AmericanRedCross.svg';
-import worldVisionIcon from 'resources/trustedBy/WorldVision.svg';
+import worldVisionIcon from 'resources/trustedBy/WorldVision.png';
 import jipsIcon from 'resources/trustedBy/JIPS.svg';
 import peopleInNeedIcon from 'resources/trustedBy/PeopleInNeed.svg';
-import dataFriendlySpaceIcon from 'resources/trustedBy/DFS.svg';
+import dataFriendlySpaceIcon from 'resources/trustedBy/DFS.png';
 import ifrcIcon from 'resources/trustedBy/IFRC.svg';
 import smtmIcon from 'resources/trustedBy/smtmCapital.svg';
 import bannerImage from 'resources/homeSection/banner.jpeg';
@@ -90,7 +91,7 @@ function Home() {
                     <h3 className={styles.heading}>Trusted By</h3>
                     <div className={styles.clientGroupOne}>
                         <img
-                            className={styles.trustedIcons}
+                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
                             src={britishEmbassyIcon}
                             alt="british-embassy"
                         />
@@ -110,7 +111,7 @@ function Home() {
                             alt="american-red-cross"
                         />
                         <img
-                            className={styles.trustedIcons}
+                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
                             src={worldVisionIcon}
                             alt="world-vision-icons"
                         />
@@ -127,7 +128,7 @@ function Home() {
                             alt="people-in-need"
                         />
                         <img
-                            className={styles.trustedIcons}
+                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
                             src={dataFriendlySpaceIcon}
                             alt="data-friendly-space"
                         />

@@ -20,15 +20,20 @@ function GalleryCard(props: Props) {
     } = props;
 
     return (
-        <div className={_cs(styles.galleryCard, className)}>
+        <div className={caption
+            ? _cs(styles.galleryCardWithCaption, className)
+            : _cs(styles.galleryCard, className)}
+        >
             <img
-                className={styles.image}
+                className={caption ? styles.image : styles.imageWithoutCaption}
                 alt={imageAlt}
                 src={imageUrl}
             />
-            <div>
-                {caption}
-            </div>
+            {caption && (
+                <div className={styles.captionDescription}>
+                    {caption}
+                </div>
+            )}
         </div>
     );
 }
