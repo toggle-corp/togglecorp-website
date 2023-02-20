@@ -74,6 +74,9 @@ function Navbar(props: NavProps) {
                 <NavLink href="/team">
                     Team
                 </NavLink>
+                <NavLink href="/works">
+                    Works
+                </NavLink>
             </div>
             <NavLink
                 href="/contact-us"

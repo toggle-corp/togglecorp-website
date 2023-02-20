@@ -31,7 +31,7 @@ const projects: Project[] = [
     },
     {
         id: 'dfid',
-        projectType: 'development',
+        projectType: 'consulting',
         projectTitle: 'DFID Dashboard',
         projectDuration: 'Ongoing',
         client: 'dfid',
@@ -86,7 +86,7 @@ const projects: Project[] = [
     },
     {
         id: 'management-information-system',
-        projectType: 'development',
+        projectType: 'consulting',
         projectTitle: 'Management Information System (MIS)',
         projectDuration: 'Completed',
         client: 'golden-community',
@@ -97,7 +97,7 @@ const projects: Project[] = [
     },
     {
         id: 'sustain',
-        projectType: 'development',
+        projectType: 'consulting',
         projectTitle: 'Sustain',
         projectDuration: 'Completed',
         client: 'golden-community',

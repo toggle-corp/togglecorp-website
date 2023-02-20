@@ -14,8 +14,8 @@
 
     .captionDescription {
         padding: 0 var(--spacing-extra-small) var(--spacing-extra-small);
-        font-size: var(--font-size-small);
         color: var(--color-text-dark-gray);
+        font-size: var(--font-size-small);
     }
 }
 
