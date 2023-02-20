@@ -160,7 +160,7 @@ function CareerPage() {
                     variant="primary"
                 >
                     <a href="mailto:career@togglecorp.com">
-                        Drop your CV
+                        Send your CV
                     </a>
                 </Button>
             </Container>

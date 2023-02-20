@@ -76,9 +76,10 @@ function Footer(props: Props) {
                     title="Company"
                 >
                     <Link href="/"> Home </Link>
-                    <Link href="/about-us"> About Us </Link>
-                    <Link href="/contact-us"> Contact Us </Link>
-                    <Link href="/team"> Our Team </Link>
+                    <Link href="/about-us"> About </Link>
+                    <Link href="/contact-us"> Contact </Link>
+                    <Link href="/team"> Team </Link>
+                    <Link href="/works"> Works </Link>
                 </FooterSection>
                 <FooterSection
                     title="Services"

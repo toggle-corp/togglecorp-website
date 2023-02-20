@@ -49,7 +49,11 @@ function AccordionWithImage<D>(props: Props<D>) {
                                 onClick={setActiveItem}
                                 icons={(
                                     <img
-                                        className={styles.halfLogo}
+                                        className={
+                                            isDefined(activeItem) && key === activeKey
+                                                ? styles.halfLogoUnsaturated
+                                                : styles.halfLogoSaturated
+                                        }
                                         src={halfTogglecorpLogo}
                                         alt="tc logo"
                                     />

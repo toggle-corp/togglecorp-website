@@ -65,6 +65,7 @@
             .trustedIcons {
                 width: 9rem;
                 height: 3.3rem;
+                object-fit: contain;
             }
 
             .darkIconMode {

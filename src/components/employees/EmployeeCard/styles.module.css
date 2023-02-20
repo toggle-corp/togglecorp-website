@@ -2,13 +2,9 @@
     display: flex;
     border: var(--width-separator-thin) solid var(--color-separator);
     border-radius: var(--radius-card);
+    box-shadow: var(--card-shadow-border);
     background-color: var(--color-surface-white);
     height: 100%;
-    box-shadow: var(--card-shadow-border);
-
-    &:hover {
-        border: var(--width-separator-thin) solid var(--color-primary);
-    }
 
     .displayImage {
         border-radius: unset;
@@ -57,6 +53,10 @@
             .description {
                 -webkit-line-clamp: 3;
             }
+        }
+
+        &:hover {
+            border-bottom: var(--width-separator-thin) solid var(--color-primary);
         }
     }
 

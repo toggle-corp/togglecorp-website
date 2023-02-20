@@ -15,8 +15,12 @@
             .titleRow {
                 font-size: var(--font-size-large);
 
-                .halfLogo {
+                .halfLogoSaturated {
                     filter: saturate(0%);
+                    height: var(--font-size-heading-small);
+                }
+
+                .halfLogoUnsaturated {
                     height: var(--font-size-heading-small);
                 }
             }

@@ -190,7 +190,7 @@ function DevelopmentPage(props: Props) {
                 />
             </Section>
             <Section
-                description="Check our research works"
+                description="Check our development works"
                 className={styles.ourResearch}
             >
                 <div className={styles.researchContent}>

@@ -204,7 +204,7 @@ function ConsultingPage(props: Props) {
                 />
             </Section>
             <Section
-                description="Check our research works"
+                description="Check our consulting works"
                 className={styles.ourResearch}
             >
                 <div className={styles.researchContent}>

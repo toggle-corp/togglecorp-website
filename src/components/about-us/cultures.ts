@@ -1,14 +1,14 @@
-import partnership from 'resources/1-partnership.webp';
-import extraMile from 'resources/5-extra-mile.webp';
-import embrace from 'resources/3-embrace-and-drive-change.webp';
-import freedom from 'resources/7-freedom-to-express.webp';
-import fun from 'resources/8-fun-and-humor.webp';
-import listen from 'resources/6-listen.webp';
-import back from 'resources/2-got-your-back.webp';
-import humble from 'resources/4-humble.webp';
-import team from 'resources/9-take-care-of-each-other.webp';
-import serve from 'resources/serve-community.jpeg';
-import kind from 'resources/10-kind.webp';
+import partnership from 'resources/aboutUs/values/partnership.jpeg';
+import extraMile from 'resources/aboutUs/values/5-extra-mile.webp';
+import embrace from 'resources/aboutUs/values/3-embrace-and-drive-change.jpeg';
+import freedom from 'resources/aboutUs/values/7-freedom-to-express.webp';
+import fun from 'resources/aboutUs/values/8-fun-and-humor.webp';
+import listen from 'resources/aboutUs/values/6-listen.webp';
+import back from 'resources/aboutUs/values/2-got-your-back.webp';
+import humble from 'resources/aboutUs/values/4-humble.webp';
+import team from 'resources/aboutUs/values/9-take-care-of-each-other.webp';
+import serve from 'resources/aboutUs/values/serve-community.jpeg';
+import kind from 'resources/aboutUs/values/10-kind.webp';
 
 // FIXME: move this to about-us
 
