@@ -26,6 +26,8 @@
     --color-text-on-dark-light: var(--color-text-light-gray);
     --color-background-social-media: rgba(255, 255, 255, 0.1);
     --card-shadow-border: 0px 4px 20px rgba(255, 85, 0, 0.1);
+    --general-shadow-border: 0 10px 27px rgba(0, 0, 0, 0.05);
+
 
     /* surface colors */
     --color-surface-white: #ffffff;
@@ -74,6 +76,9 @@
 
 
     --spacing-base: 1.25rem;
+    --responsive-navigation-bar-width: 25px;
+    --responsive-navigation-bar-height: 3px;
+    --responsive-navigation-bar-margin: 5px;
 
     --spacing-extra-small: calc(var(--spacing-base) / (var(--multiplier) * var(--multiplier)));
     --spacing-small: calc(var(--spacing-base) / var(--multiplier));

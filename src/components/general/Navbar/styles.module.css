@@ -25,11 +25,85 @@
             flex-shrink: 0;
             margin-left: var(--spacing-super-large);
         }
+
+        .activeContact {
+            &:hover {
+                background-color: var(--color-primary-active);
+                color: var(--color-text-on-dark);
+            }
+        }
+
+        .menuBar {
+            display: none;
+        }
+
+        .navHamburger {
+            display: none;
+        }
+
+        .bar {
+            display: block;
+            width: var(--responsive-navigation-bar-width);
+            height: var(--responsive-navigation-bar-height);
+            margin: var(--responsive-navigation-bar-margin) auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #101010;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .navbar {
+        background-color: var(--color-background);
+        justify-content: space-between;
+
+        .content {
+            justify-content: space-between;
+
+            .menuList {
+                display: none;
+            }
+
+            .contactLink {
+                display: none;
+            }
+
+            .menuBar {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                justify-content: center;
+                align-items: center;
+                padding: var(--spacing-large);
+                gap: var(--spacing-mega-large);
+                right: 0;
+                top: 4rem;
+                background-color: var(--color-surface-white);
+                box-shadow: var(--general-shadow-border);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                z-index: 1;
+                font-size: var(--font-size-medium);
+                border-bottom-left-radius: var(--radius-card);
+                border-bottom-right-radius: var(--radius-card);
+            }
+
+            .navHamburger {
+                display: block;
+                cursor: pointer;
+            }
+        }
     }
 }
 
 .navLink {
     &.active {
+        color: var(--color-primary);
+    }
+
+    &:hover {
         color: var(--color-primary);
     }
 }

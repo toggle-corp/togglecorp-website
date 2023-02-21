@@ -85,59 +85,45 @@ function CareerPage() {
             >
                 <div className={styles.collageContainer}>
                     <div className={styles.imageContainer}>
-                        <div className={styles.smallImgBox}>
-                            <img
-                                className={styles.smallImg}
-                                src={firstImage}
-                                alt="our story"
-                            />
-                        </div>
-                        <div className={styles.smallImgBox}>
-                            <img
-                                className={styles.smallImg}
-                                src={secondImage}
-                                alt="our story"
-                            />
-                        </div>
-                        <div className={styles.smallImgBox}>
-                            <img
-                                className={styles.smallImg}
-                                src={thirdImage}
-                                alt="our story"
-                            />
-                        </div>
+                        <img
+                            className={styles.smallImg}
+                            src={firstImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={secondImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={thirdImage}
+                            alt="our story"
+                        />
                     </div>
                     <div className={styles.imageContainer}>
-                        <div className={styles.mediumImgBox}>
-                            <img
-                                className={styles.mediumImg}
-                                src={fourthImage}
-                                alt="our story"
-                            />
-                        </div>
-                        <div className={styles.mediumImgBox}>
-                            <img
-                                className={styles.mediumImg}
-                                src={fifthImage}
-                                alt="our story"
-                            />
-                        </div>
+                        <img
+                            className={styles.mediumImg}
+                            src={fourthImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.mediumImg}
+                            src={fifthImage}
+                            alt="our story"
+                        />
                     </div>
                     <div className={styles.imageContainer}>
-                        <div className={styles.largeImgBox}>
-                            <img
-                                className={styles.largeImg}
-                                src={sixthImage}
-                                alt="our story"
-                            />
-                        </div>
-                        <div className={styles.largeImgBox}>
-                            <img
-                                className={styles.largeImg}
-                                src={seventhImage}
-                                alt="our story"
-                            />
-                        </div>
+                        <img
+                            className={styles.largeImg}
+                            src={sixthImage}
+                            alt="our story"
+                        />
+                        <img
+                            className={styles.smallImg}
+                            src={seventhImage}
+                            alt="our story"
+                        />
                     </div>
                 </div>
             </Section>

@@ -41,6 +41,7 @@ function Page(props: Props) {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     const goToTop = () => {
         window.scrollTo({
             top: 0,

@@ -8,17 +8,6 @@
     }
 }
 
-.organizationsWorkedWith {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: var(--spacing-large);
-
-    .organizationImg {
-        width: 100%;
-    }
-}
-
 .expertise {
     background-color: var(--color-surface-light);
 
