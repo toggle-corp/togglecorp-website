@@ -91,11 +91,14 @@
     --radius-card: 0.5rem;
     --outline-button-border-radius: 1rem;
     --height-logo: 2rem;
+    --expertise-logo: 3.75rem;
 
     --width-separator-thin: 1px;
     --width-separator-medium: 2px;
     --padding-social-media-icon: 4px;
     --employee-border-margin: 4px;
+
+    --project-card-height: 33rem;
 
     @media screen and (max-width: 900px) {
         --font-size-heading-base: 1.75rem;

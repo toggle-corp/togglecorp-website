@@ -27,11 +27,14 @@ function Card(props: Props) {
 
     const children = (
         <>
-            <img
-                className={styles.image}
-                src={imageSrc}
-                alt={title}
-            />
+            {imageSrc
+                && (
+                    <img
+                        className={styles.image}
+                        src={imageSrc}
+                        alt={title}
+                    />
+                )}
             <div className={styles.details}>
                 {title && (
                     <h5>

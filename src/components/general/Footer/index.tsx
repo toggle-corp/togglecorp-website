@@ -127,25 +127,34 @@ function Footer(props: Props) {
                                 href="https://www.facebook.com/togglecorp"
                                 passHref
                             >
-                                <IoLogoFacebook
-                                    className={styles.socialMedia}
-                                />
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a target="_blank" rel="noreferrer">
+                                    <IoLogoFacebook
+                                        className={styles.socialMedia}
+                                    />
+                                </a>
                             </Link>
                             <Link
                                 href="https://www.instagram.com/togglecorp/"
                                 passHref
                             >
-                                <IoLogoInstagram
-                                    className={styles.socialMedia}
-                                />
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a target="_blank" rel="noreferrer">
+                                    <IoLogoInstagram
+                                        className={styles.socialMedia}
+                                    />
+                                </a>
                             </Link>
                             <Link
                                 href="https://www.linkedin.com/togglecorp/"
                                 passHref
                             >
-                                <IoLogoLinkedin
-                                    className={styles.socialMedia}
-                                />
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a target="_blank" rel="noreferrer">
+                                    <IoLogoLinkedin
+                                        className={styles.socialMedia}
+                                    />
+                                </a>
                             </Link>
                         </div>
                     </FooterSection>

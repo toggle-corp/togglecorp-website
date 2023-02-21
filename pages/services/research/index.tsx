@@ -18,10 +18,9 @@ import { TagId, getTag } from 'data/tags';
 import staticProjects, { Project } from 'data/projects';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 
-import organizationListLogo from 'resources/organization-list.webp';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import planningLogo from 'resources/planning.png';
-import monitoringLogo from 'resources/monitoring.png';
+import planningLogo from 'resources/planning.svg';
+import monitoringLogo from 'resources/monitoring.svg';
 import workListOne from 'resources/work-list-1.webp';
 import {
     keySelector,
@@ -131,18 +130,6 @@ function ResearchPage(props: Props) {
             )}
         >
             <Section>
-                <div className={styles.organizationsWorkedWith}>
-                    <h3>
-                        Humanitarian organizations we’ve worked with
-                    </h3>
-                    <img
-                        className={styles.organizationImg}
-                        src={organizationListLogo}
-                        alt="Organization List"
-                    />
-                </div>
-            </Section>
-            <Section>
                 <div className={styles.productDetail}>
                     <img
                         className={styles.productImage}
@@ -155,11 +142,15 @@ function ResearchPage(props: Props) {
                             One of the platform that we&apos;ve worked on, DEEP, centralizes, accelerates and strengthens the inter-agency response to humanitarian crises. It hosts the largest analysis framework repository in the international humanitarian sector.
                         </div>
                         <Link
-                            href="/works"
+                            href="https://thedeep.io/"
                             passHref
                         >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className={styles.knowMoreLink}>
+                            <a
+                                className={styles.knowMoreLink}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Know more about DEEP
                                 <IoIosArrowRoundForward className={styles.icon} />
                             </a>
@@ -175,17 +166,12 @@ function ResearchPage(props: Props) {
                 <div className={styles.expertiseList}>
                     <Card
                         imageSrc={monitoringLogo}
-                        description="Research, analyze, interpret and present data related to humanitarian crises"
+                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
                         variant="mini"
                     />
                     <Card
                         imageSrc={planningLogo}
                         description="Conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response"
-                        variant="mini"
-                    />
-                    <Card
-                        imageSrc={planningLogo}
-                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
                         variant="mini"
                     />
                 </div>
@@ -224,7 +210,8 @@ function ResearchPage(props: Props) {
                         {filteredProjects.map((project) => (
                             <Card
                                 key={project.id}
-                                imageSrc={workListOne}
+                                // FIX: Add project images in the files themselves later on
+                                // imageSrc={project.image}
                                 title={project.projectTitle}
                                 description={project.summary}
                                 tags={project.tags.map(getTag)}
