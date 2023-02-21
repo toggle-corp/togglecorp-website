@@ -18,7 +18,6 @@ import {
     getProjectType,
 } from 'data/projectTypes';
 
-import organizationListLogo from 'resources/organization-list.webp';
 import expertiseLogo from 'resources/ourExpertise/expertiseGraph.png';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import workListOne from 'resources/work-list-1.webp';
@@ -43,35 +42,35 @@ interface Approach {
 const approaches: Approach[] = [
     {
         key: 'step1',
-        title: 'Step 1: Design doc with user stories',
+        title: 'Step 1: Design Document with User Stories',
         description:
             'Understanding a user’s perspective is imperative. So, the first thing we do after gathering initial requirements and information designs a document with potential user stories and flows.',
         image: workListOne,
     },
     {
         key: 'step2',
-        title: 'Step 2: Low fidelity mockups',
+        title: 'Step 2: Low Fidelity Mockups',
         description:
             'With the user’s perspective clear and fully understood, we dive into creating low-fidelity mockups that visually represent the flow of the product/project. ',
         image: workListOne,
     },
     {
         key: 'step3',
-        title: 'Step 3: Creation of milestones',
+        title: 'Step 3: Milestones Creation',
         description:
             'Milestones are significant for measuring progress. Since we have an integrated approach, we set milestones depending on the size and complexity of the project.',
         image: workListOne,
     },
     {
         key: 'step4',
-        title: 'Step 4: Iterate with continuous feedback from client',
+        title: 'Step 4: Iterate with Continuous Feedback from Client',
         description:
             'We value and maintain excellent relationships with our clients. After every small deployment, we collect feedback from our clients to make sure we are working towards achieving the same goal. ',
         image: workListOne,
     },
     {
         key: 'step5',
-        title: 'Step 5: Delivery and support',
+        title: 'Step 5: Delivery and Support',
         description:
             'After achieving all the goals and objectives, we deliver the product/project to our clients. But our work does not end there. After the final deployment and release, we support our clients’ queries and small fixes for a fixed period of time.',
         image: workListOne,
@@ -130,16 +129,6 @@ function DevelopmentPage(props: Props) {
             )}
         >
             <Section>
-                <div className={styles.organizationsWorkedWith}>
-                    <h3>Humanitarian organizations we’ve worked with</h3>
-                    <img
-                        className={styles.organizationImg}
-                        src={organizationListLogo}
-                        alt="Organization List"
-                    />
-                </div>
-            </Section>
-            <Section>
                 <div className={styles.productDetail}>
                     <img
                         className={styles.productImage}
@@ -154,9 +143,16 @@ function DevelopmentPage(props: Props) {
                             humanitarian crises. It hosts the largest analysis framework
                             repository in the international humanitarian sector.
                         </div>
-                        <Link href="/works" passHref>
+                        <Link
+                            href="https://thedeep.io/"
+                            passHref
+                        >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className={styles.knowMoreLink}>
+                            <a
+                                className={styles.knowMoreLink}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Know more about DEEP
                                 <IoIosArrowRoundForward className={styles.icon} />
                             </a>
@@ -213,7 +209,6 @@ function DevelopmentPage(props: Props) {
                         {filteredProjects.map((project) => (
                             <Card
                                 key={project.id}
-                                imageSrc={workListOne}
                                 title={project.projectTitle}
                                 description={project.summary}
                                 tags={project.tags.map(getTag)}

@@ -6,12 +6,13 @@
     overflow: hidden;
 
     &.mini {
+        border-radius: var(--outline-button-border-radius);
         background-color: var(--color-surface-white);
         padding: var(--spacing-medium);
         gap: var(--spacing-medium);
 
         .image {
-            width: 6rem;
+            width: var(--expertise-logo);
         }
 
         .details {
@@ -44,13 +45,15 @@
                 overflow: hidden;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
+                font-size: var(--font-size-accordion-description);
             }
 
             .tag {
                 display: flex;
                 align-items: flex-end;
                 flex-grow: 1;
-                color: var(--color-text-light);
+                color: var(--color-primary);
+                font-size: var(--font-size-accordion-description);
             }
         }
     }

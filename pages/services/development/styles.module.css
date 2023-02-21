@@ -31,8 +31,8 @@
         display: flex;
         align-self: center;
         flex-wrap: wrap;
-        max-width: 32rem;
-        max-height: 32rem;
+        max-width: 42rem;
+        max-height: 42rem;
 
         .expertisePicture {
             width: 100%;
@@ -41,7 +41,7 @@
 }
 
 .ourResearch {
-    background-color: var(--color-background-light);
+    background-color: var(--color-surface-light);
 
     .researchContent {
         display: flex;
@@ -68,6 +68,7 @@
             >* {
                 flex-basis: calc(50% - var(--spacing-medium));
                 background-color: var(--color-surface-white);
+                height: var(--project-card-height);
             }
 
             @media screen and (max-width: 900px) {
@@ -84,7 +85,7 @@
         align-self: center;
         color: var(--color-primary);
         gap: var(--spacing-small);
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-medium);
 
         .icon {
             display: flex;
@@ -114,7 +115,7 @@
             display: flex;
             gap: var(--spacing-small);
             color: var(--color-primary);
-            font-size: var(--font-size-large);
+            font-size: var(--font-size-medium);
 
             .icon {
                 font-size: var(--font-size-extra-large);

@@ -18,7 +18,6 @@ import { TagId, getTag } from 'data/tags';
 import staticProjects, { Project } from 'data/projects';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 
-import organizationListLogo from 'resources/organization-list.webp';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/planning.png';
 import monitoringLogo from 'resources/monitoring.png';
@@ -137,18 +136,6 @@ function ConsultingPage(props: Props) {
             )}
         >
             <Section>
-                <div className={styles.organizationsWorkedWith}>
-                    <h3>
-                        Humanitarian organizations we’ve worked with
-                    </h3>
-                    <img
-                        className={styles.organizationImg}
-                        src={organizationListLogo}
-                        alt="Organization List"
-                    />
-                </div>
-            </Section>
-            <Section>
                 <div className={styles.productDetail}>
                     <img
                         className={styles.productImage}
@@ -161,11 +148,15 @@ function ConsultingPage(props: Props) {
                             One of the platform that we&apos;ve worked on, DEEP, centralizes, accelerates and strengthens the inter-agency response to humanitarian crises. It hosts the largest analysis framework repository in the international humanitarian sector.
                         </div>
                         <Link
-                            href="/works"
+                            href="https://thedeep.io/"
                             passHref
                         >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className={styles.knowMoreLink}>
+                            <a
+                                className={styles.knowMoreLink}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Know more about DEEP
                                 <IoIosArrowRoundForward className={styles.icon} />
                             </a>
@@ -225,7 +216,6 @@ function ConsultingPage(props: Props) {
                         {filteredProjects.map((project) => (
                             <Card
                                 key={project.id}
-                                imageSrc={workListOne}
                                 title={project.projectTitle}
                                 description={project.summary}
                                 tags={project.tags.map(getTag)}
