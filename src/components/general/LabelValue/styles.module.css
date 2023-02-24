@@ -1,4 +1,9 @@
 .labelValue {
     display: flex;
     gap: var(--spacing-extra-small);
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
 }

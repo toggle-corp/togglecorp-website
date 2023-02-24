@@ -19,9 +19,15 @@ import staticProjects, { Project } from 'data/projects';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import planningLogo from 'resources/planning.png';
-import monitoringLogo from 'resources/monitoring.png';
-import workListOne from 'resources/work-list-1.webp';
+import planningLogo from 'resources/analyzeLog.svg';
+import monitoringLogo from 'resources/periodicMonitor.svg';
+import workListOne from 'resources/consulting/identification.png';
+import workListTwo from 'resources/consulting/discussion.png';
+import workListThree from 'resources/consulting/proposeSolution.png';
+import workListFour from 'resources/consulting/solution.png';
+import workListFive from 'resources/consulting/implementation.png';
+import workListSix from 'resources/consulting/monitoring.png';
+
 import {
     keySelector,
     titleSelector,
@@ -51,31 +57,31 @@ const approaches: Approach[] = [
         key: 'step2',
         title: 'Step 2: Discussions',
         description: 'After the initial meeting with the client to understand the problem, we have in-depth internal discussions about the problem the client is facing. We brainstorm as many solutions as possible and select the best solutions to present to the client later.',
-        image: workListOne,
+        image: workListTwo,
     },
     {
         key: 'step3',
         title: 'Step 3: Propose Solutions',
         description: 'Not all solutions fit the client’s needs. So, the next step would be to meet with the client and present our solutions on paper. Here, we discuss the best potential solutions that we have in mind.',
-        image: workListOne,
+        image: workListThree,
     },
     {
         key: 'step4',
         title: 'Step 4: Agree on Solution',
         description: 'As the discussion continues, we will try to visualize each solution as it would be implemented. Along the way, we will cross some out, and pick some out to implement. This will be an iterative process, and finally, the best solution will be found. ',
-        image: workListOne,
+        image: workListFour,
     },
     {
         key: 'step5',
         title: 'Step 5: Implementation',
         description: 'The next step would be to implement the solutions. We visit the client and implement the solution. Necessary training and guidance will be provided as not everybody might understand the solution.',
-        image: workListOne,
+        image: workListFive,
     },
     {
         key: 'step6',
         title: 'Step 6: Monitoring and Iterating',
         description: 'Change should be gradual. So, we implement the solutions in iterations (for about a year). The final step would then be to monitor the implemented solution. We will monitor the provided solution for a year. If we think some changes are necessary, we edit the proposed solution and implement the updated version of the sort.',
-        image: workListOne,
+        image: workListSix,
     },
 ];
 

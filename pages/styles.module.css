@@ -110,7 +110,8 @@
         border-radius: var(--radius-button);
 
         &:hover {
-            background-color: var(--color-surface-header);
+            background-color: var(--color-primary-active);
+            color: var(--color-text-on-dark);
         }
     }
 
@@ -286,6 +287,13 @@
             min-height: 20rem;
             gap: var(--spacing-large);
             text-align: center;
+
+            .howCanHelp {
+                &:hover {
+                    background-color: var(--color-primary-active);
+                    color: var(--color-text-on-dark);
+                }
+            }
         }
     }
 }

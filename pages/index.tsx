@@ -328,6 +328,7 @@ function Home() {
                 <h3>Have a project you&apos;d like to talk to us about?</h3>
                 <div>Tell us about your need, we&apos;d love to collaborate with you.</div>
                 <ButtonLikeLink
+                    className={styles.howCanHelp}
                     href="/contact-us"
                     variant="primary"
                 >
