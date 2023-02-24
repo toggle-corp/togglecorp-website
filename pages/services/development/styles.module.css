@@ -6,6 +6,13 @@
 
     .tags {
         color: var(--color-primary);
+
+        span {
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
     }
 }
 

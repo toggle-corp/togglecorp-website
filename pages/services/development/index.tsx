@@ -121,7 +121,9 @@ function DevelopmentPage(props: Props) {
                                     <Link key={service.key} href={service.link} passHref>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a>
-                                            {service.title}
+                                            <span>
+                                                {service.title}
+                                            </span>
                                             {i < otherServices.length - 1 && ', '}
                                         </a>
                                     </Link>

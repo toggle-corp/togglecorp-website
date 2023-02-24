@@ -26,13 +26,6 @@
             margin-left: var(--spacing-super-large);
         }
 
-        .activeContact {
-            &:hover {
-                background-color: var(--color-primary-active);
-                color: var(--color-text-on-dark);
-            }
-        }
-
         .menuBar {
             display: none;
         }
