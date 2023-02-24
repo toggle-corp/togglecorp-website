@@ -13,7 +13,7 @@ function LabelValue(props: Props) {
 
     return (
         <div className={styles.labelValue}>
-            <div>
+            <div className={styles.icon}>
                 {label}
             </div>
             <div>

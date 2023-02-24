@@ -21,7 +21,11 @@ import { projectTypes as generalServices, getProjectType } from 'data/projectTyp
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/planning.svg';
 import monitoringLogo from 'resources/monitoring.svg';
-import workListOne from 'resources/work-list-1.webp';
+import workListOne from 'resources/researchAnalysis/extraction.png';
+import workListTwo from 'resources/researchAnalysis/segregation.png';
+import workListThree from 'resources/researchAnalysis/review.png';
+import workListFour from 'resources/researchAnalysis/monitoring.png';
+import workListFive from 'resources/researchAnalysis/write.png';
 import {
     keySelector,
     titleSelector,
@@ -51,25 +55,25 @@ const approaches: Approach[] = [
         key: 'step2',
         title: 'Step 2: Data Segregation',
         description: 'Data collected are then classified and normalized into homogenous information for easy accessibility. An analytical framework, if required, is set in DEEP where our research and analysis team meticulously disaggregates it, finding its suitable fit within the framework. This process is called tagging.',
-        image: workListOne,
+        image: workListTwo,
     },
     {
         key: 'step3',
         title: 'Step 3: Review and Analysis',
         description: 'This is the most delicate and intricate part of our work where we sift through massive amounts of data to reveal and interpret the information plausibly. Reliability and validity of data are ensured during the analysis by triangulation and usage of multiple sources of data as evidence for the analytical statements. In addition, frequent coordination with the experts is done to ensure the relevance and quality of the writing.',
-        image: workListOne,
+        image: workListThree,
     },
     {
         key: 'step4',
         title: 'Step 4: Monitoring and Evaluation',
         description: 'All the reports acquired after the secondary data review goes through effective monitoring to have internal and external accountability of the resource used and the results obtained. We have well-established internal measures and processes to ensure data validity. Our highly qualified and dedicated monitoring, quality control, and evaluation team follow standard guidelines in each step of their work to maintain transparency and accountability.',
-        image: workListOne,
+        image: workListFour,
     },
     {
         key: 'step5',
         title: 'Step 5: Write-Up',
         description: 'Finally, we draft the findings from the analysis to make the information more digestible. We provide both draft and analyzed data to identify crucial information from the supplementary. This draft is sent to the expert groups and clients for final review and publication.',
-        image: workListOne,
+        image: workListFive,
     },
 ];
 

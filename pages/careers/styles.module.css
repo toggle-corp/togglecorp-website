@@ -45,43 +45,32 @@
         display: flex;
         gap: var(--spacing-large);
 
-        .largeImgBox {
-            display: flex;
-            flex-wrap: wrap;
-
-            .largeImg {
-                border-radius: var(--radius-card);
-                width: 100%;
-                object-fit: cover;
-                object-position: center center;
-            }
+        .largeImg {
+            flex-basis: 66.5%;
+            flex-shrink: 0;
+            border-radius: var(--radius-card);
+            width: 50%;
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
         }
 
-        .mediumImgBox {
-            display: flex;
-            flex-wrap: wrap;
+        .mediumImg {
+            flex-basis: 49%;
+            flex-shrink: 0;
+            border-radius: var(--radius-card);
             width: 100%;
-
-            .mediumImg {
-                border-radius: var(--radius-card);
-                width: 100%;
-                object-fit: cover;
-                object-position: center center;
-            }
+            height: 20rem;
+            object-fit: cover;
+            object-position: center;
         }
 
-        .smallImgBox {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-
-            .smallImg {
-                border-radius: var(--radius-card);
-                width: 100%;
-                object-fit: cover;
-                object-position: center center;
-                gap: 0;
-            }
+        .smallImg {
+            flex-basis: 100%;
+            border-radius: var(--radius-card);
+            height: 20rem;
+            object-fit: cover;
+            gap: 0;
         }
 
         @media screen and (max-width: 900px) {

@@ -9,6 +9,7 @@ interface Props {
     label?: string;
     value?: number | string;
     valueHref?: string;
+    projectCount?: number | string;
 }
 
 function KeyFigure(props: Props) {
@@ -17,6 +18,7 @@ function KeyFigure(props: Props) {
         label,
         value: valueFromProps,
         valueHref,
+        projectCount,
     } = props;
 
     const value = valueHref ? (
@@ -40,6 +42,11 @@ function KeyFigure(props: Props) {
                 className={styles.value}
             >
                 {value}
+            </div>
+            <div
+                className={styles.projectCount}
+            >
+                {projectCount}
             </div>
         </div>
     );

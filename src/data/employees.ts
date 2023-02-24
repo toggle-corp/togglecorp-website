@@ -361,7 +361,7 @@ const bimalSaud: Employee = {
     name: 'Bimal Saud',
     position: 'Operations/Admin Officer',
     description: 'I\'m passionate about my work and I know how to get the job done.',
-    funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    funnyDescription: 'Yo ja bata ako utai farkaideu',
     department: 'operations',
     linkedInLink: 'https://www.linkedin.com/mwlite/in/bimal-saud-37635a207',
 };
@@ -371,7 +371,7 @@ const sadikshyaHamal: Employee = {
     name: 'Sadikshya Hamal',
     position: 'Assistant Manager - Human Resources',
     description: 'Hi there, I am Sadikshya. I\'m a Human Resources Personnel by day, but by night I transform into a craziest and all- around fun-loving person with my family or close friends. In my free time, you can find me going on a hike, travelling and learning new things. I\'m always up for a good time and love creating beautiful memories to cherish for a lifetime. Overall, I\'m just a regular person trying to walk through this crazy thing we call life. :)',
-    funnyDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    funnyDescription: 'Ma direct anda chai khadina',
     department: 'operations',
     linkedInLink: 'https://www.linkedin.com/in/sadikshya-hamal',
 };

@@ -20,7 +20,11 @@ import {
 
 import expertiseLogo from 'resources/ourExpertise/expertiseGraph.png';
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import workListOne from 'resources/work-list-1.webp';
+import workListOne from 'resources/development/userStories.png';
+import workListTwo from 'resources/development/fidelity.png';
+import workListThree from 'resources/development/milestone.png';
+import workListFour from 'resources/development/continuous.png';
+import workListFive from 'resources/development/delivery.png';
 import {
     keySelector,
     titleSelector,
@@ -52,28 +56,28 @@ const approaches: Approach[] = [
         title: 'Step 2: Low Fidelity Mockups',
         description:
             'With the user’s perspective clear and fully understood, we dive into creating low-fidelity mockups that visually represent the flow of the product/project. ',
-        image: workListOne,
+        image: workListTwo,
     },
     {
         key: 'step3',
         title: 'Step 3: Milestones Creation',
         description:
             'Milestones are significant for measuring progress. Since we have an integrated approach, we set milestones depending on the size and complexity of the project.',
-        image: workListOne,
+        image: workListThree,
     },
     {
         key: 'step4',
         title: 'Step 4: Iterate with Continuous Feedback from Client',
         description:
             'We value and maintain excellent relationships with our clients. After every small deployment, we collect feedback from our clients to make sure we are working towards achieving the same goal. ',
-        image: workListOne,
+        image: workListFour,
     },
     {
         key: 'step5',
         title: 'Step 5: Delivery and Support',
         description:
             'After achieving all the goals and objectives, we deliver the product/project to our clients. But our work does not end there. After the final deployment and release, we support our clients’ queries and small fixes for a fixed period of time.',
-        image: workListOne,
+        image: workListFive,
     },
 ];
 

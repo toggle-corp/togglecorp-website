@@ -75,11 +75,11 @@ function WorksPage(props: Props) {
                         <div className={styles.keyFigures}>
                             <KeyFigure
                                 label="Project Completed"
-                                value={totalProjects}
+                                projectCount={totalProjects}
                             />
                             <KeyFigure
                                 label="Total Organization"
-                                value={totalOrganizations}
+                                projectCount={totalOrganizations}
                             />
                         </div>
                     )}

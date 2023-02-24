@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useEffect, useCallback, useState } from 'react';
 import { useRouter } from 'next/router';
 import { _cs } from '@togglecorp/fujs';
 
@@ -47,7 +48,29 @@ interface NavProps {
 function Navbar(props: NavProps) {
     const { className } = props;
 
+    const [showBarMenu, setShowBarMenu] = useState<boolean>(false);
+
     const { pathname } = useRouter();
+
+    useEffect(() => {
+        setShowBarMenu(false);
+        const handleScroll = () => {
+            if (window.scrollY > 250) {
+                setShowBarMenu(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const handleSideMenu = useCallback(() => {
+        setShowBarMenu(!showBarMenu);
+    }, [
+        showBarMenu,
+        setShowBarMenu,
+    ]);
 
     return (
         <Container
@@ -64,6 +87,34 @@ function Navbar(props: NavProps) {
                     alt="TC"
                 />
             </Link>
+            {/* NOTE: This menu below is intented to be used for responsive menu bar */}
+            {showBarMenu && (
+                <div className={styles.menuBar}>
+                    <NavLink href="/works">
+                        Works
+                    </NavLink>
+                    <NavLink href="/careers">
+                        Career
+                    </NavLink>
+                    <NavLink href="/about-us">
+                        About
+                    </NavLink>
+                    {showBarMenu && (
+                        <NavLink href="/contact-us">
+                            Contact Us
+                        </NavLink>
+                    )}
+                </div>
+            )}
+            <div
+                className={styles.navHamburger}
+                onClick={handleSideMenu}
+                role="presentation"
+            >
+                <span className={styles.bar} />
+                <span className={styles.bar} />
+                <span className={styles.bar} />
+            </div>
             <div className={styles.menuList}>
                 <NavLink href="/works">
                     Works
@@ -80,6 +131,7 @@ function Navbar(props: NavProps) {
                 className={styles.contactLink}
             >
                 <Button
+                    className={styles.activeContact}
                     name={undefined}
                     variant={pathname === '/contact-us' ? 'primary-active' : 'primary'}
                 >

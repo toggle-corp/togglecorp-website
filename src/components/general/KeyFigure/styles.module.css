@@ -11,8 +11,14 @@
 
         .value {
             color: var(--color-primary);
-            font-size: var(--font-size-extra-large);
+            font-size: var(--font-size-medium);
             font-weight: var(--font-weight-normal);
         }
+    }
+
+    .projectCount {
+        color: var(--color-primary);
+        font-size: var(--font-size-extra-large);
+        font-weight: var(--font-weight-normal);
     }
 }

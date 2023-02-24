@@ -121,52 +121,53 @@ function Footer(props: Props) {
                             </a>
                         )}
                     />
-                    <FooterSection title="Contact With Us">
-                        <div className={styles.socialMediaIcons}>
-                            <Link
-                                href="https://www.facebook.com/togglecorp"
-                                passHref
-                            >
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a target="_blank" rel="noreferrer">
-                                    <IoLogoFacebook
-                                        className={styles.socialMedia}
-                                    />
-                                </a>
-                            </Link>
-                            <Link
-                                href="https://www.instagram.com/togglecorp/"
-                                passHref
-                            >
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a target="_blank" rel="noreferrer">
-                                    <IoLogoInstagram
-                                        className={styles.socialMedia}
-                                    />
-                                </a>
-                            </Link>
-                            <Link
-                                href="https://www.linkedin.com/togglecorp/"
-                                passHref
-                            >
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a target="_blank" rel="noreferrer">
-                                    <IoLogoLinkedin
-                                        className={styles.socialMedia}
-                                    />
-                                </a>
-                            </Link>
-                        </div>
-                    </FooterSection>
                 </FooterSection>
             </Container>
-            <Container className={styles.copyrightContainer}>
+            <Container
+                className={styles.copyrightContainer}
+                contentClassName={styles.copyRightContent}
+            >
                 <div className={styles.copyRight}>
                     Copyright
                     {' '}
                     {new Date().getFullYear()}
                     {' '}
                     Togglecorp Solutions Pvt Ltd. All rights reserved.
+                </div>
+                <div className={styles.socialMediaIcons}>
+                    <Link
+                        href="https://www.facebook.com/togglecorp"
+                        passHref
+                    >
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a target="_blank" rel="noreferrer">
+                            <IoLogoFacebook
+                                className={styles.socialMedia}
+                            />
+                        </a>
+                    </Link>
+                    <Link
+                        href="https://www.instagram.com/togglecorp/"
+                        passHref
+                    >
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a target="_blank" rel="noreferrer">
+                            <IoLogoInstagram
+                                className={styles.socialMedia}
+                            />
+                        </a>
+                    </Link>
+                    <Link
+                        href="https://www.linkedin.com/togglecorp/"
+                        passHref
+                    >
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a target="_blank" rel="noreferrer">
+                            <IoLogoLinkedin
+                                className={styles.socialMedia}
+                            />
+                        </a>
+                    </Link>
                 </div>
             </Container>
         </>

@@ -43,6 +43,11 @@
 
         .getStartedButton {
             align-self: flex-start;
+
+            &:hover {
+                background-color: var(--color-primary-active);
+                color: var(--color-text-on-dark);
+            }
         }
     }
 
@@ -103,6 +108,11 @@
     .viewMoreButton {
         align-self: flex-start;
         border-radius: var(--radius-button);
+
+        &:hover {
+            background-color: var(--color-primary-active);
+            color: var(--color-text-on-dark);
+        }
     }
 
     .introImages {
@@ -277,6 +287,13 @@
             min-height: 20rem;
             gap: var(--spacing-large);
             text-align: center;
+
+            .howCanHelp {
+                &:hover {
+                    background-color: var(--color-primary-active);
+                    color: var(--color-text-on-dark);
+                }
+            }
         }
     }
 }
