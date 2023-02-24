@@ -72,6 +72,10 @@
         border-radius: unset;
         font-size: var(--font-size-large);
         font-weight: var(--font-weight-normal);
+
+        &:hover {
+            --color: var(--color-primary);
+        }
     }
 
     &.tabActive {

@@ -1,5 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Link from 'next/link';
+import Head from 'next/head';
 
 import staticEmployees, { Employee } from 'data/employees';
 import EmployeeCard from 'components/employees/EmployeeCard';
@@ -20,6 +21,9 @@ function EmployeePage(props: EmployeePageProps) {
 
     return (
         <div className={styles.employeePage}>
+            <Head>
+                <title>{specificEmployeeData.name}</title>
+            </Head>
             <Link
                 href="/"
                 passHref

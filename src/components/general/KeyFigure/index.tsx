@@ -10,6 +10,7 @@ interface Props {
     value?: number | string;
     valueHref?: string;
     projectCount?: number | string;
+    classNameValue?: string;
 }
 
 function KeyFigure(props: Props) {
@@ -19,6 +20,7 @@ function KeyFigure(props: Props) {
         value: valueFromProps,
         valueHref,
         projectCount,
+        classNameValue,
     } = props;
 
     const value = valueHref ? (
@@ -39,7 +41,7 @@ function KeyFigure(props: Props) {
                 {label}
             </div>
             <div
-                className={styles.value}
+                className={_cs(styles.value, classNameValue)}
             >
                 {value}
             </div>
