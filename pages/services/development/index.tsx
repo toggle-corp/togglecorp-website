@@ -212,7 +212,7 @@ function DevelopmentPage(props: Props) {
                     </div>
                     <hr className={styles.divider} />
                     <div className={styles.researchList}>
-                        {filteredProjects.map((project) => (
+                        {filteredProjects.slice(0, 6).map((project) => (
                             <Card
                                 key={project.id}
                                 title={project.projectTitle}

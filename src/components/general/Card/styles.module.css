@@ -52,7 +52,7 @@
                 display: flex;
                 align-items: flex-end;
                 flex-grow: 1;
-                color: var(--color-primary);
+                color: var(--color-text-dark-gray);
                 font-size: var(--font-size-accordion-description);
             }
         }

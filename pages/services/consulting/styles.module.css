@@ -78,13 +78,21 @@
         align-items: center;
         align-self: center;
         color: var(--color-primary);
-        gap: var(--spacing-small);
+        gap: var(--spacing-extra-small);
         font-size: var(--font-size-medium);
 
         .icon {
             display: flex;
             align-items: center;
             font-size: var(--font-size-extra-large);
+            transition: 0.2s ease-in;
+        }
+
+        &:hover {
+            .icon {
+                transform: translateX(var(--spacing-transition));
+                transition: 0.2s ease-out;
+            }
         }
     }
 }

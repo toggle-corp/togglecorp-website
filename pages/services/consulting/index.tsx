@@ -221,7 +221,7 @@ function ConsultingPage(props: Props) {
                     </div>
                     <hr className={styles.divider} />
                     <div className={styles.researchList}>
-                        {filteredProjects.map((project) => (
+                        {filteredProjects.slice(0, 6).map((project) => (
                             <Card
                                 key={project.id}
                                 title={project.projectTitle}
@@ -236,7 +236,9 @@ function ConsultingPage(props: Props) {
                     >
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a className={styles.arrowLink}>
-                            See all of the works
+                            <span>
+                                See all of the works
+                            </span>
                             <IoIosArrowRoundForward className={styles.icon} />
                         </a>
                     </Link>

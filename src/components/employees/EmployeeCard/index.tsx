@@ -60,12 +60,12 @@ function EmployeeCard(props: EmployeeCardProps) {
                 className,
             )}
         >
-            <img
-                className={styles.displayImage}
-                src={imageSrc}
-                alt={name}
-            />
             <div className={styles.details}>
+                <img
+                    className={styles.displayImage}
+                    src={imageSrc}
+                    alt={name}
+                />
                 <div>
                     {variant === 'detail' && (
                         <h3>
@@ -80,101 +80,102 @@ function EmployeeCard(props: EmployeeCardProps) {
                     <div className={styles.position}>
                         {position}
                     </div>
+                    <div className={styles.socialMediaIcons}>
+                        {(variant === 'detail' && linkedInLink) && (
+                            <a
+                                href={linkedInLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoLinkedin size={28} />
+                            </a>
+                        )}
+                        {(variant === 'detail' && instagramLink) && (
+                            <a
+                                href={instagramLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoInstagram
+                                    size={28}
+                                />
+                            </a>
+                        )}
+                        {(variant === 'detail' && githubLink) && (
+                            <a
+                                href={githubLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoGithub
+                                    size={28}
+                                />
+                            </a>
+                        )}
+                        {(variant === 'detail' && facebookLink) && (
+                            <a
+                                href={facebookLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoFacebook
+                                    size={28}
+                                />
+                            </a>
+                        )}
+                        {(variant === 'detail' && twitterLink) && (
+                            <a
+                                href={twitterLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoTwitter
+                                    size={24}
+                                />
+                            </a>
+                        )}
+                        {(variant === 'detail' && stackoverflowLink) && (
+                            <a
+                                href={stackoverflowLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoStackoverflow
+                                    size={24}
+                                />
+                            </a>
+                        )}
+                        {(variant === 'detail' && blogLink) && (
+                            <a
+                                href={blogLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoGlobeOutline
+                                    size={24}
+                                />
+                            </a>
+                        )}
+                    </div>
                 </div>
-                <div
-                    title={description}
-                >
-                    {variant === 'list' && (
-                        <div
-                            className={styles.description}
-                        >
-                            {funnyDescription}
-                        </div>
-                    )}
-                    {variant === 'detail' && (
-                        <div>
-                            {description}
-                        </div>
-                    )}
+            </div>
+            <div
+                className={styles.descriptionSection}
+                title={description}
+            >
+                {variant === 'list' && (
+                    <div
+                        className={styles.description}
+                    >
+                        {funnyDescription}
+                    </div>
+                )}
+                {variant === 'detail' && (
+                    <div>
+                        {description}
+                    </div>
+                )}
 
-                </div>
-                <div className={styles.socialMediaIcons}>
-                    {(variant === 'detail' && linkedInLink) && (
-                        <a
-                            href={linkedInLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoLinkedin size={24} />
-                        </a>
-                    )}
-                    {(variant === 'detail' && instagramLink) && (
-                        <a
-                            href={instagramLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoInstagram
-                                size={24}
-                            />
-                        </a>
-                    )}
-                    {(variant === 'detail' && githubLink) && (
-                        <a
-                            href={githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoGithub
-                                size={24}
-                            />
-                        </a>
-                    )}
-                    {(variant === 'detail' && facebookLink) && (
-                        <a
-                            href={facebookLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoFacebook
-                                size={24}
-                            />
-                        </a>
-                    )}
-                    {(variant === 'detail' && twitterLink) && (
-                        <a
-                            href={twitterLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoTwitter
-                                size={24}
-                            />
-                        </a>
-                    )}
-                    {(variant === 'detail' && stackoverflowLink) && (
-                        <a
-                            href={stackoverflowLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoLogoStackoverflow
-                                size={24}
-                            />
-                        </a>
-                    )}
-                    {(variant === 'detail' && blogLink) && (
-                        <a
-                            href={blogLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <IoGlobeOutline
-                                size={24}
-                            />
-                        </a>
-                    )}
-                </div>
             </div>
         </div>
     );

@@ -1,5 +1,9 @@
 .cardSection {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--spacing-large);
+    gap: var(--spacing-large);
     border: var(--width-separator-thin) solid var(--color-separator);
     border-radius: var(--radius-card);
     box-shadow: var(--card-shadow-border);
@@ -15,13 +19,16 @@
 
     .details {
         display: flex;
-        flex-direction: column;
-        padding: var(--spacing-medium);
+        flex-wrap: wrap;
         gap: var(--spacing-medium);
 
         .position {
             color: var(--color-primary);
         }
+    }
+
+    .descriptionSection {
+        display: flex;
 
         .description {
             display: -webkit-box;
