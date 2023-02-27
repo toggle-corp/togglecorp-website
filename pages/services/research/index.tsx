@@ -213,13 +213,14 @@ function ResearchPage(props: Props) {
                     </div>
                     <hr className={styles.divider} />
                     <div className={styles.researchList}>
-                        {filteredProjects.map((project) => (
+                        {filteredProjects.slice(0, 6).map((project) => (
                             <Card
                                 key={project.id}
                                 // FIX: Add project images in the files themselves later on
                                 // imageSrc={project.image}
                                 title={project.projectTitle}
                                 description={project.summary}
+                                href={`/works/${project.id}`}
                                 tags={project.tags.map(getTag)}
                             />
                         ))}

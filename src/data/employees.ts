@@ -234,8 +234,8 @@ const kanchiTamang: Employee = {
     id: 'kanchi-tamang',
     name: 'Kanchi Tamang',
     position: 'Office Assistant',
-    description: '',
-    funnyDescription: 'Kripaya office sakdo safa sugar rakhdinu hola',
+    description: 'Kripaya office sakdo safa sugar rakhdinu hola',
+    funnyDescription: 'Good morning! Aaipugnu bho?',
     department: 'operations',
 };
 
@@ -243,8 +243,8 @@ const kisanPahari: Employee = {
     id: 'kisan-pahari',
     name: 'Nishan Pahari',
     position: 'Chef',
-    description: '',
-    funnyDescription: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
+    description: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
+    funnyDescription: 'Ma manage garchu',
     department: 'operations',
 };
 

@@ -11,6 +11,8 @@ interface Vacancy {
     salary: string;
 }
 
+/*
+NOTE: these are sample job descriptions
 const vacancies: Vacancy[] = [
     {
         id: '1',
@@ -53,8 +55,9 @@ const vacancies: Vacancy[] = [
         salary: 'Negotiable',
     },
 ];
+*/
 
 // Note: When no vacancies, just uncomment below:
-// const vacancies: Vacancy[] | undefined = undefined;
+const vacancies: Vacancy[] | undefined = undefined;
 
 export default vacancies;
