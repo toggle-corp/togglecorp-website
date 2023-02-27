@@ -217,6 +217,7 @@ function DevelopmentPage(props: Props) {
                                 key={project.id}
                                 title={project.projectTitle}
                                 description={project.summary}
+                                href={`/works/${project.id}`}
                                 tags={project.tags.map(getTag)}
                             />
                         ))}

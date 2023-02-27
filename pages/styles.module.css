@@ -89,7 +89,7 @@
                 align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: var(--spacing-large);
+                gap: var(--spacing-extra-large);
             }
 
             .clientGroupThree {

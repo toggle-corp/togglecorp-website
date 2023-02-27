@@ -220,6 +220,7 @@ function ResearchPage(props: Props) {
                                 // imageSrc={project.image}
                                 title={project.projectTitle}
                                 description={project.summary}
+                                href={`/works/${project.id}`}
                                 tags={project.tags.map(getTag)}
                             />
                         ))}

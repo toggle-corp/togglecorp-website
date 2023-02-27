@@ -2,7 +2,6 @@
     display: flex;
     border: var(--width-separator-thin) solid var(--color-separator);
     border-radius: var(--radius-card);
-    box-shadow: var(--card-shadow-border);
     background-color: var(--color-surface-white);
     height: 100%;
 
