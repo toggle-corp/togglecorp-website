@@ -130,7 +130,9 @@ function ConsultingPage(props: Props) {
                                     >
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a>
-                                            {service.title}
+                                            <span>
+                                                {service.title}
+                                            </span>
                                             {i < otherServices.length - 1 && ', '}
                                         </a>
                                     </Link>
@@ -163,7 +165,7 @@ function ConsultingPage(props: Props) {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Know more about DEEP
+                                <span>Know more about DEEP</span>
                                 <IoIosArrowRoundForward className={styles.icon} />
                             </a>
                         </Link>

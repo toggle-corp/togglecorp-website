@@ -121,7 +121,9 @@ function DevelopmentPage(props: Props) {
                                     <Link key={service.key} href={service.link} passHref>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a>
-                                            {service.title}
+                                            <span>
+                                                {service.title}
+                                            </span>
                                             {i < otherServices.length - 1 && ', '}
                                         </a>
                                     </Link>
@@ -157,7 +159,7 @@ function DevelopmentPage(props: Props) {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Know more about DEEP
+                                <span>Know more about DEEP</span>
                                 <IoIosArrowRoundForward className={styles.icon} />
                             </a>
                         </Link>
@@ -222,7 +224,7 @@ function DevelopmentPage(props: Props) {
                     <Link href="/works" passHref>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a className={styles.arrowLink}>
-                            See all of the works
+                            <span>See all of the works</span>
                             <IoIosArrowRoundForward className={styles.icon} />
                         </a>
                     </Link>

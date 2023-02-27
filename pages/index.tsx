@@ -66,7 +66,14 @@ function Home() {
                             <div className={styles.tags}>
                                 {projectTypes.map((projectType, i) => (
                                     <React.Fragment key={projectType.key}>
-                                        <Link href={projectType.link}>{projectType.title}</Link>
+                                        <Link
+                                            href={projectType.link}
+                                            passHref
+                                        >
+                                            <span>
+                                                {projectType.title}
+                                            </span>
+                                        </Link>
                                         {i < projectTypes.length - 1 && (
                                             <div className={styles.dot}>•</div>
                                         )}
@@ -74,7 +81,6 @@ function Home() {
                                 ))}
                             </div>
                             <Button
-                                className={styles.getStartedButton}
                                 name={undefined}
                                 variant="primary"
                                 onClick={handleScrollToServices}
@@ -173,7 +179,7 @@ function Home() {
                         </div>
                         <ButtonLikeLink
                             className={styles.viewMoreButton}
-                            variant="outline-active"
+                            variant="outline"
                             href="/about-us"
                         >
                             View More
@@ -328,7 +334,6 @@ function Home() {
                 <h3>Have a project you&apos;d like to talk to us about?</h3>
                 <div>Tell us about your need, we&apos;d love to collaborate with you.</div>
                 <ButtonLikeLink
-                    className={styles.howCanHelp}
                     href="/contact-us"
                     variant="primary"
                 >
