@@ -1,6 +1,6 @@
 import adityaKhatri from 'resources/employee/aditya.jpeg';
 import amarShahi from 'resources/employee/amar.jpeg';
-import ankitMehta from 'resources/employee/ankit-mehta.png';
+import ankitMehta from 'resources/employee/ankit.jpeg';
 import anushaKhadka from 'resources/employee/anusha.jpeg';
 import barshaThakuri from 'resources/employee/barsha.jpeg';
 import bibekPandey from 'resources/employee/bibek.jpeg';
@@ -20,7 +20,7 @@ import puranBan from 'resources/employee/puran.jpeg';
 import ranjanShrestha from 'resources/employee/ranjan.jpeg';
 import rishiKhatri from 'resources/employee/rishi.jpeg';
 import rubyThapaliya from 'resources/employee/ruby.jpeg';
-import safarLigal from 'resources/employee/safar-ligal.png';
+import safarLigal from 'resources/employee/safar.jpeg';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
 import sagunaThapa from 'resources/employee/saguna.jpeg';
 import sameerRai from 'resources/employee/sameer.jpeg';

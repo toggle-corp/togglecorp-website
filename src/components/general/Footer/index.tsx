@@ -84,8 +84,8 @@ function Footer(props: Props) {
                 <FooterSection
                     title="Services"
                 >
-                    <Link href="/services/development"> Software Development </Link>
-                    <Link href="/services/research"> Data Analysis </Link>
+                    <Link href="/services/development"> Development </Link>
+                    <Link href="/services/research"> Research & Analysis </Link>
                     <Link href="/services/consulting"> Consulting </Link>
                 </FooterSection>
                 <FooterSection title="Contact information">

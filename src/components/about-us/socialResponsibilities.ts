@@ -1,6 +1,6 @@
 import sanitizer from 'resources/aboutUs/socialResponsibility/sanitizers.webp';
-import foodDistribution from 'resources/aboutUs/socialResponsibility/food-distribution.webp';
-import students from 'resources/aboutUs/socialResponsibility/students.webp';
+import volunteers from 'resources/aboutUs/socialResponsibility/volunteers.jpeg';
+import bloodDonation from 'resources/aboutUs/socialResponsibility/blood_donation.jpeg';
 import tempCheck from 'resources/aboutUs/socialResponsibility/temp-check.webp';
 import childAwareness from 'resources/aboutUs/socialResponsibility/child-awareness.webp';
 import lunchDistribution from 'resources/aboutUs/socialResponsibility/lunch-distribution.webp';
@@ -19,27 +19,27 @@ const socialResponsibilities: SocialResponsibility[] = [
     },
     {
         id: '2',
-        image: foodDistribution,
+        image: volunteers,
         imageAlt: 'logo',
     },
     {
         id: '3',
-        image: students,
-        imageAlt: 'logo',
-    },
-    {
-        id: '4',
         image: tempCheck,
         imageAlt: 'logo',
     },
     {
-        id: '5',
+        id: '4',
         image: childAwareness,
         imageAlt: 'logo',
     },
     {
-        id: '6',
+        id: '5',
         image: lunchDistribution,
+        imageAlt: 'logo',
+    },
+    {
+        id: '6',
+        image: bloodDonation,
         imageAlt: 'logo',
     },
 ];
