@@ -24,11 +24,11 @@ export type EmployeeId = 'tc-001'
     | 'tc-056'
     | 'tc-027'
     | 'tc-005'
-    | 'saguna-thapa'
+    | 'tc-067'
     | 'tc-064'
     | 'tc-007'
     | 'tc-015'
-    | 'shreeya-shrestha'
+    | 'tc-066'
     | 'tc-059'
     | 'tc-021'
     | 'tc-062'
@@ -346,7 +346,7 @@ const snehaPandey: Employee = {
 };
 
 const shreeyaShrestha: Employee = {
-    id: 'shreeya-shrestha',
+    id: 'tc-066',
     name: 'Shreeya Shrestha',
     position: 'Data Analyst',
     description: 'A devoted dog-person who loves cat memes. An avid nature lover who\'s always up for trekking but need meds for altitude sickness.Has a keen interest in cooking but sometimes burns everything.An enthusiastic series watcher but falls asleep two episodes in or binges the whole series at once.Always runs outside when the sky is a pretty color but also loves the gloomy monsoon weather. Hi I\'m Shreeya, 25, a proud second mom to a saint Saint Bernard.',
@@ -442,7 +442,7 @@ const sameerRai: Employee = {
 };
 
 const sagunaThapa: Employee = {
-    id: 'saguna-thapa',
+    id: 'tc-067',
     name: 'Saguna Thapa',
     position: 'Data Analyst',
     description: 'I enjoy reading, spending time with family and friends, watching a television show and listening to music. I am self-disciplined, introverted and always ready to work hard.',
