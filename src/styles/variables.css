@@ -91,6 +91,7 @@
     --spacing-mega-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-ultra-large: calc(var(--spacing-base) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier) * var(--multiplier));
     --spacing-extra-ultra-large: 6rem;
+    --spacing-double-ultra-large: 9rem;
 
     --spacing-highlighted-works: 3.5rem;
 
