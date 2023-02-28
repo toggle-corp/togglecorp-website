@@ -1,43 +1,43 @@
 type Department = 'development' | 'analysis' | 'operations';
 
-export type EmployeeId = 'TC-001'
-    | 'TC-013'
-    | 'TC-000'
-    | 'TC-050'
-    | 'TC-040'
-    | 'TC-063'
-    | 'TC-008'
-    | 'TC-036'
-    | 'TC-010'
-    | 'TC-023'
-    | 'TC-058'
-    | 'TC-017'
-    | 'TC-006'
-    | 'TC-004'
-    | 'TC-030'
-    | 'TC-034'
-    | 'TC-028'
-    | 'TC-039'
-    | 'TC-052'
-    | 'TC-042'
-    | 'TC-018'
-    | 'TC-052'
-    | 'TC-027'
-    | 'TC-005'
+export type EmployeeId = 'tc-001'
+    | 'tc-013'
+    | 'tc-000'
+    | 'tc-050'
+    | 'tc-040'
+    | 'tc-063'
+    | 'tc-008'
+    | 'tc-036'
+    | 'tc-010'
+    | 'tc-023'
+    | 'tc-058'
+    | 'tc-017'
+    | 'tc-006'
+    | 'tc-004'
+    | 'tc-030'
+    | 'tc-034'
+    | 'tc-028'
+    | 'tc-039'
+    | 'tc-057'
+    | 'tc-042'
+    | 'tc-018'
+    | 'tc-056'
+    | 'tc-027'
+    | 'tc-005'
     | 'saguna-thapa'
-    | 'TC-064'
-    | 'TC-007'
-    | 'TC-015'
+    | 'tc-064'
+    | 'tc-007'
+    | 'tc-015'
     | 'shreeya-shrestha'
-    | 'TC-059'
-    | 'TC-021'
-    | 'TC-062'
-    | 'TC-061'
-    | 'TC-052'
-    | 'TC-016'
-    | 'TC-047'
-    | 'TC-065'
-    | 'TC-052';
+    | 'tc-059'
+    | 'tc-021'
+    | 'tc-062'
+    | 'tc-061'
+    | 'tc-055'
+    | 'tc-016'
+    | 'tc-047'
+    | 'tc-065'
+    | 'tc-052';
 
 export interface Employee {
     id: EmployeeId;
@@ -58,7 +58,7 @@ export interface Employee {
 }
 
 const adityaKhatri: Employee = {
-    id: 'TC-001',
+    id: 'tc-001',
     name: 'Aditya Khatri',
     position: 'Co-founder / Developer',
     funnyDescription: 'Dherai halla, thorai kaam',
@@ -69,7 +69,7 @@ const adityaKhatri: Employee = {
 };
 
 const amarShahi: Employee = {
-    id: 'TC-013',
+    id: 'tc-013',
     name: 'Amar Shahi',
     position: 'Operations Manager',
     description: 'My mom says she felt a small earthquake the day I was born, 26 years later it happened again on my birthday. That\s my talent, earthquake is my thing. I also like airplanes which is why my favorite quote is "Startup world is like jumping off a cliff and assembling a plane on the way down."',
@@ -80,7 +80,7 @@ const amarShahi: Employee = {
 };
 
 const ankitMehta: Employee = {
-    id: 'TC-000',
+    id: 'tc-000',
     name: 'Ankit Mehta',
     position: 'Chief Executive Officer',
     funnyDescription: 'I\'m the CEO, plich',
@@ -91,7 +91,7 @@ const ankitMehta: Employee = {
 };
 
 const anushaKhadka: Employee = {
-    id: 'TC-050',
+    id: 'tc-050',
     name: 'Anusha Khadka',
     position: 'Data Analyst',
     description: 'Have you ever encountered someone who is simultaneously happy and sad? If not, hello there, meet AK! AK is an extrovert with cheerful demeanor. She is fond of melancholy music because she believes that sorrow can be beautiful. She enjoys going on solo walks. We are besties if you think watching FRIENDS is the idea of perfect evening.',
@@ -103,7 +103,7 @@ const anushaKhadka: Employee = {
 };
 
 const barshaThakuri: Employee = {
-    id: 'TC-040',
+    id: 'tc-040',
     name: 'Barsha Thakuri',
     position: 'Developer',
     funnyDescription: 'I\'ll be late for standup, My scotty is not starting',
@@ -114,7 +114,7 @@ const barshaThakuri: Employee = {
 };
 
 const bibekPandey: Employee = {
-    id: 'TC-008',
+    id: 'tc-008',
     name: 'Bibek Pandey',
     position: 'Developer',
     funnyDescription: '50 katechi ramaula!',
@@ -127,7 +127,7 @@ const bibekPandey: Employee = {
 };
 
 const bimalPandey: Employee = {
-    id: 'TC-036',
+    id: 'tc-036',
     name: 'Bimal Prasad Pandey',
     position: 'Software Developer',
     description: 'No BP be happy.',
@@ -141,7 +141,7 @@ const bimalPandey: Employee = {
 };
 
 const keyurKhadka: Employee = {
-    id: 'TC-058',
+    id: 'tc-058',
     name: 'Keyur Khadka',
     position: 'Assistant Project Manager',
     funnyDescription: 'Stay hard! (P.S: Context is important!)',
@@ -154,7 +154,7 @@ const keyurKhadka: Employee = {
 };
 
 const udayMaharjan: Employee = {
-    id: 'uday-maharjan',
+    id: 'tc-057',
     name: 'Uday Maharjan',
     position: 'Assistant Project Manager',
     funnyDescription: 'What is your school\'s name? School Maharjan',
@@ -167,7 +167,7 @@ const udayMaharjan: Employee = {
 };
 
 const priyeshGautam: Employee = {
-    id: 'TC-039',
+    id: 'tc-039',
     name: 'Priyesh Gautam',
     position: 'Developer',
     description: 'Priyesh, preferably Priyash, big time rock music and gym enthusiast is a fun person to be around. He lives with one of his favorite quote "The top of one mountain is the bottom of the next". Loves going on for a nice walk during dusk, a dog lover, he tries to feel every little piece of nature within. Additionally, always trying his best to make this world a better place."',
@@ -176,7 +176,7 @@ const priyeshGautam: Employee = {
 };
 
 const subinaRajopadhyay: Employee = {
-    id: 'TC-016',
+    id: 'tc-016',
     name: 'Subina Sharma',
     position: 'Designer | Developer',
     description: 'Front-end developer, Designer, Illustrator and aspiring Calligrapher by passion, Aspiring Data Scientist, Dog-lover, Potterhead, & a Massive Liverpool supporter #YNWA',
@@ -189,7 +189,7 @@ const subinaRajopadhyay: Employee = {
 };
 
 const smritiKafle: Employee = {
-    id: 'TC-061',
+    id: 'tc-061',
     name: 'Smriti Kafle',
     position: 'UI/UX Designer',
     description: 'Oh, crop!',
@@ -199,7 +199,7 @@ const smritiKafle: Employee = {
 };
 
 const shubhDhital: Employee = {
-    id: 'TC-062',
+    id: 'tc-062',
     name: 'Shubh Dhital',
     position: 'QA Engineer',
     description: 'I go up to the mountains or I go find flaws in your work. Also, sometimes all you need to do is change that altitude.',
@@ -210,7 +210,7 @@ const shubhDhital: Employee = {
 };
 
 const safarLigal: Employee = {
-    id: 'TC-005',
+    id: 'tc-005',
     name: 'Safar Sanu Ligal',
     position: 'Software Engineer',
     description: 'No man ever steps in th same river twice, for it\'s not the same river and he\'s not the same man.',
@@ -220,10 +220,10 @@ const safarLigal: Employee = {
 };
 
 const kriti: Employee = {
-    id: 'TC-006',
+    id: 'tc-006',
     name: 'Kriti Chhetri',
     position: 'Data Analyst / Team Manager',
-    description: 'Kriti has pursued Master\'s in International Relations. She is sociable and cheerful person. She enjoys when she is close to nature and goes for mini-hiking whenever she gets chance. She likes binge watchig various genre series and love eating momo. Her guilty pleasure is having a glass of chilled beer and a large Pizza at a restaurant all by herself. Fun fact: She is the first analyst at TC.',
+    description: 'Kriti has pursued Master\'s in International Relations. She is sociable and cheerful person. She enjoys when she is close to nature and goes for mini-hiking whenever she gets chance. She likes binge watchig various genre series and love eating momo. Her guilty pleasure is having a glass of chilled beer and a large Pizza at a restaurant all by herself. Fun fact: She is the first analyst at tc.',
     funnyDescription: 'Chyaaaaaaannn! Out! Out!',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/kritichhetri',
@@ -231,7 +231,7 @@ const kriti: Employee = {
 };
 
 const kanchiTamang: Employee = {
-    id: 'TC-010',
+    id: 'tc-010',
     name: 'Kanchi Tamang',
     position: 'Office Assistant',
     description: 'Kripaya office sakdo safa sugar rakhdinu hola',
@@ -240,7 +240,7 @@ const kanchiTamang: Employee = {
 };
 
 const kisanPahari: Employee = {
-    id: 'TC-017',
+    id: 'tc-017',
     name: 'Nishan Pahari',
     position: 'Chef',
     description: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
@@ -249,7 +249,7 @@ const kisanPahari: Employee = {
 };
 
 const karinaGopali: Employee = {
-    id: 'TC-023',
+    id: 'tc-023',
     name: 'Karina Gopali',
     position: 'Data Analyst',
     description: 'I am a person who believes in myself, enjoy food and music. I live very joyful life with a lot of laughter and good time. I believe that whatever happens in your life, you should always face it with a smile.',
@@ -259,7 +259,7 @@ const karinaGopali: Employee = {
 };
 
 const NavinAyer: Employee = {
-    id: 'TC-004',
+    id: 'tc-004',
     name: 'Navin Ayer',
     position: 'Developer',
     description: '¯\\_(ツ)_/¯',
@@ -270,7 +270,7 @@ const NavinAyer: Employee = {
 };
 
 const nikaShakya: Employee = {
-    id: 'TC-030',
+    id: 'tc-030',
     name: 'Nika Shakya',
     position: 'Data Analyst',
     description: 'Hi, I am Nika Shakya. I received my bachelors degree in public health and currently i am working as junior data analyst. Talking about my personal interests i enjoy doing art stuffs, listening to music and love spending time in nature. Adding to that i love watching series in my free time.',
@@ -280,7 +280,7 @@ const nikaShakya: Employee = {
 };
 
 const poojaSharma: Employee = {
-    id: 'TC-034',
+    id: 'tc-034',
     name: 'Pooja Sharma',
     position: 'Data Analyst',
     description: 'In a world where you can be anyone, I choose to be myself. I love spicy food, enjoy music and spending time with my loved ones.',
@@ -290,7 +290,7 @@ const poojaSharma: Employee = {
 };
 
 const prinishaBaidya: Employee = {
-    id: 'TC-028',
+    id: 'tc-028',
     name: 'Prinisha Baidya',
     position: 'Data Analyst / Team Lead',
     description: 'A fun loving girl who likes to be in a happy environment. Is an optimist, interested in music, sings and dances, keeps others happiness first, gets easily inspired. An altruist and a proud Leo who enjoys helping others. Needs K-Pop and K-Drama doses at times.',
@@ -301,7 +301,7 @@ const prinishaBaidya: Employee = {
 };
 
 const puranBan: Employee = {
-    id: 'TC-052',
+    id: 'tc-056',
     name: 'Puran Ban',
     position: 'Developer',
     description: 'As you like...',
@@ -312,7 +312,7 @@ const puranBan: Employee = {
 };
 
 const rishiKhatri: Employee = {
-    id: 'TC-018',
+    id: 'tc-018',
     name: 'Rishi Khatri',
     position: 'Developer',
     description: 'Rishi will always remember......',
@@ -323,7 +323,7 @@ const rishiKhatri: Employee = {
 };
 
 const shreetiKafle: Employee = {
-    id: 'TC-015',
+    id: 'tc-015',
     name: 'Shreeti Kafle',
     position: 'Data Analyst / Team Lead',
     description: 'I used to think I was indecisive. But now I\'m not so sure.',
@@ -334,7 +334,7 @@ const shreetiKafle: Employee = {
 };
 
 const snehaPandey: Employee = {
-    id: 'TC-052',
+    id: 'tc-052',
     name: 'Sneha Pandey',
     position: 'Data Analyst / Team Lead',
     description: 'Making a spontaneous plan and having trouble deciding who to invite? Make sure there\'s enough room for Sneha!! Sneha loves traveling, hiking, and trekking as much as any other nature admirer. Her fondness for horses and dogs is unrivaled. She\'s fun to be around, easy to get along with, and a true gourmet! You will always find her experimenting with different cuisines. She is a firm believer that it\'s never too late to learn new things.',
@@ -357,7 +357,7 @@ const shreeyaShrestha: Employee = {
 };
 
 const bimalSaud: Employee = {
-    id: 'TC-063',
+    id: 'tc-063',
     name: 'Bimal Saud',
     position: 'Operations/Admin Officer',
     description: 'I\'m passionate about my work and I know how to get the job done.',
@@ -367,7 +367,7 @@ const bimalSaud: Employee = {
 };
 
 const sadikshyaHamal: Employee = {
-    id: 'TC-064',
+    id: 'tc-064',
     name: 'Sadikshya Hamal',
     position: 'Assistant Manager - Human Resources',
     description: 'Hi there, I am Sadikshya. I\'m a Human Resources Personnel by day, but by night I transform into a craziest and all- around fun-loving person with my family or close friends. In my free time, you can find me going on a hike, travelling and learning new things. I\'m always up for a good time and love creating beautiful memories to cherish for a lifetime. Overall, I\'m just a regular person trying to walk through this crazy thing we call life. :)',
@@ -377,7 +377,7 @@ const sadikshyaHamal: Employee = {
 };
 
 const rubyThapaliya: Employee = {
-    id: 'TC-027',
+    id: 'tc-027',
     name: 'Ruby Thapaliya',
     position: 'Data Analyst',
     description: 'Myself Ruby from Western Nepal. I\'ve always been outspoken, energetic and inquisitive to new things. I believe making someone laugh everyday makes my life worth living. I often give advice to people and have been keen to learn from their mistakes. As long as there\'s life, there\'s hope so everyone should keep striving to their desired purpose.',
@@ -388,7 +388,7 @@ const rubyThapaliya: Employee = {
 };
 
 const shristiManandhar: Employee = {
-    id: 'TC-021',
+    id: 'tc-021',
     name: 'Shristi Manandhar',
     position: 'Data Analyst',
     description: 'I love watching Anime and Korean dramas. Also; Happily introverted :P. People say that I am hard worker and a team player :)',
@@ -398,7 +398,7 @@ const shristiManandhar: Employee = {
 };
 
 const shreeyashShrestha: Employee = {
-    id: 'TC-059',
+    id: 'tc-059',
     name: 'Shreeyash Laya La Shrestha',
     position: 'Developer',
     description: '"Crafting code and building beautiful solutions with a passion for continuous learning and growth. Always striving to create and inspire change through technology."',
@@ -410,7 +410,7 @@ const shreeyashShrestha: Employee = {
 };
 
 const rupRanjanshi: Employee = {
-    id: 'TC-052',
+    id: 'tc-055',
     name: 'Rup Narayan Rajbanshi',
     position: 'Python Developer',
     description: 'I am what I am. I am in my own world',
@@ -422,7 +422,7 @@ const rupRanjanshi: Employee = {
 };
 
 const ranjanShrestha: Employee = {
-    id: 'TC-042',
+    id: 'tc-042',
     name: 'Ranjan Shrestha',
     position: 'ML Engineer',
     description: 'My interests change over time. It used to be Traveling and Photography but now it is driving. Wish for better road infrastructure so that I can drive over 100 kph.',
@@ -432,7 +432,7 @@ const ranjanShrestha: Employee = {
 };
 
 const sameerRai: Employee = {
-    id: 'TC-007',
+    id: 'tc-007',
     name: 'Sameer Rai',
     position: 'Developer',
     description: 'Hello World! I\'m Sameer. I am fascinated with all things technology, science and art.',
@@ -453,7 +453,7 @@ const sagunaThapa: Employee = {
 };
 
 const sushmaAdhikari: Employee = {
-    id: 'TC-047',
+    id: 'tc-047',
     name: 'Sushma Adhikari',
     position: 'Data Analyst',
     description: 'I am a music lover. Music makes me smile, laughter which all I want in my life. I believe whatever makes your soul happy do that.',
@@ -465,7 +465,7 @@ const sushmaAdhikari: Employee = {
 };
 
 const praneshShrestha: Employee = {
-    id: 'TC-065',
+    id: 'tc-065',
     name: 'Pranesh Shrestha',
     position: 'UI/UX Designer',
     description: 'Hello, I am Pranesh and I have an attention span of a 2-year-old.',
