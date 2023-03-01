@@ -78,7 +78,7 @@ function WorksPage(props: Props) {
                                 projectCount={totalProjects}
                             />
                             <KeyFigure
-                                label="Total Organization"
+                                label="Total Organizations"
                                 projectCount={totalOrganizations}
                             />
                         </div>
