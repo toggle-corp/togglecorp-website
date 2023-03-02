@@ -17,6 +17,7 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 import { TagId, getTag } from 'data/tags';
 import staticProjects, { Project } from 'data/projects';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
+import { getProjectCoverImage } from 'data/projectImages';
 
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/analyzeLog.svg';
@@ -175,17 +176,17 @@ function ConsultingPage(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="Want some expert consultancy? We are all ears!"
+                description="Want some expert consultation? Tell us about your problems we will provide a meaningful solution."
             >
                 <div className={styles.expertiseList}>
                     <Card
                         imageSrc={planningLogo}
-                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
+                        description="We seamlessly integrate our proposed solution to the existing process"
                         variant="mini"
                     />
                     <Card
                         imageSrc={monitoringLogo}
-                        description="We conduct periodic and continuous monitoring and evaluation of the humanitarian efforts in emergency response"
+                        description="We implement multiple solutions in an iterative process by involving our clients throughout the process"
                         variant="mini"
                     />
                 </div>
@@ -228,6 +229,7 @@ function ConsultingPage(props: Props) {
                                 description={project.summary}
                                 href={`/works/${project.id}`}
                                 tags={project.tags.map(getTag)}
+                                imageSrc={getProjectCoverImage(project.id)}
                             />
                         ))}
                     </div>

@@ -166,7 +166,7 @@ function Home() {
 
             <Section
                 title="Who We Are"
-                description="A cohesive group of brilliant-minded individuals solving real-world problems."
+                description="A cohesive group of brilliant-minded individuals solving real-world problems"
                 sideImageUrl={whoWeAreThree}
                 actions={(
                     <>
@@ -251,7 +251,7 @@ function Home() {
                 id="services-section"
                 className={styles.ourServices}
                 title="Our Services"
-                description="We specialize in development, consultancy, research and analysis."
+                description="We specialize in development, research and analysis, and consultancy."
             >
                 <div className={styles.serviceList}>
                     {projectTypes.map((projectType) => (

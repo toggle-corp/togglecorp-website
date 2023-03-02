@@ -24,16 +24,11 @@ function EmployeePage(props: EmployeePageProps) {
             <Head>
                 <title>{specificEmployeeData.name}</title>
             </Head>
-            <Link
-                href="/"
-                passHref
-            >
-                <img
-                    className={styles.logo}
-                    src={tcLogo}
-                    alt="Togglecorp"
-                />
-            </Link>
+            <img
+                className={styles.logo}
+                src={tcLogo}
+                alt="Togglecorp"
+            />
             <EmployeeCard
                 className={styles.card}
                 key={specificEmployeeData.id}
