@@ -1,16 +1,16 @@
 .card {
     display: flex;
     flex-direction: column;
+    transition: 100ms ease-out;
     border: var(--width-separator-thin) solid var(--color-separator);
     border-radius: var(--radius-card);
     overflow: hidden;
-    transition: 100ms ease-out;
 
     &:hover {
-        background-color: transparent;
         transform: scale(1.005);
         transition: 100ms ease-in;
         box-shadow: var(--card-shadow-border);
+        background-color: transparent;
     }
 
     &.mini {
@@ -30,11 +30,10 @@
         }
 
         &:hover {
-            background-color: none;
             transform: none;
             transition: none;
             box-shadow: none;
-            box-shadow: none;
+            background-color: none;
         }
     }
 
@@ -47,6 +46,10 @@
             height: 20rem;
             object-fit: cover;
             object-position: center center;
+
+            @media screen and (max-width: 900px) {
+                flex-basis: 100%;
+            }
         }
 
         .details {
@@ -62,6 +65,10 @@
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
                 font-size: var(--font-size-accordion-description);
+
+                @media screen and (max-width: 900px) {
+                    -webkit-line-clamp: 4;
+                }
             }
 
             .tag {

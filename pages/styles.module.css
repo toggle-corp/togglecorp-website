@@ -34,8 +34,8 @@
 
             span {
                 &:hover {
-                    text-decoration: underline;
                     cursor: pointer;
+                    text-decoration: underline;
                 }
             }
 
@@ -195,16 +195,16 @@
             >* {
                 flex-basis: calc(100% / 3 - var(--spacing-medium) / 1.5);
                 flex-grow: 1;
+                transition: 100ms ease-out;
                 background-color: var(--color-surface-white);
                 min-width: 20rem;
                 max-width: calc(50% - var(--spacing-medium) / 2);
-                transition: 100ms ease-out;
 
                 &:hover {
-                    background-color: transparent;
                     transform: scale(1.005);
                     transition: 100ms ease-in;
                     box-shadow: var(--card-shadow-border);
+                    background-color: transparent;
                 }
             }
 

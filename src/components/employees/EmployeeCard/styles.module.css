@@ -2,21 +2,26 @@
     display: flex;
     border: var(--width-separator-thin) solid var(--color-separator);
     border-radius: var(--radius-card);
+    box-shadow: var(--card-shadow-border);
     background-color: var(--color-surface-white);
     height: 100%;
 
+    @media screen and (max-width: 900px) {
+        flex-wrap: wrap;
+    }
+
     .displayImage {
         border-radius: unset;
-        border-top-left-radius: var(--radius-card);
-        border-bottom-left-radius: var(--radius-card);
+        border-radius: var(--radius-card) 0 0 var(--radius-card);
         height: 100%;
     }
 
     .details {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding: var(--spacing-medium);
-        gap: var(--spacing-medium);
+        gap: var(--spacing-large);
 
         .position {
             color: var(--color-primary);
@@ -64,12 +69,20 @@
         .socialMediaIcons {
             display: flex;
             gap: var(--spacing-extra-small);
+            border-top: var(--width-separator-thin) solid var(--color-team-card);
+            padding: var(--spacing-base) 0 0 0;
         }
 
         .displayImage {
             width: 18rem;
-            height: 16rem;
+            min-height: 16rem;
             object-fit: cover;
+
+            @media screen and (max-width: 900px) {
+                border-radius: var(--radius-card) var(--radius-card) 0 0;
+                width: 100%;
+                height: unset;
+            }
         }
 
         .details {

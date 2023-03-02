@@ -36,20 +36,20 @@
 
         .bar {
             display: block;
-            width: var(--responsive-navigation-bar-width);
-            height: var(--responsive-navigation-bar-height);
-            margin: var(--responsive-navigation-bar-margin) auto;
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
+            margin: var(--responsive-navigation-bar-margin) auto;
             background-color: var(--color-text);
+            width: var(--responsive-navigation-bar-width);
+            height: var(--responsive-navigation-bar-height);
         }
     }
 }
 
 @media only screen and (max-width: 720px) {
     .navbar {
-        background-color: var(--color-background);
         justify-content: space-between;
+        background-color: var(--color-background);
 
         .content {
             justify-content: space-between;
@@ -64,23 +64,23 @@
 
             .menuBar {
                 display: flex;
-                flex-direction: column;
                 position: fixed;
-                justify-content: center;
-                align-items: center;
-                padding: var(--spacing-large);
-                gap: var(--spacing-mega-large);
-                right: 0;
                 top: 4rem;
-                background-color: var(--color-surface-white);
-                box-shadow: var(--general-shadow-border);
-                width: 100%;
-                text-align: center;
+                right: 0;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
                 transition: 0.3s;
                 z-index: 1;
-                font-size: var(--font-size-medium);
                 border-bottom-left-radius: var(--radius-card);
                 border-bottom-right-radius: var(--radius-card);
+                box-shadow: var(--general-shadow-border);
+                background-color: var(--color-surface-white);
+                padding: var(--spacing-large);
+                gap: var(--spacing-mega-large);
+                width: 100%;
+                text-align: center;
+                font-size: var(--font-size-medium);
             }
 
             .navHamburger {

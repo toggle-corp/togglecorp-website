@@ -13,6 +13,7 @@
             gap: var(--spacing-medium);
 
             .titleRow {
+                text-align: left;
                 font-size: var(--font-size-large);
 
                 .halfLogoSaturated {
@@ -38,6 +39,7 @@
 
                 @media screen and (max-width: 900px) {
                     display: block;
+                    border-radius: var(--radius-card);
                 }
             }
         }
