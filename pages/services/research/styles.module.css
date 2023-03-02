@@ -8,8 +8,8 @@
 
         span {
             &:hover {
-                text-decoration: underline;
                 cursor: pointer;
+                text-decoration: underline;
             }
         }
     }
@@ -89,8 +89,8 @@
         .icon {
             display: flex;
             align-items: center;
-            font-size: var(--font-size-extra-large);
             transition: 0.2s ease-in;
+            font-size: var(--font-size-extra-large);
         }
 
         &:hover {
@@ -127,8 +127,8 @@
             .icon {
                 display: flex;
                 align-items: center;
-                font-size: var(--font-size-extra-large);
                 transition: 0.2s ease-in;
+                font-size: var(--font-size-extra-large);
             }
 
             &:hover {

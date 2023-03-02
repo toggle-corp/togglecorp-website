@@ -131,7 +131,6 @@ function Navbar(props: NavProps) {
                 className={styles.contactLink}
             >
                 <Button
-                    className={styles.activeContact}
                     name={undefined}
                     variant={pathname === '/contact-us' ? 'primary-active' : 'primary'}
                 >

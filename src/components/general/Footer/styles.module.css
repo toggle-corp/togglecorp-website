@@ -9,8 +9,8 @@
         gap: var(--spacing-medium);
 
         .logo {
-            height: 3rem;
             cursor: pointer;
+            height: 3rem;
         }
 
         .description {
@@ -41,8 +41,8 @@
 
     .copyRightContent {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 

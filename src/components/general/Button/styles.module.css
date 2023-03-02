@@ -3,7 +3,6 @@
     --border-color: transparent;
     --background: var(--color-background);
     --color: var(--color-text);
-
     display: flex;
     position: relative;
     align-items: center;
@@ -52,9 +51,9 @@
         &:hover {
             --background: var(--color-surface-primary);
             --color: var(--color-primary);
+            transition: 150ms ease-in;
             border-color: var(--color-primary);
             font-weight: var(--font-weight-bold);
-            transition: 150ms ease-in;
         }
     }
 
@@ -90,9 +89,9 @@
     &.outline {
         --background: var(--color-surface-white);
         --border-color: rgba(0, 0, 0, 0.1);
+        transition: 100ms ease-out;
         border-radius: var(--outline-button-border-radius);
         font-weight: var(--font-weight-normal);
-        transition: 100ms ease-out;
 
         &:hover {
             --background: var(--color-primary);
