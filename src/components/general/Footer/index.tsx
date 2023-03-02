@@ -90,13 +90,25 @@ function Footer(props: Props) {
                 </FooterSection>
                 <FooterSection title="Contact information">
                     <LabelValue
-                        value="Manbhawan, Lalitpur, Nepal"
+                        value={(
+                            <a
+                                href="https://goo.gl/maps/8Wv7xGvbxEaZ4JSK7"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Manbhawan, Lalitpur, Nepal
+                            </a>
+                        )}
                         label={<IoLocation />}
                     />
                     <LabelValue
                         value={(
                             <>
-                                <a href="tel:+977-9841331922">
+                                <a
+                                    href="tel:+977-9841331922"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
                                     +977-9841331922
                                 </a>
                                 <span>
@@ -113,8 +125,8 @@ function Footer(props: Props) {
                         label={<IoMail />}
                         value={(
                             <a
-                                target="_blank"
                                 href="mailto:info@togglecorp.com"
+                                target="_blank"
                                 rel="noreferrer noopener"
                             >
                                 info@togglecorp.com

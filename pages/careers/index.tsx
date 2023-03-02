@@ -81,7 +81,7 @@ function CareerPage() {
             )}
             <Section
                 title="Life at Togglecorp"
-                description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
+                description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in"
             >
                 <div className={styles.collageContainer}>
                     <div className={styles.imageContainer}>

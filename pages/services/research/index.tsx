@@ -17,6 +17,7 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 import { TagId, getTag } from 'data/tags';
 import staticProjects, { Project } from 'data/projects';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
+import { getProjectCoverImage } from 'data/projectImages';
 
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/planning.svg';
@@ -167,7 +168,7 @@ function ResearchPage(props: Props) {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="We specialize in research, analysis, interpretation, and presentation of data mainly related to humanitarian crises."
+                description="We specialize in research, analysis, interpretation, and presentation of data mainly related to humanitarian crises"
             >
                 <div className={styles.expertiseList}>
                     <Card
@@ -216,8 +217,7 @@ function ResearchPage(props: Props) {
                         {filteredProjects.slice(0, 6).map((project) => (
                             <Card
                                 key={project.id}
-                                // FIX: Add project images in the files themselves later on
-                                // imageSrc={project.image}
+                                imageSrc={getProjectCoverImage(project.id)}
                                 title={project.projectTitle}
                                 description={project.summary}
                                 href={`/works/${project.id}`}

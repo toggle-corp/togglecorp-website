@@ -108,7 +108,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Our Culture and Core Values"
-                description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in."
+                description="People have left their marks on Togglecorp over the years, and they have become our core values and culture"
             >
                 <AccordionWithImage
                     data={cultures}
@@ -120,7 +120,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Life at Togglecorp"
-                description="Having fun as much as we work is the essence of Togglecorp."
+                description="Having fun as much as we work is the essence of Togglecorp"
             >
                 <div className={styles.galleryList}>
                     {gallery.map((galleryItem) => (
@@ -135,7 +135,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Social Responsibility"
-                description="We help the community that nurtured us in any way we can"
+                description="We give back to the community that shaped and nurtured us in any way we can"
             >
                 <div className={styles.socialList}>
                     {socialResponsibilities.map((socialResponsibility) => (

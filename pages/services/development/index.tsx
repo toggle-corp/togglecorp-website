@@ -13,6 +13,7 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 
 import { TagId, getTag } from 'data/tags';
 import staticProjects, { Project } from 'data/projects';
+import { getProjectCoverImage } from 'data/projectImages';
 import {
     projectTypes as generalServices,
     getProjectType,
@@ -181,7 +182,7 @@ function DevelopmentPage(props: Props) {
             </Section>
             <Section
                 title="Our Approach"
-                description="Togglecorp believes in an integrated approach that enables organizations to achieve long-term innovation."
+                description="Togglecorp believes in an integrated approach that enables organizations to achieve long-term innovation"
             >
                 <AccordianWithImage
                     data={approaches}
@@ -219,6 +220,7 @@ function DevelopmentPage(props: Props) {
                                 description={project.summary}
                                 href={`/works/${project.id}`}
                                 tags={project.tags.map(getTag)}
+                                imageSrc={getProjectCoverImage(project.id)}
                             />
                         ))}
                     </div>

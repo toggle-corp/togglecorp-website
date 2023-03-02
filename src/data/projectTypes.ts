@@ -15,7 +15,7 @@ export const development: ProjectTypeItem = {
     image: techDevelopment,
     title: 'Development',
     description:
-        'Our magicians tailor solutions for your business needs.',
+        'Our magicians tailor solutions for your business needs',
     link: '/services/development',
 };
 
@@ -23,7 +23,7 @@ export const research: ProjectTypeItem = {
     image: researchImg,
     title: 'Research and Analysis',
     description:
-        'We create a meaningful picture of data through research and analysis.',
+        'We create a meaningful picture of data through research and analysis',
     link: '/services/research',
 };
 
@@ -31,7 +31,7 @@ export const consulting: ProjectTypeItem = {
     image: consultation,
     title: 'Consultation',
     description:
-        'We help your business by providing practical and efficient solutions.',
+        'We help organizations by providing practical and efficient solutions',
     link: '/services/consulting',
 };
 
