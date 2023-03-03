@@ -24,17 +24,15 @@ function KeyFigure(props: Props) {
     } = props;
 
     const value = valueHref ? (
-        <div className={styles.hyperlinkValue}>
-            <Link href="/">
-                <a
-                    href={valueHref}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    {valueFromProps}
-                </a>
-            </Link>
-        </div>
+        <Link href="/">
+            <a
+                href={valueHref}
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                {valueFromProps}
+            </a>
+        </Link>
     ) : valueFromProps;
 
     return (
