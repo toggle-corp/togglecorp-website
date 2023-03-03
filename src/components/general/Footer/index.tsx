@@ -170,7 +170,7 @@ function Footer(props: Props) {
                         </a>
                     </Link>
                     <Link
-                        href="https://www.linkedin.com/togglecorp/"
+                        href="https://www.linkedin.com/company/togglecorp/"
                         passHref
                     >
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
