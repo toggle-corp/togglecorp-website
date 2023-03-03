@@ -60,7 +60,7 @@ function WorkPage(props: Props) {
                             label="View Projects"
                             value={project.projectTitle}
                             valueHref={project.projectUrl}
-                            classNameValue={styles.projectLink}
+                            classNameValue={project.projectUrl && styles.projectLink}
                         />
                         <KeyFigure
                             label="Work Type"
