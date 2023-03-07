@@ -16,6 +16,13 @@
         .description {
             max-width: 15rem;
         }
+
+        .linkHover {
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
     }
 
     .footerSection {

@@ -1,9 +1,3 @@
-.projectLink {
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
 .keyFigures {
     display: flex;
     gap: var(--spacing-super-large);
