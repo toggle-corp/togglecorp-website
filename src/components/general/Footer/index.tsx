@@ -75,18 +75,34 @@ function Footer(props: Props) {
                 <FooterSection
                     title="Company"
                 >
-                    <Link href="/"> Home </Link>
-                    <Link href="/about-us"> About </Link>
-                    <Link href="/contact-us"> Contact </Link>
-                    <Link href="/team"> Team </Link>
-                    <Link href="/works"> Works </Link>
+                    <Link href="/" passHref>
+                        <span className={styles.linkHover}>Home</span>
+                    </Link>
+                    <Link href="/about-us" passHref>
+                        <span className={styles.linkHover}>About</span>
+                    </Link>
+                    <Link href="/contact-us" passHref>
+                        <span className={styles.linkHover}>Contact</span>
+                    </Link>
+                    <Link href="/team" passHref>
+                        <span className={styles.linkHover}>Team</span>
+                    </Link>
+                    <Link href="/works" passHref>
+                        <span className={styles.linkHover}>Works</span>
+                    </Link>
                 </FooterSection>
                 <FooterSection
                     title="Services"
                 >
-                    <Link href="/services/development"> Development </Link>
-                    <Link href="/services/research"> Research & Analysis </Link>
-                    <Link href="/services/consulting"> Consulting </Link>
+                    <Link href="/services/development" passHref>
+                        <span className={styles.linkHover}>Development</span>
+                    </Link>
+                    <Link href="/services/research" passHref>
+                        <span className={styles.linkHover}>Research & Analysis</span>
+                    </Link>
+                    <Link href="/services/consulting" passHref>
+                        <span className={styles.linkHover}>Consulting</span>
+                    </Link>
                 </FooterSection>
                 <FooterSection title="Contact information">
                     <LabelValue
@@ -95,6 +111,7 @@ function Footer(props: Props) {
                                 href="https://goo.gl/maps/8Wv7xGvbxEaZ4JSK7"
                                 target="_blank"
                                 rel="noreferrer noopener"
+                                className={styles.linkHover}
                             >
                                 Manbhawan, Lalitpur, Nepal
                             </a>
@@ -106,15 +123,17 @@ function Footer(props: Props) {
                             <>
                                 <a
                                     href="tel:+977-9841331922"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
+                                    className={styles.linkHover}
                                 >
                                     +977-9841331922
                                 </a>
                                 <span>
                                     ,&nbsp;
                                 </span>
-                                <a href="tel:+977-9849831936">
+                                <a
+                                    href="tel:+977-9849831936"
+                                    className={styles.linkHover}
+                                >
                                     +977-9849831936
                                 </a>
                             </>
@@ -128,6 +147,7 @@ function Footer(props: Props) {
                                 href="mailto:info@togglecorp.com"
                                 target="_blank"
                                 rel="noreferrer noopener"
+                                className={styles.linkHover}
                             >
                                 info@togglecorp.com
                             </a>

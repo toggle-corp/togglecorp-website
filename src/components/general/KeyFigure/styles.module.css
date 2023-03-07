@@ -1,3 +1,9 @@
+.keyFigureLink {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .keyFigure {
     .value {
         color: var(--color-primary);

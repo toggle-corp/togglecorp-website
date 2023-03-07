@@ -29,6 +29,7 @@ function KeyFigure(props: Props) {
                 href={valueHref}
                 target="_blank"
                 rel="noreferrer noopener"
+                className={valueHref && styles.keyFigureLink}
             >
                 {valueFromProps}
             </a>
