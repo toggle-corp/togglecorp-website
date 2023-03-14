@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import GalleryCard from 'components/general/GalleryCard';
 import Page from 'components/general/Page';
@@ -54,11 +55,13 @@ function AboutUs() {
             >
                 <div className={styles.recentWorkList}>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={firstImage}
-                            alt="our story"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={firstImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <div className={styles.description}>
                                 Discussions began, attracting a few more people,
@@ -76,16 +79,18 @@ function AboutUs() {
                         </div>
                     </div>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreviewImg}
-                            src={thirdImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.workPreviewImg}
-                            src={secondImage}
-                            alt="our story"
-                        />
+                        <div className={styles.workPreviewImg}>
+                            <Image
+                                src={thirdImage}
+                                alt="our story"
+                            />
+                        </div>
+                        <div className={styles.workPreviewImg}>
+                            <Image
+                                src={secondImage}
+                                alt="our story"
+                            />
+                        </div>
                     </div>
                 </div>
             </Section>

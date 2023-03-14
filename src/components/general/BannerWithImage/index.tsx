@@ -1,6 +1,6 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import Container from 'components/general/Container';
 
@@ -11,7 +11,7 @@ interface Props {
     title?: string;
     titleClassName?: string;
     description?: React.ReactNode;
-    imageUrl?: string;
+    imageUrl?: string | StaticImageData;
     contentClassName?: string;
     topSectionClassName?: string;
     topSectionContentClassName?: string;

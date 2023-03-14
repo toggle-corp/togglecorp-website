@@ -1,5 +1,6 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
+import Image, { StaticImageData } from 'next/image';
 
 import Container from 'components/general/Container';
 import styles from './styles.module.css';
@@ -11,7 +12,7 @@ interface Props {
     description?: string;
     actions?: React.ReactNode;
     children?: React.ReactNode;
-    sideImageUrl?: string;
+    sideImageUrl?: string | StaticImageData;
     centeredContent?: boolean;
 }
 
@@ -57,11 +58,13 @@ function Section(props: Props) {
                     <div className={styles.left}>
                         {predefinedContent}
                     </div>
-                    <img
-                        className={styles.sideImage}
-                        src={sideImageUrl}
-                        alt={title}
-                    />
+                    <div className={styles.sideImage}>
+                        <Image
+                            src={sideImageUrl}
+                            alt={title}
+                            placeholder="blur"
+                        />
+                    </div>
                 </div>
                 {childrenFromProps}
             </>

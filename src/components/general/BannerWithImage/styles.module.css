@@ -72,6 +72,7 @@
             }
 
             .bannerImage {
+                display: grid;
                 transform: translateY(var(--image-offset-y));
                 margin-top: calc(-1 * var(--image-offset-y));
                 border-radius: var(--radius-card);

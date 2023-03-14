@@ -1,4 +1,5 @@
 import React from 'react';
+import Image, { StaticImageData } from 'next/image';
 import {
     IoLogoInstagram,
     IoLogoLinkedin,
@@ -16,7 +17,7 @@ import styles from './styles.module.css';
 
 interface EmployeeCardProps {
     className?: string;
-    imageSrc?: string;
+    imageSrc?: string | StaticImageData;
     href?: string;
     name: string;
     position: string;
@@ -60,11 +61,13 @@ function EmployeeCard(props: EmployeeCardProps) {
                 className,
             )}
         >
-            <img
-                className={styles.displayImage}
-                src={imageSrc}
-                alt={name}
-            />
+            <div className={styles.displayImage}>
+                <Image
+                    src={imageSrc}
+                    alt={name}
+                    placeholder="blur"
+                />
+            </div>
             <div className={styles.details}>
                 <div>
                     {variant === 'detail' && (

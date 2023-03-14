@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import ifrcGo from 'resources/ifrc-go-home.webp';
 import durableSolution from 'resources/durable-solutions.webp';
 import kitabBazar from 'resources/kitab-bazar-home.webp';
@@ -12,7 +14,7 @@ import { ProjectId } from 'data/projects';
 
 // NOTE: we need to separate out images because they cannot be passed through getStaticProps
 const projectCoverImages: {
-    [key in ProjectId]?: string;
+    [key in ProjectId]?: string | StaticImageData;
 } = {
     'ifrc-go': ifrcGo,
     dfid: dfidImg,

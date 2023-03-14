@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 import { _cs } from '@togglecorp/fujs';
 
 import styles from './styles.module.css';
@@ -8,7 +9,7 @@ interface Props {
     variant?: 'mini' | 'normal';
     className?: string;
     href?: string;
-    imageSrc?: string;
+    imageSrc?: string | StaticImageData;
     title?: string;
     description?: string;
     tags?: string[];
@@ -29,11 +30,14 @@ function Card(props: Props) {
         <>
             {imageSrc
                 && (
-                    <img
-                        className={styles.image}
-                        src={imageSrc}
-                        alt={title}
-                    />
+                    <div className={styles.image}>
+                        <Image
+                            src={imageSrc}
+                            alt={title}
+                        // FIXME: Need to set a condition here regarding svg or png
+                        // placeholder="blur"
+                        />
+                    </div>
                 )}
             <div className={styles.details}>
                 {title && (

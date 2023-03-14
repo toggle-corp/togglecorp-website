@@ -1,11 +1,12 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
+import Image, { StaticImageData } from 'next/image';
 
 import styles from './styles.module.css';
 
 interface Props {
     className?: string;
-    imageUrl: string;
+    imageUrl: string | StaticImageData;
     imageAlt?: string;
     caption?: React.ReactNode;
 }
@@ -24,11 +25,13 @@ function GalleryCard(props: Props) {
             ? _cs(styles.galleryCardWithCaption, className)
             : _cs(styles.galleryCard, className)}
         >
-            <img
-                className={caption ? styles.image : styles.imageWithoutCaption}
-                alt={imageAlt}
-                src={imageUrl}
-            />
+            <div className={caption ? styles.image : styles.imageWithoutCaption}>
+                <Image
+                    src={imageUrl}
+                    alt={imageAlt}
+                    placeholder="blur"
+                />
+            </div>
             {caption && (
                 <div className={styles.captionDescription}>
                     {caption}

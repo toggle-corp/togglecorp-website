@@ -1,6 +1,7 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
 import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 import {
     IoIosArrowRoundBack,
     IoIosArrowRoundForward,
@@ -18,7 +19,7 @@ interface PageDetails {
 
 interface Props {
     className?: string;
-    previewImageUrl?: string;
+    previewImageUrl?: string | StaticImageData;
     sideBarContent?: React.ReactNode;
     children?: React.ReactNode;
     prevPageDetails?: PageDetails;
@@ -41,11 +42,13 @@ function PageContentWithSidebar(props: Props) {
             contentClassName={styles.containerContent}
         >
             {previewImageUrl && (
-                <img
-                    className={styles.previewImage}
-                    src={previewImageUrl}
-                    alt="preview"
-                />
+                <div className={styles.previewImage}>
+                    <Image
+                        src={previewImageUrl}
+                        alt="preview"
+                        placeholder="blur"
+                    />
+                </div>
             )}
             <div className={styles.pageContent}>
                 <div className={styles.sideBarContainer}>

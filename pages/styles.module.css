@@ -123,6 +123,7 @@
             min-width: 20rem;
             max-width: calc(50% - var(--spacing-medium) / 2);
             height: 20rem;
+            overflow: hidden;
             object-fit: cover;
             object-position: center;
         }

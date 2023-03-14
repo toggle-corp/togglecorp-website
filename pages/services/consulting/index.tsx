@@ -4,6 +4,7 @@ import React, {
 } from 'react';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { unique } from '@togglecorp/fujs';
 
@@ -44,7 +45,7 @@ interface Approach {
     key: string;
     title: string;
     description: string;
-    image: string;
+    image: string | StaticImageData;
 }
 
 const approaches: Approach[] = [
@@ -146,11 +147,13 @@ function ConsultingPage(props: Props) {
         >
             <Section>
                 <div className={styles.productDetail}>
-                    <img
-                        className={styles.productImage}
-                        src={deepPrimaryLogo}
-                        alt="Deep Primary Logo"
-                    />
+                    <div className={styles.productImage}>
+                        <Image
+                            src={deepPrimaryLogo}
+                            alt="Deep Primary Logo"
+                            placeholder="blur"
+                        />
+                    </div>
                     <div className={styles.productDescription}>
                         <div className={styles.text}>
                             {/* eslint-disable-next-line max-len */}

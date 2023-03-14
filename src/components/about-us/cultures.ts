@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import partnership from 'resources/aboutUs/values/partnership.jpeg';
 import extraMile from 'resources/aboutUs/values/5-extra-mile.webp';
 import embrace from 'resources/aboutUs/values/3-embrace-and-drive-change.jpeg';
@@ -16,7 +18,7 @@ interface Culture {
     key: string;
     title: string;
     description: string;
-    image: string;
+    image: string | StaticImageData;
 }
 
 const cultures: Culture[] = [

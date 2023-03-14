@@ -153,23 +153,26 @@ function Home() {
                                 alt="IFRC"
                             />
                         </div>
-                        <img
-                            className={styles.trustedIcons}
-                            src={smtmIcon}
-                            alt="SMTM"
-                        />
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={smtmIcon}
+                                alt="SMTM"
+                            />
+                        </div>
                     </div>
                     <div className={styles.clientGroupThree}>
-                        <img
-                            className={styles.trustedIcons}
-                            src={okularAnalyticsIcon}
-                            alt="Okular"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={boldCodeIcon}
-                            alt="BoldCode"
-                        />
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={okularAnalyticsIcon}
+                                alt="Okular"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={boldCodeIcon}
+                                alt="BoldCode"
+                            />
+                        </div>
                     </div>
                 </div>
             </Container>
@@ -198,9 +201,27 @@ function Home() {
                 )}
             >
                 <div className={styles.introImages}>
-                    <img src={whoWeAreFour} alt="Who we are" />
-                    <img src={whoWeAreOne} alt="Who we are" />
-                    <img src={whoWeAreTwo} alt="Who we are" />
+                    <div>
+                        <Image
+                            src={whoWeAreFour}
+                            alt="Who we are"
+                            placeholder="blur"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src={whoWeAreOne}
+                            alt="Who we are"
+                            placeholder="blur"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src={whoWeAreTwo}
+                            alt="Who we are"
+                            placeholder="blur"
+                        />
+                    </div>
                 </div>
             </Section>
             <Section
@@ -281,11 +302,13 @@ function Home() {
             >
                 <div className={styles.recentWorkList}>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={deepBanner}
-                            alt="DEEP"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={deepBanner}
+                                alt="DEEP"
+                                placeholder="blur"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <h4>DEEP</h4>
                             <div className={styles.description}>
@@ -299,11 +322,12 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={analysisBanner}
-                            alt="Global COVID-19 Situational Analysis"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={analysisBanner}
+                                alt="Global COVID-19 Situational Analysis"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <h4>Global COVID-19 Situational Analysis</h4>
                             <div className={styles.description}>
@@ -319,11 +343,12 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={npStocks}
-                            alt="NP Stocks"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={npStocks}
+                                alt="NP Stocks"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <h4>NPStocks</h4>
                             <div className={styles.description}>
