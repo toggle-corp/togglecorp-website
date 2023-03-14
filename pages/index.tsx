@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import Link from 'next/link';
 import { IoIosRibbon, IoIosPeople, IoIosFiling } from 'react-icons/io';
 import { _cs } from '@togglecorp/fujs';
+import Image from 'next/image';
 
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
@@ -96,53 +97,62 @@ function Home() {
                 <div className={styles.clientLogoGroup}>
                     <h3 className={styles.heading}>Trusted By</h3>
                     <div className={styles.clientGroupOne}>
-                        <img
-                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
-                            src={britishEmbassyIcon}
-                            alt="british-embassy"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={idmcIcon}
-                            alt="IDMC"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={unhcrIcon}
-                            alt="UNHCR"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={americanRedCrossIcon}
-                            alt="american-red-cross"
-                        />
-                        <img
-                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
-                            src={worldVisionIcon}
-                            alt="world-vision-icons"
-                        />
+                        <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
+                            <Image
+                                src={britishEmbassyIcon}
+                                alt="british-embassy"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={idmcIcon}
+                                alt="IDMC"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={unhcrIcon}
+                                alt="UNHCR"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={americanRedCrossIcon}
+                                alt="american-red-cross"
+                            />
+                        </div>
+                        <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
+                            <Image
+                                src={worldVisionIcon}
+                                alt="world-vision-icons"
+                            />
+                        </div>
                     </div>
                     <div className={styles.clientGroupTwo}>
-                        <img
-                            className={styles.trustedIcons}
-                            src={jipsIcon}
-                            alt="jips"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={peopleInNeedIcon}
-                            alt="people-in-need"
-                        />
-                        <img
-                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
-                            src={dataFriendlySpaceIcon}
-                            alt="data-friendly-space"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={ifrcIcon}
-                            alt="IFRC"
-                        />
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={jipsIcon}
+                                alt="jips"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={peopleInNeedIcon}
+                                alt="people-in-need"
+                            />
+                        </div>
+                        <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
+                            <Image
+                                src={dataFriendlySpaceIcon}
+                                alt="data-friendly-space"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={ifrcIcon}
+                                alt="IFRC"
+                            />
+                        </div>
                         <img
                             className={styles.trustedIcons}
                             src={smtmIcon}

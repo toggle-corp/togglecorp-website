@@ -1,30 +1,10 @@
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const withExportImages = require('next-export-optimize-images');
 
-/** @type {import('next').NextConfig} */
-const nextConfig = withPlugins([
-    [optimizedImages, {
-        handleImage: ['png', 'svg'],
-        optimizeImages: true,
-        optipng: {
-            optimizationLevel: 3,
-        },
-        responsive: {
-            resize: true,
-            min: 100,
-            max: 1600,
-            steps: 5,
-            adapter: require('responsive-loader/jimp'),
-            placeholder: true,
-        },
-        defaultImageLoader: 'responsive-loader',
-    }],
-], {
+const nextConfig = withExportImages({
     reactStrictMode: true,
-    trailingSlash: true,
     images: {
-        disableStaticImages: true
-    }
+        deviceSizes: [640, 960, 1280, 1600, 1920],
+    },
 });
 
-module.exports = nextConfig
+module.exports = nextConfig;

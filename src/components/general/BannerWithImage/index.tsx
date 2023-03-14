@@ -1,5 +1,6 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
+import Image from 'next/image';
 
 import Container from 'components/general/Container';
 
@@ -62,11 +63,13 @@ function BannerWithImage(props: Props) {
                         {actions}
                     </div>
                     {imageUrl && (
-                        <img
-                            className={styles.bannerImage}
-                            src={imageUrl}
-                            alt={title}
-                        />
+                        <div className={styles.bannerImage}>
+                            <Image
+                                src={imageUrl}
+                                alt="Picture of the author"
+                                placeholder="blur"
+                            />
+                        </div>
                     )}
                 </div>
             </Container>

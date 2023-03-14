@@ -13,7 +13,7 @@
     .displayImage {
         border-radius: unset;
         border-radius: var(--radius-card) 0 0 var(--radius-card);
-        height: 100%;
+        height: auto;
     }
 
     .details {
