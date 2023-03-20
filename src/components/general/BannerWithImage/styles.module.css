@@ -72,13 +72,15 @@
             }
 
             .bannerImage {
+                display: grid;
                 transform: translateY(var(--image-offset-y));
                 margin-top: calc(-1 * var(--image-offset-y));
                 border-radius: var(--radius-card);
                 width: 100%;
                 max-width: var(--image-width);
-                height: var(--image-height);
+                max-height: var(--image-height);
                 object-fit: cover;
+                overflow: hidden;
             }
         }
     }

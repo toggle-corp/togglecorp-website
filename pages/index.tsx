@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import Link from 'next/link';
 import { IoIosRibbon, IoIosPeople, IoIosFiling } from 'react-icons/io';
 import { _cs } from '@togglecorp/fujs';
+import Image from 'next/image';
 
 import Page from 'components/general/Page';
 import Container from 'components/general/Container';
@@ -96,70 +97,82 @@ function Home() {
                 <div className={styles.clientLogoGroup}>
                     <h3 className={styles.heading}>Trusted By</h3>
                     <div className={styles.clientGroupOne}>
-                        <img
-                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
-                            src={britishEmbassyIcon}
-                            alt="british-embassy"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={idmcIcon}
-                            alt="IDMC"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={unhcrIcon}
-                            alt="UNHCR"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={americanRedCrossIcon}
-                            alt="american-red-cross"
-                        />
-                        <img
-                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
-                            src={worldVisionIcon}
-                            alt="world-vision-icons"
-                        />
+                        <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
+                            <Image
+                                src={britishEmbassyIcon}
+                                alt="british-embassy"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={idmcIcon}
+                                alt="IDMC"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={unhcrIcon}
+                                alt="UNHCR"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={americanRedCrossIcon}
+                                alt="american-red-cross"
+                            />
+                        </div>
+                        <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
+                            <Image
+                                src={worldVisionIcon}
+                                alt="world-vision-icons"
+                            />
+                        </div>
                     </div>
                     <div className={styles.clientGroupTwo}>
-                        <img
-                            className={styles.trustedIcons}
-                            src={jipsIcon}
-                            alt="jips"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={peopleInNeedIcon}
-                            alt="people-in-need"
-                        />
-                        <img
-                            className={_cs(styles.trustedIcons, styles.darkIconMode)}
-                            src={dataFriendlySpaceIcon}
-                            alt="data-friendly-space"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={ifrcIcon}
-                            alt="IFRC"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={smtmIcon}
-                            alt="SMTM"
-                        />
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={jipsIcon}
+                                alt="jips"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={peopleInNeedIcon}
+                                alt="people-in-need"
+                            />
+                        </div>
+                        <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
+                            <Image
+                                src={dataFriendlySpaceIcon}
+                                alt="data-friendly-space"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={ifrcIcon}
+                                alt="IFRC"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={smtmIcon}
+                                alt="SMTM"
+                            />
+                        </div>
                     </div>
                     <div className={styles.clientGroupThree}>
-                        <img
-                            className={styles.trustedIcons}
-                            src={okularAnalyticsIcon}
-                            alt="Okular"
-                        />
-                        <img
-                            className={styles.trustedIcons}
-                            src={boldCodeIcon}
-                            alt="BoldCode"
-                        />
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={okularAnalyticsIcon}
+                                alt="Okular"
+                            />
+                        </div>
+                        <div className={styles.trustedIcons}>
+                            <Image
+                                src={boldCodeIcon}
+                                alt="BoldCode"
+                            />
+                        </div>
                     </div>
                 </div>
             </Container>
@@ -188,9 +201,27 @@ function Home() {
                 )}
             >
                 <div className={styles.introImages}>
-                    <img src={whoWeAreFour} alt="Who we are" />
-                    <img src={whoWeAreOne} alt="Who we are" />
-                    <img src={whoWeAreTwo} alt="Who we are" />
+                    <div>
+                        <Image
+                            src={whoWeAreFour}
+                            alt="Who we are"
+                            placeholder="blur"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src={whoWeAreOne}
+                            alt="Who we are"
+                            placeholder="blur"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            src={whoWeAreTwo}
+                            alt="Who we are"
+                            placeholder="blur"
+                        />
+                    </div>
                 </div>
             </Section>
             <Section
@@ -271,11 +302,13 @@ function Home() {
             >
                 <div className={styles.recentWorkList}>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={deepBanner}
-                            alt="DEEP"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={deepBanner}
+                                alt="DEEP"
+                                placeholder="blur"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <h4>DEEP</h4>
                             <div className={styles.description}>
@@ -289,11 +322,12 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={analysisBanner}
-                            alt="Global COVID-19 Situational Analysis"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={analysisBanner}
+                                alt="Global COVID-19 Situational Analysis"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <h4>Global COVID-19 Situational Analysis</h4>
                             <div className={styles.description}>
@@ -309,11 +343,12 @@ function Home() {
                         </div>
                     </div>
                     <div className={styles.recentWorkCard}>
-                        <img
-                            className={styles.workPreview}
-                            src={npStocks}
-                            alt="NP Stocks"
-                        />
+                        <div className={styles.workPreview}>
+                            <Image
+                                src={npStocks}
+                                alt="NP Stocks"
+                            />
+                        </div>
                         <div className={styles.details}>
                             <h4>NPStocks</h4>
                             <div className={styles.description}>

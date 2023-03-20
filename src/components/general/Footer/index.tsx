@@ -1,5 +1,6 @@
 import { _cs } from '@togglecorp/fujs';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
     IoLocation,
     IoCall,
@@ -60,11 +61,12 @@ function Footer(props: Props) {
                             href="/"
                             passHref
                         >
-                            <img
-                                className={styles.logo}
-                                src={tcLogo}
-                                alt="TC"
-                            />
+                            <div className={styles.logo}>
+                                <Image
+                                    src={tcLogo}
+                                    alt="TC-logo"
+                                />
+                            </div>
                         </Link>
                     )}
                     contentClassName={styles.description}

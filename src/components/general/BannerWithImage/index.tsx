@@ -1,5 +1,6 @@
 import React from 'react';
 import { _cs } from '@togglecorp/fujs';
+import Image, { StaticImageData } from 'next/image';
 
 import Container from 'components/general/Container';
 
@@ -10,7 +11,7 @@ interface Props {
     title?: string;
     titleClassName?: string;
     description?: React.ReactNode;
-    imageUrl?: string;
+    imageUrl?: string | StaticImageData;
     contentClassName?: string;
     topSectionClassName?: string;
     topSectionContentClassName?: string;
@@ -62,11 +63,13 @@ function BannerWithImage(props: Props) {
                         {actions}
                     </div>
                     {imageUrl && (
-                        <img
-                            className={styles.bannerImage}
-                            src={imageUrl}
-                            alt={title}
-                        />
+                        <div className={styles.bannerImage}>
+                            <Image
+                                src={imageUrl}
+                                alt="Picture of the author"
+                                placeholder="blur"
+                            />
+                        </div>
                     )}
                 </div>
             </Container>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect, useCallback, useState } from 'react';
 import { useRouter } from 'next/router';
 import { _cs } from '@togglecorp/fujs';
+import Image from 'next/image';
 
 import tcLogo from 'resources/togglecorp-normal.svg';
 import Container from 'components/general/Container';
@@ -81,11 +82,12 @@ function Navbar(props: NavProps) {
                 href="/"
                 passHref
             >
-                <img
-                    className={styles.logo}
-                    src={tcLogo}
-                    alt="TC"
-                />
+                <div className={styles.logo}>
+                    <Image
+                        src={tcLogo}
+                        alt="TC-logo-main"
+                    />
+                </div>
             </Link>
             {/* NOTE: This menu below is intented to be used for responsive menu bar */}
             {showBarMenu && (

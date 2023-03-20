@@ -39,6 +39,7 @@
                 height: 28rem;
                 object-fit: cover;
                 object-position: center center;
+                overflow: hidden;
             }
 
             @media screen and (max-width: 900px) {

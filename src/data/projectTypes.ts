@@ -1,11 +1,13 @@
+import { mapToList } from '@togglecorp/fujs';
+import { StaticImageData } from 'next/image';
+
 import researchImg from 'resources/research.png';
 import techDevelopment from 'resources/development.png';
 import consultation from 'resources/consultation.png';
 
-import { mapToList } from '@togglecorp/fujs';
 
 interface ProjectTypeItem {
-    image: string;
+    image: string | StaticImageData;
     title: string;
     description: string;
     link: string;

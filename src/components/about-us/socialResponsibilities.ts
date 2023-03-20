@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import sanitizer from 'resources/aboutUs/socialResponsibility/sanitizers.webp';
 import volunteers from 'resources/aboutUs/socialResponsibility/volunteers.jpeg';
 import bloodDonation from 'resources/aboutUs/socialResponsibility/blood_donation.jpeg';
@@ -7,7 +9,7 @@ import lunchDistribution from 'resources/aboutUs/socialResponsibility/lunch-dist
 
 interface SocialResponsibility {
     id: string;
-    image: string;
+    image: string | StaticImageData;
     imageAlt: string,
 }
 

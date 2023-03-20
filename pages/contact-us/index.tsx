@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Page from 'components/general/Page';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
@@ -58,45 +60,59 @@ function Contact() {
             >
                 <div className={styles.collageContainer}>
                     <div className={styles.imageContainer}>
-                        <img
-                            className={styles.smallImg}
-                            src={firstImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.smallImg}
-                            src={secondImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.smallImg}
-                            src={thirdImage}
-                            alt="our story"
-                        />
+                        <div className={styles.smallImg}>
+                            <Image
+                                src={firstImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
+                        <div className={styles.smallImg}>
+                            <Image
+                                src={secondImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
+                        <div className={styles.smallImg}>
+                            <Image
+                                src={thirdImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <img
-                            className={styles.mediumImg}
-                            src={fourthImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.mediumImg}
-                            src={fifthImage}
-                            alt="our story"
-                        />
+                        <div className={styles.mediumImg}>
+                            <Image
+                                src={fourthImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
+                        <div className={styles.mediumImg}>
+                            <Image
+                                src={fifthImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
                     </div>
                     <div className={styles.imageContainer}>
-                        <img
-                            className={styles.largeImg}
-                            src={sixthImage}
-                            alt="our story"
-                        />
-                        <img
-                            className={styles.smallImg}
-                            src={seventhImage}
-                            alt="our story"
-                        />
+                        <div className={styles.largeImg}>
+                            <Image
+                                src={sixthImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
+                        <div className={styles.smallImg}>
+                            <Image
+                                src={seventhImage}
+                                alt="our story"
+                                placeholder="blur"
+                            />
+                        </div>
                     </div>
                 </div>
             </Section>

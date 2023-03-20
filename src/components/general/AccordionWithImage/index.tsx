@@ -3,6 +3,7 @@ import {
     _cs,
     isDefined,
 } from '@togglecorp/fujs';
+import Image, { StaticImageData } from 'next/image';
 
 import Button from 'components/general/Button';
 import halfTogglecorpLogo from 'resources/half-tc-icon.png';
@@ -14,7 +15,7 @@ interface Props<D> {
     keySelector: (item: D) => string;
     labelSelector: (item: D) => React.ReactNode;
     descriptionSelector: (item: D) => React.ReactNode;
-    imageUrlSelector: (item: D) => string;
+    imageUrlSelector: (item: D) => string | StaticImageData;
 }
 
 function AccordionWithImage<D>(props: Props<D>) {
@@ -48,26 +49,32 @@ function AccordionWithImage<D>(props: Props<D>) {
                                 variant="transparent"
                                 onClick={setActiveItem}
                                 icons={(
-                                    <img
+                                    <div
                                         className={
                                             isDefined(activeItem) && key === activeKey
                                                 ? styles.halfLogoUnsaturated
                                                 : styles.halfLogoSaturated
                                         }
-                                        src={halfTogglecorpLogo}
-                                        alt="tc logo"
-                                    />
+                                    >
+                                        <Image
+                                            src={halfTogglecorpLogo}
+                                            alt="tc-logo"
+                                            placeholder="blur"
+                                        />
+
+                                    </div>
                                 )}
                             >
                                 {labelSelector(d)}
                             </Button>
                             {isDefined(activeItem) && key === activeKey && (
                                 <>
-                                    <img
-                                        className={styles.imageInternal}
-                                        src={imageUrlSelector(activeItem)}
-                                        alt={keySelector(activeItem)}
-                                    />
+                                    <div className={styles.imageInternal}>
+                                        <Image
+                                            src={imageUrlSelector(activeItem)}
+                                            alt={keySelector(activeItem)}
+                                        />
+                                    </div>
                                     <div className={styles.description}>
                                         {descriptionSelector(d)}
                                     </div>
@@ -78,11 +85,12 @@ function AccordionWithImage<D>(props: Props<D>) {
                 })}
             </div>
             {imgUrl && (
-                <img
-                    className={styles.image}
-                    src={imgUrl}
-                    alt={activeKey}
-                />
+                <div className={styles.image}>
+                    <Image
+                        src={imgUrl}
+                        alt={activeKey}
+                    />
+                </div>
             )}
         </div>
     );

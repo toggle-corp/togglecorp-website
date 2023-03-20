@@ -1,6 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import staticEmployees, { Employee } from 'data/employees';
 import EmployeeCard from 'components/employees/EmployeeCard';
@@ -24,11 +25,12 @@ function EmployeePage(props: EmployeePageProps) {
             <Head>
                 <title>{specificEmployeeData.name}</title>
             </Head>
-            <img
-                className={styles.logo}
-                src={tcLogo}
-                alt="Togglecorp"
-            />
+            <div className={styles.logo}>
+                <Image
+                    src={tcLogo}
+                    alt="Togglecorp-logo"
+                />
+            </div>
             <EmployeeCard
                 className={styles.card}
                 key={specificEmployeeData.id}

@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import adityaKhatri from 'resources/employee/aditya.jpeg';
 import amarShahi from 'resources/employee/amar.jpeg';
 import ankitMehta from 'resources/employee/ankit.jpeg';
@@ -40,7 +42,7 @@ import praneshShrestha from 'resources/employee/pranesh.jpeg';
 import { EmployeeId } from 'data/employees';
 
 const employeeImages: {
-    [key in EmployeeId]?: string;
+    [key in EmployeeId]?: string | StaticImageData;
 } = {
     'tc-001': adityaKhatri,
     'tc-013': amarShahi,

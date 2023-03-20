@@ -11,9 +11,8 @@
     }
 
     .displayImage {
-        border-radius: unset;
         border-radius: var(--radius-card) 0 0 var(--radius-card);
-        height: 100%;
+        height: auto;
     }
 
     .details {
@@ -49,6 +48,7 @@
             border-top-right-radius: var(--radius-card);
             width: 100%;
             height: 16rem;
+            overflow: hidden;
             object-fit: cover;
             object-position: center center;
         }
@@ -76,6 +76,7 @@
         .displayImage {
             width: 18rem;
             min-height: 16rem;
+            flex-shrink: 0;
             object-fit: cover;
 
             @media screen and (max-width: 900px) {

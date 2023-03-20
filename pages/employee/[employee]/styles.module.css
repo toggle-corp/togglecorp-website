@@ -5,7 +5,7 @@
     justify-content: center;
     background-color: var(--color-header-dark);
     padding: var(--spacing-medium);
-    height: 100vh;
+    min-height: 100vh;
     gap: var(--spacing-super-large);
 
     .logo {

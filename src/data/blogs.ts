@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import blogListOne from 'resources/work-list-1.webp';
 
 // FIXME: need to refactor
@@ -81,7 +83,7 @@ const blogs: Blog[] = [
 ];
 
 const blogCoverImages: {
-    [key in Blog['id']]: string;
+    [key in Blog['id']]: string | StaticImageData;
 } = {
     blog1: blogListOne,
     blog2: blogListOne,
