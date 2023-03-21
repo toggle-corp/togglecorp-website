@@ -40,8 +40,8 @@
 
                 @media screen and (max-width: 900px) {
                     display: flex;
-                    height: auto;
                     border-radius: var(--radius-card);
+                    height: auto;
                 }
             }
         }

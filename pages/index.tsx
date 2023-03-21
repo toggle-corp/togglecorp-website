@@ -100,30 +100,40 @@ function Home() {
                         <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
                             <Image
                                 src={britishEmbassyIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="british-embassy"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={idmcIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="IDMC"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={unhcrIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="UNHCR"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={americanRedCrossIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="american-red-cross"
                             />
                         </div>
                         <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
                             <Image
                                 src={worldVisionIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="world-vision-icons"
                             />
                         </div>
@@ -132,30 +142,40 @@ function Home() {
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={jipsIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="jips"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={peopleInNeedIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="people-in-need"
                             />
                         </div>
                         <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
                             <Image
                                 src={dataFriendlySpaceIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="data-friendly-space"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={ifrcIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="IFRC"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={smtmIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="SMTM"
                             />
                         </div>
@@ -164,12 +184,16 @@ function Home() {
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={okularAnalyticsIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="Okular"
                             />
                         </div>
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={boldCodeIcon}
+                                layout="fill"
+                                objectFit="contain"
                                 alt="BoldCode"
                             />
                         </div>

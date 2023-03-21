@@ -117,7 +117,7 @@ function ConsultingPage(props: Props) {
             banner={(
                 <BannerWithImage
                     title={consultingProjectType.title}
-                    imageUrl={consultingProjectType.image}
+                    imageUrl={consultingProjectType.bannerImage}
                     description={consultingProjectType.description}
                     mode="light"
                     stats={(
