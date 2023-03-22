@@ -5,9 +5,13 @@ import researchImg from 'resources/research.png';
 import techDevelopment from 'resources/development.png';
 import consultation from 'resources/consultation.png';
 
+import consultationBanner from 'resources/consulting/banner.jpeg';
+import techDevelopmentBanner from 'resources/development/banner.jpeg';
+import researchImgBanner from 'resources/researchAnalysis/banner.jpeg';
 
 interface ProjectTypeItem {
     image: string | StaticImageData;
+    bannerImage?: string | StaticImageData;
     title: string;
     description: string;
     link: string;
@@ -15,6 +19,7 @@ interface ProjectTypeItem {
 
 export const development: ProjectTypeItem = {
     image: techDevelopment,
+    bannerImage: techDevelopmentBanner,
     title: 'Development',
     description:
         'Our magicians tailor solutions for your business needs',
@@ -23,6 +28,7 @@ export const development: ProjectTypeItem = {
 
 export const research: ProjectTypeItem = {
     image: researchImg,
+    bannerImage: researchImgBanner,
     title: 'Research and Analysis',
     description:
         'We create a meaningful picture of data through research and analysis',
@@ -31,6 +37,7 @@ export const research: ProjectTypeItem = {
 
 export const consulting: ProjectTypeItem = {
     image: consultation,
+    bannerImage: consultationBanner,
     title: 'Consultation',
     description:
         'We help organizations by providing practical and efficient solutions',

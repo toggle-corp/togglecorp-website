@@ -109,7 +109,7 @@ function ResearchPage(props: Props) {
             banner={(
                 <BannerWithImage
                     title={researchProjectType.title}
-                    imageUrl={researchProjectType.image}
+                    imageUrl={researchProjectType.bannerImage}
                     description={researchProjectType.description}
                     mode="light"
                     stats={(

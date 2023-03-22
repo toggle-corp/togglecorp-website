@@ -66,6 +66,8 @@ function EmployeeCard(props: EmployeeCardProps) {
                     src={imageSrc}
                     alt={name}
                     placeholder="blur"
+                    layout="fill"
+                    objectFit="cover"
                 />
             </div>
             <div className={styles.details}>

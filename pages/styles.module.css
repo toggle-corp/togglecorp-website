@@ -66,9 +66,9 @@
             gap: var(--spacing-ultra-large);
 
             .trustedIcons {
+                position: relative;
                 width: 9rem;
                 height: 3.3rem;
-                object-fit: contain;
             }
 
             .darkIconMode {
@@ -232,11 +232,12 @@
             .workPreview {
                 flex-basis: 50%;
                 flex-shrink: 0;
-                border-radius: var(--radius-button);
+                border-radius: var(--radius-card);
                 width: 50%;
                 height: 20rem;
                 object-fit: cover;
                 object-position: center;
+                overflow: hidden;
             }
 
             .details {

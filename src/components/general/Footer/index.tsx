@@ -181,23 +181,23 @@ function Footer(props: Props) {
                         </a>
                     </Link>
                     <Link
-                        href="https://www.instagram.com/togglecorp/"
-                        passHref
-                    >
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a target="_blank" rel="noreferrer">
-                            <IoLogoInstagram
-                                className={styles.socialMedia}
-                            />
-                        </a>
-                    </Link>
-                    <Link
                         href="https://www.linkedin.com/company/togglecorp/"
                         passHref
                     >
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a target="_blank" rel="noreferrer">
                             <IoLogoLinkedin
+                                className={styles.socialMedia}
+                            />
+                        </a>
+                    </Link>
+                    <Link
+                        href="https://www.instagram.com/togglecorp/"
+                        passHref
+                    >
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a target="_blank" rel="noreferrer">
+                            <IoLogoInstagram
                                 className={styles.socialMedia}
                             />
                         </a>

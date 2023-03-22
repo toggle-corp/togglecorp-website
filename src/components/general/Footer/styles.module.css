@@ -67,7 +67,7 @@
         font-size: var(--font-size-extra-large);
 
         .socialMedia {
-            border-radius: var(--radius-button);
+            border-radius: var(--radius-card);
             background-color: var(--color-background-social-media);
             cursor: pointer;
             padding: var(--padding-social-media-icon);

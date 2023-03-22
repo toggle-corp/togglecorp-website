@@ -112,7 +112,7 @@ function DevelopmentPage(props: Props) {
             banner={(
                 <BannerWithImage
                     title={developmentProjectType.title}
-                    imageUrl={developmentProjectType.image}
+                    imageUrl={developmentProjectType.bannerImage}
                     description={developmentProjectType.description}
                     mode="light"
                     stats={(
