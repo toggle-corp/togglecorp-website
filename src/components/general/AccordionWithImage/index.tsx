@@ -89,6 +89,8 @@ function AccordionWithImage<D>(props: Props<D>) {
                     <Image
                         src={imgUrl}
                         alt={activeKey}
+                    // FIXME: Need to set a condition here regarding svg or png
+                    // placeholder="blur"
                     />
                 </div>
             )}

@@ -83,12 +83,14 @@ function AboutUs() {
                             <Image
                                 src={thirdImage}
                                 alt="our story"
+                                placeholder="blur"
                             />
                         </div>
                         <div className={styles.workPreviewImg}>
                             <Image
                                 src={secondImage}
                                 alt="our story"
+                                placeholder="blur"
                             />
                         </div>
                     </div>
