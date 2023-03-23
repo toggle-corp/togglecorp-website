@@ -350,6 +350,7 @@ function Home() {
                             <Image
                                 src={analysisBanner}
                                 alt="Global COVID-19 Situational Analysis"
+                                placeholder="blur"
                             />
                         </div>
                         <div className={styles.details}>
@@ -371,6 +372,7 @@ function Home() {
                             <Image
                                 src={npStocks}
                                 alt="NP Stocks"
+                                placeholder="blur"
                             />
                         </div>
                         <div className={styles.details}>
