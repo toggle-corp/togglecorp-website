@@ -47,6 +47,8 @@ function PageContentWithSidebar(props: Props) {
                         src={previewImageUrl}
                         alt="preview"
                         placeholder="blur"
+                        layout="fill"
+                        objectFit="cover"
                     />
                 </div>
             )}
