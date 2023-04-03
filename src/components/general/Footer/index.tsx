@@ -18,8 +18,8 @@ import tcLogo from 'resources/togglecorp.svg';
 import styles from './styles.module.css';
 
 interface FooterSectionProps {
-    title: React.ReactNode;
-    children: React.ReactNode;
+    title?: React.ReactNode;
+    children?: React.ReactNode;
     contentClassName?: string;
 }
 
@@ -70,10 +70,7 @@ function Footer(props: Props) {
                         </Link>
                     )}
                     contentClassName={styles.description}
-                >
-                    For years, our team of experts have
-                    worked together with a single goal.
-                </FooterSection>
+                />
                 <FooterSection
                     title="Company"
                 >
@@ -89,9 +86,10 @@ function Footer(props: Props) {
                     <Link href="/team" passHref>
                         <span className={styles.linkHover}>Team</span>
                     </Link>
-                    <Link href="/works" passHref>
+                    {/* Uncomment below page when all work pages are complete */}
+                    {/* <Link href="/works" passHref>
                         <span className={styles.linkHover}>Works</span>
-                    </Link>
+                    </Link> */}
                 </FooterSection>
                 <FooterSection
                     title="Services"

@@ -1,24 +1,23 @@
-import React, {
-    useMemo,
-    useState,
-} from 'react';
-import { GetStaticProps } from 'next';
+// TO-DO: REMOVE ALL COMMENTS WHEN WORK IS OKAY TO DEPLOY IN THE WEBSITE
+
+import React from 'react';
+// import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import { unique } from '@togglecorp/fujs';
+// import { unique } from '@togglecorp/fujs';
 
 import Page from 'components/general/Page';
 import Section from 'components/general/Section';
 import Card from 'components/general/Card';
-import Button from 'components/general/Button';
+// import Button from 'components/general/Button';
 import BannerWithImage from 'components/general/BannerWithImage';
 import AccordianWithImage from 'components/general/AccordionWithImage';
 
-import { TagId, getTag } from 'data/tags';
-import staticProjects, { Project } from 'data/projects';
+// import { TagId, getTag } from 'data/tags';
+// import staticProjects, { Project } from 'data/projects';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
-import { getProjectCoverImage } from 'data/projectImages';
+// import { getProjectCoverImage } from 'data/projectImages';
 
 import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/analyzeLog.svg';
@@ -87,25 +86,25 @@ const approaches: Approach[] = [
     },
 ];
 
-interface Props {
-    projects: Project[],
-    tags: (TagId | 'all')[];
-}
+// interface Props {
+//     projects: Project[],
+//     tags: (TagId | 'all')[];
+// }
 
-function ConsultingPage(props: Props) {
-    const {
-        projects,
-        tags,
-    } = props;
+function ConsultingPage() {
+    // const {
+    //     projects,
+    //     tags,
+    // } = props;
 
-    const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>('all');
+    // const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>('all');
 
-    const filteredProjects = useMemo(() => {
-        if (filteredServiceType === 'all') {
-            return projects;
-        }
-        return projects.filter((service) => service.tags.includes(filteredServiceType));
-    }, [projects, filteredServiceType]);
+    // const filteredProjects = useMemo(() => {
+    //     if (filteredServiceType === 'all') {
+    //         return projects;
+    //     }
+    //     return projects.filter((service) => service.tags.includes(filteredServiceType));
+    // }, [projects, filteredServiceType]);
 
     const otherServices = generalServices.filter((service) => (
         service.key !== consultingProjectType.key
@@ -206,7 +205,7 @@ function ConsultingPage(props: Props) {
                     imageUrlSelector={imageSelector}
                 />
             </Section>
-            <Section
+            {/* <Section
                 description="Check our consulting works"
                 className={styles.ourResearch}
             >
@@ -240,7 +239,7 @@ function ConsultingPage(props: Props) {
                         href="/works"
                         passHref
                     >
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        eslint-disable-next-line jsx-a11y/anchor-is-valid
                         <a className={styles.arrowLink}>
                             <span>
                                 See all of the works
@@ -249,22 +248,22 @@ function ConsultingPage(props: Props) {
                         </a>
                     </Link>
                 </div>
-            </Section>
+            </Section> */}
         </Page>
     );
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-    const filteredProjects = staticProjects.filter((project) => (
-        project.projectType === consultingProjectType.key
-    ));
-    const usedTags = unique(filteredProjects.flatMap((item) => item.tags));
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//     const filteredProjects = staticProjects.filter((project) => (
+//         project.projectType === consultingProjectType.key
+//     ));
+//     const usedTags = unique(filteredProjects.flatMap((item) => item.tags));
 
-    const props: Props = {
-        projects: filteredProjects,
-        tags: ['all', ...usedTags],
-    };
-    return { props };
-};
+//     const props: Props = {
+//         projects: filteredProjects,
+//         tags: ['all', ...usedTags],
+//     };
+//     return { props };
+// };
 
 export default ConsultingPage;

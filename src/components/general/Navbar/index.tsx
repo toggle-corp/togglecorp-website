@@ -92,8 +92,9 @@ function Navbar(props: NavProps) {
             {/* NOTE: This menu below is intented to be used for responsive menu bar */}
             {showBarMenu && (
                 <div className={styles.menuBar}>
-                    <NavLink href="/works">
-                        Works
+                    {/* Replace with /works after all works page are complete */}
+                    <NavLink href="/team">
+                        Team
                     </NavLink>
                     <NavLink href="/careers">
                         Career
@@ -118,8 +119,9 @@ function Navbar(props: NavProps) {
                 <span className={styles.bar} />
             </div>
             <div className={styles.menuList}>
-                <NavLink href="/works">
-                    Works
+                {/* Replace with /works after all works page are complete */}
+                <NavLink href="/team">
+                    Team
                 </NavLink>
                 <NavLink href="/careers">
                     Career

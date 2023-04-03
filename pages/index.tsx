@@ -61,8 +61,8 @@ function Home() {
                     description={(
                         <div className={styles.introductionContent}>
                             <div className={styles.bannerDescription}>
-                                A flawless digital community contributing to development
-                                and research striving towards improving existing processes
+                                A flawless team contributing to tech development
+                                and data analysis striving towards improving existing processes
                             </div>
                             <div className={styles.tags}>
                                 {projectTypes.map((projectType, i) => (
@@ -321,7 +321,7 @@ function Home() {
                 </div>
             </Section>
             <Section
-                title="Highlighted Works"
+                title="Spotlight"
                 description="Togglecorp has assisted multiple organizations achieve their vision by driving change and continuous improvement"
             >
                 <div className={styles.recentWorkList}>

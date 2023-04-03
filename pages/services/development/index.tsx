@@ -1,20 +1,22 @@
-import React, { useMemo, useState } from 'react';
-import { GetStaticProps } from 'next';
+// TO-DO: REMOVE ALL COMMENTS WHEN WORK IS OKAY TO DEPLOY IN THE WEBSITE
+
+import React from 'react';
+// import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import { unique } from '@togglecorp/fujs';
+// import { unique } from '@togglecorp/fujs';
 
 import Page from 'components/general/Page';
 import Section from 'components/general/Section';
-import Card from 'components/general/Card';
-import Button from 'components/general/Button';
+// import Card from 'components/general/Card';
+// import Button from 'components/general/Button';
 import BannerWithImage from 'components/general/BannerWithImage';
 import AccordianWithImage from 'components/general/AccordionWithImage';
 
-import { TagId, getTag } from 'data/tags';
-import staticProjects, { Project } from 'data/projects';
-import { getProjectCoverImage } from 'data/projectImages';
+// import { TagId, getTag } from 'data/tags';
+// import staticProjects, { Project } from 'data/projects';
+// import { getProjectCoverImage } from 'data/projectImages';
 import {
     projectTypes as generalServices,
     getProjectType,
@@ -83,24 +85,24 @@ const approaches: Approach[] = [
     },
 ];
 
-interface Props {
-    projects: Project[];
-    tags: (TagId | 'all')[];
-}
+// interface Props {
+//     projects: Project[];
+//     tags: (TagId | 'all')[];
+// }
 
-function DevelopmentPage(props: Props) {
-    const { projects, tags } = props;
+function DevelopmentPage() {
+    // const { projects, tags } = props;
 
-    const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>(
-        'all',
-    );
+    // const [filteredServiceType, setFilteredServiceType] = useState<TagId | 'all'>(
+    //     'all',
+    // );
 
-    const filteredProjects = useMemo(() => {
-        if (filteredServiceType === 'all') {
-            return projects;
-        }
-        return projects.filter((service) => service.tags.includes(filteredServiceType));
-    }, [projects, filteredServiceType]);
+    // const filteredProjects = useMemo(() => {
+    //     if (filteredServiceType === 'all') {
+    //         return projects;
+    //     }
+    //     return projects.filter((service) => service.tags.includes(filteredServiceType));
+    // }, [projects, filteredServiceType]);
 
     const otherServices = generalServices.filter(
         (service) => service.key !== developmentProjectType.key,
@@ -197,7 +199,7 @@ function DevelopmentPage(props: Props) {
                     imageUrlSelector={imageSelector}
                 />
             </Section>
-            <Section
+            {/* <Section
                 description="Check our development works"
                 className={styles.ourResearch}
             >
@@ -230,29 +232,29 @@ function DevelopmentPage(props: Props) {
                         ))}
                     </div>
                     <Link href="/works" passHref>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        eslint-disable-next-line jsx-a11y/anchor-is-valid
                         <a className={styles.arrowLink}>
                             <span>See all of the works</span>
                             <IoIosArrowRoundForward className={styles.icon} />
                         </a>
                     </Link>
                 </div>
-            </Section>
+            </Section> */}
         </Page>
     );
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-    const filteredProjects = staticProjects.filter(
-        (project) => project.projectType === developmentProjectType.key,
-    );
-    const usedTags = unique(filteredProjects.flatMap((item) => item.tags));
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//     const filteredProjects = staticProjects.filter(
+//         (project) => project.projectType === developmentProjectType.key,
+//     );
+//     const usedTags = unique(filteredProjects.flatMap((item) => item.tags));
 
-    const props: Props = {
-        projects: filteredProjects,
-        tags: ['all', ...usedTags],
-    };
-    return { props };
-};
+//     const props: Props = {
+//         projects: filteredProjects,
+//         tags: ['all', ...usedTags],
+//     };
+//     return { props };
+// };
 
 export default DevelopmentPage;

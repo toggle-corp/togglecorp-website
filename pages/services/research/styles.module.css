@@ -39,7 +39,7 @@
     }
 }
 
-.ourResearch {
+/* .ourResearch {
     background-color: var(--color-surface-light);
 
     .researchContent {
@@ -101,7 +101,7 @@
             }
         }
     }
-}
+} */
 
 .productDetail {
     display: flex;
