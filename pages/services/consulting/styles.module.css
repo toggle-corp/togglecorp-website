@@ -39,7 +39,7 @@
     }
 }
 
-.ourResearch {
+/* .ourResearch {
     background-color: var(--color-surface-light);
 
     .researchContent {
@@ -101,7 +101,7 @@
             }
         }
     }
-}
+} */
 
 .productDetail {
     display: flex;
@@ -115,7 +115,8 @@
         gap: var(--spacing-large);
 
         .text {
-            font-size: var(--font-size-large);
+            line-height: 1.5;
+            font-size: var(--font-size-heading-extra-small);
         }
 
         .knowMoreLink {

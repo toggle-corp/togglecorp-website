@@ -171,7 +171,7 @@ const priyeshGautam: Employee = {
     name: 'Priyesh Gautam',
     position: 'Developer',
     description: 'Priyesh, preferably Priyash, big time rock music and gym enthusiast is a fun person to be around. He lives with one of his favorite quote "The top of one mountain is the bottom of the next". Loves going on for a nice walk during dusk, a dog lover, he tries to feel every little piece of nature within. Additionally, always trying his best to make this world a better place."',
-    funnyDescription: 'Get yo self some juicy ass jerris!',
+    funnyDescription: 'Get this man some chicken nuggets',
     department: 'development',
 };
 
