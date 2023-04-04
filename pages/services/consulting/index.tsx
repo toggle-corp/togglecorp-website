@@ -3,8 +3,7 @@
 import React from 'react';
 // import { GetStaticProps } from 'next';
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import { StaticImageData } from 'next/image';
 // import { unique } from '@togglecorp/fujs';
 
 import Page from 'components/general/Page';
@@ -19,7 +18,6 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 // import { getProjectCoverImage } from 'data/projectImages';
 
-import deepPrimaryLogo from 'resources/deep-primary-logo.png';
 import planningLogo from 'resources/analyzeLog.svg';
 import monitoringLogo from 'resources/periodicMonitor.svg';
 import workListOne from 'resources/consulting/identification.png';
@@ -51,37 +49,37 @@ const approaches: Approach[] = [
     {
         key: 'step1',
         title: 'Step 1: Problem Identification',
-        description: 'Understanding the problem is essential before diving into solutions. So, firstly, our team of experts meets the client to gather as much information as possible to understand the problem. ',
+        description: 'Understanding the problem is essential. Our expert team meets with the client to gather information for a comprehensive study.',
         image: workListOne,
     },
     {
         key: 'step2',
         title: 'Step 2: Discussions',
-        description: 'After the initial meeting with the client to understand the problem, we have in-depth internal discussions about the problem the client is facing. We brainstorm as many solutions as possible and select the best solutions to present to the client later.',
+        description: 'After understanding the client\'s problem, our team conducts internal discussions and brainstorm multiple solutions. We select the best solutions to present to the client.',
         image: workListTwo,
     },
     {
         key: 'step3',
         title: 'Step 3: Propose Solutions',
-        description: 'Not all solutions fit the client’s needs. So, the next step would be to meet with the client and present our solutions on paper. Here, we discuss the best potential solutions that we have in mind.',
+        description: 'After internal discussions, we present potential solutions to the client for further discussion and selection. Not all solutions may fit the client\'s needs, so this step is crucial in aligning our proposed solutions with the client\'s requirements.',
         image: workListThree,
     },
     {
         key: 'step4',
         title: 'Step 4: Agree on Solution',
-        description: 'As the discussion continues, we will try to visualize each solution as it would be implemented. Along the way, we will cross some out, and pick some out to implement. This will be an iterative process, and finally, the best solution will be found. ',
+        description: 'We visually explore and discuss potential solutions, eliminating some and selecting others in an iterative process to find the best outcome for the client.',
         image: workListFour,
     },
     {
         key: 'step5',
         title: 'Step 5: Implementation',
-        description: 'The next step would be to implement the solutions. We visit the client and implement the solution. Necessary training and guidance will be provided as not everybody might understand the solution.',
+        description: 'Implementation is the next step. We provide on-site implementation and necessary training to ensure successful adoption to the system.',
         image: workListFive,
     },
     {
         key: 'step6',
         title: 'Step 6: Monitoring and Iterating',
-        description: 'Change should be gradual. So, we implement the solutions in iterations (for about a year). The final step would then be to monitor the implemented solution. We will monitor the provided solution for a year. If we think some changes are necessary, we edit the proposed solution and implement the updated version of the sort.',
+        description: 'We implement solutions gradually in iterations over approximately a year. The final step is monitoring the implemented solution for another year, making necessary adjustments as needed.',
         image: workListSix,
     },
 ];
@@ -144,41 +142,10 @@ function ConsultingPage() {
                 />
             )}
         >
-            <Section>
-                <div className={styles.productDetail}>
-                    <div className={styles.productImage}>
-                        <Image
-                            src={deepPrimaryLogo}
-                            alt="Deep Primary Logo"
-                            placeholder="blur"
-                        />
-                    </div>
-                    <div className={styles.productDescription}>
-                        <div className={styles.text}>
-                            {/* eslint-disable-next-line max-len */}
-                            One of the platform that we&apos;ve worked on, DEEP, centralizes, accelerates and strengthens the inter-agency response to humanitarian crises. It hosts the largest analysis framework repository in the international humanitarian sector.
-                        </div>
-                        <Link
-                            href="https://thedeep.io/"
-                            passHref
-                        >
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className={styles.knowMoreLink}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <span>Know more about DEEP</span>
-                                <IoIosArrowRoundForward className={styles.icon} />
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </Section>
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="Want some expert consultation? Tell us about your problems we will provide a meaningful solution."
+                description="Want some expert consultation? Tell us about your problems and we will provide robust solutions"
             >
                 <div className={styles.expertiseList}>
                     <Card
@@ -188,14 +155,14 @@ function ConsultingPage() {
                     />
                     <Card
                         imageSrc={monitoringLogo}
-                        description="We implement multiple solutions in an iterative process by involving our clients throughout the process"
+                        description="We implement multiple solutions in an iterative process by involving our clients throughout the cycle"
                         variant="mini"
                     />
                 </div>
             </Section>
             <Section
                 title="Our Approach"
-                description="We believe in effective data sharing and information management during any humanitarian crisis. Access to data is just the beginning."
+                description="We forge a formidable plan until we find the one that matches your organization's ambition"
             >
                 <AccordianWithImage
                     data={approaches}

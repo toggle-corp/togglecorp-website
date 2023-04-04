@@ -57,6 +57,7 @@ function Contact() {
             <div />
             <Section
                 title="Life at Togglecorp"
+                description="Great teams both collaborate and socialize beyond the workplace"
             >
                 <div className={styles.collageContainer}>
                     <div className={styles.imageContainer}>

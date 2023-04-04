@@ -7,57 +7,41 @@ interface Vacancy {
     category: 'Part Time' | 'Full Time';
     openings: number;
     formLink: string;
+    jobLevel: string;
+    experience: string;
     applyBefore: string;
     salary: string;
 }
 
-/*
-NOTE: these are sample job descriptions
+// NOTE: these are sample job descriptions
 const vacancies: Vacancy[] = [
     {
         id: '1',
-        position: 'Frontend Developer',
+        position: 'Sr. Backend Developer',
         department: 'Development',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfNjibK_T956rlt-Qw8sVSogWYaACitxdTeW2J6TbLZClHu8Q/viewform?usp=sf_link',
+        jobLevel: 'Mid / Senior',
         openings: 1,
-        applyBefore: '2023, Jan 30',
+        experience: '2 years in the same field',
         category: 'Full Time',
-        salary: 'Negotiable',
+        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYCcQMUk5wGKQTWFsFF_lqXv12BI_DTtbXpmWctrUHxhfTOg/viewform?usp=share_link',
+        applyBefore: 'June 30, 2023',
+        salary: 'Best in the industry / Negotiable',
     },
     {
         id: '2',
-        position: 'Data Analyst',
-        department: 'Analysis',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfNjibK_T956rlt-Qw8sVSogWYaACitxdTeW2J6TbLZClHu8Q/viewform?usp=sf_link',
-        openings: 1,
-        applyBefore: '2023, Jan 30',
-        category: 'Full Time',
-        salary: 'Negotiable',
-    },
-    {
-        id: '3',
-        position: 'Backend Developer',
+        position: 'Quality Analyst ( QA)',
         department: 'Development',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfNjibK_T956rlt-Qw8sVSogWYaACitxdTeW2J6TbLZClHu8Q/viewform?usp=sf_link',
+        jobLevel: 'Junior / Mid',
         openings: 1,
-        applyBefore: '2023, Jan 30',
+        experience: '6 months - 1 year in the same field',
         category: 'Full Time',
-        salary: 'Negotiable',
-    },
-    {
-        id: '4',
-        position: 'HR Manager',
-        department: 'Operations',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfNjibK_T956rlt-Qw8sVSogWYaACitxdTeW2J6TbLZClHu8Q/viewform?usp=sf_link',
-        openings: 1,
-        applyBefore: '2023, Jan 30',
-        category: 'Full Time',
-        salary: 'Negotiable',
+        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScge7PQ7IAAIoQ-ByE26Djacsiqyz2a1pJTnAN-MabrmJfPJg/viewform?usp=share_link',
+        applyBefore: 'June 30, 2023',
+        salary: 'Best in the industry / Negotiable',
     },
 ];
-*/
 
 // Note: When no vacancies, just uncomment below:
-const vacancies: Vacancy[] | undefined = undefined;
+// const vacancies: Vacancy[] | undefined = undefined;
 
 export default vacancies;

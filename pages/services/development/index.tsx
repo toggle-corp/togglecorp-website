@@ -52,35 +52,35 @@ const approaches: Approach[] = [
         key: 'step1',
         title: 'Step 1: Design Document with User Stories',
         description:
-            'Understanding a user’s perspective is imperative. So, the first thing we do after gathering initial requirements and information designs a document with potential user stories and flows.',
+            'Understanding user perspective is crucial. We document potential user stories and flows after gathering initial requirements and information.',
         image: workListOne,
     },
     {
         key: 'step2',
         title: 'Step 2: Low Fidelity Mockups',
         description:
-            'With the user’s perspective clear and fully understood, we dive into creating low-fidelity mockups that visually represent the flow of the product/project. ',
+            'With a clear understanding of the user\'s perspective, we create low-fidelity mockups to visually represent the product or project flow.',
         image: workListTwo,
     },
     {
         key: 'step3',
         title: 'Step 3: Milestones Creation',
         description:
-            'Milestones are significant for measuring progress. Since we have an integrated approach, we set milestones depending on the size and complexity of the project.',
+            'We set project milestones based on project size and complexity to measure progress in our integrated approach.',
         image: workListThree,
     },
     {
         key: 'step4',
         title: 'Step 4: Iterate with Continuous Feedback from Client',
         description:
-            'We value and maintain excellent relationships with our clients. After every small deployment, we collect feedback from our clients to make sure we are working towards achieving the same goal. ',
+            'After each small deployment, we collect client feedback to maintain a good relationship and ensure alignment towards our goal.',
         image: workListFour,
     },
     {
         key: 'step5',
         title: 'Step 5: Delivery and Support',
         description:
-            'After achieving all the goals and objectives, we deliver the product/project to our clients. But our work does not end there. After the final deployment and release, we support our clients’ queries and small fixes for a fixed period of time.',
+            'After delivering the product or project, we provide a fixed period of support for our clients\' queries and fixes.',
         image: workListFive,
     },
 ];

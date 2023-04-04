@@ -31,7 +31,7 @@ function Team(props: Props) {
             banner={(
                 <BannerWithImage
                     title="Our Team"
-                    description="Meet our passionate team of creators and problem-solvers"
+                    description="Get to know more about our inspiring team"
                     mode="light"
                     imageUrl={bannerImage}
                 />
