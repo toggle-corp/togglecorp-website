@@ -15,7 +15,7 @@ interface Props<D> {
     keySelector: (item: D) => string;
     labelSelector: (item: D) => React.ReactNode;
     descriptionSelector: (item: D) => React.ReactNode;
-    imageUrlSelector: (item: D) => string | StaticImageData;
+    imageUrlSelector: (item: D) => StaticImageData;
 }
 
 function AccordionWithImage<D>(props: Props<D>) {
@@ -69,12 +69,11 @@ function AccordionWithImage<D>(props: Props<D>) {
                             </Button>
                             {isDefined(activeItem) && key === activeKey && (
                                 <>
-                                    <div className={styles.imageInternal}>
-                                        <Image
-                                            src={imageUrlSelector(activeItem)}
-                                            alt={keySelector(activeItem)}
-                                        />
-                                    </div>
+                                    <img
+                                        className={styles.imageInternal}
+                                        src={imageUrlSelector(activeItem).src}
+                                        alt={keySelector(activeItem)}
+                                    />
                                     <div className={styles.description}>
                                         {descriptionSelector(d)}
                                     </div>
@@ -85,14 +84,13 @@ function AccordionWithImage<D>(props: Props<D>) {
                 })}
             </div>
             {imgUrl && (
-                <div className={styles.image}>
-                    <Image
-                        src={imgUrl}
-                        alt={activeKey}
+                <img
+                    className={styles.image}
+                    src={imgUrl.src}
+                    alt={activeKey}
                     // FIXME: Need to set a condition here regarding svg or png
                     // placeholder="blur"
-                    />
-                </div>
+                />
             )}
         </div>
     );
