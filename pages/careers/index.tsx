@@ -57,7 +57,7 @@ function CareerPage() {
                 <Container contentClassName={styles.careerContent}>
                     <Header
                         title="Job openings"
-                        description="We are a team of problem-solvers working together solving real world problems. Join us and let's solve problems together."
+                        description="Unleash your inner superhero with limitless platform to reach your full potential"
                     />
                     <div
                         className={_cs(
@@ -73,6 +73,8 @@ function CareerPage() {
                                 openings={vacancy.openings}
                                 applyUrl={vacancy.formLink}
                                 category={vacancy.category}
+                                jobLevel={vacancy.jobLevel}
+                                experience={vacancy.experience}
                                 salary={vacancy.salary}
                                 applyBefore={vacancy.applyBefore}
                             />
@@ -82,7 +84,7 @@ function CareerPage() {
             )}
             <Section
                 title="Life at Togglecorp"
-                description="We foster a learning culture that encourages every employee to grow their capabilities and careers with the values they believe in"
+                description="We cultivate a learning culture that supports our employees&apos; growth and career development aligned with their values"
             >
                 <div className={styles.collageContainer}>
                     <div className={styles.imageContainer}>
@@ -149,12 +151,18 @@ function CareerPage() {
                 {vacancies ? (
                     <>
                         <h3>Want to work with us apart from the available vacancies?</h3>
-                        <div>Reach out to us and we&apos;ll let you know more</div>
+                        <div>
+                            We acknowledge all kinds of talent.
+                            Let&apos;s see what you are made up of!
+                        </div>
+
                     </>
                 ) : (
-                    <h3>
-                        No vacancies available at the moment. But feel free to drop your CV.
-                    </h3>
+                    <>
+                        <h3>There are no vacancies available at the moment</h3>
+                        <div>But, we welcome talents. Please feel free to drop your CV</div>
+
+                    </>
                 )}
                 <Button
                     name={undefined}

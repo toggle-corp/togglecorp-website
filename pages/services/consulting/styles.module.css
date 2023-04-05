@@ -103,7 +103,7 @@
     }
 } */
 
-.productDetail {
+/* .productDetail {
     display: flex;
     flex-direction: row-reverse;
     gap: var(--spacing-super-large);
@@ -156,4 +156,4 @@
             object-position: center center;
         }
     }
-}
+} */

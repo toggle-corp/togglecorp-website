@@ -401,7 +401,7 @@ const shreeyashShrestha: Employee = {
     id: 'tc-059',
     name: 'Shreeyash Laya La Shrestha',
     position: 'Developer',
-    description: '"Crafting code and building beautiful solutions with a passion for continuous learning and growth. Always striving to create and inspire change through technology."',
+    description: 'Crafting code and building beautiful solutions with a passion for continuous learning and growth. Always striving to create and inspire change through technology.',
     funnyDescription: 'Maaraamaar, kaataakaat. Ghatiyaa haru!',
     department: 'development',
     instagramLink: 'https://www.instagram.com/shreeyash__',

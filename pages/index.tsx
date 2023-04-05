@@ -61,8 +61,8 @@ function Home() {
                     description={(
                         <div className={styles.introductionContent}>
                             <div className={styles.bannerDescription}>
-                                A flawless team contributing to tech development
-                                and data analysis striving towards improving existing processes
+                                An ambitious team revolutionizing existing processes
+                                through software development and data analysis
                             </div>
                             <div className={styles.tags}>
                                 {projectTypes.map((projectType, i) => (
@@ -208,11 +208,8 @@ function Home() {
                 actions={(
                     <>
                         <div>
-                            An experienced team having worked with several national
-                            and international clients,
-                            including humanitarian organizations, aiming to help solve
-                            problems with development, data tagging and
-                            analysis, and visualizations.
+                            With a dedicated workforce, we have built sustainable solutions
+                            for global clients with development and data analysis
                         </div>
                         <ButtonLikeLink
                             className={styles.viewMoreButton}
@@ -306,7 +303,6 @@ function Home() {
                 id="services-section"
                 className={styles.ourServices}
                 title="Our Services"
-                description="We specialize in development, research and analysis, and consultancy."
             >
                 <div className={styles.serviceList}>
                     {projectTypes.map((projectType) => (
@@ -322,7 +318,7 @@ function Home() {
             </Section>
             <Section
                 title="Spotlight"
-                description="Togglecorp has assisted multiple organizations achieve their vision by driving change and continuous improvement"
+                description="Togglecorp has assisted organizations achieve their vision by driving change and continuous improvement"
             >
                 <div className={styles.recentWorkList}>
                     <div className={styles.recentWorkCard}>
@@ -336,12 +332,10 @@ function Home() {
                         <div className={styles.details}>
                             <h4>DEEP</h4>
                             <div className={styles.description}>
-                                The DEEP offers a suite of tools
-                                and collaborative workflows that meet the needs
-                                for compiling, storing, and structuring qualitative
-                                information. It was initially established in 2016 in
-                                the aftermath of the Nepal Earthquake to strengthen
-                                collective sense-making and analysis.
+                                The DEEP provides collaborative workflows and tools for compiling,
+                                storing, and structuring qualitative data.
+                                It was established after the 2016 Nepal earthquake
+                                to enhance collective sense-making and analysis.
                             </div>
                         </div>
                     </div>
@@ -356,13 +350,9 @@ function Home() {
                         <div className={styles.details}>
                             <h4>Global COVID-19 Situational Analysis</h4>
                             <div className={styles.description}>
-                                Funded by USAID, this project focused on
-                                providing extensive information
-                                regarding the impact of COVID-19
-                                on refugees and migrants and identifying
-                                the unmet needs of affected people due
-                                to COVID-19 and the pre-existing
-                                humanitarian crisis in Columbia,
+                                USAID-funded project gathering information on COVID-19&apos;s
+                                impact on refugees and migrants.
+                                It identified unmet needs in Colombia,
                                 Burkina Faso, DRC, Nigeria, Syria, and Bangladesh.
                             </div>
                         </div>
@@ -378,11 +368,9 @@ function Home() {
                         <div className={styles.details}>
                             <h4>NPStocks</h4>
                             <div className={styles.description}>
-                                NPstocks is a stock application created for Nepali stock market.
-                                It is an application that aids the users with
-                                decision making in investing in the secondary
-                                share market with real-time share market data and multiple
-                                appealing visual charts.
+                                NPstocks is a stock application created for the Nepali share market.
+                                It provides real-time data and visual charts that
+                                aid in decision-making in the secondary share investment.
                             </div>
                         </div>
                     </div>
@@ -392,8 +380,8 @@ function Home() {
                 className={styles.bottomSection}
                 contentClassName={styles.content}
             >
-                <h3>Have a project you&apos;d like to talk to us about?</h3>
-                <div>Tell us about your need, we&apos;d love to collaborate with you.</div>
+                <h3>Have a project you would like to talk to us about?</h3>
+                <div>Tell us about your need, we would love to collaborate with you.</div>
                 <ButtonLikeLink
                     href="/contact-us"
                     variant="primary"

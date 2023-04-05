@@ -49,31 +49,31 @@ const approaches: Approach[] = [
     {
         key: 'step1',
         title: 'Step 1: Data Extraction',
-        description: 'We develop a list of sources that will provide credible information for collecting data. Sources include daily newspapers, academic reports, websites, journals, relevant documents provided by the organizations and infographics. The data from these sources are recorded into our in-house platform called DEEP for the second stage of our work. ',
+        description: 'We compile credible sources, such as newspapers, reports, websites, journals, organization-provided documents, and infographics, for data collection. These sources are saved for later stages of our work.',
         image: workListOne,
     },
     {
         key: 'step2',
         title: 'Step 2: Data Segregation',
-        description: 'Data collected are then classified and normalized into homogenous information for easy accessibility. An analytical framework, if required, is set in DEEP where our research and analysis team meticulously disaggregates it, finding its suitable fit within the framework. This process is called tagging.',
+        description: 'Collected data is classified and normalized for easy accessibility. We sort qualitative and quantitative data based on purpose, type, and approach for analysis.',
         image: workListTwo,
     },
     {
         key: 'step3',
         title: 'Step 3: Review and Analysis',
-        description: 'This is the most delicate and intricate part of our work where we sift through massive amounts of data to reveal and interpret the information plausibly. Reliability and validity of data are ensured during the analysis by triangulation and usage of multiple sources of data as evidence for the analytical statements. In addition, frequent coordination with the experts is done to ensure the relevance and quality of the writing.',
+        description: 'Our meticulous data analysis involves examing through large amounts of data to interpret information reliably and accurately. We ensure data validity and reliability through triangulation and multiple sources. Our coordination with experts ensures relevance and quality.',
         image: workListThree,
     },
     {
         key: 'step4',
         title: 'Step 4: Monitoring and Evaluation',
-        description: 'All the reports acquired after the secondary data review goes through effective monitoring to have internal and external accountability of the resource used and the results obtained. We have well-established internal measures and processes to ensure data validity. Our highly qualified and dedicated monitoring, quality control, and evaluation team follow standard guidelines in each step of their work to maintain transparency and accountability.',
+        description: 'Reports from secondary data review and primary data collection undergo effective monitoring for internal and external accountability. Our qualified monitoring, quality control, and evaluation team follows standard guidelines to ensure data validity, transparency, and accountability.',
         image: workListFour,
     },
     {
         key: 'step5',
         title: 'Step 5: Write-Up',
-        description: 'Finally, we draft the findings from the analysis to make the information more digestible. We provide both draft and analyzed data to identify crucial information from the supplementary. This draft is sent to the expert groups and clients for final review and publication.',
+        description: 'We summarize and present the analysis findings for easy understanding. Both draft and analyzed data are used to identify crucial information. The draft is then reviewed by expert groups and clients for final publication.',
         image: workListFive,
     },
 ];
@@ -170,12 +170,12 @@ function ResearchPage() {
             <Section
                 className={styles.expertise}
                 title="Our Expertise"
-                description="We specialize in research, analysis, interpretation, and presentation of data mainly related to humanitarian crises"
+                description="We analyze, interpret, and present data with specialization in humanitarian sector"
             >
                 <div className={styles.expertiseList}>
                     <Card
                         imageSrc={monitoringLogo}
-                        description="We support humanitarian organizations in intervention planning, analyze past results and perform various analyses"
+                        description="We support organizations in intervention planning, analyze past results and perform various analyses"
                         variant="mini"
                     />
                     <Card
@@ -187,7 +187,8 @@ function ResearchPage() {
             </Section>
             <Section
                 title="Our Approach"
-                description="We believe in effective data sharing and information management during any humanitarian crisis. Access to data is just the beginning."
+                // description="We believe in effective data sharing and information management"
+                description="We utilize a robust methodology to achieve more accurate observation"
             >
                 <AccordianWithImage
                     data={approaches}

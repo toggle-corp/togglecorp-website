@@ -104,7 +104,7 @@ function Footer(props: Props) {
                         <span className={styles.linkHover}>Consulting</span>
                     </Link>
                 </FooterSection>
-                <FooterSection title="Contact information">
+                <FooterSection title="Contact Information">
                     <LabelValue
                         value={(
                             <a

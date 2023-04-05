@@ -36,7 +36,7 @@ function AboutUs() {
                 <BannerWithImage
                     title="About Us"
                     imageUrl={bannerImage}
-                    description="A place to grow your creativity & work on the issues you believe in"
+                    description="Our nurturing culture empowers employees to unveil their potential"
                     mode="light"
                     actions={(
                         <ButtonLikeLink
@@ -99,7 +99,7 @@ function AboutUs() {
             <Section
                 className={styles.ourTeam}
                 title="We are proud of the team we have built"
-                description="At Togglecorp, we focus on having quality time and work. At the same time, on the all-round development and growth of our team. Work is fun at TC!"
+                description="At Togglecorp, we prioritize quality time and work while fostering all-round development and growth of our team. Work is fun here!"
             >
                 <div className={styles.activityList}>
                     {expertises.map((activity) => (
@@ -115,7 +115,7 @@ function AboutUs() {
             </Section>
             <Section
                 title="Our Culture and Core Values"
-                description="People have left their marks on Togglecorp over the years, and they have become our core values and culture"
+                description="People have graced Togglecorp with their optimism and open-mindness over the years, and we carry this legacy forward!"
             >
                 <AccordionWithImage
                     data={cultures}

@@ -12,7 +12,9 @@ interface CareerItemProps {
     applyUrl: string;
     openings: number;
     salary: string;
+    jobLevel: string;
     category: 'Part Time' | 'Full Time';
+    experience: string;
     applyBefore: string;
 }
 
@@ -24,7 +26,9 @@ function CareerItem(props: CareerItemProps) {
         openings,
         salary,
         category,
+        jobLevel,
         applyBefore,
+        experience,
     } = props;
 
     return (
@@ -41,12 +45,16 @@ function CareerItem(props: CareerItemProps) {
                     value={openings}
                 />
                 <LabelValue
-                    label="Category:"
+                    label="Job Level:"
+                    value={jobLevel}
+                />
+                <LabelValue
+                    label="Employment Type:"
                     value={category}
                 />
                 <LabelValue
-                    label="Apply Before:"
-                    value={applyBefore}
+                    label="Experience:"
+                    value={experience}
                 />
                 <LabelValue
                     label="Salary:"
@@ -57,7 +65,8 @@ function CareerItem(props: CareerItemProps) {
             <div className={styles.actions}>
                 <div className={styles.applyDate}>
                     <IoCalendarClearOutline color="grey" size={20} />
-                    &nbsp;&nbsp;April 22, 2023
+                    &nbsp;&nbsp;
+                    {applyBefore}
                 </div>
                 <ButtonLikeLink href={applyUrl}>
                     Apply Now

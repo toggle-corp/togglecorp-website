@@ -22,7 +22,7 @@ export const development: ProjectTypeItem = {
     bannerImage: techDevelopmentBanner,
     title: 'Development',
     description:
-        'Our magicians tailor solutions for your business needs',
+        'Our magicians tailor solutions for your venture',
     link: '/services/development',
 };
 
@@ -31,7 +31,7 @@ export const research: ProjectTypeItem = {
     bannerImage: researchImgBanner,
     title: 'Research and Analysis',
     description:
-        'We create a meaningful picture of data through research and analysis',
+        'We turn mundane data into exciting visuals that tell a story',
     link: '/services/research',
 };
 
@@ -40,7 +40,7 @@ export const consulting: ProjectTypeItem = {
     bannerImage: consultationBanner,
     title: 'Consultation',
     description:
-        'We help organizations by providing practical and efficient solutions',
+        'We create and implement strategies that align your vision',
     link: '/services/consulting',
 };
 

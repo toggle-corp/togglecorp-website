@@ -25,6 +25,7 @@ function ButtonLikeLink(props: Props) {
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
                 className={className}
+                target="_blank"
             >
                 {children}
             </a>
