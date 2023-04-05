@@ -19,20 +19,20 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 // import { getProjectCoverImage } from 'data/projectImages';
 
-import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import planningLogo from 'resources/planning.svg';
-import monitoringLogo from 'resources/monitoring.svg';
-import workListOne from 'resources/researchAnalysis/extraction.png';
-import workListTwo from 'resources/researchAnalysis/segregation.png';
-import workListThree from 'resources/researchAnalysis/review.png';
-import workListFour from 'resources/researchAnalysis/monitoring.png';
-import workListFive from 'resources/researchAnalysis/write.png';
 import {
     keySelector,
     titleSelector,
     descriptionSelector,
     imageSelector,
 } from 'utils/common';
+import planningLogo from '../../../src/resources/planning.svg';
+import monitoringLogo from '../../../src/resources/monitoring.svg';
+import workListOne from '../../../src/resources/researchAnalysis/extraction.png';
+import workListTwo from '../../../src/resources/researchAnalysis/segregation.png';
+import workListThree from '../../../src/resources/researchAnalysis/review.png';
+import workListFour from '../../../src/resources/researchAnalysis/monitoring.png';
+import workListFive from '../../../src/resources/researchAnalysis/write.png';
+import deepPrimaryLogo from '../../../src/resources/deep-primary-logo.png';
 
 import styles from './styles.module.css';
 
