@@ -80,6 +80,9 @@ function Footer(props: Props) {
                     <Link href="/about-us" passHref>
                         <span className={styles.linkHover}>About</span>
                     </Link>
+                    <Link href="/careers" passHref>
+                        <span className={styles.linkHover}>Career</span>
+                    </Link>
                     <Link href="/contact-us" passHref>
                         <span className={styles.linkHover}>Contact</span>
                     </Link>

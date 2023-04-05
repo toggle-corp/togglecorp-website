@@ -22,19 +22,19 @@ import {
     getProjectType,
 } from 'data/projectTypes';
 
-import expertiseLogo from 'resources/ourExpertise/expertiseGraph.png';
-import deepPrimaryLogo from 'resources/deep-primary-logo.png';
-import workListOne from 'resources/development/userStories.png';
-import workListTwo from 'resources/development/fidelity.png';
-import workListThree from 'resources/development/milestone.png';
-import workListFour from 'resources/development/continuous.png';
-import workListFive from 'resources/development/delivery.png';
 import {
     keySelector,
     titleSelector,
     descriptionSelector,
     imageSelector,
 } from 'utils/common';
+import expertiseLogo from '../../../src/resources/ourExpertise/expertiseGraph.png';
+import deepPrimaryLogo from '../../../src/resources/deep-primary-logo.png';
+import workListOne from '../../../src/resources/development/userStories.png';
+import workListTwo from '../../../src/resources/development/fidelity.png';
+import workListThree from '../../../src/resources/development/milestone.png';
+import workListFour from '../../../src/resources/development/continuous.png';
+import workListFive from '../../../src/resources/development/delivery.png';
 
 import styles from './styles.module.css';
 

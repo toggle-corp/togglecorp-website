@@ -18,21 +18,20 @@ import AccordianWithImage from 'components/general/AccordionWithImage';
 import { projectTypes as generalServices, getProjectType } from 'data/projectTypes';
 // import { getProjectCoverImage } from 'data/projectImages';
 
-import planningLogo from 'resources/analyzeLog.svg';
-import monitoringLogo from 'resources/periodicMonitor.svg';
-import workListOne from 'resources/consulting/identification.png';
-import workListTwo from 'resources/consulting/discussion.png';
-import workListThree from 'resources/consulting/proposeSolution.png';
-import workListFour from 'resources/consulting/solution.png';
-import workListFive from 'resources/consulting/implementation.png';
-import workListSix from 'resources/consulting/monitoring.png';
-
 import {
     keySelector,
     titleSelector,
     descriptionSelector,
     imageSelector,
 } from 'utils/common';
+import planningLogo from '../../../src/resources/analyzeLog.svg';
+import monitoringLogo from '../../../src/resources/periodicMonitor.svg';
+import workListOne from '../../../src/resources/consulting/identification.png';
+import workListTwo from '../../../src/resources/consulting/discussion.png';
+import workListThree from '../../../src/resources/consulting/proposeSolution.png';
+import workListFour from '../../../src/resources/consulting/solution.png';
+import workListFive from '../../../src/resources/consulting/implementation.png';
+import workListSix from '../../../src/resources/consulting/monitoring.png';
 
 import styles from './styles.module.css';
 
