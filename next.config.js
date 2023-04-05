@@ -5,7 +5,6 @@ const nextConfig = withExportImages({
     images: {
         deviceSizes: [640, 960, 1280, 1600, 1920],
     },
-    exportTrailingSlash: true,
 });
 
 module.exports = nextConfig;
