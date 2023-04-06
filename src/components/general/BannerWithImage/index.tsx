@@ -68,6 +68,7 @@ function BannerWithImage(props: Props) {
                                 src={imageUrl}
                                 alt="Picture of the author"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     )}

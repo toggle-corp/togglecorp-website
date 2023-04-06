@@ -47,7 +47,7 @@ function Home() {
     return (
         <Page
             className={styles.home}
-            pageTitle="Home"
+            pageTitle="Togglecorp"
             banner={(
                 <BannerWithImage
                     className={styles.banner}
