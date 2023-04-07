@@ -30,6 +30,7 @@ function GalleryCard(props: Props) {
                     src={imageUrl}
                     alt={imageAlt}
                     placeholder="blur"
+                    objectFit="cover"
                 />
             </div>
             {caption && (

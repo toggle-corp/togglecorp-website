@@ -93,6 +93,7 @@ function CareerPage() {
                                 src={firstImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.smallImg}>
@@ -100,6 +101,7 @@ function CareerPage() {
                                 src={secondImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.smallImg}>
@@ -107,6 +109,7 @@ function CareerPage() {
                                 src={thirdImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -116,6 +119,7 @@ function CareerPage() {
                                 src={fourthImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.mediumImg}>
@@ -123,6 +127,7 @@ function CareerPage() {
                                 src={fifthImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -132,6 +137,7 @@ function CareerPage() {
                                 src={sixthImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.smallImg}>
@@ -139,6 +145,7 @@ function CareerPage() {
                                 src={seventhImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -168,7 +175,11 @@ function CareerPage() {
                     name={undefined}
                     variant="primary"
                 >
-                    <a href="mailto:career@togglecorp.com">
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScTzfwzlMTzvaq-JS1uX0iXszmIk_hYWkBLtnlSQZtBZFgSjQ/viewform?usp=share_link"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         Send your CV
                     </a>
                 </Button>

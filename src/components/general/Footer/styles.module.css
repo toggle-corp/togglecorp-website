@@ -23,6 +23,10 @@
                 text-decoration: underline;
             }
         }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
     }
 
     .footerSection {
@@ -64,7 +68,7 @@
         display: flex;
         margin-right: var(--spacing-double-ultra-large);
         gap: var(--spacing-small);
-        font-size: var(--font-size-extra-large);
+        font-size: var(--font-size-social-media-icons);
 
         .socialMedia {
             border-radius: var(--radius-card);

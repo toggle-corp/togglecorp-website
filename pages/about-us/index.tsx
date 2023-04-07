@@ -60,6 +60,7 @@ function AboutUs() {
                                 src={firstImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.details}>
@@ -84,6 +85,7 @@ function AboutUs() {
                                 src={thirdImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.workPreviewImg}>
@@ -91,6 +93,7 @@ function AboutUs() {
                                 src={secondImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>

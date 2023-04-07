@@ -350,7 +350,7 @@ const shreeyaShrestha: Employee = {
     name: 'Shreeya Shrestha',
     position: 'Data Analyst',
     description: 'A devoted dog-person who loves cat memes. An avid nature lover who\'s always up for trekking but need meds for altitude sickness.Has a keen interest in cooking but sometimes burns everything.An enthusiastic series watcher but falls asleep two episodes in or binges the whole series at once.Always runs outside when the sky is a pretty color but also loves the gloomy monsoon weather. Hi I\'m Shreeya, 25, a proud second mom to a saint Saint Bernard.',
-    funnyDescription: 'Apainmen lera aunu bhako cha?',
+    funnyDescription: 'Aja mero doctor ko apainmen cha',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/shya.sthaa',
     linkedInLink: 'https://www.linkedin.com/in/shreeya-shrestha-6b333b181',
