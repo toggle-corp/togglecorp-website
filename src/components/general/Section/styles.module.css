@@ -33,6 +33,7 @@
             }
 
             .sideImage {
+                display: flex;
                 flex-shrink: 0;
                 border-radius: var(--radius-card);
                 width: calc(45% + 5rem);
@@ -52,7 +53,7 @@
 
                 .sideImage {
                     width: 100%;
-                    height: 20rem;
+                    height: unset;
                 }
             }
         }

@@ -53,7 +53,7 @@
         width: 24rem;
         height: 30rem;
         overflow: hidden;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center center;
     }
 

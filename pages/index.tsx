@@ -47,7 +47,7 @@ function Home() {
     return (
         <Page
             className={styles.home}
-            pageTitle="Home"
+            pageTitle="Togglecorp"
             banner={(
                 <BannerWithImage
                     className={styles.banner}
@@ -96,7 +96,7 @@ function Home() {
             <Container contentClassName={styles.clientsSection}>
                 <div className={styles.clientLogoGroup}>
                     <h3 className={styles.heading}>Trusted By</h3>
-                    <div className={styles.clientGroupOne}>
+                    <div className={styles.logoGroup}>
                         <div className={_cs(styles.trustedIcons, styles.darkIconMode)}>
                             <Image
                                 src={britishEmbassyIcon}
@@ -137,8 +137,8 @@ function Home() {
                                 alt="world-vision-icons"
                             />
                         </div>
-                    </div>
-                    <div className={styles.clientGroupTwo}>
+                        <div className={styles.break} />
+                        <div className={styles.spacer} />
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={jipsIcon}
@@ -179,8 +179,10 @@ function Home() {
                                 alt="SMTM"
                             />
                         </div>
-                    </div>
-                    <div className={styles.clientGroupThree}>
+                        <div className={styles.spacer} />
+                        <div className={styles.break} />
+                        <div className={styles.spacer} />
+                        <div className={styles.spacer} />
                         <div className={styles.trustedIcons}>
                             <Image
                                 src={okularAnalyticsIcon}
@@ -197,7 +199,10 @@ function Home() {
                                 alt="BoldCode"
                             />
                         </div>
+                        <div className={styles.spacer} />
+                        <div className={styles.spacer} />
                     </div>
+
                 </div>
             </Container>
 

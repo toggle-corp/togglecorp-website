@@ -66,6 +66,7 @@ function Contact() {
                                 src={firstImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.smallImg}>
@@ -73,6 +74,7 @@ function Contact() {
                                 src={secondImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.smallImg}>
@@ -80,6 +82,7 @@ function Contact() {
                                 src={thirdImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -89,6 +92,7 @@ function Contact() {
                                 src={fourthImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.mediumImg}>
@@ -96,6 +100,7 @@ function Contact() {
                                 src={fifthImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>
@@ -105,6 +110,7 @@ function Contact() {
                                 src={sixthImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.smallImg}>
@@ -112,6 +118,7 @@ function Contact() {
                                 src={seventhImage}
                                 alt="our story"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                     </div>

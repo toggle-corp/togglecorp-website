@@ -76,28 +76,37 @@
                 filter: grayscale(100%);
             }
 
-            .clientGroupOne {
+            .logoGroup {
                 display: flex;
                 align-items: center;
-                flex-wrap: wrap;
                 justify-content: center;
-                gap: var(--spacing-extra-ultra-large);
-            }
-
-            .clientGroupTwo {
-                display: flex;
-                align-items: center;
                 flex-wrap: wrap;
-                justify-content: center;
-                gap: var(--spacing-extra-large);
-            }
-
-            .clientGroupThree {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: center;
+                font-size: var(--font-size-social-media-icons);
                 gap: var(--spacing-ultra-large);
+
+                >* {
+                    flex-grow: 1;
+                }
+
+                .break {
+                    flex-basis: 100%;
+                }
+
+                @media screen and (max-width: 1080px) {
+                    .break {
+                        display: none;
+                    }
+
+                    .spacer {
+                        display: none;
+                    }
+
+                    >* {
+                        flex-basis: calc(50% - var(--spacing-super-large));
+                        min-width: 20rem;
+                        flex-grow: 1;
+                    }
+                }
             }
         }
     }
@@ -117,6 +126,7 @@
         gap: var(--spacing-medium);
 
         >* {
+            display: flex;
             flex-grow: 1;
             border-radius: var(--radius-card);
             width: calc(100% / 3 - var(--spacing-medium) / 1.5);
@@ -133,7 +143,14 @@
                 flex-basis: 100%;
                 min-width: unset;
                 max-width: unset;
+                height: unset;
             }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        >* {
+            height: unset;
         }
     }
 
@@ -230,6 +247,7 @@
             gap: var(--spacing-super-large);
 
             .workPreview {
+                display: flex;
                 flex-basis: 50%;
                 flex-shrink: 0;
                 border-radius: var(--radius-card);
@@ -270,6 +288,7 @@
                 .workPreview {
                     flex-basis: unset;
                     width: 100%;
+                    height: unset;
                 }
 
                 &:nth-child(even) {
