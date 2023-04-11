@@ -51,18 +51,6 @@ const vacancies: Vacancy[] = [
         applyBefore: 'June 30, 2023',
         salary: 'Best in the industry / Negotiable',
     },
-    {
-        id: '4',
-        position: 'DUMMY FOR TESTING PURPOSES',
-        department: 'Development',
-        jobLevel: 'Senior',
-        openings: 1,
-        experience: '2 - 3 years in the same field',
-        category: 'Full Time',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfqsz6byNTxIo8hECDnzLSgo_YtTCdLKBM7QZoQEvR2sHP64Q/viewform?usp=share_link',
-        applyBefore: 'June 30, 2023',
-        salary: 'Best in the industry / Negotiable',
-    },
 ];
 
 // Note: When no vacancies, just uncomment below:
