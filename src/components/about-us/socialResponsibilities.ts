@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image';
 
 import sanitizer from 'resources/aboutUs/socialResponsibility/sanitizers.webp';
-import volunteers from 'resources/aboutUs/socialResponsibility/volunteers.jpeg';
-import bloodDonation from 'resources/aboutUs/socialResponsibility/blood_donation.jpeg';
+import volunteers from 'resources/aboutUs/socialResponsibility/volunteers.webp';
+import bloodDonation from 'resources/aboutUs/socialResponsibility/blood_donation.webp';
 import tempCheck from 'resources/aboutUs/socialResponsibility/temp-check.webp';
 import childAwareness from 'resources/aboutUs/socialResponsibility/child-awareness.webp';
 import lunchDistribution from 'resources/aboutUs/socialResponsibility/lunch-distribution.webp';

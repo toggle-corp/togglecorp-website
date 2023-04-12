@@ -227,25 +227,31 @@ function Home() {
                 )}
             >
                 <div className={styles.introImages}>
-                    <div>
+                    <div className={styles.whoImage}>
                         <Image
                             src={whoWeAreFour}
                             alt="Who we are"
                             placeholder="blur"
+                            layout="fill"
+                            objectFit="cover"
                         />
                     </div>
-                    <div>
+                    <div className={styles.whoImage}>
                         <Image
                             src={whoWeAreOne}
                             alt="Who we are"
                             placeholder="blur"
+                            layout="fill"
+                            objectFit="cover"
                         />
                     </div>
-                    <div>
+                    <div className={styles.whoImage}>
                         <Image
                             src={whoWeAreTwo}
                             alt="Who we are"
                             placeholder="blur"
+                            layout="fill"
+                            objectFit="cover"
                         />
                     </div>
                 </div>
@@ -332,6 +338,7 @@ function Home() {
                                 src={deepBanner}
                                 alt="DEEP"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.details}>
@@ -350,6 +357,7 @@ function Home() {
                                 src={analysisBanner}
                                 alt="Global COVID-19 Situational Analysis"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.details}>
@@ -368,6 +376,7 @@ function Home() {
                                 src={npStocks}
                                 alt="NP Stocks"
                                 placeholder="blur"
+                                objectFit="cover"
                             />
                         </div>
                         <div className={styles.details}>
