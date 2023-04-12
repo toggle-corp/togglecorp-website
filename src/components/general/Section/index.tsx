@@ -63,6 +63,7 @@ function Section(props: Props) {
                             src={sideImageUrl}
                             alt={title}
                             placeholder="blur"
+                            objectFit="cover"
                         />
                     </div>
                 </div>

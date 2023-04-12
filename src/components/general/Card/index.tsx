@@ -34,6 +34,7 @@ function Card(props: Props) {
                         <Image
                             src={imageSrc}
                             alt={title}
+                            objectFit="cover"
                         // FIXME: Need to set a condition here regarding svg or png
                         // placeholder="blur"
                         />

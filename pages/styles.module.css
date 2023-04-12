@@ -125,32 +125,20 @@
         flex-wrap: wrap;
         gap: var(--spacing-medium);
 
-        >* {
+        .whoImage {
             display: flex;
             flex-grow: 1;
-            border-radius: var(--radius-card);
             width: calc(100% / 3 - var(--spacing-medium) / 1.5);
             min-width: 20rem;
-            max-width: calc(50% - var(--spacing-medium) / 2);
             height: 20rem;
             overflow: hidden;
-            object-fit: cover;
-            object-position: center;
-        }
+            position: relative;
+            border-radius: var(--radius-card);
 
-        @media screen and (max-width: 900px) {
-            >* {
-                flex-basis: 100%;
+            @media screen and (max-width: 720px) {
                 min-width: unset;
-                max-width: unset;
-                height: unset;
+                width: 100%;
             }
-        }
-    }
-
-    @media screen and (max-width: 720px) {
-        >* {
-            height: unset;
         }
     }
 

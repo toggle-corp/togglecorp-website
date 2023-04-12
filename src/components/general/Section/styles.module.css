@@ -59,6 +59,10 @@
         }
     }
 
+    @media screen and (max-width: 900px) {
+        padding: var(--spacing-large);
+    }
+
     &.centeredContent {
         .content {
             align-items: center;

@@ -21,20 +21,27 @@ function GalleryCard(props: Props) {
     } = props;
 
     return (
-        <div className={caption
-            ? _cs(styles.galleryCardWithCaption, className)
-            : _cs(styles.galleryCard, className)}
+        <div
+            className={
+                _cs(
+                    styles.galleryCard,
+                    !caption && styles.withoutCaption,
+                    className,
+                )
+            }
         >
-            <div className={caption ? styles.image : styles.imageWithoutCaption}>
+            <div className={styles.imageContainer}>
                 <Image
+                    className={styles.image}
                     src={imageUrl}
                     alt={imageAlt}
                     placeholder="blur"
+                    layout="fill"
                     objectFit="cover"
                 />
             </div>
             {caption && (
-                <div className={styles.captionDescription}>
+                <div className={styles.caption}>
                     {caption}
                 </div>
             )}
