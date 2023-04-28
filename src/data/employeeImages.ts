@@ -24,10 +24,10 @@ import rishiKhatri from 'resources/employee/rishi.jpeg';
 import rubyThapaliya from 'resources/employee/ruby.jpeg';
 import safarLigal from 'resources/employee/safar.jpeg';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
-import sagunaThapa from 'resources/employee/saguna.jpeg';
+// import sagunaThapa from 'resources/employee/saguna.jpeg';
+// import shreeyaShrestha from 'resources/employee/shya.jpeg';
 import sameerRai from 'resources/employee/sameer.jpeg';
 import shreetiKafle from 'resources/employee/shreeti.jpeg';
-import shreeyaShrestha from 'resources/employee/shya.jpeg';
 import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
 import shristiManandhar from 'resources/employee/shristi.jpeg';
 import shubhDhital from 'resources/employee/shubh.jpeg';
@@ -62,7 +62,7 @@ const employeeImages: {
     'tc-015': shreetiKafle,
     'tc-052': snehaPandey,
     'tc-057': udayMaharjan,
-    'tc-067': sagunaThapa,
+    // 'tc-067': sagunaThapa,
     'tc-063': bimalSaud,
     'tc-023': karinaGopali,
     'tc-017': kishanPahari,
@@ -74,7 +74,7 @@ const employeeImages: {
     'tc-027': rubyThapaliya,
     'tc-064': sadikshyaHamal,
     'tc-007': sameerRai,
-    'tc-066': shreeyaShrestha,
+    // 'tc-066': shreeyaShrestha,
     'tc-059': shreeyashShrestha,
     'tc-021': shristiManandhar,
     'tc-055': rup,

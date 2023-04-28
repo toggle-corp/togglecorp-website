@@ -24,11 +24,11 @@ export type EmployeeId = 'tc-001'
     | 'tc-056'
     | 'tc-027'
     | 'tc-005'
-    | 'tc-067'
+    // | 'tc-066'
+    // | 'tc-067'
     | 'tc-064'
     | 'tc-007'
     | 'tc-015'
-    | 'tc-066'
     | 'tc-059'
     | 'tc-021'
     | 'tc-062'
@@ -158,7 +158,7 @@ const udayMaharjan: Employee = {
     name: 'Uday Maharjan',
     position: 'Assistant Project Manager',
     funnyDescription: 'What is your school\'s name? School Maharjan',
-    description: 'Meet Uday, a 25-year-old man who is still trying to figure out what he wants to be when he grows up (because let\'s be real, at 25 you\'re basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He\'s always up for a good time, whether it\'s cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he\'s not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He\'s also been known to dance every now and then (just don\'t ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.',
+    description: 'Meet Uday, a 26-year-old man who is still trying to figure out what he wants to be when he grows up (because let\'s be real, at 26 you\'re basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He\'s always up for a good time, whether it\'s cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he\'s not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He\'s also been known to dance every now and then (just don\'t ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.',
     department: 'development',
     instagramLink: 'https://www.instagram.com/udaynwa',
     facebookLink: 'https://www.facebook.com/udaynwa',
@@ -345,16 +345,23 @@ const snehaPandey: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/sneha-pandey-00324419b',
 };
 
-const shreeyaShrestha: Employee = {
+/* const shreeyaShrestha: Employee = {
     id: 'tc-066',
     name: 'Shreeya Shrestha',
     position: 'Data Analyst',
-    description: 'A devoted dog-person who loves cat memes. An avid nature lover who\'s always up for trekking but need meds for altitude sickness.Has a keen interest in cooking but sometimes burns everything.An enthusiastic series watcher but falls asleep two episodes in or binges the whole series at once.Always runs outside when the sky is a pretty color but also loves the gloomy monsoon weather. Hi I\'m Shreeya, 25, a proud second mom to a saint Saint Bernard.',
+    description: 'A devoted dog-person who loves cat memes.
+    An avid nature lover who\'s always up for trekking but need meds for altitude sickness.
+    Has a keen interest in cooking but sometimes burns everything.
+    An enthusiastic series watcher
+     but falls asleep two episodes in or binges the whole series at once.
+    Always runs outside when the sky is a pretty color but also loves the gloomy monsoon weather.
+    Hi I\'m Shreeya, 25, a proud second mom to a saint Saint Bernard.',
     funnyDescription: 'Aja mero doctor ko apainmen cha',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/shya.sthaa',
     linkedInLink: 'https://www.linkedin.com/in/shreeya-shrestha-6b333b181',
 };
+*/
 
 const bimalSaud: Employee = {
     id: 'tc-063',
@@ -441,16 +448,20 @@ const sameerRai: Employee = {
     githubLink: 'https://github.com/samshara',
 };
 
+/*
 const sagunaThapa: Employee = {
     id: 'tc-067',
     name: 'Saguna Thapa',
     position: 'Data Analyst',
-    description: 'I enjoy reading, spending time with family and friends, watching a television show and listening to music. I am self-disciplined, introverted and always ready to work hard.',
+    description: 'I enjoy reading, spending time with family and friends,
+     watching a television show and listening to music. I am self-disciplined,
+     introverted and always ready to work hard.',
     funnyDescription: 'Saiiyaan',
     department: 'analysis',
     facebookLink: 'https://www.facebook.com/saguna.thapa.794',
     linkedInLink: 'https://www.linkedin.com/in/saguna-thapa-8a5929223',
 };
+*/
 
 const sushmaAdhikari: Employee = {
     id: 'tc-047',
@@ -497,7 +508,7 @@ const employees: Employee[] = [
     priyeshGautam,
     kanchiTamang,
     kisanPahari,
-    shreeyaShrestha,
+    // shreeyaShrestha,
     karinaGopali,
     nikaShakya,
     poojaSharma,
@@ -512,7 +523,7 @@ const employees: Employee[] = [
     shristiManandhar,
     rupRanjanshi,
     ranjanShrestha,
-    sagunaThapa,
+    // sagunaThapa,
     praneshShrestha,
 ];
 
