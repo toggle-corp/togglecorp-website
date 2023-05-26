@@ -79,9 +79,35 @@
     }
 }
 
-.ourTeam {
-    background-color: var(--color-surface-light);
+.missionSection {
+    background-color: var(--color-surface-header);
+    background-image: url('/rectangle-pattern.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    .missionContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        min-height: 20rem;
+        text-align: center;
+        gap: var(--spacing-large);
+        font-size: var(--font-size-heading-base);
+        font-weight: var(--font-weight-normal);
+        font-style: italic;
+    }
+
+    @media screen and (max-width: 900px) {
+        .missionContent {
+            width: unset;
+        }
+    }
+}
+
+.ourTeam {
     .activityList {
         display: flex;
         gap: var(--spacing-medium);
@@ -102,6 +128,10 @@
             }
         }
     }
+}
+
+.ourCulture {
+    background-color: var(--color-surface-light);
 }
 
 .bottomSection {
