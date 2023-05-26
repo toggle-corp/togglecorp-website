@@ -99,6 +99,16 @@ function AboutUs() {
                     </div>
                 </div>
             </Section>
+            <Container
+                className={styles.missionSection}
+                contentClassName={styles.missionContent}
+            >
+                <span>
+                    &ldquo;Our mission is to inspire talented individuals
+                    to pursue fulfilling careers in Nepal and empower
+                    them to grow and innovate in a fun workplace&rdquo;
+                </span>
+            </Container>
             <Section
                 className={styles.ourTeam}
                 title="We are proud of the team we have built"
@@ -117,6 +127,7 @@ function AboutUs() {
                 </div>
             </Section>
             <Section
+                className={styles.ourCulture}
                 title="Our Culture and Core Values"
                 description="People have graced Togglecorp with their optimism and open-mindness over the years, and we carry this legacy forward!"
             >

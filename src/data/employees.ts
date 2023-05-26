@@ -37,7 +37,8 @@ export type EmployeeId = 'tc-001'
     | 'tc-016'
     | 'tc-047'
     | 'tc-065'
-    | 'tc-052';
+    | 'tc-052'
+    | 'tc-066';
 
 export interface Employee {
     id: EmployeeId;
@@ -171,7 +172,7 @@ const priyeshGautam: Employee = {
     name: 'Priyesh Gautam',
     position: 'Developer',
     description: 'Priyesh, preferably Priyash, big time rock music and gym enthusiast is a fun person to be around. He lives with one of his favorite quote "The top of one mountain is the bottom of the next". Loves going on for a nice walk during dusk, a dog lover, he tries to feel every little piece of nature within. Additionally, always trying his best to make this world a better place."',
-    funnyDescription: 'Get this man some chicken nuggets',
+    funnyDescription: 'Get yo self some juicy ass jerries',
     department: 'development',
 };
 
@@ -293,7 +294,7 @@ const prinishaBaidya: Employee = {
     id: 'tc-028',
     name: 'Prinisha Baidya',
     position: 'Data Analyst / Team Lead',
-    description: 'A fun loving girl who likes to be in a happy environment. Is an optimist, interested in music, sings and dances, keeps others happiness first, gets easily inspired. An altruist and a proud Leo who enjoys helping others. Needs K-Pop and K-Drama doses at times.',
+    description: 'A fun loving girl who likes to be in a happy environment. Is an optimist, interested in music, sings and dances, keeps others happiness first, gets easily inspired. An altruist and a proud Leo member who enjoys helping others. Needs K-Pop and K-Drama doses at times.',
     funnyDescription: 'Aasey aasey',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/prinisha.baidya',
@@ -480,10 +481,20 @@ const praneshShrestha: Employee = {
     name: 'Pranesh Shrestha',
     position: 'UI/UX Designer',
     description: 'Hello, I am Pranesh and I have an attention span of a 2-year-old.',
-    funnyDescription: 'Here here here!!!',
+    funnyDescription: 'Fixai ho.. Bhyai halcha ni.',
     department: 'development',
     facebookLink: 'https://www.facebook.com/pranesh.shrestha.501/',
     instagramLink: 'https://www.instagram.com/pranesh_chaa',
+};
+
+const pratikshyaBhattarai: Employee = {
+    id: 'tc-066',
+    name: 'Pratikshya Bhattarai',
+    position: 'Data Analyst',
+    description: 'Social Vegan Era, avoiding meet.',
+    funnyDescription: 'Malai lame jokes haru ekdam man parcha',
+    department: 'analysis',
+    instagramLink: 'https://www.instagram.com/___pratikshya/',
 };
 
 const employees: Employee[] = [
@@ -525,6 +536,7 @@ const employees: Employee[] = [
     ranjanShrestha,
     // sagunaThapa,
     praneshShrestha,
+    pratikshyaBhattarai,
 ];
 
 export default employees;

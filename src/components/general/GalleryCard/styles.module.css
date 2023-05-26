@@ -4,9 +4,9 @@
 
     .imageContainer {
         position: relative;
-        height: 16rem;
         border-top-left-radius: var(--radius-card);
         border-top-right-radius: var(--radius-card);
+        height: 16rem;
 
         .image {
             border-top-left-radius: var(--radius-card);
@@ -26,8 +26,8 @@
 
     .caption {
         padding: var(--spacing-small);
+        text-align: justify;
         color: var(--color-text-dark-gray);
         font-size: var(--font-size-small);
-        text-align: justify;
     }
 }

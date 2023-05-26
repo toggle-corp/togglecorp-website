@@ -33,8 +33,8 @@
         @media screen and (max-width: 900px) {
             >* {
                 flex-basis: 100%;
-                max-width: unset;
                 min-width: unset;
+                max-width: unset;
             }
         }
     }
