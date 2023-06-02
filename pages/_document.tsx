@@ -26,6 +26,11 @@ function Document() {
                     href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap"
                     rel="stylesheet"
                 />
+                <script
+                    async
+                    src="https://umami.dev.togglecorp.com/script.js"
+                    data-website-id="4f6c3f97-7858-48ac-85f3-57f4916b41a3"
+                />
             </Head>
             <body>
                 <Main />
