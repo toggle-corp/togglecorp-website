@@ -334,7 +334,7 @@ const shreetiKafle: Employee = {
     instagramLink: 'https://www.instagram.com/shreeti.kafle',
 };
 
-const snehaPandey: Employee = {
+/* const snehaPandey: Employee = {
     id: 'tc-052',
     name: 'Sneha Pandey',
     position: 'Data Analyst / Team Lead',
@@ -345,6 +345,7 @@ const snehaPandey: Employee = {
     facebookLink: 'https://www.facebook.com/sneha.pandey.9465',
     linkedInLink: 'https://www.linkedin.com/in/sneha-pandey-00324419b',
 };
+*/
 
 /* const shreeyaShrestha: Employee = {
     id: 'tc-066',
@@ -387,7 +388,7 @@ const sadikshyaHamal: Employee = {
 const rubyThapaliya: Employee = {
     id: 'tc-027',
     name: 'Ruby Thapaliya',
-    position: 'Data Analyst',
+    position: 'Data Analyst / Team Lead',
     description: 'Myself Ruby from Western Nepal. I\'ve always been outspoken, energetic and inquisitive to new things. I believe making someone laugh everyday makes my life worth living. I often give advice to people and have been keen to learn from their mistakes. As long as there\'s life, there\'s hope so everyone should keep striving to their desired purpose.',
     funnyDescription: 'Affff cooourse!',
     department: 'analysis',
@@ -511,7 +512,8 @@ const employees: Employee[] = [
     kriti,
     shreetiKafle,
     prinishaBaidya,
-    snehaPandey,
+    // snehaPandey,
+    rubyThapaliya,
     anushaKhadka,
     bibekPandey,
     sameerRai,
@@ -529,7 +531,6 @@ const employees: Employee[] = [
     shubhDhital,
     bimalSaud,
     sadikshyaHamal,
-    rubyThapaliya,
     sushmaAdhikari,
     shristiManandhar,
     rupRanjanshi,
