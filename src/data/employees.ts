@@ -242,7 +242,7 @@ const kanchiTamang: Employee = {
 
 const kisanPahari: Employee = {
     id: 'tc-017',
-    name: 'Nishan Pahari',
+    name: 'Kishan Pahari',
     position: 'Chef',
     description: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
     funnyDescription: 'Ma manage garchu',
