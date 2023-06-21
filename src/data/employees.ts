@@ -91,17 +91,17 @@ const ankitMehta: Employee = {
     githubLink: 'https://github.com/frozenhelium/',
 };
 
-const anushaKhadka: Employee = {
-    id: 'tc-050',
-    name: 'Anusha Khadka',
-    position: 'Data Analyst',
-    description: 'Have you ever encountered someone who is simultaneously happy and sad? If not, hello there, meet AK! AK is an extrovert with cheerful demeanor. She is fond of melancholy music because she believes that sorrow can be beautiful. She enjoys going on solo walks. We are besties if you think watching FRIENDS is the idea of perfect evening.',
-    funnyDescription: 'Baisakh mahina ma ful fulyo, timlai dekhera man bhulyo',
-    department: 'analysis',
-    facebookLink: 'https://t.co/uyRPiop7Sq',
-    instagramLink: 'https://t.co/QrIDBnubda',
-    linkedInLink: 'https://t.co/SpRa8U05Ah',
-};
+// const anushaKhadka: Employee = {
+//     id: 'tc-050',
+//     name: 'Anusha Khadka',
+//     position: 'Data Analyst',
+//     description: 'Have you ever encountered someone who is simultaneously happy and sad? If not, hello there, meet AK! AK is an extrovert with cheerful demeanor. She is fond of melancholy music because she believes that sorrow can be beautiful. She enjoys going on solo walks. We are besties if you think watching FRIENDS is the idea of perfect evening.',
+//     funnyDescription: 'Baisakh mahina ma ful fulyo, timlai dekhera man bhulyo',
+//     department: 'analysis',
+//     facebookLink: 'https://t.co/uyRPiop7Sq',
+//     instagramLink: 'https://t.co/QrIDBnubda',
+//     linkedInLink: 'https://t.co/SpRa8U05Ah',
+// };
 
 const barshaThakuri: Employee = {
     id: 'tc-040',
@@ -514,7 +514,7 @@ const employees: Employee[] = [
     prinishaBaidya,
     // snehaPandey,
     rubyThapaliya,
-    anushaKhadka,
+    // anushaKhadka,
     bibekPandey,
     sameerRai,
     bimalPandey,
