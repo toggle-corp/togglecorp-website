@@ -323,16 +323,16 @@ const rishiKhatri: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/rishi-khatri-73635519a/',
 };
 
-const shreetiKafle: Employee = {
-    id: 'tc-015',
-    name: 'Shreeti Kafle',
-    position: 'Data Analyst / Team Lead',
-    description: 'I used to think I was indecisive. But now I\'m not so sure.',
-    funnyDescription: 'Pitai khancha ahile!',
-    department: 'analysis',
-    linkedInLink: 'https://www.linkedin.com/in/shreeti-kafle-35bb97187',
-    instagramLink: 'https://www.instagram.com/shreeti.kafle',
-};
+// const shreetiKafle: Employee = {
+//     id: 'tc-015',
+//     name: 'Shreeti Kafle',
+//     position: 'Data Analyst / Team Lead',
+//     description: 'I used to think I was indecisive. But now I\'m not so sure.',
+//     funnyDescription: 'Pitai khancha ahile!',
+//     department: 'analysis',
+//     linkedInLink: 'https://www.linkedin.com/in/shreeti-kafle-35bb97187',
+//     instagramLink: 'https://www.instagram.com/shreeti.kafle',
+// };
 
 /* const snehaPandey: Employee = {
     id: 'tc-052',
@@ -510,7 +510,7 @@ const employees: Employee[] = [
     smritiKafle,
     barshaThakuri,
     kriti,
-    shreetiKafle,
+    // shreetiKafle,
     prinishaBaidya,
     // snehaPandey,
     rubyThapaliya,
