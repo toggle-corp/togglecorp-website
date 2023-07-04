@@ -27,7 +27,7 @@ import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
 // import sagunaThapa from 'resources/employee/saguna.jpeg';
 // import shreeyaShrestha from 'resources/employee/shya.jpeg';
 import sameerRai from 'resources/employee/sameer.jpeg';
-import shreetiKafle from 'resources/employee/shreeti.jpeg';
+// import shreetiKafle from 'resources/employee/shreeti.jpeg';
 import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
 import shristiManandhar from 'resources/employee/shristi.jpeg';
 import shubhDhital from 'resources/employee/shubh.jpeg';
@@ -60,7 +60,7 @@ const employeeImages: {
     'tc-062': shubhDhital,
     'tc-006': kritiChhetri,
     'tc-004': navinAyer,
-    'tc-015': shreetiKafle,
+    // 'tc-015': shreetiKafle,
     // 'tc-052': snehaPandey,
     'tc-057': udayMaharjan,
     // 'tc-067': sagunaThapa,
