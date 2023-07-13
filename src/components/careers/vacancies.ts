@@ -13,18 +13,30 @@ interface Vacancy {
     salary: string;
 }
 
-// NOTE: these are sample job descriptions
+// NOTE: these are actual job descriptions
 const vacancies: Vacancy[] = [
+    // {
+    //     id: '1',
+    //     position: 'Sr. Backend Developer',
+    //     department: 'Development',
+    //     jobLevel: 'Mid / Senior',
+    //     openings: 1,
+    //     experience: '2 years in the same field',
+    //     category: 'Full Time',
+    //     formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYCcQMUk5wGKQTWFsFF_lqXv12BI_DTtbXpmWctrUHxhfTOg/viewform?usp=share_link',
+    //     applyBefore: 'June 30, 2023',
+    //     salary: 'Best in the industry / Negotiable',
+    // },
     {
-        id: '1',
-        position: 'Sr. Backend Developer',
+        id: '3',
+        position: 'Sr. Frontend Developer',
         department: 'Development',
-        jobLevel: 'Mid / Senior',
+        jobLevel: 'Senior',
         openings: 1,
-        experience: '2 years in the same field',
+        experience: '2 - 3 years in the same field',
         category: 'Full Time',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYCcQMUk5wGKQTWFsFF_lqXv12BI_DTtbXpmWctrUHxhfTOg/viewform?usp=share_link',
-        applyBefore: 'June 30, 2023',
+        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc5egRAI3rpyTVeMxZcYOSiXomyGO5GYTgxefOmhXmuvZudew/viewform?usp=share_link',
+        applyBefore: 'August 31, 2023',
         salary: 'Best in the industry / Negotiable',
     },
     {
@@ -36,24 +48,12 @@ const vacancies: Vacancy[] = [
         experience: '6 months - 1 year in the same field',
         category: 'Full Time',
         formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScge7PQ7IAAIoQ-ByE26Djacsiqyz2a1pJTnAN-MabrmJfPJg/viewform?usp=share_link',
-        applyBefore: 'June 30, 2023',
-        salary: 'Best in the industry / Negotiable',
-    },
-    {
-        id: '3',
-        position: 'Sr. Frontend Developer',
-        department: 'Development',
-        jobLevel: 'Senior',
-        openings: 1,
-        experience: '2 - 3 years in the same field',
-        category: 'Full Time',
-        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc5egRAI3rpyTVeMxZcYOSiXomyGO5GYTgxefOmhXmuvZudew/viewform?usp=share_link',
-        applyBefore: 'June 30, 2023',
+        applyBefore: 'August 31, 2023',
         salary: 'Best in the industry / Negotiable',
     },
 ];
 
-// Note: When no vacancies, just uncomment below:
+// Note: When no vacancies, comment above vacancies and uncomment below vacancies:
 // const vacancies: Vacancy[] | undefined = undefined;
 
 export default vacancies;
