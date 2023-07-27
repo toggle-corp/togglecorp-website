@@ -39,6 +39,7 @@ import rup from 'resources/employee/rup.jpeg';
 import sushmaAdhikari from 'resources/employee/sushma.jpeg';
 import praneshShrestha from 'resources/employee/pranesh.jpeg';
 import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpeg';
+import sudanBhandari from 'resources/employee/sudan-bhandari.jpeg';
 
 import { EmployeeId } from 'data/employees';
 
@@ -84,6 +85,7 @@ const employeeImages: {
     'tc-010': kanchiTamang,
     'tc-065': praneshShrestha,
     'tc-066': pratikshyaBhattarai,
+    'tc-067': sudanBhandari,
 };
 
 // eslint-disable-next-line import/prefer-default-export

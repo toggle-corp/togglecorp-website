@@ -38,7 +38,8 @@ export type EmployeeId = 'tc-001'
     | 'tc-047'
     | 'tc-065'
     | 'tc-052'
-    | 'tc-066';
+    | 'tc-066'
+    | 'tc-067';
 
 export interface Employee {
     id: EmployeeId;
@@ -498,6 +499,18 @@ const pratikshyaBhattarai: Employee = {
     instagramLink: 'https://www.instagram.com/___pratikshya/',
 };
 
+const sudanBhandari: Employee = {
+    id: 'tc-067',
+    name: 'Sudan Bhandari',
+    position: 'Developer',
+    description: 'K cha badda!!',
+    funnyDescription: 'Ok boss',
+    department: 'development',
+    instagramLink: 'https://www.instagram.com/sudan.py/',
+    githubLink: 'https://github.com/sudan45',
+    linkedInLink: 'https://www.linkedin.com/in/sudan-bhandari-9b4420149/',
+};
+
 const employees: Employee[] = [
     ankitMehta,
     adityaKhatri,
@@ -538,6 +551,7 @@ const employees: Employee[] = [
     // sagunaThapa,
     praneshShrestha,
     pratikshyaBhattarai,
+    sudanBhandari,
 ];
 
 export default employees;
