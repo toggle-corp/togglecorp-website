@@ -3,10 +3,10 @@ type Department = 'development' | 'analysis' | 'operations';
 export type EmployeeId = 'tc-001'
     | 'tc-013'
     | 'tc-000'
-    | 'tc-050'
+    // | 'tc-050'
     | 'tc-040'
     | 'tc-063'
-    | 'tc-008'
+    // | 'tc-008'
     | 'tc-036'
     | 'tc-010'
     | 'tc-023'
@@ -24,11 +24,9 @@ export type EmployeeId = 'tc-001'
     | 'tc-056'
     | 'tc-027'
     | 'tc-005'
-    // | 'tc-066'
-    // | 'tc-067'
     | 'tc-064'
     | 'tc-007'
-    | 'tc-015'
+    // | 'tc-015'
     | 'tc-059'
     | 'tc-021'
     | 'tc-062'
@@ -37,7 +35,7 @@ export type EmployeeId = 'tc-001'
     | 'tc-016'
     | 'tc-047'
     | 'tc-065'
-    | 'tc-052'
+    // | 'tc-052'
     | 'tc-066'
     | 'tc-067';
 
@@ -92,17 +90,25 @@ const ankitMehta: Employee = {
     githubLink: 'https://github.com/frozenhelium/',
 };
 
-// const anushaKhadka: Employee = {
-//     id: 'tc-050',
-//     name: 'Anusha Khadka',
-//     position: 'Data Analyst',
-//     description: 'Have you ever encountered someone who is simultaneously happy and sad? If not, hello there, meet AK! AK is an extrovert with cheerful demeanor. She is fond of melancholy music because she believes that sorrow can be beautiful. She enjoys going on solo walks. We are besties if you think watching FRIENDS is the idea of perfect evening.',
-//     funnyDescription: 'Baisakh mahina ma ful fulyo, timlai dekhera man bhulyo',
-//     department: 'analysis',
-//     facebookLink: 'https://t.co/uyRPiop7Sq',
-//     instagramLink: 'https://t.co/QrIDBnubda',
-//     linkedInLink: 'https://t.co/SpRa8U05Ah',
-// };
+/*
+const anushaKhadka: Employee = {
+    id: 'tc-050',
+    name: 'Anusha Khadka',
+    position: 'Data Analyst',
+    description: 'Have you ever encountered someone who is simultaneously
+    happy and sad? If not, hello there, meet AK!
+    AK is an extrovert with cheerful demeanor.
+    She is fond of melancholy music because
+    she believes that sorrow can be beautiful.
+    She enjoys going on solo walks.
+    We are besties if you think watching FRIENDS is the idea of perfect evening.',
+    funnyDescription: 'Baisakh mahina ma ful fulyo, timlai dekhera man bhulyo',
+    department: 'analysis',
+    facebookLink: 'https://t.co/uyRPiop7Sq',
+    instagramLink: 'https://t.co/QrIDBnubda',
+    linkedInLink: 'https://t.co/SpRa8U05Ah',
+};
+*/
 
 const barshaThakuri: Employee = {
     id: 'tc-040',
@@ -115,18 +121,22 @@ const barshaThakuri: Employee = {
     instagramLink: 'https://www.instagram.com/barsha.thakuri/',
 };
 
+/*
 const bibekPandey: Employee = {
     id: 'tc-008',
     name: 'Bibek Pandey',
     position: 'Developer',
     funnyDescription: '50 katechi ramaula!',
-    description: '"Chitwan ma ghar chha, Hamlai ke ko darr chha, Dui din ko jindagi maa, hasi raakhnu parcha." Computer and Mathematics. Traveling and writing.',
+    description: '"Chitwan ma ghar chha, Hamlai ke ko darr chha,
+    Dui din ko jindagi maa, hasi raakhnu parcha."
+    Computer and Mathematics. Traveling and writing.',
     department: 'development',
     blogLink: 'https://bewakes.com',
     githubLink: 'https://github.com/bewakes',
     facebookLink: 'https://facebook.com/be.pandey',
     linkedInLink: 'https://www.linkedin.com/in/bibek-pandey-023879b1/',
 };
+*/
 
 const bimalPandey: Employee = {
     id: 'tc-036',
@@ -151,6 +161,7 @@ const keyurKhadka: Employee = {
     department: 'development',
     instagramLink: 'https://www.instagram.com/keyurkhadka',
     twitterLink: 'https://twitter.com/kopitek8',
+    facebookLink: 'https://facebook.com/kopitek8',
     linkedInLink: 'https://www.linkedin.com/in/kopitek8',
     githubLink: 'https://github.com/kopitek8',
 };
@@ -168,14 +179,22 @@ const udayMaharjan: Employee = {
     githubLink: 'https://github.com/udaynwa',
 };
 
+/*
 const priyeshGautam: Employee = {
     id: 'tc-039',
     name: 'Priyesh Gautam',
     position: 'Developer',
-    description: 'Priyesh, preferably Priyash, big time rock music and gym enthusiast is a fun person to be around. He lives with one of his favorite quote "The top of one mountain is the bottom of the next". Loves going on for a nice walk during dusk, a dog lover, he tries to feel every little piece of nature within. Additionally, always trying his best to make this world a better place."',
+    description: 'Priyesh, preferably Priyash,
+    big time rock music and gym enthusiast is a fun person to be around.
+    He lives with one of his favorite quote
+    "The top of one mountain is the bottom of the next".
+    Loves going on for a nice walk during dusk, a dog lover,
+    he tries to feel every little piece of nature within.
+    Additionally, always trying his best to make this world a better place."',
     funnyDescription: 'Get yo self some juicy ass jerries',
     department: 'development',
 };
+*/
 
 const subinaRajopadhyay: Employee = {
     id: 'tc-016',
@@ -260,7 +279,7 @@ const karinaGopali: Employee = {
     instagramLink: 'https://www.instagram.com/karina_gopali_',
 };
 
-const NavinAyer: Employee = {
+const navinAyer: Employee = {
     id: 'tc-004',
     name: 'Navin Ayer',
     position: 'Developer',
@@ -324,22 +343,31 @@ const rishiKhatri: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/rishi-khatri-73635519a/',
 };
 
-// const shreetiKafle: Employee = {
-//     id: 'tc-015',
-//     name: 'Shreeti Kafle',
-//     position: 'Data Analyst / Team Lead',
-//     description: 'I used to think I was indecisive. But now I\'m not so sure.',
-//     funnyDescription: 'Pitai khancha ahile!',
-//     department: 'analysis',
-//     linkedInLink: 'https://www.linkedin.com/in/shreeti-kafle-35bb97187',
-//     instagramLink: 'https://www.instagram.com/shreeti.kafle',
-// };
+/*
+const shreetiKafle: Employee = {
+    id: 'tc-015',
+    name: 'Shreeti Kafle',
+    position: 'Data Analyst / Team Lead',
+    description: 'I used to think I was indecisive. But now I\'m not so sure.',
+    funnyDescription: 'Pitai khancha ahile!',
+    department: 'analysis',
+    linkedInLink: 'https://www.linkedin.com/in/shreeti-kafle-35bb97187',
+    instagramLink: 'https://www.instagram.com/shreeti.kafle',
+};
+*/
 
-/* const snehaPandey: Employee = {
-    id: 'tc-052',
+/*
+const snehaPandey: Employee = {
+    // id: 'tc-052',
     name: 'Sneha Pandey',
     position: 'Data Analyst / Team Lead',
-    description: 'Making a spontaneous plan and having trouble deciding who to invite? Make sure there\'s enough room for Sneha!! Sneha loves traveling, hiking, and trekking as much as any other nature admirer. Her fondness for horses and dogs is unrivaled. She\'s fun to be around, easy to get along with, and a true gourmet! You will always find her experimenting with different cuisines. She is a firm believer that it\'s never too late to learn new things.',
+    description: 'Making a spontaneous plan and having trouble deciding who to invite?
+    Make sure there\'s enough room for Sneha!!
+    Sneha loves traveling, hiking, and trekking as much as any other nature admirer.
+    Her fondness for horses and dogs is unrivaled.
+    She\'s fun to be around, easy to get along with,
+    and a true gourmet! You will always find her experimenting with different cuisines.
+    She is a firm believer that it\'s never too late to learn new things.',
     funnyDescription: 'Testo nabhana na...',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/snehappy_',
@@ -348,7 +376,8 @@ const rishiKhatri: Employee = {
 };
 */
 
-/* const shreeyaShrestha: Employee = {
+/*
+const shreeyaShrestha: Employee = {
     id: 'tc-066',
     name: 'Shreeya Shrestha',
     position: 'Data Analyst',
@@ -515,7 +544,7 @@ const employees: Employee[] = [
     ankitMehta,
     adityaKhatri,
     amarShahi,
-    NavinAyer,
+    navinAyer,
     safarLigal,
     udayMaharjan,
     keyurKhadka,
@@ -528,10 +557,10 @@ const employees: Employee[] = [
     // snehaPandey,
     rubyThapaliya,
     // anushaKhadka,
-    bibekPandey,
+    // bibekPandey,
     sameerRai,
     bimalPandey,
-    priyeshGautam,
+    // priyeshGautam,
     kanchiTamang,
     kisanPahari,
     // shreeyaShrestha,
