@@ -5,7 +5,7 @@ import amarShahi from 'resources/employee/amar.jpeg';
 import ankitMehta from 'resources/employee/ankit.jpeg';
 // import anushaKhadka from 'resources/employee/anusha.jpeg';
 import barshaThakuri from 'resources/employee/barsha.jpeg';
-import bibekPandey from 'resources/employee/bibek.jpeg';
+// import bibekPandey from 'resources/employee/bibek.jpeg';
 import bimalPandey from 'resources/employee/bimal-pandey.jpeg';
 import bimalSaud from 'resources/employee/bimal-saud.jpeg';
 import kanchiTamang from 'resources/employee/kanchi.jpeg';
@@ -17,7 +17,7 @@ import navinAyer from 'resources/employee/navin.jpeg';
 import nikaShakya from 'resources/employee/nika.jpeg';
 import poojaSharma from 'resources/employee/pooja.jpeg';
 import prinishaBaidya from 'resources/employee/prinisha.jpeg';
-import priyeshGautam from 'resources/employee/priyesh.jpeg';
+// import priyeshGautam from 'resources/employee/priyesh.jpeg';
 import puranBan from 'resources/employee/puran.jpeg';
 import ranjanShrestha from 'resources/employee/ranjan.jpeg';
 import rishiKhatri from 'resources/employee/rishi.jpeg';
@@ -55,8 +55,8 @@ const employeeImages: {
     'tc-016': subinaRajopadhyaya,
     'tc-058': keyurKhadka,
     'tc-036': bimalPandey,
-    'tc-008': bibekPandey,
-    'tc-039': priyeshGautam,
+    // 'tc-008': bibekPandey,
+    // 'tc-039': priyeshGautam,
     'tc-061': smritiKafle,
     'tc-062': shubhDhital,
     'tc-006': kritiChhetri,
