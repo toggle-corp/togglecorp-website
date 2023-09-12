@@ -452,7 +452,7 @@ const shreeyashShrestha: Employee = {
     name: 'Shreeyash Laya La Shrestha',
     position: 'Developer',
     description: 'Crafting code and building beautiful solutions with a passion for continuous learning and growth. Always striving to create and inspire change through technology.',
-    funnyDescription: 'Maaraamaar, kaataakaat. Ghatiyaa haru!',
+    funnyDescription: 'Haule haule saajna; dheere dheere baalma. O ho ho hmm hmm hmm...',
     department: 'development',
     instagramLink: 'https://www.instagram.com/shreeyash__',
     facebookLink: 'https://www.facebook.com/shreeyash07',
@@ -556,7 +556,7 @@ const anupamaKc: Employee = {
     name: 'Anupama KC',
     position: 'Data Analyst',
     description: 'Rasili Hasili Funny and Funtastic',
-    funnyDescription: 'I am hungry!',
+    funnyDescription: 'Guess who is hungry again?',
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/anupamakc1/',
 };
