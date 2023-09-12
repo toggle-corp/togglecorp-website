@@ -7,7 +7,7 @@ export type EmployeeId = 'tc-001'
     | 'tc-040'
     | 'tc-063'
     // | 'tc-008'
-    | 'tc-036'
+    // | 'tc-036'
     | 'tc-010'
     | 'tc-023'
     | 'tc-058'
@@ -37,7 +37,9 @@ export type EmployeeId = 'tc-001'
     | 'tc-065'
     // | 'tc-052'
     | 'tc-066'
-    | 'tc-067';
+    | 'tc-067'
+    | 'tc-068'
+    | 'tc-069';
 
 export interface Employee {
     id: EmployeeId;
@@ -138,19 +140,19 @@ const bibekPandey: Employee = {
 };
 */
 
-const bimalPandey: Employee = {
-    id: 'tc-036',
-    name: 'Bimal Prasad Pandey',
-    position: 'Software Developer',
-    description: 'No BP be happy.',
-    funnyDescription: 'Namaskar sir haru!',
-    department: 'development',
-    twitterLink: 'https://twitter.com/BimalPandy',
-    githubLink: 'https://github.com/bimal125',
-    linkedInLink: 'https://www.linkedin.com/in/bimal-pandey-7a5033110',
-    facebookLink: 'https://www.facebook.com/bimal125',
-    stackoverflowLink: 'https://stackoverflow.com/users/6127290/bimal-prasad-pandey',
-};
+// const bimalPandey: Employee = {
+//     id: 'tc-036',
+//     name: 'Bimal Prasad Pandey',
+//     position: 'Software Developer',
+//     description: 'No BP be happy.',
+//     funnyDescription: 'Namaskar sir haru!',
+//     department: 'development',
+//     twitterLink: 'https://twitter.com/BimalPandy',
+//     githubLink: 'https://github.com/bimal125',
+//     linkedInLink: 'https://www.linkedin.com/in/bimal-pandey-7a5033110',
+//     facebookLink: 'https://www.facebook.com/bimal125',
+//     stackoverflowLink: 'https://stackoverflow.com/users/6127290/bimal-prasad-pandey',
+// };
 
 const keyurKhadka: Employee = {
     id: 'tc-058',
@@ -233,7 +235,7 @@ const shubhDhital: Employee = {
 const safarLigal: Employee = {
     id: 'tc-005',
     name: 'Safar Sanu Ligal',
-    position: 'Software Engineer',
+    position: 'Developer',
     description: 'No man ever steps in th same river twice, for it\'s not the same river and he\'s not the same man.',
     funnyDescription: 'Mazza ayena, eh!',
     department: 'development',
@@ -251,24 +253,6 @@ const kriti: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/kriti-chhetri-61270214b',
 };
 
-const kanchiTamang: Employee = {
-    id: 'tc-010',
-    name: 'Kanchi Tamang',
-    position: 'Office Assistant',
-    description: 'Kripaya office sakdo safa sugar rakhdinu hola',
-    funnyDescription: 'Good morning! Aaipugnu bho?',
-    department: 'operations',
-};
-
-const kisanPahari: Employee = {
-    id: 'tc-017',
-    name: 'Kishan Pahari',
-    position: 'Chef',
-    description: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
-    funnyDescription: 'Ma manage garchu',
-    department: 'operations',
-};
-
 const karinaGopali: Employee = {
     id: 'tc-023',
     name: 'Karina Gopali',
@@ -282,9 +266,9 @@ const karinaGopali: Employee = {
 const navinAyer: Employee = {
     id: 'tc-004',
     name: 'Navin Ayer',
-    position: 'Developer',
+    position: 'Backend Developer',
     description: '¯\\_(ツ)_/¯',
-    funnyDescription: 'Too late, too sad, too bad',
+    funnyDescription: 'Hajuuuuuuuuuuuuuuuur',
     department: 'development',
     githubLink: 'https://github.com/thenav56',
     linkedInLink: 'https://www.linkedin.com/in/navin-ayer-6453b8b4',
@@ -335,7 +319,7 @@ const puranBan: Employee = {
 const rishiKhatri: Employee = {
     id: 'tc-018',
     name: 'Rishi Khatri',
-    position: 'Developer',
+    position: 'Backend Developer',
     description: 'Rishi will always remember......',
     funnyDescription: 'Togglecorp Airlines ma tapailai swaagat cha.. Dhanyewaad',
     department: 'development',
@@ -415,6 +399,33 @@ const sadikshyaHamal: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/sadikshya-hamal',
 };
 
+const kisanPahari: Employee = {
+    id: 'tc-017',
+    name: 'Kishan Pahari',
+    position: 'Chef',
+    description: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
+    funnyDescription: 'Ma manage garchu',
+    department: 'operations',
+};
+
+const kanchiTamang: Employee = {
+    id: 'tc-010',
+    name: 'Kanchi Tamang',
+    position: 'Office Assistant',
+    description: 'Kripaya office sakdo safa sugar rakhdinu hola',
+    funnyDescription: 'Good morning! Aaipugnu bho?',
+    department: 'operations',
+};
+
+const champaDeviChaudhary: Employee = {
+    id: 'tc-068',
+    name: 'Champha Devi Chaudhary',
+    position: 'Office Assistant',
+    description: 'Ma khusi chu',
+    funnyDescription: 'Vaihalcha',
+    department: 'operations',
+};
+
 const rubyThapaliya: Employee = {
     id: 'tc-027',
     name: 'Ruby Thapaliya',
@@ -451,7 +462,7 @@ const shreeyashShrestha: Employee = {
 const rupRanjanshi: Employee = {
     id: 'tc-055',
     name: 'Rup Narayan Rajbanshi',
-    position: 'Python Developer',
+    position: 'Backend Developer',
     description: 'I am what I am. I am in my own world',
     funnyDescription: 'Oh sathi!',
     department: 'development',
@@ -512,7 +523,7 @@ const praneshShrestha: Employee = {
     name: 'Pranesh Shrestha',
     position: 'UI/UX Designer',
     description: 'Hello, I am Pranesh and I have an attention span of a 2-year-old.',
-    funnyDescription: 'Fixai ho.. Bhyai halcha ni.',
+    funnyDescription: 'Ma mid-level QA ho k!!',
     department: 'development',
     facebookLink: 'https://www.facebook.com/pranesh.shrestha.501/',
     instagramLink: 'https://www.instagram.com/pranesh_chaa',
@@ -531,13 +542,23 @@ const pratikshyaBhattarai: Employee = {
 const sudanBhandari: Employee = {
     id: 'tc-067',
     name: 'Sudan Bhandari',
-    position: 'Developer',
+    position: 'Backend Developer',
     description: 'K cha badda!!',
     funnyDescription: 'Ok boss',
     department: 'development',
     instagramLink: 'https://www.instagram.com/sudan.py/',
     githubLink: 'https://github.com/sudan45',
     linkedInLink: 'https://www.linkedin.com/in/sudan-bhandari-9b4420149/',
+};
+
+const anupamaKc: Employee = {
+    id: 'tc-069',
+    name: 'Anupama KC',
+    position: 'Data Analyst',
+    description: 'Rasili Hasili Funny and Funtastic',
+    funnyDescription: 'I am hungry!',
+    department: 'analysis',
+    instagramLink: 'https://www.instagram.com/anupamakc1/',
 };
 
 const employees: Employee[] = [
@@ -559,10 +580,8 @@ const employees: Employee[] = [
     // anushaKhadka,
     // bibekPandey,
     sameerRai,
-    bimalPandey,
+    // bimalPandey,
     // priyeshGautam,
-    kanchiTamang,
-    kisanPahari,
     // shreeyaShrestha,
     karinaGopali,
     nikaShakya,
@@ -573,6 +592,9 @@ const employees: Employee[] = [
     shubhDhital,
     bimalSaud,
     sadikshyaHamal,
+    kisanPahari,
+    kanchiTamang,
+    champaDeviChaudhary,
     sushmaAdhikari,
     shristiManandhar,
     rupRanjanshi,
@@ -581,6 +603,7 @@ const employees: Employee[] = [
     praneshShrestha,
     pratikshyaBhattarai,
     sudanBhandari,
+    anupamaKc,
 ];
 
 export default employees;
