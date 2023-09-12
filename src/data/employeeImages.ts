@@ -6,7 +6,7 @@ import ankitMehta from 'resources/employee/ankit.jpeg';
 // import anushaKhadka from 'resources/employee/anusha.jpeg';
 import barshaThakuri from 'resources/employee/barsha.jpeg';
 // import bibekPandey from 'resources/employee/bibek.jpeg';
-import bimalPandey from 'resources/employee/bimal-pandey.jpeg';
+// import bimalPandey from 'resources/employee/bimal-pandey.jpeg';
 import bimalSaud from 'resources/employee/bimal-saud.jpeg';
 import kanchiTamang from 'resources/employee/kanchi.jpeg';
 import karinaGopali from 'resources/employee/karina.jpeg';
@@ -40,6 +40,9 @@ import sushmaAdhikari from 'resources/employee/sushma.jpeg';
 import praneshShrestha from 'resources/employee/pranesh.jpeg';
 import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpeg';
 import sudanBhandari from 'resources/employee/sudan-bhandari.jpeg';
+import anupamaKc from 'resources/employee/anupama-kc.jpeg';
+
+import champaDevi from 'resources/employee/champa.jpeg';
 
 import { EmployeeId } from 'data/employees';
 
@@ -54,7 +57,7 @@ const employeeImages: {
     'tc-005': safarLigal,
     'tc-016': subinaRajopadhyaya,
     'tc-058': keyurKhadka,
-    'tc-036': bimalPandey,
+    // 'tc-036': bimalPandey,
     // 'tc-008': bibekPandey,
     // 'tc-039': priyeshGautam,
     'tc-061': smritiKafle,
@@ -86,6 +89,8 @@ const employeeImages: {
     'tc-065': praneshShrestha,
     'tc-066': pratikshyaBhattarai,
     'tc-067': sudanBhandari,
+    'tc-068': champaDevi,
+    'tc-069': anupamaKc,
 };
 
 // eslint-disable-next-line import/prefer-default-export
