@@ -28,7 +28,7 @@ function Document() {
                 />
                 <script
                     async
-                    src="https://umami.dev.togglecorp.com/script.js"
+                    src="https://umami.tools.togglecorp.com/script.js"
                     data-website-id="4f6c3f97-7858-48ac-85f3-57f4916b41a3"
                 />
             </Head>
