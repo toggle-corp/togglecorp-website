@@ -58,7 +58,7 @@ function Team(props: Props) {
                 </div>
             </Section>
             <Section
-                title="Research & Analysis"
+                title="Tagging, Research & Analysis"
             >
                 <div className={styles.memberGroup}>
                     {analysisTeam?.map((member) => (

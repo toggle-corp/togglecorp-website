@@ -101,7 +101,7 @@ function Footer(props: Props) {
                         <span className={styles.linkHover}>Development</span>
                     </Link>
                     <Link href="/services/research" passHref>
-                        <span className={styles.linkHover}>Research & Analysis</span>
+                        <span className={styles.linkHover}>Tagging, Research & Analysis</span>
                     </Link>
                     <Link href="/services/consulting" passHref>
                         <span className={styles.linkHover}>Consulting</span>

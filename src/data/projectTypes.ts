@@ -29,7 +29,7 @@ export const development: ProjectTypeItem = {
 export const research: ProjectTypeItem = {
     image: researchImg,
     bannerImage: researchImgBanner,
-    title: 'Research and Analysis',
+    title: 'Tagging, Research and Analysis',
     description:
         'We turn mundane data into exciting visuals that tell a story',
     link: '/services/research',
