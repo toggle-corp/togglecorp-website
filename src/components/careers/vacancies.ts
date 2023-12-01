@@ -15,18 +15,19 @@ interface Vacancy {
 
 // NOTE: these are actual job descriptions
 const vacancies: Vacancy[] = [
-    // {
-    //     id: '1',
-    //     position: 'Sr. Backend Developer',
-    //     department: 'Development',
-    //     jobLevel: 'Mid / Senior',
-    //     openings: 1,
-    //     experience: '2 years in the same field',
-    //     category: 'Full Time',
-    //     formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYCcQMUk5wGKQTWFsFF_lqXv12BI_DTtbXpmWctrUHxhfTOg/viewform?usp=share_link',
-    //     applyBefore: 'June 30, 2023',
-    //     salary: 'Best in the industry / Negotiable',
-    // },
+    /*
+    {
+        id: '1',
+        position: 'Sr. Backend Developer',
+        department: 'Development',
+        jobLevel: 'Mid / Senior',
+        openings: 1,
+        experience: '2 years in the same field',
+        category: 'Full Time',
+        formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYCcQMUk5wGKQTWFsFF_lqXv12BI_DTtbXpmWctrUHxhfTOg/viewform?usp=share_link',
+        applyBefore: 'June 30, 2023',
+        salary: 'Best in the industry / Negotiable',
+    },
     {
         id: '3',
         position: 'Sr. Frontend Developer',
@@ -51,6 +52,7 @@ const vacancies: Vacancy[] = [
         applyBefore: 'August 31, 2023',
         salary: 'Best in the industry / Negotiable',
     },
+    */
 ];
 
 // Note: When no vacancies, comment above vacancies and uncomment below vacancies:

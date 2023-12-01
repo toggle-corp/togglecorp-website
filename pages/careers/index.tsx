@@ -53,7 +53,7 @@ function CareerPage() {
                 />
             )}
         >
-            {vacancies && (
+            {vacancies.length > 0 && (
                 <Container contentClassName={styles.careerContent}>
                     <Header
                         title="Job openings"
