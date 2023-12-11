@@ -39,7 +39,9 @@ export type EmployeeId = 'tc-001'
     | 'tc-066'
     | 'tc-067'
     | 'tc-068'
-    | 'tc-069';
+    | 'tc-069'
+    | 'tc-070'
+    | 'tc-071';
 
 export interface Employee {
     id: EmployeeId;
@@ -561,6 +563,27 @@ const anupamaKc: Employee = {
     instagramLink: 'https://www.instagram.com/anupamakc1/',
 };
 
+const babinKarmacharya: Employee = {
+    id: 'tc-070',
+    name: 'Babin Kumar Karmacharya',
+    position: 'QA Engineer',
+    description: 'Breaking things professionally with a smile – I\'m the QA Engineer who turns software glitches into comedy gold. Finding bugs is my superpower, fixing them is just a bonus',
+    funnyDescription: '',
+    department: 'development',
+    instagramLink: 'https://instagram.com/babin_karmacharya',
+    linkedInLink: 'https://www.linkedin.com/in/babin-kumar-karmacharya-b1789b220/',
+};
+
+const shreyaBhattarai: Employee = {
+    id: 'tc-071',
+    name: 'Shreya Bhattarai',
+    position: 'QA Engineer',
+    description: 'Haina, sab thikk chaaaaa !!!!!',
+    funnyDescription: 'Haina, sab thikk chaaaaa !!!!!',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/shreyabha/',
+};
+
 const employees: Employee[] = [
     ankitMehta,
     adityaKhatri,
@@ -604,6 +627,8 @@ const employees: Employee[] = [
     pratikshyaBhattarai,
     sudanBhandari,
     anupamaKc,
+    babinKarmacharya,
+    shreyaBhattarai,
 ];
 
 export default employees;
