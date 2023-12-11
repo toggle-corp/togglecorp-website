@@ -41,6 +41,8 @@ import praneshShrestha from 'resources/employee/pranesh.jpeg';
 import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpeg';
 import sudanBhandari from 'resources/employee/sudan-bhandari.jpeg';
 import anupamaKc from 'resources/employee/anupama-kc.jpeg';
+import babinKarmacharya from 'resources/employee/babin-karmacharya.jpeg';
+import shreyaBhattarai from 'resources/employee/shreya-bhattarai.jpeg';
 
 import champaDevi from 'resources/employee/champa.jpeg';
 
@@ -91,6 +93,8 @@ const employeeImages: {
     'tc-067': sudanBhandari,
     'tc-068': champaDevi,
     'tc-069': anupamaKc,
+    'tc-070': babinKarmacharya,
+    'tc-071': shreyaBhattarai,
 };
 
 // eslint-disable-next-line import/prefer-default-export
