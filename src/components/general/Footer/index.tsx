@@ -83,6 +83,9 @@ function Footer(props: Props) {
                     <Link href="/careers" passHref>
                         <span className={styles.linkHover}>Career</span>
                     </Link>
+                    <Link href="https://blog.togglecorp.com" passHref>
+                        <span className={styles.linkHover}>Blogs and Resources</span>
+                    </Link>
                     <Link href="/contact-us" passHref>
                         <span className={styles.linkHover}>Contact</span>
                     </Link>
