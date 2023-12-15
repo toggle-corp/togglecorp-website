@@ -89,7 +89,7 @@ function Navbar(props: NavProps) {
                     />
                 </div>
             </Link>
-            {/* NOTE: This menu below is intented to be used for responsive menu bar */}
+            {/* NOTE: This menu below is intended to be used for responsive menu bar */}
             {showBarMenu && (
                 <div className={styles.menuBar}>
                     {/* Replace with /works after all works page are complete */}
@@ -98,6 +98,9 @@ function Navbar(props: NavProps) {
                     </NavLink>
                     <NavLink href="/careers">
                         Career
+                    </NavLink>
+                    <NavLink href="https://blog.togglecorp.com">
+                        Blogs
                     </NavLink>
                     <NavLink href="/about-us">
                         About
@@ -125,6 +128,9 @@ function Navbar(props: NavProps) {
                 </NavLink>
                 <NavLink href="/careers">
                     Career
+                </NavLink>
+                <NavLink href="https://blog.togglecorp.com">
+                    Blogs
                 </NavLink>
                 <NavLink href="/about-us">
                     About
