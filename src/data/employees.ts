@@ -299,7 +299,7 @@ const poojaSharma: Employee = {
 const prinishaBaidya: Employee = {
     id: 'tc-028',
     name: 'Prinisha Baidya',
-    position: 'Data Analyst / Team Lead',
+    position: 'Data Analyst/Team Lead/Communications and Digital Content Manager',
     description: 'A fun loving girl who likes to be in a happy environment. Is an optimist, interested in music, sings and dances, keeps others happiness first, gets easily inspired. An altruist and a proud Leo member who enjoys helping others. Needs K-Pop and K-Drama doses at times.',
     funnyDescription: 'Aasey aasey',
     department: 'analysis',
