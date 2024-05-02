@@ -41,7 +41,11 @@ export type EmployeeId = 'tc-001'
     | 'tc-068'
     | 'tc-069'
     | 'tc-070'
-    | 'tc-071';
+    | 'tc-071'
+    | 'tc-072'
+    | 'tc-073'
+    | 'tc-074'
+    | 'tc-075';
 
 export interface Employee {
     id: EmployeeId;
@@ -142,19 +146,21 @@ const bibekPandey: Employee = {
 };
 */
 
-// const bimalPandey: Employee = {
-//     id: 'tc-036',
-//     name: 'Bimal Prasad Pandey',
-//     position: 'Software Developer',
-//     description: 'No BP be happy.',
-//     funnyDescription: 'Namaskar sir haru!',
-//     department: 'development',
-//     twitterLink: 'https://twitter.com/BimalPandy',
-//     githubLink: 'https://github.com/bimal125',
-//     linkedInLink: 'https://www.linkedin.com/in/bimal-pandey-7a5033110',
-//     facebookLink: 'https://www.facebook.com/bimal125',
-//     stackoverflowLink: 'https://stackoverflow.com/users/6127290/bimal-prasad-pandey',
-// };
+/*
+const bimalPandey: Employee = {
+    id: 'tc-036',
+    name: 'Bimal Prasad Pandey',
+    position: 'Software Developer',
+    description: 'No BP be happy.',
+    funnyDescription: 'Namaskar sir haru!',
+    department: 'development',
+    twitterLink: 'https://twitter.com/BimalPandy',
+    githubLink: 'https://github.com/bimal125',
+    linkedInLink: 'https://www.linkedin.com/in/bimal-pandey-7a5033110',
+    facebookLink: 'https://www.facebook.com/bimal125',
+    stackoverflowLink: 'https://stackoverflow.com/users/6127290/bimal-prasad-pandey',
+};
+*/
 
 const keyurKhadka: Employee = {
     id: 'tc-058',
@@ -175,7 +181,7 @@ const udayMaharjan: Employee = {
     name: 'Uday Maharjan',
     position: 'Assistant Project Manager',
     funnyDescription: 'What is your school\'s name? School Maharjan',
-    description: 'Meet Uday, a 26-year-old man who is still trying to figure out what he wants to be when he grows up (because let\'s be real, at 26 you\'re basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He\'s always up for a good time, whether it\'s cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he\'s not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He\'s also been known to dance every now and then (just don\'t ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.',
+    description: 'Meet Uday, a 27-year-old man who is still trying to figure out what he wants to be when he grows up (because let\'s be real, at 26 you\'re basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He\'s always up for a good time, whether it\'s cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he\'s not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He\'s also been known to dance every now and then (just don\'t ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.',
     department: 'development',
     instagramLink: 'https://www.instagram.com/udaynwa',
     facebookLink: 'https://www.facebook.com/udaynwa',
@@ -244,6 +250,7 @@ const safarLigal: Employee = {
     githubLink: 'https://github.com/tnagorra/',
 };
 
+/*
 const kriti: Employee = {
     id: 'tc-006',
     name: 'Kriti Chhetri',
@@ -264,6 +271,7 @@ const karinaGopali: Employee = {
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/karina_gopali_',
 };
+*/
 
 const navinAyer: Employee = {
     id: 'tc-004',
@@ -553,6 +561,7 @@ const sudanBhandari: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/sudan-bhandari-9b4420149/',
 };
 
+/*
 const anupamaKc: Employee = {
     id: 'tc-069',
     name: 'Anupama KC',
@@ -562,13 +571,14 @@ const anupamaKc: Employee = {
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/anupamakc1/',
 };
+*/
 
 const babinKarmacharya: Employee = {
     id: 'tc-070',
     name: 'Babin Kumar Karmacharya',
     position: 'QA Engineer',
     description: 'Breaking things professionally with a smile – I\'m the QA Engineer who turns software glitches into comedy gold. Finding bugs is my superpower, fixing them is just a bonus',
-    funnyDescription: '',
+    funnyDescription: 'Malai Shreya le last bully hancha!',
     department: 'development',
     instagramLink: 'https://instagram.com/babin_karmacharya',
     linkedInLink: 'https://www.linkedin.com/in/babin-kumar-karmacharya-b1789b220/',
@@ -579,9 +589,55 @@ const shreyaBhattarai: Employee = {
     name: 'Shreya Bhattarai',
     position: 'QA Engineer',
     description: 'Haina, sab thikk chaaaaa !!!!!',
-    funnyDescription: 'Haina, sab thikk chaaaaa !!!!!',
+    funnyDescription: 'aile ho Babin?? 😠',
     department: 'development',
     linkedInLink: 'https://www.linkedin.com/in/shreyabha/',
+};
+
+const sushilTiwari: Employee = {
+    id: 'tc-072',
+    name: 'Sushil Tiwari',
+    position: 'Backend Developer',
+    description: 'Waasssssssssup Bro?',
+    funnyDescription: 'Mero aaja futsal aauna namilney bho',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/susilnem/',
+    githubLink: 'https://github.com/susilnem',
+};
+
+const sauravSapkota: Employee = {
+    id: 'tc-073',
+    name: 'Saurav Sapkota',
+    position: 'Backend Developer',
+    description: 'Chiya khanna janni ho???',
+    funnyDescription: 'Bike hoina hunter ho hunter 350',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/sauravsapkota/',
+    githubLink: 'https://github.com/sauravsapkota/',
+    twitterLink: 'https://twitter.com/sauravsapkota/',
+    facebookLink: 'https://facebook.com/saauravsapkota/',
+    instagramLink: 'https://instagram.com/da_saurav_sapkota/',
+};
+
+const roshaniPoudel: Employee = {
+    id: 'tc-074',
+    name: 'Roshani Poudel',
+    position: 'Frontend Developer',
+    funnyDescription: 'Tyo bela ma still intern thyeeee! Hehe he!',
+    description: 'Hey there! I\'m Roshani, passionate about frontend development. Beyond coding, I enjoy exploring new places, food and cooking.',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/roshni-poudel',
+    instagramLink: 'https://www.instagram.com/_roshnipoudel',
+};
+
+const supriyaRana: Employee = {
+    id: 'tc-075',
+    name: 'Supriya Rana',
+    position: 'Department Head-Research and Analysis',
+    description: 'Vibes milnu parcha!!!',
+    funnyDescription: 'Malie veg kina bhako nasodha!',
+    department: 'analysis',
+    linkedInLink: 'www.linkedin.com/in/supriya-rana-39a248215',
 };
 
 const employees: Employee[] = [
@@ -595,7 +651,7 @@ const employees: Employee[] = [
     subinaRajopadhyay,
     smritiKafle,
     barshaThakuri,
-    kriti,
+    // kriti,
     // shreetiKafle,
     prinishaBaidya,
     // snehaPandey,
@@ -606,7 +662,7 @@ const employees: Employee[] = [
     // bimalPandey,
     // priyeshGautam,
     // shreeyaShrestha,
-    karinaGopali,
+    // karinaGopali,
     nikaShakya,
     poojaSharma,
     puranBan,
@@ -626,9 +682,13 @@ const employees: Employee[] = [
     praneshShrestha,
     pratikshyaBhattarai,
     sudanBhandari,
-    anupamaKc,
+    // anupamaKc,
     babinKarmacharya,
     shreyaBhattarai,
+    sushilTiwari,
+    sauravSapkota,
+    roshaniPoudel,
+    supriyaRana,
 ];
 
 export default employees;

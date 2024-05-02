@@ -99,9 +99,14 @@ function Navbar(props: NavProps) {
                     <NavLink href="/careers">
                         Career
                     </NavLink>
-                    <NavLink href="https://blog.togglecorp.com">
+                    <a
+                        className={styles.navLink}
+                        href="https://blog.togglecorp.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         Blogs
-                    </NavLink>
+                    </a>
                     <NavLink href="/about-us">
                         About
                     </NavLink>
@@ -129,9 +134,14 @@ function Navbar(props: NavProps) {
                 <NavLink href="/careers">
                     Career
                 </NavLink>
-                <NavLink href="https://blog.togglecorp.com">
+                <a
+                    className={styles.navLink}
+                    href="https://blog.togglecorp.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     Blogs
-                </NavLink>
+                </a>
                 <NavLink href="/about-us">
                     About
                 </NavLink>
