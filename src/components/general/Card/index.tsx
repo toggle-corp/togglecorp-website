@@ -9,9 +9,10 @@ interface Props {
     variant?: 'mini' | 'normal';
     className?: string;
     href?: string;
+    openExternal?: Boolean;
     imageSrc?: string | StaticImageData;
     title?: string;
-    description?: string;
+    description?: string | React.ReactNode;
     tags?: string[];
 }
 
@@ -22,6 +23,7 @@ function Card(props: Props) {
         imageSrc,
         title,
         description,
+        openExternal,
         tags,
         href,
     } = props;
@@ -49,7 +51,7 @@ function Card(props: Props) {
                 {description && (
                     <div
                         className={styles.description}
-                        title={description}
+                        title={typeof description === 'string' ? description : undefined}
                     >
                         {description}
                     </div>
@@ -84,7 +86,10 @@ function Card(props: Props) {
             passHref
         >
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className={className}>
+            <a
+                className={className}
+                target={openExternal ? '_blank' : undefined}
+            >
                 {children}
             </a>
         </Link>
