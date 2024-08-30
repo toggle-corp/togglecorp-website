@@ -10,11 +10,9 @@ import keyurKhadka from 'resources/employee/keyur.jpeg';
 import kishanPahari from 'resources/employee/nishan.jpeg';
 import navinAyer from 'resources/employee/navin.jpeg';
 import nikaShakya from 'resources/employee/nika.jpeg';
-import poojaSharma from 'resources/employee/pooja.jpeg';
 import prinishaBaidya from 'resources/employee/prinisha.jpeg';
 import puranBan from 'resources/employee/puran.jpeg';
 import ranjanShrestha from 'resources/employee/ranjan.jpeg';
-import rishiKhatri from 'resources/employee/rishi.jpeg';
 import rubyThapaliya from 'resources/employee/ruby.jpeg';
 import safarLigal from 'resources/employee/safar.jpeg';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
@@ -32,9 +30,7 @@ import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpeg';
 import sudanBhandari from 'resources/employee/sudan-bhandari.jpeg';
 import babinKarmacharya from 'resources/employee/babin-karmacharya.jpeg';
 import shreyaBhattarai from 'resources/employee/shreya-bhattarai.jpeg';
-import supriyaRana from 'resources/employee/supriyaRana.jpg';
 import sushilTiwari from 'resources/employee/sushilTiwari.jpg';
-import sauravSapkota from 'resources/employee/sauravSapkota.jpg';
 import roshaniPoudel from 'resources/employee/roshaniPoudel.jpg';
 
 import champaDevi from 'resources/employee/champa.jpeg';
@@ -58,7 +54,6 @@ const employeeImages: {
     'tc-063': bimalSaud,
     'tc-017': kishanPahari,
     'tc-030': nikaShakya,
-    'tc-034': poojaSharma,
     'tc-028': prinishaBaidya,
     'tc-056': puranBan,
     'tc-042': ranjanShrestha,
@@ -69,7 +64,6 @@ const employeeImages: {
     'tc-021': shristiManandhar,
     'tc-055': rup,
     'tc-047': sushmaAdhikari,
-    'tc-018': rishiKhatri,
     'tc-010': kanchiTamang,
     'tc-065': praneshShrestha,
     'tc-066': pratikshyaBhattarai,
@@ -78,9 +72,7 @@ const employeeImages: {
     'tc-070': babinKarmacharya,
     'tc-071': shreyaBhattarai,
     'tc-072': sushilTiwari,
-    'tc-073': sauravSapkota,
     'tc-074': roshaniPoudel,
-    'tc-075': supriyaRana,
 };
 
 // eslint-disable-next-line import/prefer-default-export

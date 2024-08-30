@@ -1,22 +1,21 @@
-import React, {
-    useMemo,
-    useState,
-} from 'react';
+import React from 'react';
 import { GetStaticProps } from 'next';
 // import { unique } from '@togglecorp/fujs';
 
-import { ProjectType, getProjectType } from 'data/projectTypes';
-import { getProjectCoverImage } from 'data/projectImages';
+import { ProjectType } from 'data/projectTypes';
+// import { getProjectCoverImage } from 'data/projectImages';
 import staticProjects, { Project } from 'data/projects';
 
 import Page from 'components/general/Page';
-import Card from 'components/general/Card';
-import Container from 'components/general/Container';
 import BannerWithImage from 'components/general/BannerWithImage';
 import KeyFigure from 'components/general/KeyFigure';
+import Container from 'components/general/Container';
+import Card from 'components/general/Card';
+/*
 import Separator from 'components/general/Separator';
 import Tabs from 'components/general/Tabs';
 import { selfSelector } from 'utils/common';
+*/
 
 import bannerImage from 'resources/works/banner.jpeg';
 
@@ -33,21 +32,18 @@ interface Props {
     projects: Project[];
 }
 
-function WorksPage(props: Props) {
-    const {
-        projects,
-    } = props;
-
-    const [
-        filteredProjectType,
-        setFilteredProjectType,
-    ] = useState<ProjectType | 'all'>('all');
-
+function WorksPage() {
     // const totalProjects = projects.length;
     const totalProjects = '250+';
 
     // const totalOrganizations = unique(projects.map((project) => project.client)).length;
     const totalOrganizations = '20+';
+
+    /*
+    const [
+        filteredProjectType,
+        setFilteredProjectType,
+    ] = useState<ProjectType | 'all'>('all');
 
     const filteredProjects = useMemo(() => {
         if (filteredProjectType === 'all') {
@@ -61,6 +57,7 @@ function WorksPage(props: Props) {
     const labelSelector = React.useCallback((projectType: ProjectType | 'all') => (
         projectType === 'all' ? 'All Works' : getProjectType(projectType).title
     ), []);
+    */
 
     return (
         <Page
@@ -86,6 +83,7 @@ function WorksPage(props: Props) {
                 />
             )}
         >
+            {/*
             <Container contentClassName={styles.workContent}>
                 <Tabs
                     options={projectTypeOptions}
@@ -108,6 +106,29 @@ function WorksPage(props: Props) {
                         />
                     ))}
                 </div>
+            </Container>
+            */}
+            <Container contentClassName={styles.portfolioCard}>
+                <Card
+                    title="Development Team Portfolio"
+                    href="https://drive.google.com/file/d/1vXXxd5oWWRvTkMSlDO92NUzpf6gHknt1/view?usp=sharing"
+                    description={(
+                        <div>
+                            Click here to download
+                        </div>
+                    )}
+                    openExternal
+                />
+                <Card
+                    title="Analysis Team Portfolio"
+                    href="https://drive.google.com/file/d/1T6gHiY27jlpxJ4jpci1Af-JQ9Iev553X/view?usp=sharing"
+                    description={(
+                        <div>
+                            Click here to download
+                        </div>
+                    )}
+                    openExternal
+                />
             </Container>
         </Page>
     );

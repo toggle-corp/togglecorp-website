@@ -142,6 +142,9 @@ function Navbar(props: NavProps) {
                 >
                     Blogs
                 </a>
+                <NavLink href="/works">
+                    Works
+                </NavLink>
                 <NavLink href="/about-us">
                     About
                 </NavLink>

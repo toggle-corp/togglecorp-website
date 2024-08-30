@@ -77,6 +77,9 @@ function Footer(props: Props) {
                     <Link href="/" passHref>
                         <span className={styles.linkHover}>Home</span>
                     </Link>
+                    <Link href="/works" passHref>
+                        <span className={styles.linkHover}>Works</span>
+                    </Link>
                     <Link href="/about-us" passHref>
                         <span className={styles.linkHover}>About</span>
                     </Link>
