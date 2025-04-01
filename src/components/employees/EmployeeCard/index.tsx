@@ -21,7 +21,6 @@ interface EmployeeCardProps {
     href?: string;
     name: string;
     position: string;
-    funnyDescription?: string;
     description?: string;
     linkedInLink?: string;
     instagramLink?: string;
@@ -40,7 +39,6 @@ function EmployeeCard(props: EmployeeCardProps) {
         name,
         position,
         description,
-        funnyDescription,
         linkedInLink,
         instagramLink,
         githubLink,
@@ -89,13 +87,6 @@ function EmployeeCard(props: EmployeeCardProps) {
                 <div
                     title={description}
                 >
-                    {variant === 'list' && (
-                        <div
-                            className={styles.description}
-                        >
-                            {funnyDescription}
-                        </div>
-                    )}
                     {variant === 'detail' && (
                         <div>
                             {description}

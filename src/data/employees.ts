@@ -68,10 +68,10 @@ export interface Employee {
 const adityaKhatri: Employee = {
     id: 'tc-001',
     name: 'Aditya Khatri',
-    position: 'Co-founder / Developer',
+    position: 'Chief Technology Officer / Co-founder',
     funnyDescription: 'That\'s soo stewpid!',
     department: 'development',
-    description: '"Aditya here! Come talk to me, or rather listen to be explain ideas and facts that you probably don\'t need to know. I like music, I like cooking and love food. I am constantly changing hobbies and trying out new things. I think everyone should appreciate effort more that the outcome. If we live everyday with an effort to be better than yesterday, the least we\'ll be is what we are right now, which is okay."',
+    description: '"Aditya here! Come talk to me, or rather listen to me explain ideas and facts that you probably don\'t need to know. I like music, I like cooking and love food. I am constantly changing hobbies and trying out new things. I think everyone should appreciate effort more that the outcome. If we live everyday with an effort to be better than yesterday, the least we\'ll be is what we are right now, which is okay."',
     linkedInLink: 'https://www.linkedin.com/in/adityakhatri47/',
     instagramLink: 'https://www.instagram.com/adityakhatri47/',
 };
@@ -210,17 +210,6 @@ const prinishaBaidya: Employee = {
     department: 'analysis',
     instagramLink: 'https://www.instagram.com/prinisha.baidya',
     linkedInLink: 'https://www.linkedin.com/in/prinisha-baidya-394b74187',
-};
-
-const puranBan: Employee = {
-    id: 'tc-056',
-    name: 'Puran Ban',
-    position: 'Developer',
-    description: 'As you like...',
-    funnyDescription: 'Garo cha jindagi :D',
-    department: 'development',
-    githubLink: 'https://github.com/puranban',
-    linkedInLink: 'https://www.linkedin.com/in/puran-ban-a22765149',
 };
 
 const bimalSaud: Employee = {
@@ -438,7 +427,6 @@ const employees: Employee[] = [
     rubyThapaliya,
     sameerRai,
     nikaShakya,
-    puranBan,
     shreeyashShrestha,
     shubhDhital,
     bimalSaud,

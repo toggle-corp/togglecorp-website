@@ -47,7 +47,6 @@ function Team(props: Props) {
                             key={member.id}
                             name={member.name}
                             position={member.position}
-                            funnyDescription={member.funnyDescription}
                             description={member.description}
                             variant="list"
                             href={`/employee/${member.id}`}
@@ -67,7 +66,6 @@ function Team(props: Props) {
                             key={member.id}
                             name={member.name}
                             position={member.position}
-                            funnyDescription={member.funnyDescription}
                             description={member.description}
                             variant="list"
                             href={`/employee/${member.id}`}
@@ -87,7 +85,6 @@ function Team(props: Props) {
                             key={member.id}
                             name={member.name}
                             position={member.position}
-                            funnyDescription={member.funnyDescription}
                             description={member.description}
                             variant="list"
                             href={`/employee/${member.id}`}

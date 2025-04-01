@@ -37,7 +37,6 @@ function EmployeePage(props: EmployeePageProps) {
                 imageSrc={getEmployeeImage(specificEmployeeData.id)}
                 name={specificEmployeeData.name}
                 position={specificEmployeeData.position}
-                funnyDescription={specificEmployeeData.funnyDescription}
                 description={specificEmployeeData.description}
                 linkedInLink={specificEmployeeData.linkedInLink}
                 instagramLink={specificEmployeeData.instagramLink}
