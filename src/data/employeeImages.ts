@@ -11,7 +11,6 @@ import kishanPahari from 'resources/employee/nishan.jpeg';
 import navinAyer from 'resources/employee/navin.jpeg';
 import nikaShakya from 'resources/employee/nika.jpeg';
 import prinishaBaidya from 'resources/employee/prinisha.jpeg';
-import puranBan from 'resources/employee/puran.jpeg';
 import ranjanShrestha from 'resources/employee/ranjan.jpeg';
 import rubyThapaliya from 'resources/employee/ruby.jpeg';
 import safarLigal from 'resources/employee/safar.jpeg';
@@ -55,7 +54,6 @@ const employeeImages: {
     'tc-017': kishanPahari,
     'tc-030': nikaShakya,
     'tc-028': prinishaBaidya,
-    'tc-056': puranBan,
     'tc-042': ranjanShrestha,
     'tc-027': rubyThapaliya,
     'tc-064': sadikshyaHamal,
