@@ -45,7 +45,8 @@ export type EmployeeId = 'tc-001'
 | 'tc-072'
 | 'tc-073'
 | 'tc-074'
-| 'tc-075';
+| 'tc-076'
+| 'tc-077';
 
 export interface Employee {
     id: EmployeeId;
@@ -128,7 +129,7 @@ const udayMaharjan: Employee = {
     name: 'Uday Maharjan',
     position: 'Assistant Project Manager',
     funnyDescription: 'What is your school\'s name? School Maharjan',
-    description: 'Meet Uday, a 27-year-old man who is still trying to figure out what he wants to be when he grows up (because let\'s be real, at 26 you\'re basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He\'s always up for a good time, whether it\'s cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he\'s not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He\'s also been known to dance every now and then (just don\'t ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.',
+    description: 'Meet Uday, a 28-year-old man who is still trying to figure out what he wants to be when he grows up (because let\'s be real, at 28 you\'re basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He\'s always up for a good time, whether it\'s cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he\'s not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He\'s also been known to dance every now and then (just don\'t ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.',
     department: 'development',
     instagramLink: 'https://www.instagram.com/udaynwa',
     facebookLink: 'https://www.facebook.com/udaynwa',
@@ -412,6 +413,27 @@ const roshaniPoudel: Employee = {
     instagramLink: 'https://www.instagram.com/_roshnipoudel',
 };
 
+
+const sudipKhanal: Employee = {
+    id: 'tc-076',
+    name: 'Sudip Khanal',
+    position: 'Backend Trainee',
+    description: 'Om Namah Shivaya....🙏🏻',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/sudip-khanal-59b815270',
+    githubLink: 'https://github.com/sudip-khanal',
+    instagramLink: 'https://www.instagram.com/sudip057/profilecard/?igsh=MXMxNXljc2w3NXg0Yw==',
+};
+
+const sandeshThapa: Employee = {
+    id: 'tc-077',
+    name: 'Sandesh Thapa',
+    position: 'ML Trainee',
+    description: 'I am veg on Tuesday and Thursday. Sorry for the inconvenience.',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/sandesh-thapa-18375b215/',
+};
+
 const employees: Employee[] = [
     ankitMehta,
     adityaKhatri,
@@ -445,6 +467,8 @@ const employees: Employee[] = [
     shreyaBhattarai,
     sushilTiwari,
     roshaniPoudel,
+    sudipKhanal,
+    sandeshThapa,
 ];
 
 export default employees;

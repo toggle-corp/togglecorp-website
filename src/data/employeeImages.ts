@@ -21,7 +21,7 @@ import shristiManandhar from 'resources/employee/shristi.jpeg';
 import shubhDhital from 'resources/employee/shubh.jpeg';
 import smritiKafle from 'resources/employee/smriti.jpeg';
 import subinaRajopadhyaya from 'resources/employee/subina.jpeg';
-import udayMaharjan from 'resources/employee/uday.jpeg';
+import udayMaharjan from 'resources/employee/uday.png';
 import rup from 'resources/employee/rup.jpeg';
 import sushmaAdhikari from 'resources/employee/sushma.jpeg';
 import praneshShrestha from 'resources/employee/pranesh.jpeg';
@@ -30,7 +30,9 @@ import sudanBhandari from 'resources/employee/sudan-bhandari.jpeg';
 import babinKarmacharya from 'resources/employee/babin-karmacharya.jpeg';
 import shreyaBhattarai from 'resources/employee/shreya-bhattarai.jpeg';
 import sushilTiwari from 'resources/employee/sushilTiwari.jpg';
-import roshaniPoudel from 'resources/employee/roshaniPoudel.jpg';
+import roshaniPoudel from 'resources/employee/roshani.png';
+import sudipKhanal from 'resources/employee/sudip.png';
+import sandeshThapa from 'resources/employee/sandesh.png';
 
 import champaDevi from 'resources/employee/champa.jpeg';
 
@@ -71,6 +73,8 @@ const employeeImages: {
     'tc-071': shreyaBhattarai,
     'tc-072': sushilTiwari,
     'tc-074': roshaniPoudel,
+    'tc-076': sudipKhanal,
+    'tc-077': sandeshThapa,   
 };
 
 // eslint-disable-next-line import/prefer-default-export
