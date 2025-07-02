@@ -105,7 +105,7 @@ function Navbar(props: NavProps) {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Blogs
+                        Publications
                     </a>
                     <NavLink href="/about-us">
                         About
@@ -140,7 +140,7 @@ function Navbar(props: NavProps) {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Blogs
+                    Publications
                 </a>
                 <NavLink href="/works">
                     Works
