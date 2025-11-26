@@ -3,15 +3,11 @@ type Department = 'development' | 'analysis' | 'operations';
 export type EmployeeId = 'tc-001'
 | 'tc-013'
 | 'tc-000'
-// | 'tc-050'
 | 'tc-040'
 | 'tc-063'
-// | 'tc-008'
-// | 'tc-036'
 | 'tc-010'
 | 'tc-023'
 | 'tc-058'
-| 'tc-017'
 | 'tc-006'
 | 'tc-004'
 | 'tc-030'
@@ -25,28 +21,24 @@ export type EmployeeId = 'tc-001'
 | 'tc-027'
 | 'tc-005'
 | 'tc-064'
-| 'tc-007'
-// | 'tc-015'
 | 'tc-059'
 | 'tc-021'
 | 'tc-062'
 | 'tc-061'
 | 'tc-055'
 | 'tc-016'
-| 'tc-047'
 | 'tc-065'
-// | 'tc-052'
 | 'tc-066'
-| 'tc-067'
 | 'tc-068'
 | 'tc-069'
 | 'tc-070'
-| 'tc-071'
 | 'tc-072'
 | 'tc-073'
-| 'tc-074'
 | 'tc-076'
-| 'tc-077';
+| 'tc-077'
+| 'tc-079'
+| 'tc-080'
+| 'tc-081';
 
 export interface Employee {
     id: EmployeeId;
@@ -216,7 +208,7 @@ const prinishaBaidya: Employee = {
 const bimalSaud: Employee = {
     id: 'tc-063',
     name: 'Bimal Saud',
-    position: 'Operations/Admin Officer',
+    position: 'Accounts and Operations Officer',
     description: 'I\'m passionate about my work and I know how to get the job done.',
     funnyDescription: 'Yo ja bata ako utai farkaideu',
     department: 'operations',
@@ -226,20 +218,11 @@ const bimalSaud: Employee = {
 const sadikshyaHamal: Employee = {
     id: 'tc-064',
     name: 'Sadikshya Hamal',
-    position: 'Assistant Manager - Human Resources',
+    position: 'HR Manager',
     description: 'Hi there, I am Sadikshya. I\'m a Human Resources Personnel by day, but by night I transform into a craziest and all- around fun-loving person with my family or close friends. In my free time, you can find me going on a hike, travelling and learning new things. I\'m always up for a good time and love creating beautiful memories to cherish for a lifetime. Overall, I\'m just a regular person trying to walk through this crazy thing we call life. :)',
     funnyDescription: 'Ma direct anda chai khadina',
     department: 'operations',
     linkedInLink: 'https://www.linkedin.com/in/sadikshya-hamal',
-};
-
-const kisanPahari: Employee = {
-    id: 'tc-017',
-    name: 'Kishan Pahari',
-    position: 'Chef',
-    description: 'Namaskar sabai jana lai. Ma aja tapailai mitho lunch khuwaune chu. Dhanyawad',
-    funnyDescription: 'Ma manage garchu',
-    department: 'operations',
 };
 
 const kanchiTamang: Employee = {
@@ -315,28 +298,6 @@ const ranjanShrestha: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/ranjan-shrestha-25779164/',
 };
 
-const sameerRai: Employee = {
-    id: 'tc-007',
-    name: 'Sameer Rai',
-    position: 'Developer',
-    description: 'Hello World! I\'m Sameer. I am fascinated with all things technology, science and art.',
-    funnyDescription: 'Rai ko chora lai Ale banaidyo yaar',
-    department: 'development',
-    githubLink: 'https://github.com/samshara',
-};
-
-const sushmaAdhikari: Employee = {
-    id: 'tc-047',
-    name: 'Sushma Adhikari',
-    position: 'Data Analyst',
-    description: 'I am a music lover. Music makes me smile, laughter which all I want in my life. I believe whatever makes your soul happy do that.',
-    funnyDescription: 'Aja Tuesday ho!',
-    department: 'analysis',
-    linkedInLink: 'https://www.linkedin.com/in/sushma-adhikari-00b5431a1',
-    facebookLink: 'https://www.facebook.com/sushma.adhikari.1023',
-    instagramLink: 'https://instagram.com/_sushmaa_',
-};
-
 const praneshShrestha: Employee = {
     id: 'tc-065',
     name: 'Pranesh Shrestha',
@@ -358,18 +319,6 @@ const pratikshyaBhattarai: Employee = {
     instagramLink: 'https://www.instagram.com/___pratikshya/',
 };
 
-const sudanBhandari: Employee = {
-    id: 'tc-067',
-    name: 'Sudan Bhandari',
-    position: 'Backend Developer',
-    description: 'K cha badda!!',
-    funnyDescription: 'Ok boss',
-    department: 'development',
-    instagramLink: 'https://www.instagram.com/sudan.py/',
-    githubLink: 'https://github.com/sudan45',
-    linkedInLink: 'https://www.linkedin.com/in/sudan-bhandari-9b4420149/',
-};
-
 const babinKarmacharya: Employee = {
     id: 'tc-070',
     name: 'Babin Kumar Karmacharya',
@@ -379,16 +328,6 @@ const babinKarmacharya: Employee = {
     department: 'development',
     instagramLink: 'https://instagram.com/babin_karmacharya',
     linkedInLink: 'https://www.linkedin.com/in/babin-kumar-karmacharya-b1789b220/',
-};
-
-const shreyaBhattarai: Employee = {
-    id: 'tc-071',
-    name: 'Shreya Bhattarai',
-    position: 'QA Engineer',
-    description: 'Haina, sab thikk chaaaaa !!!!!',
-    funnyDescription: 'aile ho Babin?? 😠',
-    department: 'development',
-    linkedInLink: 'https://www.linkedin.com/in/shreyabha/',
 };
 
 const sushilTiwari: Employee = {
@@ -402,22 +341,10 @@ const sushilTiwari: Employee = {
     githubLink: 'https://github.com/susilnem',
 };
 
-const roshaniPoudel: Employee = {
-    id: 'tc-074',
-    name: 'Roshani Poudel',
-    position: 'Frontend Developer',
-    funnyDescription: 'Tyo bela ma still intern thyeeee! Hehe he!',
-    description: 'Hey there! I\'m Roshani, passionate about frontend development. Beyond coding, I enjoy exploring new places, food and cooking.',
-    department: 'development',
-    linkedInLink: 'https://www.linkedin.com/in/roshni-poudel',
-    instagramLink: 'https://www.instagram.com/_roshnipoudel',
-};
-
-
 const sudipKhanal: Employee = {
     id: 'tc-076',
     name: 'Sudip Khanal',
-    position: 'Backend Trainee',
+    position: 'Backend Developer',
     description: 'Om Namah Shivaya....🙏🏻',
     department: 'development',
     linkedInLink: 'https://www.linkedin.com/in/sudip-khanal-59b815270',
@@ -428,10 +355,38 @@ const sudipKhanal: Employee = {
 const sandeshThapa: Employee = {
     id: 'tc-077',
     name: 'Sandesh Thapa',
-    position: 'ML Trainee',
+    position: 'ML Engineer',
     description: 'I am veg on Tuesday and Thursday. Sorry for the inconvenience.',
     department: 'development',
     linkedInLink: 'https://www.linkedin.com/in/sandesh-thapa-18375b215/',
+};
+
+const ashmitaPaudel: Employee = {
+    id: 'tc-079',
+    name: 'Ashmita Paudel',
+    position: 'Project Manager',
+    description: 'Hi, I\'m Ashmita, an explorer of ideas, places and good food. Behind my serious looking face, I\'m always up for a good laugh, a stimulating brainstorming session, or a good travel story. If you find me staring into the nothingness, I\'m either pondering the meaning of existence, or planning my next vacation.',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/ashmitapaudel/',
+};
+
+const lekhnathKhanal: Employee = {
+    id: 'tc-081',
+    name: 'Lekh Nath Khanal',
+    position: 'Senior Backend Developer',
+    description: 'घुम्ति-घुम्तिमा, मोड-मोडमा...',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/lekh-nath-khanal/',
+};
+
+const cyrusShrestha: Employee = {
+    id: 'tc-080',
+    name: 'Cyrus Shrestha',
+    position: 'Frontend Developer',
+    description: 'Learning new things, making small wins, and enjoying the journey.',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/crsstha/',
+    githubLink: 'https://github.com/crsstha',
 };
 
 const employees: Employee[] = [
@@ -447,28 +402,25 @@ const employees: Employee[] = [
     barshaThakuri,
     prinishaBaidya,
     rubyThapaliya,
-    sameerRai,
     nikaShakya,
     shreeyashShrestha,
     shubhDhital,
     bimalSaud,
     sadikshyaHamal,
-    kisanPahari,
     kanchiTamang,
     champaDeviChaudhary,
-    sushmaAdhikari,
     shristiManandhar,
     rupRanjanshi,
     ranjanShrestha,
     praneshShrestha,
     pratikshyaBhattarai,
-    sudanBhandari,
     babinKarmacharya,
-    shreyaBhattarai,
     sushilTiwari,
-    roshaniPoudel,
     sudipKhanal,
     sandeshThapa,
+    ashmitaPaudel,
+    lekhnathKhanal,
+    cyrusShrestha,
 ];
 
 export default employees;
