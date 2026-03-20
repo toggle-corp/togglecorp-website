@@ -15,13 +15,11 @@ import rubyThapaliya from 'resources/employee/ruby.jpeg';
 import safarLigal from 'resources/employee/safar.jpeg';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
 import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
-import shristiManandhar from 'resources/employee/shristi.jpeg';
 import shubhDhital from 'resources/employee/shubh.jpeg';
 import smritiKafle from 'resources/employee/smriti.jpeg';
 import subinaRajopadhyaya from 'resources/employee/subina.jpeg';
 import udayMaharjan from 'resources/employee/uday.png';
 import rup from 'resources/employee/rup.jpeg';
-import praneshShrestha from 'resources/employee/pranesh.jpeg';
 import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpeg';
 import babinKarmacharya from 'resources/employee/babin-karmacharya.jpeg';
 import sushilTiwari from 'resources/employee/sushilTiwari.jpg';
@@ -29,6 +27,7 @@ import sudipKhanal from 'resources/employee/sudip.png';
 import sandeshThapa from 'resources/employee/sandesh.png';
 import ashmitaPaudel from 'resources/employee/ashmitaPaudel.jpeg';
 import cyrusShrestha from 'resources/employee/cyrusShrestha.jpeg';
+import safalShrestha from 'resources/employee/safalShrestha.jpeg';
 import lekhnathKhanal from 'resources/employee/lnkhanal.jpg';
 import champaDevi from 'resources/employee/champa.jpeg';
 
@@ -55,10 +54,8 @@ const employeeImages: {
     'tc-027': rubyThapaliya,
     'tc-064': sadikshyaHamal,
     'tc-059': shreeyashShrestha,
-    'tc-021': shristiManandhar,
     'tc-055': rup,
     'tc-010': kanchiTamang,
-    'tc-065': praneshShrestha,
     'tc-066': pratikshyaBhattarai,
     'tc-068': champaDevi,
     'tc-070': babinKarmacharya,
@@ -68,6 +65,7 @@ const employeeImages: {
     'tc-079': ashmitaPaudel,
     'tc-080': cyrusShrestha,
     'tc-081': lekhnathKhanal,
+    'tc-082': safalShrestha,
 };
 
 // eslint-disable-next-line import/prefer-default-export
