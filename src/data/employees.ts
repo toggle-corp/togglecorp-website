@@ -22,12 +22,10 @@ export type EmployeeId = 'tc-001'
 | 'tc-005'
 | 'tc-064'
 | 'tc-059'
-| 'tc-021'
 | 'tc-062'
 | 'tc-061'
 | 'tc-055'
 | 'tc-016'
-| 'tc-065'
 | 'tc-066'
 | 'tc-068'
 | 'tc-069'
@@ -38,7 +36,8 @@ export type EmployeeId = 'tc-001'
 | 'tc-077'
 | 'tc-079'
 | 'tc-080'
-| 'tc-081';
+| 'tc-081'
+| 'tc-082';
 
 export interface Employee {
     id: EmployeeId;
@@ -254,16 +253,6 @@ const rubyThapaliya: Employee = {
     facebookLink: 'https://www.facebook.com/profile.php?id=100007191255458',
 };
 
-const shristiManandhar: Employee = {
-    id: 'tc-021',
-    name: 'Shristi Manandhar',
-    position: 'Data Analyst',
-    description: 'I love watching Anime and Korean dramas. Also; Happily introverted :P. People say that I am hard worker and a team player :)',
-    funnyDescription: 'Ma ghar janalaho k',
-    department: 'analysis',
-    instagramLink: 'https://www.instagram.com/shristee/',
-};
-
 const shreeyashShrestha: Employee = {
     id: 'tc-059',
     name: 'Shreeyash Laya La Shrestha',
@@ -296,17 +285,6 @@ const ranjanShrestha: Employee = {
     funnyDescription: 'Soooooo yesterday i worked on the',
     department: 'development',
     linkedInLink: 'https://www.linkedin.com/in/ranjan-shrestha-25779164/',
-};
-
-const praneshShrestha: Employee = {
-    id: 'tc-065',
-    name: 'Pranesh Shrestha',
-    position: 'UI/UX Designer',
-    description: 'Hello, I am Pranesh and I have an attention span of a 2-year-old.',
-    funnyDescription: 'Ma mid-level QA ho k!!',
-    department: 'development',
-    facebookLink: 'https://www.facebook.com/pranesh.shrestha.501/',
-    instagramLink: 'https://www.instagram.com/pranesh_chaa',
 };
 
 const pratikshyaBhattarai: Employee = {
@@ -389,6 +367,18 @@ const cyrusShrestha: Employee = {
     githubLink: 'https://github.com/crsstha',
 };
 
+const safalShrestha: Employee = {
+    id: 'tc-082',
+    name: 'Safal Shrestha',
+    position: 'UI/UX Designer',
+    description: 'Designing clean and user-friendly experiences by day, gaming by night and occasionally judging the UI of both.',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/safalxtha/',
+    facebookLink: 'https://www.facebook.com/safalshrestha619',
+    instagramLink: 'https://www.instagram.com/safal_xtha/',
+
+};
+
 const employees: Employee[] = [
     ankitMehta,
     adityaKhatri,
@@ -409,10 +399,8 @@ const employees: Employee[] = [
     sadikshyaHamal,
     kanchiTamang,
     champaDeviChaudhary,
-    shristiManandhar,
     rupRanjanshi,
     ranjanShrestha,
-    praneshShrestha,
     pratikshyaBhattarai,
     babinKarmacharya,
     sushilTiwari,
@@ -421,6 +409,7 @@ const employees: Employee[] = [
     ashmitaPaudel,
     lekhnathKhanal,
     cyrusShrestha,
+    safalShrestha,
 ];
 
 export default employees;
