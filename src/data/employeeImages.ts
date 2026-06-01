@@ -3,7 +3,6 @@ import { StaticImageData } from 'next/image';
 import adityaKhatri from 'resources/employee/aditya.jpeg';
 import amarShahi from 'resources/employee/amar.jpeg';
 import ankitMehta from 'resources/employee/ankit.jpeg';
-import barshaThakuri from 'resources/employee/barsha.jpeg';
 import bimalSaud from 'resources/employee/bimal-saud.jpeg';
 import kanchiTamang from 'resources/employee/kanchi.jpeg';
 import keyurKhadka from 'resources/employee/keyur.jpeg';
@@ -39,7 +38,6 @@ const employeeImages: {
     'tc-001': adityaKhatri,
     'tc-013': amarShahi,
     'tc-000': ankitMehta,
-    'tc-040': barshaThakuri,
     'tc-005': safarLigal,
     'tc-016': subinaRajopadhyaya,
     'tc-058': keyurKhadka,

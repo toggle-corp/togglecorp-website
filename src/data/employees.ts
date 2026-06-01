@@ -3,7 +3,6 @@ type Department = 'development' | 'analysis' | 'operations';
 export type EmployeeId = 'tc-001'
 | 'tc-013'
 | 'tc-000'
-| 'tc-040'
 | 'tc-063'
 | 'tc-010'
 | 'tc-023'
@@ -88,17 +87,6 @@ const ankitMehta: Employee = {
     department: 'development',
     linkedInLink: 'https://www.linkedin.com/in/frozenhelium/',
     githubLink: 'https://github.com/frozenhelium/',
-};
-
-const barshaThakuri: Employee = {
-    id: 'tc-040',
-    name: 'Barsha Thakuri',
-    position: 'Developer',
-    funnyDescription: 'I\'ll be late for standup, My scotty is not starting',
-    description: 'Barsha loves adventures, traveling, hiking, visiting new places, and reading books. "Mountains are her happy place"',
-    department: 'development',
-    linkedInLink: 'https://www.linkedin.com/in/barshathakuri/',
-    instagramLink: 'https://www.instagram.com/barsha.thakuri/',
 };
 
 const keyurKhadka: Employee = {
@@ -389,7 +377,6 @@ const employees: Employee[] = [
     keyurKhadka,
     subinaRajopadhyay,
     smritiKafle,
-    barshaThakuri,
     prinishaBaidya,
     rubyThapaliya,
     nikaShakya,
