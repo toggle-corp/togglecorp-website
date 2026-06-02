@@ -8,9 +8,9 @@ import kanchiTamang from 'resources/employee/kanchi.jpeg';
 import keyurKhadka from 'resources/employee/keyur.jpeg';
 import navinAyer from 'resources/employee/navin.jpeg';
 import nikaShakya from 'resources/employee/nika.jpeg';
-import prinishaBaidya from 'resources/employee/prinisha.jpeg';
+import prinishaBaidya from 'resources/employee/prinisha.jpg';
 import ranjanShrestha from 'resources/employee/ranjan.jpeg';
-import rubyThapaliya from 'resources/employee/ruby.jpeg';
+import rubyThapaliya from 'resources/employee/ruby.jpg';
 import safarLigal from 'resources/employee/safar.jpeg';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
 import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
@@ -19,7 +19,7 @@ import smritiKafle from 'resources/employee/smriti.jpeg';
 import subinaRajopadhyaya from 'resources/employee/subina.jpeg';
 import udayMaharjan from 'resources/employee/uday.png';
 import rup from 'resources/employee/rup.jpeg';
-import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpeg';
+import pratikshyaBhattarai from 'resources/employee/pratikshya-bhattarai.jpg';
 import babinKarmacharya from 'resources/employee/babin-karmacharya.jpeg';
 import sushilTiwari from 'resources/employee/sushilTiwari.jpg';
 import sudipKhanal from 'resources/employee/sudip.png';
@@ -27,8 +27,8 @@ import sandeshThapa from 'resources/employee/sandesh.png';
 import ashmitaPaudel from 'resources/employee/ashmitaPaudel.jpeg';
 import cyrusShrestha from 'resources/employee/cyrusShrestha.jpeg';
 import safalShrestha from 'resources/employee/safalShrestha.jpeg';
-import lekhnathKhanal from 'resources/employee/lnkhanal.jpg';
 import champaDevi from 'resources/employee/champa.jpeg';
+import amritBhusal from 'resources/employee/amrit.jpeg';
 
 import { EmployeeId } from 'data/employees';
 
@@ -62,8 +62,8 @@ const employeeImages: {
     'tc-077': sandeshThapa,
     'tc-079': ashmitaPaudel,
     'tc-080': cyrusShrestha,
-    'tc-081': lekhnathKhanal,
     'tc-082': safalShrestha,
+    'tc-084': amritBhusal,
 };
 
 // eslint-disable-next-line import/prefer-default-export

@@ -1,42 +1,42 @@
 type Department = 'development' | 'analysis' | 'operations';
 
 export type EmployeeId = 'tc-001'
-| 'tc-013'
-| 'tc-000'
-| 'tc-063'
-| 'tc-010'
-| 'tc-023'
-| 'tc-058'
-| 'tc-006'
-| 'tc-004'
-| 'tc-030'
-| 'tc-034'
-| 'tc-028'
-| 'tc-039'
-| 'tc-057'
-| 'tc-042'
-| 'tc-018'
-| 'tc-056'
-| 'tc-027'
-| 'tc-005'
-| 'tc-064'
-| 'tc-059'
-| 'tc-062'
-| 'tc-061'
-| 'tc-055'
-| 'tc-016'
-| 'tc-066'
-| 'tc-068'
-| 'tc-069'
-| 'tc-070'
-| 'tc-072'
-| 'tc-073'
-| 'tc-076'
-| 'tc-077'
-| 'tc-079'
-| 'tc-080'
-| 'tc-081'
-| 'tc-082';
+    | 'tc-013'
+    | 'tc-000'
+    | 'tc-063'
+    | 'tc-010'
+    | 'tc-023'
+    | 'tc-058'
+    | 'tc-006'
+    | 'tc-004'
+    | 'tc-030'
+    | 'tc-034'
+    | 'tc-028'
+    | 'tc-039'
+    | 'tc-057'
+    | 'tc-042'
+    | 'tc-018'
+    | 'tc-056'
+    | 'tc-027'
+    | 'tc-005'
+    | 'tc-064'
+    | 'tc-059'
+    | 'tc-062'
+    | 'tc-061'
+    | 'tc-055'
+    | 'tc-016'
+    | 'tc-066'
+    | 'tc-068'
+    | 'tc-069'
+    | 'tc-070'
+    | 'tc-072'
+    | 'tc-073'
+    | 'tc-076'
+    | 'tc-077'
+    | 'tc-079'
+    | 'tc-080'
+    | 'tc-082'
+    | 'tc-084';
 
 export interface Employee {
     id: EmployeeId;
@@ -336,15 +336,6 @@ const ashmitaPaudel: Employee = {
     linkedInLink: 'https://www.linkedin.com/in/ashmitapaudel/',
 };
 
-const lekhnathKhanal: Employee = {
-    id: 'tc-081',
-    name: 'Lekh Nath Khanal',
-    position: 'Senior Backend Developer',
-    description: 'घुम्ति-घुम्तिमा, मोड-मोडमा...',
-    department: 'development',
-    linkedInLink: 'https://www.linkedin.com/in/lekh-nath-khanal/',
-};
-
 const cyrusShrestha: Employee = {
     id: 'tc-080',
     name: 'Cyrus Shrestha',
@@ -366,6 +357,19 @@ const safalShrestha: Employee = {
     instagramLink: 'https://www.instagram.com/safal_xtha/',
 
 };
+
+const amritBhusal: Employee = {
+    id: 'tc-084',
+    name: 'Amrit Bhusal',
+    position: 'Frontend Developer',
+    funnyDescription: 'Chiya khane ho?',
+    description: 'Powered by chiya, curiosity, and clean code. Believes that every challenge has a solution.',
+    department: 'development',
+    linkedInLink: 'https://www.linkedin.com/in/amrit-bhusal1/',
+    githubLink: 'https://github.com/AmritBhusal',
+    instagramLink: 'https://www.instagram.com/bhusalamrit14',
+};
+
 
 const employees: Employee[] = [
     ankitMehta,
@@ -394,9 +398,9 @@ const employees: Employee[] = [
     sudipKhanal,
     sandeshThapa,
     ashmitaPaudel,
-    lekhnathKhanal,
     cyrusShrestha,
     safalShrestha,
+    amritBhusal,
 ];
 
 export default employees;
