@@ -28,6 +28,7 @@ import ashmitaPaudel from 'resources/employee/ashmitaPaudel.jpeg';
 import cyrusShrestha from 'resources/employee/cyrusShrestha.jpeg';
 import safalShrestha from 'resources/employee/safalShrestha.jpeg';
 import champaDevi from 'resources/employee/champa.jpeg';
+import nehaBhatta from 'resources/employee/neha.jpg';
 import amritBhusal from 'resources/employee/amrit.jpeg';
 
 import { EmployeeId } from 'data/employees';
@@ -63,6 +64,7 @@ const employeeImages: {
     'tc-079': ashmitaPaudel,
     'tc-080': cyrusShrestha,
     'tc-082': safalShrestha,
+    'tc-083': nehaBhatta,
     'tc-084': amritBhusal,
 };
 
