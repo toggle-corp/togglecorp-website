@@ -9,7 +9,8 @@
         "lint": "next lint",
         "css-lint": "stylelint pages/**/*.css src/**/*.css",
         "typecheck": "tsc",
-        "export": "next build && next export && next-export-optimize-images"
+        "export": "next build && next export && next-export-optimize-images",
+        "validate": "yarn unimported && yarn lint && yarn css-lint && yarn typecheck && yarn export"
     },
     "dependencies": {
         "@togglecorp/fujs": "^1.9.3",
