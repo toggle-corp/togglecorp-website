@@ -21,7 +21,6 @@ export type EmployeeId =
 | "tc-027"
 | "tc-005"
 | "tc-064"
-| "tc-059"
 | "tc-062"
 | "tc-061"
 | "tc-055"
@@ -36,7 +35,6 @@ export type EmployeeId =
 | "tc-077"
 | "tc-079"
 | "tc-080"
-| "tc-082"
 | "tc-083"
 | "tc-084";
 
@@ -108,7 +106,7 @@ const keyurKhadka: Employee = {
 const udayMaharjan: Employee = {
     id: "tc-057",
     name: "Uday Maharjan",
-    position: "Assistant Project Manager",
+    position: "Project Manager",
     funnyDescription: "What is your school's name? School Maharjan",
     description: "Meet Uday, a 29-year-old man who is still trying to figure out what he wants to be when he grows up (because let's be real, at 29 you're basically a grown-up, right?). Despite his indecisiveness, Uday is a pretty cool dude. He's always up for a good time, whether it's cracking jokes with his friends or trying out a new restaurant in town. Uday is also an avid Liverpool FC fan, and can often be found cheering on his favorite team on game day.When he's not rooting for the home team, you might catch him going on hikes with his buddies or going on bike rides. In his spare time, Uday enjoys partying, playing video games, collecting KinderJoy toys and listening to music.He's also been known to dance every now and then (just don't ask him to dance). Overall, Uday is a fun- loving, easy-going guy who is always up for an adventure.",
     department: "development",
@@ -244,18 +242,6 @@ const rubyThapaliya: Employee = {
     facebookLink: "https://www.facebook.com/profile.php?id=100007191255458",
 };
 
-const shreeyashShrestha: Employee = {
-    id: "tc-059",
-    name: "Shreeyash Laya La Shrestha",
-    position: "Developer",
-    description: "Crafting code and building beautiful solutions with a passion for continuous learning and growth. Always striving to create and inspire change through technology.",
-    funnyDescription: "Haule haule saajna; dheere dheere baalma. O ho ho hmm hmm hmm...",
-    department: "development",
-    instagramLink: "https://www.instagram.com/shreeyash__",
-    facebookLink: "https://www.facebook.com/shreeyash07",
-    linkedInLink: "https://www.linkedin.com/in/shreeyash-shrestha",
-};
-
 const rupRanjanshi: Employee = {
     id: "tc-055",
     name: "Rup Narayan Rajbanshi",
@@ -351,17 +337,6 @@ const cyrusShrestha: Employee = {
     githubLink: "https://github.com/crsstha",
 };
 
-const safalShrestha: Employee = {
-    id: "tc-082",
-    name: "Safal Shrestha",
-    position: "UI/UX Designer",
-    description: "Designing clean and user-friendly experiences by day, gaming by night and occasionally judging the UI of both.",
-    department: "development",
-    linkedInLink: "https://www.linkedin.com/in/safalxtha/",
-    facebookLink: "https://www.facebook.com/safalshrestha619",
-    instagramLink: "https://www.instagram.com/safal_xtha/",
-};
-
 const nehaBhatta: Employee = {
     id: "tc-083",
     name: "Neha Bhatta",
@@ -395,7 +370,6 @@ const employees: Employee[] = [
     prinishaBaidya,
     rubyThapaliya,
     nikaShakya,
-    shreeyashShrestha,
     shubhDhital,
     bimalSaud,
     sadikshyaHamal,
@@ -410,7 +384,6 @@ const employees: Employee[] = [
     sandeshThapa,
     ashmitaPaudel,
     cyrusShrestha,
-    safalShrestha,
     nehaBhatta,
     amritBhusal,
 ];
