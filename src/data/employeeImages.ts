@@ -13,7 +13,6 @@ import ranjanShrestha from 'resources/employee/ranjan.jpeg';
 import rubyThapaliya from 'resources/employee/ruby.jpg';
 import safarLigal from 'resources/employee/safar.jpeg';
 import sadikshyaHamal from 'resources/employee/sadikshya.jpeg';
-import shreeyashShrestha from 'resources/employee/shreeyash.jpeg';
 import shubhDhital from 'resources/employee/shubh.jpeg';
 import smritiKafle from 'resources/employee/smriti.jpeg';
 import subinaRajopadhyaya from 'resources/employee/subina.jpeg';
@@ -26,7 +25,6 @@ import sudipKhanal from 'resources/employee/sudip.png';
 import sandeshThapa from 'resources/employee/sandesh.png';
 import ashmitaPaudel from 'resources/employee/ashmitaPaudel.jpeg';
 import cyrusShrestha from 'resources/employee/cyrusShrestha.jpeg';
-import safalShrestha from 'resources/employee/safalShrestha.jpeg';
 import champaDevi from 'resources/employee/champa.jpeg';
 import nehaBhatta from 'resources/employee/neha.jpg';
 import amritBhusal from 'resources/employee/amrit.jpeg';
@@ -52,7 +50,6 @@ const employeeImages: {
     'tc-042': ranjanShrestha,
     'tc-027': rubyThapaliya,
     'tc-064': sadikshyaHamal,
-    'tc-059': shreeyashShrestha,
     'tc-055': rup,
     'tc-010': kanchiTamang,
     'tc-066': pratikshyaBhattarai,
@@ -63,7 +60,6 @@ const employeeImages: {
     'tc-077': sandeshThapa,
     'tc-079': ashmitaPaudel,
     'tc-080': cyrusShrestha,
-    'tc-082': safalShrestha,
     'tc-083': nehaBhatta,
     'tc-084': amritBhusal,
 };
