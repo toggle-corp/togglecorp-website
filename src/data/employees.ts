@@ -92,7 +92,7 @@ const ankitMehta: Employee = {
 const keyurKhadka: Employee = {
     id: "tc-058",
     name: "Keyur Khadka",
-    position: "Assistant Project Manager",
+    position: "Project Manager",
     funnyDescription: "Stay hard! (P.S: Context is important!)",
     description: "I am fun, I am casual, I am humorous, I am... K?",
     department: "development",
@@ -340,7 +340,7 @@ const cyrusShrestha: Employee = {
 const nehaBhatta: Employee = {
     id: "tc-083",
     name: "Neha Bhatta",
-    position: "QA Trainee",
+    position: "QA Engineer",
     description: "Living, Laughing, losing track of time.",
     department: "development",
     linkedInLink: "https://www.linkedin.com/in/neha-bhatta-568820266",
